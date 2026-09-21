@@ -1,0 +1,42 @@
+name: Story do marketplace
+
+on:
+  schedule:
+    # 9,10,11,12,13h de Brasilia = 12,13,14,15,16 UTC (BRT e UTC-3 o ano todo).
+    # O cron do GitHub Actions pode atrasar alguns minutos em horario de pico.
+    - cron: '0 12,13,14,15,16 * * *'
+  workflow_dispatch:
+    inputs:
+      forcar:
+        description: 'Publicar agora, ignorando janela de horario e meta diaria'
+        type: boolean
+        default: false
+
+# Evita que duas execucoes empurrem commits ao mesmo tempo.
+concurrency:
+  group: story
+  cancel-in-progress: false
+
+jobs:
+  publicar:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write        # o script commita a arte e o registro
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Conferir que o Chrome existe no runner
+        run: google-chrome --version
+
+      - name: Identidade do git
+        run: |
+          git config user.name "Story Bot"
+          git config user.email "guilherme@ihelpu.com.br"
+
+      - name: Publicar
+        env:
+          IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+          SUPABASE_ANON_KEY: ${{ secrets.SUPABASE_ANON_KEY }}
+          IG_USER_ID: '17841400093603178'
+          FORCAR: ${{ inputs.forcar && '1' || '0' }}
+        run: python3 publicar.py
