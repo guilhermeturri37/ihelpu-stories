@@ -3,8 +3,13 @@ name: Story do marketplace
 on:
   schedule:
     # 9,10,11,12,13h de Brasilia = 12,13,14,15,16 UTC (BRT e UTC-3 o ano todo).
-    # O cron do GitHub Actions pode atrasar alguns minutos em horario de pico.
-    - cron: '0 12,13,14,15,16 * * *'
+    # Minutos quebrados de proposito: o minuto :00 concentra a fila do GitHub
+    # inteira e as execucoes atrasam muito ou sao descartadas.
+    - cron: '7 12 * * *'
+    - cron: '13 13 * * *'
+    - cron: '9 14 * * *'
+    - cron: '17 15 * * *'
+    - cron: '11 16 * * *'
   workflow_dispatch:
     inputs:
       forcar:
