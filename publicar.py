@@ -49,10 +49,16 @@ def montar_arte(a, destino):
     bat = a.get("battery_health")
     mostra_bat = a.get("category") in COM_BATERIA and isinstance(bat, int) and bat > 0
 
+    modelo = a.get("model") or a.get("title") or "Seminovo"
+    # Nomes longos (iPad 10a geracao 10.9" 2022) quebravam em duas linhas e
+    # comprimiam o bloco de preco. Encolhe a fonte em vez de deixar quebrar.
+    fs = 54 if len(modelo) <= 18 else max(32, int(54 * 18 / len(modelo)))
+
     h = (RAIZ / "template.html").read_text()
     h = (h.replace("FOTO_URL", foto_de(a))
            .replace("ESTADO_LABEL", COND.get(a.get("aesthetic_condition"), "Seminovo"))
-           .replace("MODELO_NOME", a.get("model") or a.get("title") or "Seminovo")
+           .replace("FS_MODELO", str(fs))
+           .replace("MODELO_NOME", modelo)
            .replace("ARMAZENAMENTO · Retire ainda hoje", specs)
            .replace("R$ PRECO", "R$ " + format(int(a["asking_price"]), ",d").replace(",", ".")))
     h = h.replace("BATERIA", str(bat)) if mostra_bat else \
