@@ -106,6 +106,19 @@ def publicar(url_arte):
 def git(*args):
     subprocess.run(["git", *args], cwd=RAIZ, check=True, capture_output=True)
 
+def git_push():
+    """O repo recebe commits de outras execucoes, entao o push pode ser
+    recusado. Rebaseia e tenta de novo antes de desistir."""
+    for tentativa in range(3):
+        try:
+            subprocess.run(["git", "push"], cwd=RAIZ, check=True, capture_output=True)
+            return
+        except subprocess.CalledProcessError:
+            log(f"   push recusado (tentativa {tentativa + 1}); rebaseando...")
+            subprocess.run(["git", "pull", "--rebase", "-q"], cwd=RAIZ, capture_output=True)
+            time.sleep(2)
+    sys.exit("nao consegui enviar ao repositorio apos 3 tentativas")
+
 def main():
     agora = datetime.now(BRT)
     hora, hoje = agora.hour, agora.strftime("%Y-%m-%d")
@@ -114,6 +127,16 @@ def main():
 
     if not forcar and hora not in HORARIOS_CHEIOS:
         return log(f"ignorado: {hora}h fora da janela 9-13h")
+
+    # Sem isto, duas execucoes proximas leem o mesmo publicados.json antigo e
+    # escolhem o MESMO aparelho (aconteceu em 23/09: o disparo manual e o do
+    # launchd cairam com 34s de diferenca). So nao duplicou porque o push da
+    # arte falhou por conflito — sorte, nao design.
+    try:
+        subprocess.run(["git", "pull", "--rebase", "-q"], cwd=RAIZ, check=True,
+                       capture_output=True, timeout=120)
+    except Exception as e:
+        log(f"   aviso: nao consegui sincronizar antes de decidir ({e})")
 
     registro = json.loads((RAIZ / "publicados.json").read_text())
     ja = {p["device_id"] for p in registro["publicados"]}
@@ -148,7 +171,7 @@ def main():
     # A arte precisa estar publica ANTES de publicar: a Meta busca por URL.
     git("add", f"artes/{nome}")
     git("commit", "-m", f"Arte: {a.get('model')} ({hoje} {hora:02d}h)")
-    git("push")
+    git_push()
     url = f"{REPO_RAW}/artes/{nome}"
     log(f"   publicada em {url}")
 
@@ -162,7 +185,7 @@ def main():
     (RAIZ / "publicados.json").write_text(json.dumps(registro, indent=2, ensure_ascii=False) + "\n")
     git("add", "publicados.json")
     git("commit", "-m", f"Registra story {story_id}")
-    git("push")
+    git_push()
 
 if __name__ == "__main__":
     main()
