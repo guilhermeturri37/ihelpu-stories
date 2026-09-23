@@ -52,7 +52,7 @@ def montar_arte(a, destino):
     modelo = a.get("model") or a.get("title") or "Seminovo"
     # Nomes longos (iPad 10a geracao 10.9" 2022) quebravam em duas linhas e
     # comprimiam o bloco de preco. Encolhe a fonte em vez de deixar quebrar.
-    fs = 54 if len(modelo) <= 18 else max(32, int(54 * 18 / len(modelo)))
+    fs = 82 if len(modelo) <= 16 else max(46, int(82 * 16 / len(modelo)))
 
     h = (RAIZ / "template.html").read_text()
     h = (h.replace("FOTO_URL", foto_de(a))
@@ -62,7 +62,7 @@ def montar_arte(a, destino):
            .replace("ARMAZENAMENTO · Retire ainda hoje", specs)
            .replace("R$ PRECO", "R$ " + format(int(a["asking_price"]), ",d").replace(",", ".")))
     h = h.replace("BATERIA", str(bat)) if mostra_bat else \
-        re.sub(r'<div class="badge-bat">.*?</div>', "", h, flags=re.S)
+        re.sub(r'<span class="pill badge-bat">.*?</span>', "", h, flags=re.S)
 
     html = RAIZ / "_arte.html"
     html.write_text(h)

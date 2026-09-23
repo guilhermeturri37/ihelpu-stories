@@ -2,113 +2,84 @@
 <html lang="pt-BR"><head><meta charset="utf-8">
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,700;12..96,800&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
 <style>
-  :root{
-    --roxo:hsl(289 52% 31%); --roxo-esc:hsl(289 66% 16%);
-    --laranja:hsl(16 96% 57%); --laranja-2:hsl(28 91% 59%);
-    --branco:#fff;
-  }
+  :root{--roxo:hsl(289 52% 31%);--roxo-esc:hsl(289 66% 16%);--fundo:#150419;
+        --laranja:hsl(16 96% 57%);--laranja-2:hsl(28 91% 59%)}
   *{margin:0;padding:0;box-sizing:border-box}
-  body{width:1080px;height:1920px;overflow:hidden;
-    font-family:'Manrope',sans-serif;
-    background:linear-gradient(160deg,var(--roxo) 0%,var(--roxo-esc) 55%,#150419 100%);
-    color:var(--branco);position:relative}
-  /* brilho de marca */
-  .glow{position:absolute;width:900px;height:900px;border-radius:50%;
-    background:radial-gradient(circle,hsl(16 96% 57% / .30) 0%,transparent 68%);
-    top:480px;left:-180px;filter:blur(20px)}
-  .glow2{position:absolute;width:700px;height:700px;border-radius:50%;
-    background:radial-gradient(circle,hsl(298 78% 91% / .13) 0%,transparent 70%);
-    top:-140px;right:-160px}
-  /* safe area: conteúdo entre 250 e 1670 */
-  .wrap{position:absolute;inset:250px 70px 250px 70px;display:flex;flex-direction:column}
+  body{width:1080px;height:1920px;overflow:hidden;font-family:'Manrope',sans-serif;
+       background:linear-gradient(170deg,var(--roxo),var(--roxo-esc) 58%,var(--fundo));position:relative}
 
-  .topo{display:flex;align-items:center;justify-content:space-between}
-  .marca{font-family:'Bricolage Grotesque';font-weight:800;font-size:40px;letter-spacing:-.5px}
+  /* A foto e o destaque: ocupa o terco superior inteiro, sangrando nas bordas.
+     As fotos dos anuncios sao verticais (~3:4), entao um recorte alto enquadra
+     melhor do que a janela horizontal que havia antes. */
+  .janela{position:absolute;top:0;left:0;right:0;height:1180px;overflow:hidden}
+  .janela img{width:100%;height:100%;object-fit:cover;object-position:center 40%}
+  .fade{position:absolute;bottom:0;left:0;right:0;height:300px;
+        background:linear-gradient(0deg,#2B0A33 10%,rgba(43,10,51,.72) 48%,transparent 100%)}
+  .veu{position:absolute;top:0;left:0;right:0;height:470px;
+       background:linear-gradient(180deg,rgba(21,4,25,.86),transparent)}
+
+  .topo{position:absolute;top:250px;left:70px;right:70px;display:flex;
+        justify-content:space-between;align-items:center;z-index:4}
+  .marca{font-family:'Bricolage Grotesque';font-weight:800;font-size:38px;
+         letter-spacing:-.5px;color:#fff}
   .marca b{color:var(--laranja)}
-  .selo-topo{font-size:22px;font-weight:800;letter-spacing:3px;text-transform:uppercase;
-    color:hsl(28 97% 91%);border:2px solid hsl(28 97% 91% / .45);
-    padding:12px 22px;border-radius:999px}
+  .selo{color:#FCE9DA;border:2px solid hsl(298 78% 91% / .45);font-weight:700;
+        letter-spacing:3px;font-size:21px;padding:11px 22px;border-radius:999px}
 
-  .chamada{margin-top:46px;font-family:'Bricolage Grotesque';font-weight:800;
-    font-size:74px;line-height:.96;letter-spacing:-2.5px}
-  .chamada span{color:var(--laranja)}
-  .sub{margin-top:18px;font-size:29px;font-weight:600;color:hsl(298 78% 91% / .82)}
+  .badges{position:absolute;top:1035px;left:70px;display:flex;gap:12px;z-index:4}
+  .pill{font-size:22px;font-weight:800;padding:12px 24px;border-radius:999px;color:#fff}
+  .badge-estado{background:var(--roxo)}
+  .badge-bat{background:hsl(150 62% 40%)}
 
-  /* card do aparelho */
-  .card{margin-top:40px;background:var(--branco);border-radius:44px;padding:34px;min-height:0;
-    box-shadow:0 40px 90px hsl(289 66% 6% / .55);flex:1;display:flex;flex-direction:column}
-  .foto{flex:1;min-height:0;border-radius:26px;background:#f4f4f7;overflow:hidden;
-    display:flex;align-items:center;justify-content:center;position:relative}
-  .foto img{width:100%;height:100%;object-fit:cover}
-  .badge-estado{position:absolute;top:24px;left:24px;background:var(--roxo);color:#fff;
-    font-size:23px;font-weight:800;padding:13px 24px;border-radius:999px;letter-spacing:.3px}
-  .badge-bat{position:absolute;top:24px;right:24px;background:hsl(150 62% 40%);color:#fff;
-    font-size:23px;font-weight:800;padding:13px 24px;border-radius:999px}
+  .painel{position:absolute;top:1175px;left:70px;right:70px;bottom:250px;
+          display:flex;flex-direction:column;z-index:3}
+  .modelo{font-family:'Bricolage Grotesque';font-weight:800;line-height:.95;
+          letter-spacing:-3px;color:#fff;margin-top:26px}
+  .specs{font-size:30px;font-weight:600;color:hsl(298 78% 91% / .8);margin-top:14px}
 
-  .info{margin-top:30px;display:flex;align-items:flex-end;justify-content:space-between;gap:24px}
-  .modelo{font-family:'Bricolage Grotesque';font-weight:800;color:hsl(0 0% 12%);
-    font-size:54px;line-height:1;letter-spacing:-1.5px}
-  .specs{margin-top:14px;font-size:27px;font-weight:600;color:hsl(0 0% 40%)}
-  .preco-bloco{text-align:right;flex-shrink:0}
-  .preco-label{font-size:21px;font-weight:700;color:hsl(0 0% 48%);text-transform:uppercase;letter-spacing:1.6px}
-  .preco{font-family:'Bricolage Grotesque';font-weight:800;font-size:76px;line-height:1;
-    letter-spacing:-2.5px;background:linear-gradient(135deg,var(--laranja),var(--laranja-2));
-    -webkit-background-clip:text;-webkit-text-fill-color:transparent}
-  .parcela{font-size:24px;font-weight:700;color:hsl(0 0% 40%);margin-top:8px}
+  .preco-bloco{margin-top:38px}
+  .preco-label{font-size:20px;font-weight:700;letter-spacing:1.8px;
+               color:hsl(0 0% 100% / .55);text-transform:uppercase}
+  .preco{font-family:'Bricolage Grotesque';font-weight:800;font-size:100px;line-height:.92;
+         letter-spacing:-3.5px;margin-top:6px;
+         background:linear-gradient(135deg,var(--laranja),var(--laranja-2));
+         -webkit-background-clip:text;-webkit-text-fill-color:transparent}
+  .parcela{font-size:25px;font-weight:700;color:hsl(0 0% 100% / .72);margin-top:14px}
 
-  .garantias{margin-top:28px;padding-top:26px;border-top:2px solid hsl(0 0% 91%);
-    display:flex;gap:14px}
-  .g{flex:1;text-align:center;font-size:22px;font-weight:700;color:hsl(289 52% 31%);
-    background:hsl(28 97% 91% / .62);border-radius:18px;padding:16px 8px;line-height:1.25}
-
-  /* CTA */
-  .cta{margin-top:40px;background:linear-gradient(135deg,var(--laranja),var(--laranja-2));
-    border-radius:38px;padding:34px 40px;display:flex;align-items:center;justify-content:space-between;
-    box-shadow:0 26px 60px hsl(16 96% 40% / .42)}
-  .cta-txt{font-family:'Bricolage Grotesque';font-weight:800;font-size:50px;
-    letter-spacing:-1.3px;line-height:1}
-  .cta-sub{font-size:25px;font-weight:700;margin-top:12px;color:hsl(0 0% 100% / .93)}
-  .seta{font-size:62px;font-weight:800}
+  .cta{margin-top:auto;background:linear-gradient(135deg,var(--laranja),var(--laranja-2));
+       border-radius:34px;padding:30px 38px;display:flex;align-items:center;
+       justify-content:space-between;box-shadow:0 24px 54px hsl(16 96% 40% / .42)}
+  .cta-txt{font-family:'Bricolage Grotesque';font-weight:800;font-size:48px;
+           letter-spacing:-1.3px;line-height:1;color:#fff}
+  .cta-sub{font-size:24px;font-weight:700;margin-top:10px;color:hsl(0 0% 100% / .93)}
+  .seta{font-size:56px;font-weight:800;color:#fff}
 </style></head><body>
-<div class="glow"></div><div class="glow2"></div>
-<div class="wrap">
+  <div class="janela">
+    <img src="FOTO_URL" alt="">
+    <div class="veu"></div><div class="fade"></div>
+  </div>
   <div class="topo">
     <div class="marca">iHelp<b>U</b> Seminovos</div>
-    <div class="selo-topo">Achado do dia</div>
+    <div class="selo">ACHADO DO DIA</div>
   </div>
-
-  <div class="chamada">Chegou por aqui.<br><span>Sai hoje.</span></div>
-  <div class="sub">Testado, com laudo técnico e garantia.</div>
-
-  <div class="card">
-    <div class="foto">
-      <img src="FOTO_URL" alt="">
-      <div class="badge-estado">ESTADO_LABEL</div>
-      <div class="badge-bat">Bateria BATERIA%</div>
+  <div class="badges">
+    <span class="pill badge-estado">ESTADO_LABEL</span>
+    <span class="pill badge-bat">Bateria BATERIA%</span>
+  </div>
+  <div class="painel">
+    <div class="modelo" style="font-size:FS_MODELOpx">MODELO_NOME</div>
+    <div class="specs">ARMAZENAMENTO · Retire ainda hoje</div>
+    <div class="preco-bloco">
+      <div class="preco-label">à vista no Pix</div>
+      <div class="preco">R$ PRECO</div>
+      <div class="parcela">ou parcelamos em até 18x no cartão</div>
     </div>
-    <div class="info">
+    <div class="cta">
       <div>
-        <div class="modelo" style="font-size:FS_MODELOpx">MODELO_NOME</div>
-        <div class="specs">ARMAZENAMENTO · Retire ainda hoje</div>
+        <div class="cta-txt">Chama no Direct</div>
+        <div class="cta-sub">é só mandar uma mensagem</div>
       </div>
-      <div class="preco-bloco">
-        <div class="preco-label">à vista no Pix</div>
-        <div class="preco">R$ PRECO</div>
-        <div class="parcela">parcelamos no cartão</div>
-      </div>
-    </div>
-    <div class="garantias">
-      <div class="g">Laudo<br>técnico</div>
-      <div class="g">Garantia<br>iHelpU</div>
-      <div class="g">Pagamento<br>intermediado</div>
+      <div class="seta">›</div>
     </div>
   </div>
-
-  <div class="cta">
-    <div>
-      <div class="cta-txt">Chama no Direct</div>
-      <div class="cta-sub">é só mandar uma mensagem</div>
-    </div>
-    <div class="seta">›</div>
-  </div>
-</div></body></html>
+</body></html>
