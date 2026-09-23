@@ -1,15 +1,10 @@
 name: Story do marketplace
 
 on:
-  schedule:
-    # 9,10,11,12,13h de Brasilia = 12,13,14,15,16 UTC (BRT e UTC-3 o ano todo).
-    # Minutos quebrados de proposito: o minuto :00 concentra a fila do GitHub
-    # inteira e as execucoes atrasam muito ou sao descartadas.
-    - cron: '7 12 * * *'
-    - cron: '13 13 * * *'
-    - cron: '9 14 * * *'
-    - cron: '17 15 * * *'
-    - cron: '11 16 * * *'
+  # Sem 'schedule' de proposito: o cron do GitHub disparava com ate 4h de
+  # atraso, o que faria um story marcado para 9h sair no meio da tarde.
+  # Quem agenda e o launchd local (com.ihelpu.stories), que chama este
+  # workflow via 'gh workflow run' as 9h05, 10h05, 11h05, 12h05 e 13h05.
   workflow_dispatch:
     inputs:
       forcar:
