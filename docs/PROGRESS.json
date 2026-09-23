@@ -1,0 +1,40 @@
+{
+  "project": "ihelpu-stories",
+  "created_at": "2026-09-21T19:37:09Z",
+  "sessions": [
+    {
+      "date": "2026-09-23",
+      "session_id": "6d7b60dc",
+      "periodo": "2026-09-21 a 2026-09-23",
+      "done": [
+        "Automação de Stories do marketplace no @ihelpuoficial construída e em produção; 8 stories publicados entre 21 e 23/09.",
+        "publicar.py: lê o RPC público do marketplace, escolhe o anúncio, gera a arte com Chrome headless, hospeda no repo e publica via Graph API.",
+        "Workflow do GitHub Actions como executor, disparado pelo launchd local (com.ihelpu.stories) às 9h05, 10h05, 11h05, 12h05 e 13h05.",
+        "publicados.json versionado no repo como controle de rodízio (substitui external_listing_publications, sem acesso de escrita ao Supabase).",
+        "Arte redesenhada (layout B): foto ocupa os 1180px superiores, texto em painel da marca embaixo.",
+        "Token do Instagram validado (system user Claude-Ads, 4 escopos) e guardado em op://iHelpU-Core/Instagram-Stories-Marketplace.",
+        "5 bugs corrigidos, todos encontrados em produção: falta de polling do container (9007), corrida entre execuções simultâneas, commit vazio em reexecução, erro transitório tratado como fatal, nome de modelo longo quebrando o layout."
+      ],
+      "decisions": [
+        "GitHub Actions em vez de Supabase Edge Functions — o usuário recusou explicitamente conectar o Supabase; não reabrir.",
+        "CTA exclusivamente pelo Direct; o WhatsApp saiu da arte e da bio.",
+        "'Retire ainda hoje' no lugar da loja de retirada, para o story falar com as 7 cidades ao mesmo tempo.",
+        "5 stories/dia enquanto houver inéditos; cai sozinho para 2/dia (9h e 12h) quando o estoque aperta. Nunca repete aparelho.",
+        "Ordem: anúncio mais novo primeiro.",
+        "Foto do anúncio usada como está, sem tratamento — autenticidade sobre acabamento.",
+        "Layout B escolhido entre 3 direções testadas, por degradar melhor quando a foto é ruim.",
+        "Agendamento do GitHub removido do workflow: disparava com até 4h26 de atraso. Quem agenda é o launchd local.",
+        "Arte informa 'parcelamos em até 18x no cartão', conferido na tabela installment_fees."
+      ],
+      "next_step": "Observar 24/09, primeiro dia completo com o agendador corrigido e a arte nova. Pendentes do usuário: definir quem monitora o Direct, rotacionar o token do Instagram (foi colado em chat em 21/09) e decidir se restringe a automação a iPhones.",
+      "files_touched": [
+        ".github/workflows/story.yml",
+        "README.md",
+        "publicados.json",
+        "publicar.py",
+        "publicar_teste.py",
+        "template.html"
+      ]
+    }
+  ]
+}
