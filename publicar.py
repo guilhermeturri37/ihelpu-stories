@@ -74,7 +74,7 @@ def montar_arte(a, destino):
     if not destino.exists() or destino.stat().st_size < 50_000:
         sys.exit("a arte nao foi gerada corretamente")
 
-def graph(path, payload=None, metodo="POST"):
+def graph(path, payload=None, metodo="POST", tolerar=False):
     if metodo == "POST":
         req = urllib.request.Request(f"https://graph.facebook.com/v21.0/{path}",
             data=json.dumps({**payload, "access_token": IG_TOKEN}).encode(),
@@ -86,6 +86,8 @@ def graph(path, payload=None, metodo="POST"):
         return json.load(urllib.request.urlopen(req, timeout=90))
     except urllib.error.HTTPError as e:
         err = json.loads(e.read().decode()).get("error", {})
+        if tolerar:
+            return {"__erro__": err}
         sys.exit(f"Graph API: {err.get('message')} (code {err.get('code')})")
 
 def publicar(url_arte):
@@ -93,11 +95,19 @@ def publicar(url_arte):
     cid = c["id"]
     log(f"   container {cid}; aguardando processamento...")
     # Publicar antes de FINISHED devolve "Media ID is not available" (code 9007).
-    for _ in range(30):
-        s = graph(f"{cid}?fields=status_code,status", metodo="GET")
-        estado = s.get("status_code")
+    for tentativa in range(30):
+        # Logo apos criar, a Meta pode ainda nao responder consultas sobre o
+        # container e devolver 9007. Isso e transitorio: e exatamente o que
+        # este laco existe para esperar, entao nao pode abortar.
+        r = graph(f"{cid}?fields=status_code,status", metodo="GET", tolerar=True)
+        if "__erro__" in r:
+            if tentativa >= 10:
+                sys.exit(f"container nao ficou consultavel: {r['__erro__'].get('message')}")
+            time.sleep(3)
+            continue
+        estado = r.get("status_code")
         if estado == "FINISHED": break
-        if estado in ("ERROR", "EXPIRED"): sys.exit(f"container falhou: {s.get('status')}")
+        if estado in ("ERROR", "EXPIRED"): sys.exit(f"container falhou: {r.get('status')}")
         time.sleep(3)
     else:
         sys.exit("container nao ficou pronto em 90s")
