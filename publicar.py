@@ -116,6 +116,16 @@ def publicar(url_arte):
 def git(*args):
     subprocess.run(["git", *args], cwd=RAIZ, check=True, capture_output=True)
 
+def git_commit(msg):
+    """Commita so se houver algo staged. Uma reexecucao na mesma hora reusa o
+    mesmo nome de arte; sem isto o 'nothing to commit' derruba o script."""
+    if subprocess.run(["git", "diff", "--cached", "--quiet"],
+                      cwd=RAIZ).returncode == 0:
+        log("   (nada novo para commitar)")
+        return False
+    git("commit", "-m", msg)
+    return True
+
 def git_push():
     """O repo recebe commits de outras execucoes, entao o push pode ser
     recusado. Rebaseia e tenta de novo antes de desistir."""
@@ -180,8 +190,8 @@ def main():
 
     # A arte precisa estar publica ANTES de publicar: a Meta busca por URL.
     git("add", f"artes/{nome}")
-    git("commit", "-m", f"Arte: {a.get('model')} ({hoje} {hora:02d}h)")
-    git_push()
+    if git_commit(f"Arte: {a.get('model')} ({hoje} {hora:02d}h)"):
+        git_push()
     url = f"{REPO_RAW}/artes/{nome}"
     log(f"   publicada em {url}")
 
@@ -194,8 +204,8 @@ def main():
     })
     (RAIZ / "publicados.json").write_text(json.dumps(registro, indent=2, ensure_ascii=False) + "\n")
     git("add", "publicados.json")
-    git("commit", "-m", f"Registra story {story_id}")
-    git_push()
+    if git_commit(f"Registra story {story_id}"):
+        git_push()
 
 if __name__ == "__main__":
     main()
