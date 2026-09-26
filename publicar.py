@@ -6,6 +6,9 @@ sozinha se publica:
   - escolhe o anuncio mais novo que ainda nao foi ao ar; nunca repete aparelho
   - 5/dia enquanto houver ineditos; se o estoque apertar, cai para 2/dia (9h e 12h)
   - pula anuncio sem foto ou sem preco em vez de publicar algo quebrado
+  - um story por horario: um segundo disparo na mesma hora nao publica de novo
+  - HORARIO (so com FORCAR) repoe um horario perdido de hoje e registra o story nele
+  - reserva o aparelho e o horario no registro ANTES de publicar: nunca duplica story
 
 O nome do vendedor (seller_name) vem no RPC mas NUNCA entra na arte: sao
 consignacoes de pessoas fisicas. Nao reintroduza esse campo.
@@ -25,11 +28,21 @@ REPO_RAW = "https://raw.githubusercontent.com/guilhermeturri37/ihelpu-stories/ma
 HORARIOS_CHEIOS = [9, 10, 11, 12, 13]
 HORARIOS_REDUZIDOS = [9, 12]
 META_CHEIA, META_REDUZIDA = 5, 2
+# Codigos que o media_publish devolveu, medidos, para container que existia e
+# estava FINISHED — "ainda nao da para publicar", nao "nunca vai dar".
+PUBLISH_AINDA_NAO = {9007, 24}
 
 COND = {"como_novo": "Como novo", "excelente": "Excelente", "bom": "Bom", "regular": "Regular"}
 COM_BATERIA = {"iphone", "ipad", "macbook"}   # onde "Bateria X%" faz sentido
 
 def log(m): print(m, flush=True)
+
+def dia_e_horario(p):
+    """Data e horario (Brasilia) que um registro ocupa. O `em` e UTC e marca quando
+    o story saiu; o `horario` marca qual horario ele cobre — numa reposicao os dois
+    diferem. Registro anterior ao campo `horario` usa a hora do `em`."""
+    em = datetime.fromisoformat(p["em"].replace("Z", "+00:00")).astimezone(BRT)
+    return em.strftime("%Y-%m-%d"), p.get("horario", em.hour)
 
 def anuncios_ativos():
     req = urllib.request.Request(f"{SUPA}/rest/v1/rpc/get_public_active_devices",
@@ -90,28 +103,59 @@ def graph(path, payload=None, metodo="POST", tolerar=False):
             return {"__erro__": err}
         sys.exit(f"Graph API: {err.get('message')} (code {err.get('code')})")
 
+class NaoPublicou(Exception):
+    """A publicacao falhou com CERTEZA de que nenhum story saiu — a reserva pode ser liberada.
+    Qualquer outra saida de erro de publicar() e 'nao da para saber': a reserva fica."""
+
 def publicar(url_arte):
-    c = graph(f"{IG_USER_ID}/media", {"media_type": "STORIES", "image_url": url_arte})
-    cid = c["id"]
-    log(f"   container {cid}; aguardando processamento...")
-    # Publicar antes de FINISHED devolve "Media ID is not available" (code 9007).
-    for tentativa in range(30):
-        # Logo apos criar, a Meta pode ainda nao responder consultas sobre o
-        # container e devolver 9007. Isso e transitorio: e exatamente o que
-        # este laco existe para esperar, entao nao pode abortar.
-        r = graph(f"{cid}?fields=status_code,status", metodo="GET", tolerar=True)
-        if "__erro__" in r:
-            if tentativa >= 10:
-                sys.exit(f"container nao ficou consultavel: {r['__erro__'].get('message')}")
+    # Tudo antes do primeiro media_publish nao publica nada: qualquer falha aqui e certeza.
+    try:
+        c = graph(f"{IG_USER_ID}/media", {"media_type": "STORIES", "image_url": url_arte}, tolerar=True)
+        if "__erro__" in c:
+            e = c["__erro__"]
+            raise NaoPublicou(f"Graph API ao criar o container: {e.get('message')} (code {e.get('code')})")
+        cid = c["id"]
+        log(f"   container {cid}; aguardando processamento...")
+        # Publicar antes de FINISHED devolve "Media ID is not available" (code 9007).
+        for tentativa in range(30):
+            # Logo apos criar, a Meta pode ainda nao responder consultas sobre o
+            # container e devolver 9007. Isso e transitorio: e exatamente o que
+            # este laco existe para esperar, entao nao pode abortar.
+            r = graph(f"{cid}?fields=status_code,status", metodo="GET", tolerar=True)
+            if "__erro__" in r:
+                if tentativa >= 10:
+                    raise NaoPublicou(f"container nao ficou consultavel: {r['__erro__'].get('message')}")
+                time.sleep(3)
+                continue
+            estado = r.get("status_code")
+            if estado == "FINISHED": break
+            if estado in ("ERROR", "EXPIRED"): raise NaoPublicou(f"container falhou: {r.get('status')}")
             time.sleep(3)
-            continue
-        estado = r.get("status_code")
-        if estado == "FINISHED": break
-        if estado in ("ERROR", "EXPIRED"): sys.exit(f"container falhou: {r.get('status')}")
-        time.sleep(3)
-    else:
-        sys.exit("container nao ficou pronto em 90s")
-    return graph(f"{IG_USER_ID}/media_publish", {"creation_id": cid})["id"]
+        else:
+            raise NaoPublicou("container nao ficou pronto em 90s")
+    except NaoPublicou:
+        raise
+    except Exception as e:
+        # QUALQUER erro antes do primeiro media_publish e certeza de que nada saiu: rede, JSON,
+        # resposta cortada no meio (IncompleteRead), 200 sem `id` (cetico, rodada 3).
+        raise NaoPublicou(f"falha antes de publicar: {type(e).__name__}: {e}")
+    # FINISHED nao garante que o publish aceita: em 25/09 13h e 26/09 9h o status
+    # veio FINISHED na primeira consulta e o media_publish, 0,6-0,7 s depois, devolveu
+    # 9007; em 26/09 10h38, 0,8 s depois, devolveu 24 ("does not exist") para um
+    # container que existia. A tentativa recusada NAO publica (os tres containers
+    # seguem FINISHED, nao PUBLISHED), entao repetir e seguro. Outro erro sai na hora
+    # e SEM certeza (a reserva fica); rede caindo no meio tambem.
+    for tentativa in range(1, 7):
+        r = graph(f"{IG_USER_ID}/media_publish", {"creation_id": cid}, tolerar=True)
+        if "__erro__" not in r:
+            return r["id"]
+        err = r["__erro__"]
+        if err.get("code") not in PUBLISH_AINDA_NAO:
+            sys.exit(f"Graph API: {err.get('message')} (code {err.get('code')})")
+        if tentativa == 6:
+            raise NaoPublicou(f"Graph API: {err.get('message')} (code {err.get('code')}) em 6 tentativas")
+        log(f"   publish recusado com {err.get('code')} (tentativa {tentativa}/6); de novo em 5s...")
+        time.sleep(5)
 
 def git(*args):
     subprocess.run(["git", *args], cwd=RAIZ, check=True, capture_output=True)
@@ -143,7 +187,19 @@ def main():
     agora = datetime.now(BRT)
     hora, hoje = agora.hour, agora.strftime("%Y-%m-%d")
     forcar = os.environ.get("FORCAR") == "1"
+    repor = os.environ.get("HORARIO", "").strip()
     log(f"== {agora:%Y-%m-%d %H:%M} BRT ==")
+
+    if repor:
+        if not forcar:
+            sys.exit("HORARIO so vale junto com FORCAR=1 (reposicao de horario perdido)")
+        if not repor.isdigit() or int(repor) not in HORARIOS_CHEIOS:
+            sys.exit(f"HORARIO invalido: {repor!r}; use um de {HORARIOS_CHEIOS}")
+        # Repor horario que ainda nao chegou ocuparia a vaga e o disparo de verdade seria
+        # ignorado depois — inclusive o de amanha, se alguem repuser apos a meia-noite.
+        if int(repor) > hora:
+            sys.exit(f"HORARIO {repor}h ainda nao chegou hoje ({hora}h): reposicao e so de horario que ja passou")
+    horario = int(repor) if repor else hora
 
     if not forcar and hora not in HORARIOS_CHEIOS:
         return log(f"ignorado: {hora}h fora da janela 9-13h")
@@ -160,7 +216,15 @@ def main():
 
     registro = json.loads((RAIZ / "publicados.json").read_text())
     ja = {p["device_id"] for p in registro["publicados"]}
-    hoje_n = sum(1 for p in registro["publicados"] if p["em"][:10] == hoje)
+    feitos_hoje = [h for d, h in map(dia_e_horario, registro["publicados"]) if d == hoje]
+    hoje_n = len(feitos_hoje)
+
+    # Um story por horario. Com dois disparadores ligados (o launchd antigo e o
+    # n8n), cada horario recebe dois disparos e saiam dois stories na mesma hora.
+    # FORCAR sem HORARIO segue passando por cima de tudo (uso manual); a reposicao
+    # respeita a trava do horario que ela repoe, para nao repor duas vezes.
+    if (not forcar or repor) and horario in feitos_hoje:
+        return log(f"ignorado: horario {horario}h ja publicado hoje")
 
     ativos = anuncios_ativos()
     ineditos = sorted([a for a in ativos if a["id"] not in ja
@@ -183,29 +247,52 @@ def main():
     a = ineditos[0]
     log(f"   escolhido: {a.get('model')} — R$ {a['asking_price']} ({a['id'][:8]})")
 
-    nome = f"{hoje}-{hora:02d}h-{a['id'][:8]}.png"
+    nome = f"{hoje}-{horario:02d}h-{a['id'][:8]}.png"
     destino = RAIZ / "artes" / nome
     montar_arte(a, destino)
     log(f"   arte gerada: {nome} ({destino.stat().st_size // 1024} KB)")
 
-    # A arte precisa estar publica ANTES de publicar: a Meta busca por URL.
-    git("add", f"artes/{nome}")
-    if git_commit(f"Arte: {a.get('model')} ({hoje} {hora:02d}h)"):
-        git_push()
+    # RESERVA ANTES DE PUBLICAR. O aparelho e o horario entram no registro no MESMO commit da
+    # arte (que precisa estar publica antes: a Meta busca por URL), e esse push acontece antes
+    # de a Meta ser chamada. Push que nao sai = nada publicado. Story que sai e registro final
+    # que nao sobe = a reserva ja esta na main e segura o aparelho e o horario, hoje e nos
+    # proximos dias. Duplicar fica impossivel por construcao (cetico, 26/09: uma trava pela
+    # contagem da Meta so enxergava o proprio dia, e no dia seguinte o aparelho voltava).
+    reserva = {"device_id": a["id"], "modelo": a.get("model"), "story_id": None,
+               "em": datetime.now(timezone.utc).isoformat(timespec="seconds"),
+               "horario": horario, "estado": "publicando"}
+    registro["publicados"].append(reserva)
+    gravar(registro)
+    git("add", f"artes/{nome}", "publicados.json")
+    git_commit(f"Arte e reserva: {a.get('model')} ({hoje} {horario:02d}h)")
+    git_push()
     url = f"{REPO_RAW}/artes/{nome}"
     log(f"   publicada em {url}")
 
-    story_id = publicar(url)
+    try:
+        story_id = publicar(url)
+    except NaoPublicou as e:
+        # Certeza de que nada saiu: devolve o aparelho e o horario (pode repor depois).
+        registro["publicados"].remove(reserva)
+        gravar(registro)
+        git("add", "publicados.json")
+        if git_commit(f"Libera reserva: {a.get('model')} ({hoje} {horario:02d}h) — nao publicou"):
+            try:
+                git_push()
+            except SystemExit:
+                log("   aviso: a reserva nao foi liberada na main; o horario fica bloqueado ate alguem tirar")
+        sys.exit(str(e))
     log(f"   >>> STORY NO AR: {story_id}")
 
-    registro["publicados"].append({
-        "device_id": a["id"], "modelo": a.get("model"),
-        "story_id": story_id, "em": datetime.now(timezone.utc).isoformat(timespec="seconds"),
-    })
-    (RAIZ / "publicados.json").write_text(json.dumps(registro, indent=2, ensure_ascii=False) + "\n")
+    reserva.update(story_id=story_id, em=datetime.now(timezone.utc).isoformat(timespec="seconds"))
+    del reserva["estado"]
+    gravar(registro)
     git("add", "publicados.json")
     if git_commit(f"Registra story {story_id}"):
         git_push()
+
+def gravar(registro):
+    (RAIZ / "publicados.json").write_text(json.dumps(registro, indent=2, ensure_ascii=False) + "\n")
 
 if __name__ == "__main__":
     main()

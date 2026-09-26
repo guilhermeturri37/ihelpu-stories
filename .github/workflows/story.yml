@@ -3,14 +3,20 @@ name: Story do marketplace
 on:
   # Sem 'schedule' de proposito: o cron do GitHub disparava com ate 4h de
   # atraso, o que faria um story marcado para 9h sair no meio da tarde.
-  # Quem agenda e o launchd local (com.ihelpu.stories), que chama este
-  # workflow via 'gh workflow run' as 9h05, 10h05, 11h05, 12h05 e 13h05.
+  # Quem pede as rodadas (9h05, 10h05, 11h05, 12h05 e 13h05): o launchd
+  # com.ihelpu.stories de outra maquina e, quando ativado, o n8n "Stories
+  # Marketplace — Disparador". Pedido em dobro na mesma hora nao duplica:
+  # o publicar.py publica um story por horario.
   workflow_dispatch:
     inputs:
       forcar:
         description: 'Publicar agora, ignorando janela de horario e meta diaria'
         type: boolean
         default: false
+      horario:
+        description: 'Repor um horario de HOJE que ja passou (9 a 13). So vale com forcar; nao repoe o mesmo horario duas vezes'
+        type: string
+        default: ''
 
 # Evita que duas execucoes empurrem commits ao mesmo tempo.
 concurrency:
@@ -39,4 +45,5 @@ jobs:
           SUPABASE_ANON_KEY: ${{ secrets.SUPABASE_ANON_KEY }}
           IG_USER_ID: '17841400093603178'
           FORCAR: ${{ inputs.forcar && '1' || '0' }}
+          HORARIO: ${{ inputs.horario }}
         run: python3 publicar.py
