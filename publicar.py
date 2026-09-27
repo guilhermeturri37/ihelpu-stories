@@ -9,6 +9,8 @@ sozinha se publica:
   - um story por horario: um segundo disparo na mesma hora nao publica de novo
   - HORARIO (so com FORCAR) repoe um horario perdido de hoje e registra o story nele
   - reserva o aparelho e o horario no registro ANTES de publicar: nunca duplica story
+  - anota a decisao de cada rodada (::notice title=decisao::) e avisa quando a reserva
+    fica (::warning title=reserva::) — o vigia do n8n le essas anotacoes sem token
 
 O nome do vendedor (seller_name) vem no RPC mas NUNCA entra na arte: sao
 consignacoes de pessoas fisicas. Nao reintroduza esse campo.
@@ -36,6 +38,24 @@ COND = {"como_novo": "Como novo", "excelente": "Excelente", "bom": "Bom", "regul
 COM_BATERIA = {"iphone", "ipad", "macbook"}   # onde "Bateria X%" faz sentido
 
 def log(m): print(m, flush=True)
+
+def anotar(titulo, texto, nivel="notice"):
+    """Anotacao do GitHub Actions: fica na rodada e e PUBLICA — o vigia do n8n le em
+    GET <check_run_url>/annotations, sem token. Uma linha so: o runner desfaz %25, %0D e %0A
+    no texto (actions/runner, ActionCommand.cs), entao escapa exatamente esses tres."""
+    texto = str(texto).replace("%", "%25").replace("\r", "%0D").replace("\n", "%0A")
+    print(f"::{nivel} title={titulo}::{texto}", flush=True)
+
+def ignorar(codigo, motivo):
+    """A rodada decidiu NAO publicar: a mesma linha de sempre no log, mais a decisao anotada."""
+    log(f"ignorado: {motivo}")
+    anotar("decisao", f"ignorado:{codigo} | {motivo}")
+
+def ficou(onde, situacao):
+    """A rodada termina com a reserva na main ("estado": "publicando"): aparelho e horario ficam
+    presos ate alguem resolver, com o robo parado. Diz no log e anota para o vigia."""
+    log(f"   RESERVA FICA na main ({onde}): {situacao}")
+    anotar("reserva", f"fica | {onde} | {situacao}", nivel="warning")
 
 def dia_e_horario(p):
     """Data e horario (Brasilia) que um registro ocupa. O `em` e UTC e marca quando
@@ -202,7 +222,7 @@ def main():
     horario = int(repor) if repor else hora
 
     if not forcar and hora not in HORARIOS_CHEIOS:
-        return log(f"ignorado: {hora}h fora da janela 9-13h")
+        return ignorar("fora_da_janela", f"{hora}h fora da janela 9-13h")
 
     # Sem isto, duas execucoes proximas leem o mesmo publicados.json antigo e
     # escolhem o MESMO aparelho (aconteceu em 23/09: o disparo manual e o do
@@ -224,7 +244,7 @@ def main():
     # FORCAR sem HORARIO segue passando por cima de tudo (uso manual); a reposicao
     # respeita a trava do horario que ela repoe, para nao repor duas vezes.
     if (not forcar or repor) and horario in feitos_hoje:
-        return log(f"ignorado: horario {horario}h ja publicado hoje")
+        return ignorar("horario", f"horario {horario}h ja publicado hoje")
 
     ativos = anuncios_ativos()
     ineditos = sorted([a for a in ativos if a["id"] not in ja
@@ -233,16 +253,16 @@ def main():
     log(f"   ativos={len(ativos)} ineditos={len(ineditos)} publicados_hoje={hoje_n}")
 
     if not ineditos:
-        return log("ignorado: nenhum anuncio inedito disponivel")
+        return ignorar("sem_inedito", "nenhum anuncio inedito disponivel")
 
     modo_cheio = (len(ineditos) + hoje_n) >= META_CHEIA
     meta = META_CHEIA if modo_cheio else META_REDUZIDA
     log(f"   modo={'cheio 5/dia' if modo_cheio else 'reduzido 2/dia'} meta={meta}")
 
     if not forcar and not modo_cheio and hora not in HORARIOS_REDUZIDOS:
-        return log(f"ignorado: modo reduzido publica so as {HORARIOS_REDUZIDOS}h")
+        return ignorar("reduzido", f"modo reduzido publica so as {HORARIOS_REDUZIDOS}h")
     if not forcar and hoje_n >= meta:
-        return log(f"ignorado: meta de {meta} ja atingida hoje")
+        return ignorar("meta", f"meta de {meta} ja atingida hoje")
 
     a = ineditos[0]
     log(f"   escolhido: {a.get('model')} — R$ {a['asking_price']} ({a['id'][:8]})")
@@ -269,27 +289,41 @@ def main():
     url = f"{REPO_RAW}/artes/{nome}"
     log(f"   publicada em {url}")
 
+    onde = f"{horario}h | {a.get('model')} ({a['id'][:8]})"
     try:
         story_id = publicar(url)
     except NaoPublicou as e:
         # Certeza de que nada saiu: devolve o aparelho e o horario (pode repor depois).
-        registro["publicados"].remove(reserva)
+        try:
+            registro["publicados"].remove(reserva)
+            gravar(registro)
+            git("add", "publicados.json")
+            if git_commit(f"Libera reserva: {a.get('model')} ({hoje} {horario:02d}h) — nao publicou"):
+                git_push()
+        except BaseException:
+            log("   aviso: a reserva nao foi liberada na main; o horario fica bloqueado ate alguem tirar")
+            ficou(onde, "NAO publicou (certeza) e a liberacao nao subiu: apagar a entrada")
+        sys.exit(str(e))
+    except BaseException as e:
+        # Sem certeza (codigo desconhecido ou rede caindo NO publish): a reserva fica, e o vigia sabe.
+        porque = str(e.code) if isinstance(e, SystemExit) else f"{type(e).__name__}: {e}"
+        ficou(onde, f"desfecho incerto ({porque}): ver no Instagram se saiu — saiu: preencher story_id e tirar estado; nao saiu: apagar a entrada")
+        raise
+    log(f"   >>> STORY NO AR: {story_id}")
+    # A decisao sai ANTES do registro final: se ele nao subir, a rodada falha, mas o vigia
+    # sabe que o story saiu e nao manda repor.
+    anotar("decisao", f"publicado | {onde} | story {story_id}")
+
+    try:
+        reserva.update(story_id=story_id, em=datetime.now(timezone.utc).isoformat(timespec="seconds"))
+        del reserva["estado"]
         gravar(registro)
         git("add", "publicados.json")
-        if git_commit(f"Libera reserva: {a.get('model')} ({hoje} {horario:02d}h) — nao publicou"):
-            try:
-                git_push()
-            except SystemExit:
-                log("   aviso: a reserva nao foi liberada na main; o horario fica bloqueado ate alguem tirar")
-        sys.exit(str(e))
-    log(f"   >>> STORY NO AR: {story_id}")
-
-    reserva.update(story_id=story_id, em=datetime.now(timezone.utc).isoformat(timespec="seconds"))
-    del reserva["estado"]
-    gravar(registro)
-    git("add", "publicados.json")
-    if git_commit(f"Registra story {story_id}"):
-        git_push()
+        if git_commit(f"Registra story {story_id}"):
+            git_push()
+    except BaseException:
+        ficou(onde, f"story {story_id} NO AR e o registro final nao subiu: preencher story_id {story_id} e tirar estado")
+        raise
 
 def gravar(registro):
     (RAIZ / "publicados.json").write_text(json.dumps(registro, indent=2, ensure_ascii=False) + "\n")
