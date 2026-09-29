@@ -235,10 +235,9 @@
     {
       "device_id": "8c50d702-ebd5-47c2-b32f-85ec115319d7",
       "modelo": "MacBook Air M3 13\" 2024",
-      "story_id": null,
-      "em": "2026-09-29T15:05:17+00:00",
-      "horario": 12,
-      "estado": "publicando"
+      "story_id": "18094137458652610",
+      "em": "2026-09-29T15:05:29+00:00",
+      "horario": 12
     }
   ]
 }
