@@ -284,10 +284,9 @@
     {
       "device_id": "139ffc8c-32a7-40af-a671-a1c60bd34a7e",
       "modelo": "iPhone 16e",
-      "story_id": null,
-      "em": "2026-10-01T12:05:31+00:00",
-      "horario": 9,
-      "estado": "publicando"
+      "story_id": "17958508269079693",
+      "em": "2026-10-01T12:05:40+00:00",
+      "horario": 9
     }
   ]
 }
