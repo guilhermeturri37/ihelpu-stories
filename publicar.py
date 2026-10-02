@@ -1,10 +1,11 @@
 #!/usr/bin/env python3
 """Publica um Story no @ihelpuoficial com um aparelho do marketplace iHelpU.
 
-Roda no GitHub Actions as 9,10,11,12 e 13h de Brasilia. Cada execucao decide
+Roda no GitHub Actions; quem pede, pede de hora em hora das 9 as 13h de Brasilia, e so
+as 9, 11 e 13h publicam (3/dia, pedido do Guilherme em 02/10/2026). Cada execucao decide
 sozinha se publica:
   - escolhe o anuncio mais novo que ainda nao foi ao ar; nunca repete aparelho
-  - 5/dia enquanto houver ineditos; se o estoque apertar, cai para 2/dia (9h e 12h)
+  - 3/dia (9h, 11h, 13h) enquanto houver ineditos; se o estoque apertar, cai para 2/dia (9h e 13h)
   - pula anuncio sem foto ou sem preco em vez de publicar algo quebrado
   - um story por horario: um segundo disparo na mesma hora nao publica de novo
   - HORARIO (so com FORCAR) repoe um horario perdido de hoje e registra o story nele
@@ -27,9 +28,9 @@ IG_USER_ID = os.environ.get("IG_USER_ID", "17841400093603178")
 IG_TOKEN = os.environ["IG_ACCESS_TOKEN"]
 REPO_RAW = "https://raw.githubusercontent.com/guilhermeturri37/ihelpu-stories/main"
 
-HORARIOS_CHEIOS = [9, 10, 11, 12, 13]
-HORARIOS_REDUZIDOS = [9, 12]
-META_CHEIA, META_REDUZIDA = 5, 2
+HORARIOS_CHEIOS = [9, 11, 13]           # os pedidos das 10h e 12h caem em fora_da_janela
+HORARIOS_REDUZIDOS = [9, 13]            # tem de ser subconjunto de HORARIOS_CHEIOS
+META_CHEIA, META_REDUZIDA = 3, 2
 # Codigos que o media_publish devolveu, medidos, para container que existia e
 # estava FINISHED — "ainda nao da para publicar", nao "nunca vai dar".
 PUBLISH_AINDA_NAO = {9007, 24}
@@ -222,7 +223,7 @@ def main():
     horario = int(repor) if repor else hora
 
     if not forcar and hora not in HORARIOS_CHEIOS:
-        return ignorar("fora_da_janela", f"{hora}h fora da janela 9-13h")
+        return ignorar("fora_da_janela", f"{hora}h fora dos horarios {HORARIOS_CHEIOS}")
 
     # Sem isto, duas execucoes proximas leem o mesmo publicados.json antigo e
     # escolhem o MESMO aparelho (aconteceu em 23/09: o disparo manual e o do
@@ -257,7 +258,7 @@ def main():
 
     modo_cheio = (len(ineditos) + hoje_n) >= META_CHEIA
     meta = META_CHEIA if modo_cheio else META_REDUZIDA
-    log(f"   modo={'cheio 5/dia' if modo_cheio else 'reduzido 2/dia'} meta={meta}")
+    log(f"   modo={'cheio' if modo_cheio else 'reduzido'} {meta}/dia meta={meta}")
 
     if not forcar and not modo_cheio and hora not in HORARIOS_REDUZIDOS:
         return ignorar("reduzido", f"modo reduzido publica so as {HORARIOS_REDUZIDOS}h")
