@@ -368,10 +368,9 @@
     {
       "device_id": "a52e74eb-b0af-495c-81e1-85df5709babb",
       "modelo": "iPhone 14",
-      "story_id": null,
-      "em": "2026-10-03T16:05:31+00:00",
-      "horario": 13,
-      "estado": "publicando"
+      "story_id": "17991340664852000",
+      "em": "2026-10-03T16:05:41+00:00",
+      "horario": 13
     }
   ]
 }
