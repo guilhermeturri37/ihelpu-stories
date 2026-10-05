@@ -1,0 +1,49 @@
+name: Responder reacoes de story
+
+# Sem 'schedule': o cron do GitHub nao e confiavel (ver CLAUDE.md). Enquanto
+# estamos testando, o disparo e manual; depois passa a ser chamado pelo launchd
+# local, igual a automacao de stories.
+on:
+  workflow_dispatch:
+    inputs:
+      forcar:
+        description: 'Ignorar a janela de atendimento (seg-sex 9h-18h)'
+        type: boolean
+        default: false
+      diagnostico:
+        description: 'So inspecionar as conversas, sem enviar nada'
+        type: boolean
+        default: true
+
+concurrency:
+  group: responder
+  cancel-in-progress: false
+
+jobs:
+  responder:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Identidade do git
+        run: |
+          git config user.name "Story Bot"
+          git config user.email "guilherme@ihelpu.com.br"
+
+      - name: Diagnostico das conversas
+        if: ${{ inputs.diagnostico }}
+        env:
+          IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+          IG_USER_ID: '17841400093603178'
+        run: python3 diagnostico_direct.py
+
+      - name: Responder
+        if: ${{ !inputs.diagnostico }}
+        env:
+          IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+          SUPABASE_ANON_KEY: ${{ secrets.SUPABASE_ANON_KEY }}
+          IG_USER_ID: '17841400093603178'
+          FORCAR: ${{ inputs.forcar && '1' || '0' }}
+        run: python3 responder.py
