@@ -24,6 +24,9 @@ SUPA = "https://tegdgtovwhbhsrbkxvog.supabase.co"
 API = "https://graph.facebook.com/v21.0"
 
 HORA_ABRE, HORA_FECHA = 9, 18        # atendimento humano; fora disso o IG nativo assume
+DIAS_UTEIS = range(0, 5)             # seg-sex (weekday(): 0=segunda). Nao ha atendimento
+                                     # no fim de semana, e responder sem alguem para dar
+                                     # continuidade e pior do que nao responder.
 JANELA_HORAS = 24                    # so olha conversas movimentadas nas ultimas 24h
 
 def log(m): print(m, flush=True)
@@ -80,6 +83,8 @@ def main():
     forcar = os.environ.get("FORCAR") == "1"
     log(f"== {agora:%Y-%m-%d %H:%M} BRT ==")
 
+    if not forcar and agora.weekday() not in DIAS_UTEIS:
+        return log(f"ignorado: {agora:%A} nao tem atendimento no Direct.")
     if not forcar and not (HORA_ABRE <= agora.hour < HORA_FECHA):
         return log(f"ignorado: {agora.hour}h fora do atendimento "
                    f"({HORA_ABRE}h-{HORA_FECHA}h). A resposta nativa do Instagram assume.")
