@@ -81,6 +81,13 @@ def foto_de(a):
     if not fs: return None
     return (next((f for f in fs if f.get("photo_type") == "front"), fs[0])).get("photo_url")
 
+def bateria(a):
+    """Saude da bateria como o site mostra. Quando o anuncio esta marcado para trocar a
+    bateria antes da retirada (battery_replacement_required), o cliente recebe bateria nova
+    e o site mostra 100% — nao o valor medido na vistoria. Publicar o valor cru fazia o
+    story dizer 76% de um aparelho que o marketplace anuncia com 100%."""
+    return 100 if a.get("battery_replacement_required") else a.get("battery_health")
+
 def foto_do_banco(a, registro):
     """Foto de loja do modelo do anuncio, a menos usada ate aqui — com varias fotos do mesmo
     modelo elas se revezam em vez de a mesma sair todo dia. None se o modelo nao tem foto."""
@@ -99,7 +106,7 @@ def renderizar(pagina, destino):
     if not destino.exists() or destino.stat().st_size < 50_000:
         sys.exit("a arte nao foi gerada corretamente")
 
-def montar_arte_iphone(a, destino, banco):
+def montar_arte_iphone(a, destino, banco, cta="Chama no Direct", retirada="Retire ainda hoje"):
     """Layout v2 (template_v2.html): foto em tela cheia e etiqueta branca. Com foto do banco
     quando o modelo tem; senao, a foto de costas do proprio anuncio (aparelho na bancada)."""
     modelo = (a.get("model") or "Seminovo").replace("iPhone ", "").replace("(", "").replace(")", "")
@@ -111,8 +118,8 @@ def montar_arte_iphone(a, destino, banco):
     linhas = f"{html.escape(linha1)}<br><em>POR R$ {preco} NO PIX</em> OU<br>EM ATÉ 18X NO CARTÃO"
     # Nome longo encolhe a fonte em vez de estourar a largura do story.
     fs = 50 if len(linha1) <= 38 else max(34, int(50 * 38 / len(linha1)))
-    bat = a.get("battery_health")
-    selo = f"Bateria {bat}% · Retire ainda hoje" if isinstance(bat, int) and bat > 0 else "Retire ainda hoje"
+    bat = bateria(a)
+    selo = f"Bateria {bat}% · {retirada}" if isinstance(bat, int) and bat > 0 else retirada
     resto = "Valor à vista no Pix; parcelamos em até 18x no cartão. Sujeito à disponibilidade."
     if banco:
         foto = f"banco/{banco['arquivo']}"
@@ -127,7 +134,8 @@ def montar_arte_iphone(a, destino, banco):
     h = (h.replace("FOTO_URL", foto).replace("IMG_ATTRS", attrs)
            .replace("ALVO_H_PX", str(alvo_h)).replace("ALVO_Y_PX", str(alvo_y))
            .replace("BLOCO_TOP", str(topo)).replace("FS_ETIQUETA", str(fs))
-           .replace("RODAPE_TXT", rodape).replace("LINHAS", linhas).replace("SELO_TXT", selo))
+           .replace("RODAPE_TXT", rodape).replace("LINHAS", linhas).replace("SELO_TXT", selo)
+           .replace("CTA_TXT", cta))
     renderizar(h, destino)
 
 def montar_arte(a, destino, banco=None):
@@ -136,7 +144,7 @@ def montar_arte(a, destino, banco=None):
     cap = a.get("capacity") or a.get("storage") or a.get("ram") or ""
     # Sem a loja de propria: o story fala com as 7 cidades ao mesmo tempo.
     specs = " · ".join([p for p in [cap, "Retire ainda hoje"] if p])
-    bat = a.get("battery_health")
+    bat = bateria(a)
     mostra_bat = a.get("category") in COM_BATERIA and isinstance(bat, int) and bat > 0
 
     modelo = a.get("model") or a.get("title") or "Seminovo"

@@ -24,6 +24,10 @@ launchd (Mac do Guilherme) ou n8n  →  workflow_dispatch  →  GitHub Actions  
   mascara o problema. O lugar certo é `~/Library/Application Support/`.
 - **Sempre `git pull --rebase` antes de mexer no repo local.** O workflow commita a
   cada publicação, então o remoto muda sem aviso.
+- **Bateria: usar sempre `bateria(a)`, nunca `battery_health` direto.** Quando o anúncio tem
+  `battery_replacement_required`, a loja troca a bateria antes da retirada e o site mostra
+  100% (regra `d1()` do site). Até 07/10/2026 o robô publicava o valor da vistoria — um
+  13 mini saiu com 76% enquanto o marketplace dizia 100%. Vale para 12 dos 57 anúncios.
 - **Nunca escrever "sem juros" nem um valor de parcela calculado sem a taxa.** A tabela
   `installment_fees` tem 18 parcelas, com 12,5% em 12x e 15,18% em 18x. "Parcelamos em
   até 18x no cartão" é o que pode ser afirmado.
@@ -37,7 +41,7 @@ launchd (Mac do Guilherme) ou n8n  →  workflow_dispatch  →  GitHub Actions  
 - **iPhone usa o `template_v2.html`; as outras categorias seguem no `template.html`.** O v2
   (foto em tela cheia + etiqueta branca) tem os seus proprios placeholders (`FOTO_URL`,
   `IMG_ATTRS`, `ALVO_H_PX`, `ALVO_Y_PX`, `BLOCO_TOP`, `FS_ETIQUETA`, `LINHAS`, `SELO_TXT`,
-  `RODAPE_TXT`), preenchidos em `montar_arte_iphone()`.
+  `RODAPE_TXT`, `CTA_TXT`), preenchidos em `montar_arte_iphone()`.
 - **Foto do banco e do MODELO, nao do aparelho.** `banco.json` mapeia o nome exato do modelo
   no marketplace para as fotos em `banco/`. Antes de cadastrar uma foto, conferir o modelo
   pela camera (iPhone 11 e 12: duas lentes na vertical; 13, 14 e 15: na diagonal) — o nome
