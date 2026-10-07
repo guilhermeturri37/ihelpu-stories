@@ -86,8 +86,11 @@ def enviar(instancia, url_arte, legenda, so_para=None):
     saiu e nao da para saber se o Status foi ao ar (tempo esgotado, erro do servidor)."""
     # `content` tem de ser URL: a Evolution 2.3.7 trata o valor como caminho de arquivo e
     # base64 volta "ENAMETOOLONG: name too long".
-    corpo = {"type": "image", "content": url_arte, "caption": legenda,
-             "allContacts": not so_para, "statusJidList": [f"{so_para}@s.whatsapp.net"] if so_para else []}
+    # Para todos os contatos, `statusJidList` NAO pode ir no corpo: a Evolution valida a lista
+    # (minimo de 1 item) antes de olhar o `allContacts`, e a lista vazia voltava HTTP 400
+    # "statusJidList does not meet minimum length of 1" (07/10/2026 14h10, as 3 lojas).
+    corpo = {"type": "image", "content": url_arte, "caption": legenda}
+    corpo.update({"statusJidList": [f"{so_para}@s.whatsapp.net"]} if so_para else {"allContacts": True})
     req = urllib.request.Request(f"{EVO}/message/sendStatus/{urllib.parse.quote(instancia)}",
         data=json.dumps(corpo).encode(), method="POST",
         headers={"apikey": os.environ["EVOLUTION_API_KEY"], "Content-Type": "application/json"})
