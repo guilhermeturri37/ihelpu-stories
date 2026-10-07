@@ -1,3 +1,26 @@
 {
-  "publicados": []
+  "publicados": [
+    {
+      "instancia": "SAO LEOPOLDO 2",
+      "device_id": "1889aab3-3126-4de0-a2d6-3724fc1fe958",
+      "modelo": "iPhone 13 Pro Max",
+      "em": "2026-10-07T17:15:28+00:00",
+      "horario": 14
+    },
+    {
+      "instancia": "iHelpU Corp Emerson",
+      "device_id": "1889aab3-3126-4de0-a2d6-3724fc1fe958",
+      "modelo": "iPhone 13 Pro Max",
+      "em": "2026-10-07T17:18:37+00:00",
+      "horario": 14
+    },
+    {
+      "instancia": "TREND2",
+      "device_id": "765ab76b-5ee4-48a0-9a67-71ee3a8d8f58",
+      "modelo": "iPhone 12",
+      "em": "2026-10-07T17:34:07+00:00",
+      "horario": 14,
+      "foto": "iphone-12-a.jpg"
+    }
+  ]
 }
