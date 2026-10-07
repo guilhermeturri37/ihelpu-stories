@@ -88,11 +88,21 @@ WhatsApp das lojas, pela Evolution API (`https://evolutionapi.ihelpu.com.br`, ve
 chave em `op://iHelpU-Core/Evolution API - Lojas/password` e no secret `EVOLUTION_API_KEY`).
 
 - **4 por dia em cada número: 8h10, 10h10, 12h10 e 14h10, de segunda a sábado** — dez
-  minutos depois do story. Quem dispara é o launchd `com.ihelpu.status`
-  (`~/Library/Application Support/ihelpu-stories/disparar_status.sh`).
+  minutos depois do story. Quem dispara é **só o n8n** ("Stories Marketplace — Disparador",
+  gatilho `Status 8h10 a 14h10`, cron `10 8,10,12,14 * * 1-6`), desde 07/10/2026. O launchd
+  `com.ihelpu.status` do Mac foi desligado (`launchctl disable`; o plist ficou no lugar) a
+  pedido do Guilherme, para não depender do Mac ligado. Não religar os dois juntos: o
+  registro do Status só é gravado no FIM da rodada, então um segundo disparo depois de uma
+  rodada que falhou no meio reenviaria para as lojas que já tinham recebido.
 - **`LOJAS` mapeia instância → loja do marketplace; `ATIVAS` diz quais estão no automático.**
   Entram por ordem de tamanho: o envio para todos os contatos só foi medido nas menores.
   Não ligar uma instância de 13 mil contatos ou mais sem olhar o tempo de envio das anteriores.
+  **Medido em 07/10/2026 14h (primeiro envio real): São Leopoldo 43 s, central 144 s e
+  Trend 884 s — a 16 s do `timeout=900` do `enviar()`.** Loja maior que a Trend estoura o
+  tempo e vira "incerto"; antes de ligar qualquer outra, resolver o tempo de envio.
+- **Para todos os contatos, não mandar `statusJidList` no corpo.** A Evolution valida a
+  lista (mínimo de 1 item) antes de olhar o `allContacts`; a lista vazia derrubou as 3
+  lojas com HTTP 400 em 07/10/2026 14h10. O `TESTE_PARA` não exercita esse caminho.
 - **A Evolution é API não oficial e os números são os de atendimento das lojas.** Uma loja
   por vez, com pausa (`PAUSA`); nunca disparar as dez em paralelo nem aumentar a frequência
   sem o Guilherme pedir.
@@ -107,7 +117,9 @@ chave em `op://iHelpU-Core/Evolution API - Lojas/password` e no secret `EVOLUTIO
 - Só publica com o **Mac ligado e o usuário logado** — o Mac está configurado para
   dormir em 1 minuto e depende do Amphetamine estar ativo. Horário perdido não é
   recuperado sozinho: o script recusa publicar fora dos horários (8h a 14h) e aos domingos.
-  O n8n "Stories Marketplace — Disparador" é um segundo disparador, independente do Mac.
+  O n8n "Stories Marketplace — Disparador" é um segundo disparador, independente do Mac
+  (`5 8-14 * * 1-6`, os 7 horários). Em 07/10/2026 14h o `gh workflow run` do Mac levou
+  HTTP 500 do GitHub e quem publicou foi o n8n, às 14h05.
 - A API do Instagram **não permite sticker de link** em Stories publicados por API.
   Vale para qualquer ferramenta. Por isso o CTA é o Direct.
 - As fotos são de vistoria, não de venda. Categorias que não são iPhone às vezes
