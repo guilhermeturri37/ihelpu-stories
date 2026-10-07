@@ -171,10 +171,11 @@ def main():
         if estado == "incerto":
             item["estado"] = "incerto"            # fica registrado para nao reenviar em dobro
         registro["publicados"].append(item)
-    if not so_para:
+        # Grava e sobe a cada loja, nao so no fim: a rodada leva minutos (a Trend levou 884 s)
+        # e, se cair no meio, um novo disparo reenviaria para quem ja tinha recebido.
         REGISTRO.write_text(json.dumps(registro, indent=2, ensure_ascii=False) + "\n")
         P.git("add", REGISTRO.name)
-        if P.git_commit(f"Registra Status do WhatsApp ({hoje} {hora:02d}h)"):
+        if P.git_commit(f"Registra Status: {inst} ({hoje} {hora:02d}h)"):
             P.git_push()
     if falhas:
         sys.exit(f"{falhas} envio(s) nao confirmados; ver os avisos acima")

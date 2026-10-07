@@ -91,9 +91,9 @@ chave em `op://iHelpU-Core/Evolution API - Lojas/password` e no secret `EVOLUTIO
   minutos depois do story. Quem dispara é **só o n8n** ("Stories Marketplace — Disparador",
   gatilho `Status 8h10 a 14h10`, cron `10 8,10,12,14 * * 1-6`), desde 07/10/2026. O launchd
   `com.ihelpu.status` do Mac foi desligado (`launchctl disable`; o plist ficou no lugar) a
-  pedido do Guilherme, para não depender do Mac ligado. Não religar os dois juntos: o
-  registro do Status só é gravado no FIM da rodada, então um segundo disparo depois de uma
-  rodada que falhou no meio reenviaria para as lojas que já tinham recebido.
+  pedido do Guilherme, para não depender do Mac ligado. Não religar os dois juntos sem necessidade. O registro do Status
+  é gravado e enviado ao GitHub a cada loja (até 07/10/2026 14h34 era só no fim da rodada,
+  e um disparo depois de uma queda no meio reenviaria para quem já tinha recebido).
 - **`LOJAS` mapeia instância → loja do marketplace; `ATIVAS` diz quais estão no automático.**
   Entram por ordem de tamanho: o envio para todos os contatos só foi medido nas menores.
   Não ligar uma instância de 13 mil contatos ou mais sem olhar o tempo de envio das anteriores.
