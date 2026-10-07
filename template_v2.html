@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-BR"><head><meta charset="utf-8">
+<style>
+@font-face {
+  font-family: 'Barlow Semi Condensed';
+  font-style: normal;
+  font-weight: 500;
+  font-display: block;
+  src: url(fonts/BarlowSemiCondensed-500.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Barlow Semi Condensed';
+  font-style: normal;
+  font-weight: 600;
+  font-display: block;
+  src: url(fonts/BarlowSemiCondensed-600.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Barlow Semi Condensed';
+  font-style: normal;
+  font-weight: 700;
+  font-display: block;
+  src: url(fonts/BarlowSemiCondensed-700.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Bricolage Grotesque';
+  font-style: normal;
+  font-weight: 800;
+  font-stretch: 100%;
+  font-display: block;
+  src: url(fonts/BricolageGrotesque-800.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+</style>
+<style>
+  :root{--roxo:hsl(289 52% 31%);--laranja:hsl(16 96% 57%)}
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{width:1080px;height:1920px;overflow:hidden;position:relative;background:#1a0a05;
+       font-family:'Barlow Semi Condensed',sans-serif;text-transform:uppercase}
+
+  /* Foto em tela cheia. O script no fim do arquivo aproxima e centraliza o aparelho. */
+  .foto{position:absolute;inset:0;overflow:hidden}
+  .foto img{position:absolute;left:0;top:0;width:100%;height:100%;object-fit:cover}
+  .sombra{position:absolute;left:0;right:0;bottom:0;height:900px;
+          background:linear-gradient(0deg,rgba(0,0,0,.42),rgba(0,0,0,.18) 55%,transparent)}
+
+  .bloco{position:absolute;left:0;right:0;top:BLOCO_TOPpx;display:flex;flex-direction:column;
+         align-items:center;text-align:center}
+  /* Marca numa pilula roxa: texto branco solto sumia em cima de aparelho claro. */
+  .marca{display:flex;align-items:baseline;gap:12px;background:var(--roxo);color:#fff;
+         padding:7px 26px 10px;border-radius:999px;line-height:1;text-transform:none;
+         font-family:'Bricolage Grotesque';font-weight:800;font-size:40px;letter-spacing:-.8px}
+  .marca small{font-family:'Barlow Semi Condensed';font-weight:600;font-size:22px;
+               letter-spacing:4px;text-transform:uppercase;opacity:.92}
+
+  /* Etiqueta branca por linha, com as linhas fundidas (o filtro arredonda as juncoes). */
+  .etiqueta{position:relative;margin-top:16px;font-weight:600;font-size:FS_ETIQUETApx;line-height:1.32;
+            letter-spacing:.2px}
+  .etiqueta .fundo{filter:url(#goo)}
+  .etiqueta .fundo span{background:#fff;color:#fff}
+  .etiqueta .texto{position:absolute;inset:0}
+  .etiqueta .texto span{color:#141414}
+  .etiqueta span{padding:.14em .52em;border-radius:.44em;-webkit-box-decoration-break:clone;
+                 box-decoration-break:clone}
+  .etiqueta em{font-style:normal;color:var(--roxo)}
+  .etiqueta .fundo em{color:#fff}
+
+  .cta{margin-top:26px;font-weight:600;font-size:30px;letter-spacing:.6px;color:#fff;
+       text-shadow:0 1px 3px rgba(0,0,0,.9),0 2px 14px rgba(0,0,0,.7)}
+  /* Seta desenhada, nao emoji: o runner pode nao ter fonte de emoji e sairia um quadrado. */
+  .cta svg{vertical-align:-6px;fill:none;stroke:#fff;stroke-width:3.2;stroke-linecap:round;
+           stroke-linejoin:round;filter:drop-shadow(0 1px 3px rgba(0,0,0,.9))}
+  .selo{margin-top:20px;background:var(--roxo);color:#fff;font-weight:600;font-size:27px;
+        letter-spacing:.5px;padding:7px 22px;border-radius:999px}
+  .rodape{margin-top:22px;width:560px;font-weight:500;font-size:16px;line-height:19px;
+          letter-spacing:.3px;color:rgba(255,255,255,.85);text-shadow:0 1px 2px rgba(0,0,0,.9),0 1px 8px rgba(0,0,0,.7)}
+</style></head><body>
+  <svg width="0" height="0" style="position:absolute"><filter id="goo">
+    <feGaussianBlur in="SourceGraphic" stdDeviation="7" result="b"/>
+    <feColorMatrix in="b" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 22 -10"/>
+  </filter></svg>
+  <div class="foto"><img id="foto" IMG_ATTRS src="FOTO_URL" alt=""><div class="sombra"></div></div>
+  <div class="bloco">
+    <div class="marca">iHelpU<small>Seminovos</small></div>
+    <div class="etiqueta">
+      <div class="fundo"><span>LINHAS</span></div>
+      <div class="texto"><span>LINHAS</span></div>
+    </div>
+    <div class="selo">SELO_TXT</div>
+    <div class="cta">Chama no Direct <svg viewBox="0 0 24 24" width="30" height="30"><path d="M12 3v17m0 0l-7-7m7 7l7-7"/></svg></div>
+    <div class="rodape">RODAPE_TXT</div>
+  </div>
+
+<script>
+/* Enquadra o aparelho: aproxima ate ele ter ALVO_H de altura, centrado em (540, ALVO_Y).
+   Foto do banco (banco.json): a caixa do aparelho vem pronta em data-cx/cy/bw/bh.
+   Foto de vistoria do anuncio: o aparelho fica num suporte sobre a bancada laranja, em
+   tamanhos e posicoes diferentes — acha a maior mancha "nao laranja" que nao encosta no
+   topo (o topo e a loja desfocada). Se nao achar nada confiavel, fica no enquadramento
+   padrao (cover): nunca quebra a arte. */
+const ALVO_H = ALVO_H_PX, ALVO_Y = ALVO_Y_PX, ZOOM_MAX = 1.9;
+const img = document.getElementById('foto');
+function enquadrar(){
+  const nw = img.naturalWidth, nh = img.naturalHeight; if(!nw) return;
+  if(img.dataset.cx) return aplicar(nw, nh, img.dataset.bw*nw, img.dataset.bh*nh, img.dataset.cx*nw, img.dataset.cy*nh);
+  const W = 120, H = Math.round(120*nh/nw), c = document.createElement('canvas');
+  c.width = W; c.height = H; const x = c.getContext('2d'); x.drawImage(img,0,0,W,H);
+  let d; try{ d = x.getImageData(0,0,W,H).data }catch(e){ return }
+  const m = new Uint8Array(W*H);
+  for(let i=0;i<W*H;i++){
+    const r=d[i*4]/255,g=d[i*4+1]/255,b=d[i*4+2]/255,mx=Math.max(r,g,b),mn=Math.min(r,g,b),df=mx-mn;
+    let h=0; if(df){ h = mx==r ? ((g-b)/df)%6 : mx==g ? (b-r)/df+2 : (r-g)/df+4; h*=60; if(h<0)h+=360 }
+    const s = mx ? df/mx : 0;
+    const laranja = h>=7 && h<=46 && s>0.45 && mx>0.22;
+    m[i] = laranja ? 0 : 1;
+  }
+  const rot = new Int32Array(W*H); let melhor=null, n=0;
+  for(let i=0;i<W*H;i++){
+    if(!m[i]||rot[i]) continue; n++;
+    let pilha=[i], area=0, x0=W,x1=0,y0=H,y1=0; rot[i]=n;
+    while(pilha.length){
+      const p=pilha.pop(), px=p%W, py=(p-px)/W; area++;
+      if(px<x0)x0=px; if(px>x1)x1=px; if(py<y0)y0=py; if(py>y1)y1=py;
+      for(const q of [p-1,p+1,p-W,p+W]){
+        if(q<0||q>=W*H||rot[q]||!m[q]) continue;
+        if((q==p-1&&px==0)||(q==p+1&&px==W-1)) continue;
+        rot[q]=n; pilha.push(q);
+      }
+    }
+    if(y0==0) continue;                         // encosta no topo: e a loja ao fundo
+    if(area < W*H*0.02) continue;               // reflexo de luz na bancada
+    if(!melhor || area>melhor.area) melhor={area,x0,x1,y0,y1};
+  }
+  if(!melhor) return;
+  const k = nw/W, bw=(melhor.x1-melhor.x0+1)*k, bh=(melhor.y1-melhor.y0+1)*k,
+        cx=(melhor.x0+melhor.x1+1)/2*k, cy=(melhor.y0+melhor.y1+1)/2*k;
+  aplicar(nw, nh, bw, bh, cx, cy);
+}
+function aplicar(nw, nh, bw, bh, cx, cy){
+  const s0 = Math.max(1080/nw, 1920/nh);
+  const s = Math.min(Math.max(ALVO_H/bh, s0), s0*ZOOM_MAX, 860/bw > s0 ? 860/bw : s0);
+  const w = nw*s, h = nh*s;
+  const left = Math.min(0, Math.max(1080-w, 540-cx*s)), top = Math.min(0, Math.max(1920-h, ALVO_Y-cy*s));
+  Object.assign(img.style,{width:w+'px',height:h+'px',left:left+'px',top:top+'px',objectFit:'fill'});
+  document.body.dataset.enquadre = JSON.stringify({s:(s/s0).toFixed(2),bw:Math.round(bw),bh:Math.round(bh)});
+}
+if(img.complete) enquadrar(); else img.addEventListener('load', enquadrar);
+</script>
+</body></html>

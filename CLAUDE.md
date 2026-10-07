@@ -1,10 +1,10 @@
 # iHelpU Stories — CLAUDE.md
 
 Automação que publica Stories no **@ihelpuoficial** com aparelhos do marketplace
-de seminovos. Roda sozinha às 9h05, 10h05, 11h05, 12h05 e 13h05.
+de seminovos. Sai um story por hora, das 8h às 14h, de segunda a sábado (7 por dia).
 
 ```
-launchd (Mac do Guilherme)  →  gh workflow run  →  GitHub Actions  →  Story no ar
+launchd (Mac do Guilherme) ou n8n  →  workflow_dispatch  →  GitHub Actions  →  Story no ar
 ```
 
 ## Regras e convenções
@@ -34,14 +34,43 @@ launchd (Mac do Guilherme)  →  gh workflow run  →  GitHub Actions  →  Stor
 - **Ao mexer no `template.html`, conferir o `publicar.py` junto.** Os placeholders
   (`FOTO_URL`, `MODELO_NOME`, `FS_MODELO`, `ESTADO_LABEL`, `BATERIA`, `R$ PRECO`) e o
   regex que remove o badge de bateria vivem nos dois arquivos.
+- **iPhone usa o `template_v2.html`; as outras categorias seguem no `template.html`.** O v2
+  (foto em tela cheia + etiqueta branca) tem os seus proprios placeholders (`FOTO_URL`,
+  `IMG_ATTRS`, `ALVO_H_PX`, `ALVO_Y_PX`, `BLOCO_TOP`, `FS_ETIQUETA`, `LINHAS`, `SELO_TXT`,
+  `RODAPE_TXT`), preenchidos em `montar_arte_iphone()`.
+- **Foto do banco e do MODELO, nao do aparelho.** `banco.json` mapeia o nome exato do modelo
+  no marketplace para as fotos em `banco/`. Antes de cadastrar uma foto, conferir o modelo
+  pela camera (iPhone 11 e 12: duas lentes na vertical; 13, 14 e 15: na diagonal) — o nome
+  do arquivo que vem da loja ja veio errado. A arte com foto do banco diz "imagem
+  ilustrativa"; a que usa a foto do anuncio diz "foto real do aparelho anunciado".
+- **Nunca subir foto de loja sem tirar o EXIF.** Os originais do iPhone trazem o GPS da
+  loja e o repositorio e publico. Regravar com PIL, sem `exif`, antes de por em `banco/`.
+- **Fontes ficam em `fonts/`, nao no Google Fonts.** Quando a fonte da internet nao
+  carrega a tempo, o Chrome renderiza com a fonte padrao e nao da erro nenhum.
+- **Aparelho pode reprisar, mas nunca no mesmo dia.** 7 stories/dia não se sustentam só
+  com anúncio inédito (entram 1 a 2 por dia). Sem inédito, sai o anúncio ativo que está há
+  mais tempo sem aparecer. A regra antiga de "nunca repete aparelho" acabou em 07/10/2026.
+- **Mudou horário ou dia? São três lugares:** `HORARIOS` no `publicar.py`, o plist
+  `~/Library/LaunchAgents/com.ihelpu.stories.plist` e o disparador do n8n.
+- **Para ver a arte sem publicar: `SO_ARTE=1`** (input `so_arte` do workflow). Gera as
+  proximas artes em `previa/` e sai antes de reservar, commitar ou chamar a Meta.
 - **Testar mudança rodando de verdade.** Os cinco bugs desta automação só apareceram em
   produção. `gh run view <id> --log | awk -F'\t' '$2=="Publicar"'` mostra a saída limpa.
+
+- **Curtida de story não existe na API.** O coração é privado por design (a Meta listou
+  "curtir stories" como não suportado em abril/2026). Só **reação com emoji** e **resposta
+  de texto** chegam como mensagem no Direct. Ferramenta que promete disparar para quem
+  curtiu está usando API não oficial — risco de banimento da conta.
+- **Erro `code 3` da Graph API não é permissão do token.** "Application does not have the
+  capability" significa que falta um **produto no app** da Meta. Checar o app antes de
+  mexer em escopo: o token pode ter o escopo e a chamada falhar mesmo assim.
 
 ## Limites conhecidos
 
 - Só publica com o **Mac ligado e o usuário logado** — o Mac está configurado para
   dormir em 1 minuto e depende do Amphetamine estar ativo. Horário perdido não é
-  recuperado: o script recusa publicar fora da janela 9h–13h.
+  recuperado sozinho: o script recusa publicar fora dos horários (8h a 14h) e aos domingos.
+  O n8n "Stories Marketplace — Disparador" é um segundo disparador, independente do Mac.
 - A API do Instagram **não permite sticker de link** em Stories publicados por API.
   Vale para qualquer ferramenta. Por isso o CTA é o Direct.
 - As fotos são de vistoria, não de venda. Categorias que não são iPhone às vezes

@@ -35,6 +35,41 @@
         "publicar_teste.py",
         "template.html"
       ]
+    },
+    {
+      "date": "2026-10-07",
+      "session_id": "617a931f",
+      "periodo": "2026-09-24 a 2026-10-07",
+      "done": [
+        "Automação de stories rodando estável: 63+ stories publicados, 58 artes geradas no período.",
+        "Arte redesenhada (layout B): a foto do aparelho passou de uma janela de 872x480 para os 1180px superiores — as fotos dos anúncios são verticais e o recorte paisagem cortava as laterais.",
+        "Três bugs de produção corrigidos: corrida entre execuções simultâneas (duas escolhiam o mesmo aparelho), erro 9007 transitório no polling tratado como fatal, e commit vazio em reexecução na mesma hora.",
+        "Agendador local movido de ~/Desktop para ~/Library/Application Support — o TCC do macOS nega acesso do launchd ao Desktop (exit 126).",
+        "Bloco schedule removido do workflow: o cron do GitHub disparava com até 4h26 de atraso.",
+        "Auditoria do perfil @ihelpuoficial com dados reais da Graph API; NAME e bio reescritos e aprovados.",
+        "responder.py, diagnostico_direct.py e .github/workflows/responder.yml escritos para responder quem reage aos stories — prontos, mas bloqueados pela Meta."
+      ],
+      "decisions": [
+        "Layout B escolhido entre 3 direções testadas, por degradar melhor quando a foto do anúncio é ruim.",
+        "Arte passa a informar 'parcelamos em até 18x no cartão', conferido na tabela installment_fees (15,18% de taxa em 18x) — nunca 'sem juros'.",
+        "NAME do Instagram: 'iHelpU | Assistência Apple RS' (29/30). Bio reescrita com o slogan 'Seu Apple em boas mãos' na primeira linha e o story diário na última. Aplicação é manual — a API não altera esses campos.",
+        "Resposta automática no Direct limitada a seg-sex 9h-18h: fora disso a resposta nativa do Instagram assume e direciona para o WhatsApp, e duas automáticas seguidas pareceriam spam.",
+        "Quem agenda é o launchd local, não o GitHub. O cron do GitHub foi removido de propósito."
+      ],
+      "next_step": "Decidir se vale pedir App Review à Meta para o Direct — antes disso, confirmar com a atendente se o Instagram já mostra a miniatura do story na conversa (se mostrar, o ganho da automação cai para só velocidade de resposta). Pendentes do usuário: aplicar NAME e bio no Instagram, rotacionar o token do Instagram (foi colado em chat em 21/09), decidir sobre restringir a automação a iPhones, e liberar (ou não) o acesso ao Business Manager para o email externo.",
+      "files_touched": [
+        ".github/workflows/responder.yml",
+        ".github/workflows/story.yml",
+        "CLAUDE.md",
+        "diagnostico_direct.py",
+        "docs/PROGRESS.json",
+        "local/disparar.sh",
+        "local/disparos.log",
+        "local/launchd.log",
+        "publicados.json",
+        "publicar.py",
+        "responder.py"
+      ]
     }
   ]
 }

@@ -3,11 +3,10 @@ name: Story do marketplace
 on:
   # Sem 'schedule' de proposito: o cron do GitHub disparava com ate 4h de
   # atraso, o que faria um story marcado para 9h sair no meio da tarde.
-  # Quem pede as rodadas (9h05, 10h05, 11h05, 12h05 e 13h05; so 9h, 11h e 13h
-  # publicam, as outras o publicar.py ignora — 3/dia, pedido do Guilherme em 02/10/2026): o launchd
-  # com.ihelpu.stories de outra maquina e, quando ativado, o n8n "Stories
-  # Marketplace — Disparador". Pedido em dobro na mesma hora nao duplica:
-  # o publicar.py publica um story por horario.
+  # Quem pede as rodadas (de hora em hora, das 8h as 14h, segunda a sabado — 7/dia, pedido
+  # do Guilherme em 07/10/2026; domingo o publicar.py ignora): o launchd com.ihelpu.stories
+  # do Mac do Guilherme e o n8n "Stories Marketplace — Disparador". Pedido em dobro na
+  # mesma hora nao duplica: o publicar.py publica um story por horario.
   workflow_dispatch:
     inputs:
       forcar:
@@ -15,9 +14,13 @@ on:
         type: boolean
         default: false
       horario:
-        description: 'Repor um horario de HOJE que ja passou (9, 11 ou 13). So vale com forcar; nao repoe o mesmo horario duas vezes'
+        description: 'Repor um horario de HOJE que ja passou (8 a 14). So vale com forcar; nao repoe o mesmo horario duas vezes'
         type: string
         default: ''
+      so_arte:
+        description: 'So gerar previas das proximas artes (baixar em Artifacts). Nao publica nem registra nada'
+        type: boolean
+        default: false
 
 # Evita que duas execucoes empurrem commits ao mesmo tempo.
 concurrency:
@@ -47,4 +50,12 @@ jobs:
           IG_USER_ID: '17841400093603178'
           FORCAR: ${{ inputs.forcar && '1' || '0' }}
           HORARIO: ${{ inputs.horario }}
+          SO_ARTE: ${{ inputs.so_arte && '1' || '0' }}
         run: python3 publicar.py
+
+      - name: Guardar as previas
+        if: ${{ inputs.so_arte }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: previas
+          path: previa/

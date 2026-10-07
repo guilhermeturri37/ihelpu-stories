@@ -1,0 +1,30 @@
+{
+  "iPhone 11": [
+    {"arquivo": "iphone-11-a.jpg", "cx": 0.5, "cy": 0.51, "bw": 0.55, "bh": 0.6},
+    {"arquivo": "iphone-11-b.jpg", "cx": 0.49, "cy": 0.5, "bw": 0.38, "bh": 0.51}
+  ],
+  "iPhone 13": [
+    {"arquivo": "iphone-13-a.jpg", "cx": 0.54, "cy": 0.5, "bw": 0.5, "bh": 0.53},
+    {"arquivo": "iphone-13-b.jpg", "cx": 0.5, "cy": 0.59, "bw": 0.45, "bh": 0.57},
+    {"arquivo": "iphone-13-c.jpg", "cx": 0.5, "cy": 0.53, "bw": 0.42, "bh": 0.48},
+    {"arquivo": "iphone-13-d.jpg", "cx": 0.56, "cy": 0.5, "bw": 0.88, "bh": 0.5}
+  ],
+  "iPhone 13 mini": [
+    {"arquivo": "iphone-13-mini-a.jpg", "cx": 0.51, "cy": 0.53, "bw": 0.42, "bh": 0.62}
+  ],
+  "iPhone 12 Pro": [
+    {"arquivo": "iphone-12-pro-a.jpg", "cx": 0.5, "cy": 0.65, "bw": 0.4, "bh": 0.55}
+  ],
+  "iPhone 14 Plus": [
+    {"arquivo": "iphone-14-plus-a.jpg", "cx": 0.52, "cy": 0.51, "bw": 0.54, "bh": 0.67},
+    {"arquivo": "iphone-14-plus-b.jpg", "cx": 0.49, "cy": 0.5, "bw": 0.44, "bh": 0.55},
+    {"arquivo": "iphone-14-plus-c.jpg", "cx": 0.49, "cy": 0.47, "bw": 0.39, "bh": 0.63}
+  ],
+  "iPhone 14 Pro Max": [
+    {"arquivo": "iphone-14-pro-max-a.jpg", "cx": 0.54, "cy": 0.57, "bw": 0.49, "bh": 0.69}
+  ],
+  "iPhone 15": [
+    {"arquivo": "iphone-15-a.jpg", "cx": 0.5, "cy": 0.52, "bw": 0.46, "bh": 0.65},
+    {"arquivo": "iphone-15-b.jpg", "cx": 0.47, "cy": 0.51, "bw": 0.35, "bh": 0.48}
+  ]
+}
