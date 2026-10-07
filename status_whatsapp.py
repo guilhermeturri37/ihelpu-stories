@@ -27,6 +27,7 @@ REGISTRO = RAIZ / "status_whatsapp.json"
 RAW = "https://raw.githubusercontent.com/guilhermeturri37/ihelpu-stories"
 HORARIOS = [8, 10, 12, 14]
 PAUSA = 45                      # segundos entre uma loja e a seguinte
+DIAS_CONVERSA = 60              # o Status vai para quem conversou com a loja nesse prazo
 # instancia da Evolution -> (loja no marketplace, nome que vai na arte). A central nao tem
 # loja: mostra o estoque geral. Em ordem crescente de contatos guardados (07/10/2026).
 LOJAS = {
@@ -81,23 +82,45 @@ def publicar_artes(arquivos):
     git("push", "-f", "origin", f"{commit}:refs/heads/artes-status")
     return commit
 
-def enviar(instancia, url_arte, legenda, so_para=None):
+def destinatarios(instancia):
+    """Quem recebe o Status: os numeros com quem a loja trocou mensagem nos ultimos
+    DIAS_CONVERSA dias. Nao e `allContacts` de proposito (decisao do Guilherme, 07/10/2026): a
+    Evolution 2.3.7 reenvia a imagem inteira a cada 10 destinatarios (~0,13 s por
+    destinatario) e "todos os contatos" vai de 494 a 20.875 conforme a loja — a Trend levou
+    884 s e Pelotas levaria 47 min, quatro vezes ao dia, no numero de atendimento. O
+    WhatsApp so mostra Status a quem tem o numero da loja salvo; conversa recente e a melhor
+    aproximacao disso, e deixa as dez lojas entre 500 e 1.100 destinatarios.
+    Conversa que a Evolution so conhece pelo @lid (sem telefone em `remoteJidAlt`) fica de fora."""
+    req = urllib.request.Request(f"{EVO}/chat/findChats/{urllib.parse.quote(instancia)}",
+        data=b"{}", method="POST",
+        headers={"apikey": os.environ["EVOLUTION_API_KEY"], "Content-Type": "application/json"})
+    desde = time.time() - DIAS_CONVERSA * 86400
+    jids = set()
+    for c in json.load(urllib.request.urlopen(req, timeout=300)):
+        ultima = c.get("lastMessage") or {}
+        if int(ultima.get("messageTimestamp") or 0) < desde:
+            continue
+        for jid in (c.get("remoteJid"), (ultima.get("key") or {}).get("remoteJidAlt")):
+            if re.fullmatch(r"\d+@s\.whatsapp\.net", jid or ""):
+                jids.add(jid)
+                break
+    return sorted(jids)
+
+def enviar(instancia, url_arte, legenda, jids):
     """Devolve ("ok", id), ("recusado", motivo) ou ("incerto", motivo). Incerto = o pedido
     saiu e nao da para saber se o Status foi ao ar (tempo esgotado, erro do servidor)."""
     # `content` tem de ser URL: a Evolution 2.3.7 trata o valor como caminho de arquivo e
     # base64 volta "ENAMETOOLONG: name too long".
-    # Para todos os contatos, `statusJidList` NAO pode ir no corpo: a Evolution valida a lista
-    # (minimo de 1 item) antes de olhar o `allContacts`, e a lista vazia voltava HTTP 400
-    # "statusJidList does not meet minimum length of 1" (07/10/2026 14h10, as 3 lojas).
-    corpo = {"type": "image", "content": url_arte, "caption": legenda}
-    corpo.update({"statusJidList": [f"{so_para}@s.whatsapp.net"]} if so_para else {"allContacts": True})
+    # `statusJidList` vazio volta HTTP 400 ("does not meet minimum length of 1", 07/10/2026
+    # 14h10, as 3 lojas): quem chama nao envia sem destinatario.
+    corpo = {"type": "image", "content": url_arte, "caption": legenda, "statusJidList": jids}
     req = urllib.request.Request(f"{EVO}/message/sendStatus/{urllib.parse.quote(instancia)}",
         data=json.dumps(corpo).encode(), method="POST",
         headers={"apikey": os.environ["EVOLUTION_API_KEY"], "Content-Type": "application/json"})
     try:
         # A Evolution so responde quando termina de enviar, e leva ~0,13 s por destinatario
-        # (reenvia a imagem a cada 10): a Trend, com 6.544, levou 884 s em 07/10/2026. Com
-        # 900 s de limite ela virava "incerto" por 16 s de folga.
+        # (reenvia a imagem a cada 10): com `allContacts` a Trend, com 6.544, levou 884 s em
+        # 07/10/2026. Com a lista de destinatarios() a espera normal e de 1 a 3 min.
         r = json.load(urllib.request.urlopen(req, timeout=2400))
         return "ok", (r.get("key") or {}).get("id")
     except urllib.error.HTTPError as e:
@@ -158,8 +181,13 @@ def main():
         legenda = " ".join(f"{a.get('model')} {a.get('capacity') or ''} por R$ {preco} no Pix. "
                            "Responda este status e fale com a gente.".split())
         inicio = time.time()
-        estado, detalhe = enviar(inst, f"{RAW}/{commit}/{arq.name}", legenda, so_para)
-        P.log(f"   >>> {inst}: {estado} em {time.time() - inicio:.0f}s — {detalhe}"
+        try:
+            jids = [f"{so_para}@s.whatsapp.net"] if so_para else destinatarios(inst)
+            estado, detalhe = enviar(inst, f"{RAW}/{commit}/{arq.name}", legenda, jids) if jids else \
+                ("recusado", f"ninguem conversou com a loja nos ultimos {DIAS_CONVERSA} dias")
+        except Exception as e:                    # a lista nao veio: nada foi enviado
+            jids, estado, detalhe = [], "recusado", f"nao consegui a lista de destinatarios ({type(e).__name__}: {e})"
+        P.log(f"   >>> {inst}: {estado} em {time.time() - inicio:.0f}s, {len(jids)} destinatarios — {detalhe}"
               + (f" (TESTE para {so_para})" if so_para else ""))
         arq.unlink()
         if estado != "ok":
@@ -168,7 +196,8 @@ def main():
         if so_para or estado == "recusado":
             continue                              # teste nao entra no registro; recusado pode repetir
         item = {"instancia": inst, "device_id": a["id"], "modelo": a.get("model"),
-                "em": datetime.now(timezone.utc).isoformat(timespec="seconds"), "horario": hora}
+                "em": datetime.now(timezone.utc).isoformat(timespec="seconds"), "horario": hora,
+                "destinatarios": len(jids)}
         if banco:
             item["foto"] = banco["arquivo"]
         if estado == "incerto":

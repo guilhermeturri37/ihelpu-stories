@@ -95,14 +95,19 @@ chave em `op://iHelpU-Core/Evolution API - Lojas/password` e no secret `EVOLUTIO
   é gravado e enviado ao GitHub a cada loja (até 07/10/2026 14h34 era só no fim da rodada,
   e um disparo depois de uma queda no meio reenviaria para quem já tinha recebido).
 - **`LOJAS` mapeia instância → loja do marketplace; `ATIVAS` diz quais estão no automático.**
-  Entram por ordem de tamanho: o envio para todos os contatos só foi medido nas menores.
-  Não ligar uma instância de 13 mil contatos ou mais sem olhar o tempo de envio das anteriores.
-  **Medido em 07/10/2026 14h (primeiro envio real): São Leopoldo 43 s, central 144 s e
-  Trend 884 s — a 16 s do `timeout=900` do `enviar()`.** Loja maior que a Trend estoura o
-  tempo e vira "incerto"; antes de ligar qualquer outra, resolver o tempo de envio.
-- **Para todos os contatos, não mandar `statusJidList` no corpo.** A Evolution valida a
-  lista (mínimo de 1 item) antes de olhar o `allContacts`; a lista vazia derrubou as 3
-  lojas com HTTP 400 em 07/10/2026 14h10. O `TESTE_PARA` não exercita esse caminho.
+  Em 07/10/2026 eram três (São Leopoldo, central e Trend). Ligar as outras sete só depois
+  de conferir, numa rodada real, o tempo de envio das três com a lista de `destinatarios()`.
+- **O Status vai para quem conversou com a loja nos últimos 60 dias (`DIAS_CONVERSA`), não
+  para todos os contatos** (decisão do Guilherme em 07/10/2026). A Evolution 2.3.7 reenvia
+  a imagem inteira a cada 10 destinatários (~0,13 s por destinatário) e ignora em silêncio
+  os grupos de 10 que falham. Com `allContacts` (todo contato com nome) a lista ia de 494
+  a 20.875 conforme a loja: no primeiro envio real São Leopoldo levou 43 s, a central
+  144 s e a Trend 884 s; Pelotas levaria 47 min. Com `destinatarios()` as dez ficam entre
+  500 e 1.100 (uns 2 min cada). Não voltar para `allContacts`. Conversa que a Evolution só
+  conhece pelo `@lid`, sem telefone em `remoteJidAlt`, fica de fora.
+- **Nunca mandar `statusJidList` vazio.** A Evolution valida a lista (mínimo de 1 item)
+  antes de qualquer outra coisa; a lista vazia derrubou as 3 lojas com HTTP 400 em
+  07/10/2026 14h10. O `TESTE_PARA` manda 1 número e não mostra tempo de envio real.
 - **A Evolution é API não oficial e os números são os de atendimento das lojas.** Uma loja
   por vez, com pausa (`PAUSA`); nunca disparar as dez em paralelo nem aumentar a frequência
   sem o Guilherme pedir.
