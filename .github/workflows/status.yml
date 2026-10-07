@@ -1,0 +1,53 @@
+name: Status do WhatsApp
+
+on:
+  # Sem 'schedule', como no story.yml: o cron do GitHub atrasa horas. Quem pede as rodadas
+  # (8h10, 10h10, 12h10 e 14h10, segunda a sabado) e o launchd com.ihelpu.status do Mac do
+  # Guilherme. Pedido fora de hora ou repetido o status_whatsapp.py ignora.
+  workflow_dispatch:
+    inputs:
+      previa:
+        description: 'So gerar a proxima arte de cada loja (baixar em Artifacts). Nao envia nada'
+        type: boolean
+        default: false
+      forcar:
+        description: 'Enviar agora, ignorando horario, domingo e a trava de horario ja publicado'
+        type: boolean
+        default: false
+      instancias:
+        description: 'Restringir a estas instancias da Evolution, separadas por virgula (vazio = as ativas)'
+        type: string
+        default: ''
+
+concurrency:
+  group: status
+  cancel-in-progress: false
+
+jobs:
+  enviar:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write        # commita o registro e empurra as artes para o ramo artes-status
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Identidade do git
+        run: |
+          git config user.name "Story Bot"
+          git config user.email "guilherme@ihelpu.com.br"
+
+      - name: Enviar
+        env:
+          EVOLUTION_API_KEY: ${{ secrets.EVOLUTION_API_KEY }}
+          SUPABASE_ANON_KEY: ${{ secrets.SUPABASE_ANON_KEY }}
+          PREVIA: ${{ inputs.previa && '1' || '0' }}
+          FORCAR: ${{ inputs.forcar && '1' || '0' }}
+          INSTANCIAS: ${{ inputs.instancias }}
+        run: python3 status_whatsapp.py
+
+      - name: Guardar as previas
+        if: ${{ inputs.previa }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: previas-status
+          path: previa/
