@@ -72,6 +72,27 @@ launchd (Mac do Guilherme) ou n8n  →  workflow_dispatch  →  GitHub Actions  
   capability" significa que falta um **produto no app** da Meta. Checar o app antes de
   mexer em escopo: o token pode ter o escopo e a chamada falhar mesmo assim.
 
+## Status do WhatsApp (desde 07/10/2026)
+
+`status_whatsapp.py` + `.github/workflows/status.yml` publicam a mesma arte no Status do
+WhatsApp das lojas, pela Evolution API (`https://evolutionapi.ihelpu.com.br`, versão 2.3.7,
+chave em `op://iHelpU-Core/Evolution API - Lojas/password` e no secret `EVOLUTION_API_KEY`).
+
+- **4 por dia em cada número: 8h10, 10h10, 12h10 e 14h10, de segunda a sábado** — dez
+  minutos depois do story. Quem dispara é o launchd `com.ihelpu.status`
+  (`~/Library/Application Support/ihelpu-stories/disparar_status.sh`).
+- **`LOJAS` mapeia instância → loja do marketplace; `ATIVAS` diz quais estão no automático.**
+  Entram por ordem de tamanho: o envio para todos os contatos só foi medido nas menores.
+  Não ligar uma instância de 13 mil contatos ou mais sem olhar o tempo de envio das anteriores.
+- **A Evolution é API não oficial e os números são os de atendimento das lojas.** Uma loja
+  por vez, com pausa (`PAUSA`); nunca disparar as dez em paralelo nem aumentar a frequência
+  sem o Guilherme pedir.
+- **A imagem tem de ir por URL.** Base64 volta `ENAMETOOLONG`. As artes vão para o ramo
+  `artes-status` (um commit solto, push forçado), não para a main — seriam 40 MB por dia.
+- **Para testar sem atingir cliente: `TESTE_PARA=<número>`** (resolver o JID antes em
+  `/chat/whatsappNumbers`; número do RS perde o 9). **Para ver a arte: `PREVIA=1`.**
+- **Envio "incerto" fica no registro** (`status_whatsapp.json`) para não sair em dobro.
+
 ## Limites conhecidos
 
 - Só publica com o **Mac ligado e o usuário logado** — o Mac está configurado para
