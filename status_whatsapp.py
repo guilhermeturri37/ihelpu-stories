@@ -95,7 +95,10 @@ def enviar(instancia, url_arte, legenda, so_para=None):
         data=json.dumps(corpo).encode(), method="POST",
         headers={"apikey": os.environ["EVOLUTION_API_KEY"], "Content-Type": "application/json"})
     try:
-        r = json.load(urllib.request.urlopen(req, timeout=900))
+        # A Evolution so responde quando termina de enviar, e leva ~0,13 s por destinatario
+        # (reenvia a imagem a cada 10): a Trend, com 6.544, levou 884 s em 07/10/2026. Com
+        # 900 s de limite ela virava "incerto" por 16 s de folga.
+        r = json.load(urllib.request.urlopen(req, timeout=2400))
         return "ok", (r.get("key") or {}).get("id")
     except urllib.error.HTTPError as e:
         motivo = f"HTTP {e.code} {e.read().decode()[:200]}"
