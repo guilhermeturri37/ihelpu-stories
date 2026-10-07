@@ -43,6 +43,9 @@ launchd (Mac do Guilherme) ou n8n  →  workflow_dispatch  →  GitHub Actions  
   pela camera (iPhone 11 e 12: duas lentes na vertical; 13, 14 e 15: na diagonal) — o nome
   do arquivo que vem da loja ja veio errado. A arte com foto do banco diz "imagem
   ilustrativa"; a que usa a foto do anuncio diz "foto real do aparelho anunciado".
+- **O iPhone 14 usa as fotos do 14 Plus, provisoriamente** (decisão do Guilherme em 07/10/2026:
+  os dois só diferem no tamanho, e numa foto de mão não dá para distinguir). Quando chegar
+  foto de um iPhone 14, trocar a lista do `"iPhone 14"` no `banco.json`.
 - **Nunca subir foto de loja sem tirar o EXIF.** Os originais do iPhone trazem o GPS da
   loja e o repositorio e publico. Regravar com PIL, sem `exif`, antes de por em `banco/`.
 - **Fontes ficam em `fonts/`, nao no Google Fonts.** Quando a fonte da internet nao
