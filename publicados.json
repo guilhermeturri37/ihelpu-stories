@@ -452,10 +452,9 @@
     {
       "device_id": "689d5d56-4557-4793-ba9d-654af0a70ef3",
       "modelo": "iPhone 15 Pro Max",
-      "story_id": null,
-      "em": "2026-10-07T15:00:31+00:00",
-      "horario": 12,
-      "estado": "publicando"
+      "story_id": "18105348625975447",
+      "em": "2026-10-07T15:00:43+00:00",
+      "horario": 12
     }
   ]
 }
