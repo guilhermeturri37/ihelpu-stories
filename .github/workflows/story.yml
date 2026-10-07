@@ -31,7 +31,7 @@ jobs:
   publicar:
     runs-on: ubuntu-latest
     permissions:
-      contents: write        # o script commita a arte e o registro
+      contents: write        # o script commita o registro e empurra a arte para o ramo artes-stories
     steps:
       - uses: actions/checkout@v4
 
@@ -59,3 +59,14 @@ jobs:
         with:
           name: previas
           path: previa/
+
+      # A arte nao fica mais na main (ramo artes-stories, so a ultima). Aqui fica a copia
+      # de cada rodada, para conferir depois o que foi ao ar.
+      - name: Guardar a arte publicada
+        if: ${{ always() && !inputs.so_arte }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: arte
+          path: _story/
+          if-no-files-found: ignore
+          retention-days: 30

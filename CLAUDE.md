@@ -60,7 +60,16 @@ launchd (Mac do Guilherme) ou n8n  →  workflow_dispatch  →  GitHub Actions  
 - **Mudou horário ou dia? São três lugares:** `HORARIOS` no `publicar.py`, o plist
   `~/Library/LaunchAgents/com.ihelpu.stories.plist` e o disparador do n8n.
 - **Para ver a arte sem publicar: `SO_ARTE=1`** (input `so_arte` do workflow). Gera as
-  proximas artes em `previa/` e sai antes de reservar, commitar ou chamar a Meta.
+  proximas artes em `previa/` e sai antes de reservar, tocar na main ou chamar a Meta. As
+  prévias sobem para o ramo `artes-previa` pelo mesmo `subir_artes()` das artes de verdade
+  — é o ensaio desse caminho.
+- **Arte de story não vai para a main.** Cada PNG tem ~1 MB e ficava para sempre no
+  histórico (85 MB em 07/10/2026, +8 MB por dia). `subir_artes()` põe a arte num commit
+  solto no ramo `artes-stories` (push forçado, só a última fica) e a Meta busca por
+  `raw.githubusercontent.com/.../<sha>/<nome>`. A ordem é: arte no ramo → reserva na main
+  → Meta. Não usar o `artes-status` (é do WhatsApp) nem voltar a dar `git add` em arte. A
+  cópia de cada rodada fica 30 dias no artifact `arte` do run. A pasta `artes/` da main é
+  o acervo antigo (até 07/10/2026) e não recebe mais nada.
 - **Testar mudança rodando de verdade.** Os cinco bugs desta automação só apareceram em
   produção. `gh run view <id> --log | awk -F'\t' '$2=="Publicar"'` mostra a saída limpa.
 

@@ -28,7 +28,11 @@ SUPA = "https://tegdgtovwhbhsrbkxvog.supabase.co"
 ANON = os.environ["SUPABASE_ANON_KEY"]       # chave publica, a mesma do site
 IG_USER_ID = os.environ.get("IG_USER_ID", "17841400093603178")
 IG_TOKEN = os.environ["IG_ACCESS_TOKEN"]
-REPO_RAW = "https://raw.githubusercontent.com/guilhermeturri37/ihelpu-stories/main"
+RAW = "https://raw.githubusercontent.com/guilhermeturri37/ihelpu-stories"
+# As artes NAO vao para a main: cada uma tem ~1 MB e ficava para sempre no historico (85 MB
+# em 07/10/2026, +8 MB por dia). Vao para um ramo sem historico — ver subir_artes().
+RAMO_ARTES = "artes-stories"      # proprio: o artes-status e do status_whatsapp.py
+RAMO_PREVIA = "artes-previa"      # o SO_ARTE ensaia o mesmo caminho sem tocar no de producao
 
 HORARIOS = [8, 9, 10, 11, 12, 13, 14]   # um story por horario
 META = len(HORARIOS)
@@ -260,6 +264,33 @@ def git_push():
             time.sleep(2)
     sys.exit("nao consegui enviar ao repositorio apos 3 tentativas")
 
+def subir_artes(arquivos, ramo):
+    """Poe as artes num commit solto no ramo (sem pai, push forcado: o ramo nunca acumula
+    historico) e devolve a URL de cada uma, pelo sha do commit. E o esquema do
+    publicar_artes() do status_whatsapp.py, em ramo proprio para um nao apagar o do outro.
+    So devolve depois de baixar cada imagem de volta, inteira: a Meta busca por essa URL, e
+    o ramo segue apontando para este commit ate a proxima rodada (o `concurrency` do
+    workflow nao deixa duas rodadas ao mesmo tempo), entao ela continua no ar ate o
+    container ficar FINISHED. Falha aqui = nada reservado, nada publicado."""
+    def g(*args, entrada=None):
+        return subprocess.run(["git", *args], cwd=RAIZ, check=True, capture_output=True,
+                              text=True, input=entrada).stdout.strip()
+    linhas = "".join(f"100644 blob {g('hash-object', '-w', str(arq))}\t{arq.name}\n" for arq in arquivos)
+    commit = g("commit-tree", g("mktree", entrada=linhas), "-m", "Artes dos stories")
+    g("push", "-f", "origin", f"{commit}:refs/heads/{ramo}")
+    urls = [f"{RAW}/{commit}/{arq.name}" for arq in arquivos]
+    for arq, url in zip(arquivos, urls):
+        for tentativa in range(10):
+            try:
+                if len(urllib.request.urlopen(url, timeout=30).read()) == arq.stat().st_size:
+                    break
+            except Exception:
+                pass
+            time.sleep(3)
+        else:
+            sys.exit(f"a arte subiu para o ramo {ramo} mas nao ficou disponivel em {url}")
+    return urls
+
 def main():
     agora = datetime.now(BRT)
     hora, hoje = agora.hour, agora.strftime("%Y-%m-%d")
@@ -340,18 +371,24 @@ def main():
         + ("" if ineditos else f" — reprise, saiu em {ultima_vez[a['id']].astimezone(BRT):%d/%m}"))
 
     nome = f"{hoje}-{horario:02d}h-{a['id'][:8]}.png"
-    destino = RAIZ / "artes" / nome
+    destino = RAIZ / "_story" / nome       # fora do git (.gitignore): a arte nao entra na main
+    destino.parent.mkdir(exist_ok=True)
     banco = foto_do_banco(a, registro) if a.get("category") == "iphone" else None
     montar_arte(a, destino, banco)
     log(f"   arte gerada: {nome} ({destino.stat().st_size // 1024} KB)"
         + (f" — foto do banco: {banco['arquivo']}" if banco else ""))
 
-    # RESERVA ANTES DE PUBLICAR. O aparelho e o horario entram no registro no MESMO commit da
-    # arte (que precisa estar publica antes: a Meta busca por URL), e esse push acontece antes
-    # de a Meta ser chamada. Push que nao sai = nada publicado. Story que sai e registro final
-    # que nao sobe = a reserva ja esta na main e segura o aparelho e o horario, hoje e nos
-    # proximos dias. Duplicar fica impossivel por construcao (cetico, 26/09: uma trava pela
-    # contagem da Meta so enxergava o proprio dia, e no dia seguinte o aparelho voltava).
+    # A arte sobe primeiro, para o ramo das artes (a Meta busca por URL). Se nao subir, a
+    # rodada para aqui, sem reserva nenhuma.
+    [url] = subir_artes([destino], RAMO_ARTES)
+    log(f"   publicada em {url}")
+
+    # RESERVA ANTES DE PUBLICAR. O aparelho e o horario entram no registro, na MAIN, e esse
+    # push acontece antes de a Meta ser chamada. Push que nao sai = nada publicado. Story que
+    # sai e registro final que nao sobe = a reserva ja esta na main e segura o aparelho e o
+    # horario, hoje e nos proximos dias. Duplicar fica impossivel por construcao (cetico,
+    # 26/09: uma trava pela contagem da Meta so enxergava o proprio dia, e no dia seguinte o
+    # aparelho voltava).
     reserva = {"device_id": a["id"], "modelo": a.get("model"), "story_id": None,
                "em": datetime.now(timezone.utc).isoformat(timespec="seconds"),
                "horario": horario, "estado": "publicando"}
@@ -359,11 +396,9 @@ def main():
         reserva["foto"] = banco["arquivo"]      # e o que faz as fotos do modelo se revezarem
     registro["publicados"].append(reserva)
     gravar(registro)
-    git("add", f"artes/{nome}", "publicados.json")
-    git_commit(f"Arte e reserva: {a.get('model')} ({hoje} {horario:02d}h)")
+    git("add", "publicados.json")
+    git_commit(f"Reserva: {a.get('model')} ({hoje} {horario:02d}h)")
     git_push()
-    url = f"{REPO_RAW}/artes/{nome}"
-    log(f"   publicada em {url}")
 
     onde = f"{horario}h | {a.get('model')} ({a['id'][:8]})"
     try:
@@ -402,8 +437,10 @@ def main():
         raise
 
 def previas():
-    """SO_ARTE=1: gera a arte dos proximos ineditos em previa/ e sai. Nao reserva, nao commita,
-    nao chama a Meta — serve para ver no runner (fontes, fotos, enquadramento) sem publicar.
+    """SO_ARTE=1: gera a arte dos proximos ineditos em previa/ e sai. Nao reserva, nao toca na
+    main, nao chama a Meta — serve para ver no runner (fontes, fotos, enquadramento) sem
+    publicar. As previas sobem para o ramo artes-previa pelo mesmo subir_artes() das artes de
+    verdade: e o ensaio desse caminho (push do runner, download pela URL do sha).
     PREVIAS diz quantas (padrao 6); pega um anuncio por modelo para variar."""
     registro = json.loads((RAIZ / "publicados.json").read_text())
     ja = {p["device_id"] for p in registro["publicados"]}
@@ -412,6 +449,7 @@ def previas():
                       key=lambda a: a["created_at"], reverse=True)
     um_por_modelo = list({a.get("model"): a for a in reversed(ineditos)}.values())[::-1]
     (RAIZ / "previa").mkdir(exist_ok=True)
+    feitas = []
     for a in um_por_modelo[:int(os.environ.get("PREVIAS", "6"))]:
         banco = foto_do_banco(a, registro) if a.get("category") == "iphone" else None
         destino = RAIZ / "previa" / f"{a['id'][:8]}.png"
@@ -419,6 +457,10 @@ def previas():
         log(f"   previa/{destino.name}: {a.get('model')} — {banco['arquivo'] if banco else 'foto do anuncio'}")
         if banco:
             registro["publicados"].append({"foto": banco["arquivo"]})   # so para revezar dentro da previa
+        feitas.append(destino)
+    if feitas:
+        for url in subir_artes(feitas, RAMO_PREVIA):
+            log(f"   no ar em {url}")
 
 def gravar(registro):
     (RAIZ / "publicados.json").write_text(json.dumps(registro, indent=2, ensure_ascii=False) + "\n")
