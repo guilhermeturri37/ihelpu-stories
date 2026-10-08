@@ -273,6 +273,15 @@
       "em": "2026-10-08T15:28:00+00:00",
       "horario": 12,
       "destinatarios": 983
+    },
+    {
+      "instancia": "PELOTAS2",
+      "device_id": "b6768435-d284-4274-9d0c-3f30f7fa4393",
+      "modelo": "iPhone 14",
+      "em": "2026-10-08T15:30:27+00:00",
+      "horario": 12,
+      "destinatarios": 940,
+      "foto": "iphone-14-b.jpg"
     }
   ]
 }
