@@ -300,6 +300,15 @@
       "horario": 14,
       "destinatarios": 613,
       "foto": "iphone-13-c.jpg"
+    },
+    {
+      "instancia": "TREND2",
+      "device_id": "c6b5d753-644a-4d0d-8b6a-3d13963dc11e",
+      "modelo": "iPhone 14 Pro Max",
+      "em": "2026-10-08T17:15:47+00:00",
+      "horario": 14,
+      "destinatarios": 536,
+      "foto": "iphone-14-pro-max-a.jpg"
     }
   ]
 }
