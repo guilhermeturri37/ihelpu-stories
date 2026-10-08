@@ -353,6 +353,15 @@
       "horario": 14,
       "destinatarios": 1013,
       "foto": "iphone-13-c.jpg"
+    },
+    {
+      "instancia": "CANOAS",
+      "device_id": "a819de66-02f8-4ffa-951e-8c8b5d607cf0",
+      "modelo": "iPhone 13 mini",
+      "em": "2026-10-08T17:28:42+00:00",
+      "horario": 14,
+      "destinatarios": 986,
+      "foto": "iphone-13-mini-a.jpg"
     }
   ]
 }
