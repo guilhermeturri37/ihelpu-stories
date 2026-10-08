@@ -211,6 +211,15 @@
       "horario": 12,
       "destinatarios": 604,
       "foto": "iphone-13-mini-a.jpg"
+    },
+    {
+      "instancia": "TREND2",
+      "device_id": "396485ef-231b-4319-9c68-cf4a3b051812",
+      "modelo": "iPhone 12",
+      "em": "2026-10-08T15:15:35+00:00",
+      "horario": 12,
+      "destinatarios": 534,
+      "foto": "iphone-12-c.jpg"
     }
   ]
 }
