@@ -64,6 +64,14 @@
       "horario": 8,
       "destinatarios": 960,
       "foto": "iphone-13-a.jpg"
+    },
+    {
+      "instancia": "ZONA NORTE 2",
+      "device_id": "38a8e752-2aeb-4294-8798-c2d2c7313550",
+      "modelo": "iPhone SE (2ª geração)",
+      "em": "2026-10-08T11:24:27+00:00",
+      "horario": 8,
+      "destinatarios": 1097
     }
   ]
 }
