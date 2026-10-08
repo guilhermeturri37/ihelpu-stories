@@ -141,6 +141,15 @@
       "horario": 10,
       "destinatarios": 796,
       "foto": "iphone-12-b.jpg"
+    },
+    {
+      "instancia": "SANTAMARIA",
+      "device_id": "4189787d-edd5-4cd6-baa5-1ac60e617199",
+      "modelo": "iPhone 12",
+      "em": "2026-10-08T13:19:36+00:00",
+      "horario": 10,
+      "destinatarios": 964,
+      "foto": "iphone-12-b.jpg"
     }
   ]
 }
