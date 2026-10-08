@@ -336,6 +336,14 @@
       "horario": 14,
       "destinatarios": 1094,
       "foto": "iphone-14-a.jpg"
+    },
+    {
+      "instancia": "NOVO HAMBURGO",
+      "device_id": "665a4477-cbd9-47e6-a9a1-81a06c3d9f04",
+      "modelo": "iPhone XS Max",
+      "em": "2026-10-08T17:24:32+00:00",
+      "horario": 14,
+      "destinatarios": 1027
     }
   ]
 }
