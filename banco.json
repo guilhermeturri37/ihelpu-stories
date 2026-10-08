@@ -1,10 +1,24 @@
 {
   "iPhone 11": [
     {"arquivo": "iphone-11-a.jpg", "cx": 0.5, "cy": 0.51, "bw": 0.55, "bh": 0.6},
-    {"arquivo": "iphone-11-b.jpg", "cx": 0.49, "cy": 0.5, "bw": 0.38, "bh": 0.51}
+    {"arquivo": "iphone-11-b.jpg", "cx": 0.49, "cy": 0.5, "bw": 0.38, "bh": 0.51},
+    {"arquivo": "iphone-11-c.jpg", "cx": 0.405, "cy": 0.49, "bw": 0.39, "bh": 0.58},
+    {"arquivo": "iphone-11-d.jpg", "cx": 0.49, "cy": 0.545, "bw": 0.48, "bh": 0.59},
+    {"arquivo": "iphone-11-e.jpg", "cx": 0.515, "cy": 0.58, "bw": 0.71, "bh": 0.64},
+    {"arquivo": "iphone-11-f.jpg", "cx": 0.5, "cy": 0.545, "bw": 0.36, "bh": 0.51},
+    {"arquivo": "iphone-11-g.jpg", "cx": 0.46, "cy": 0.525, "bw": 0.58, "bh": 0.59}
   ],
   "iPhone 12": [
-    {"arquivo": "iphone-12-a.jpg", "cx": 0.47, "cy": 0.47, "bw": 0.37, "bh": 0.53}
+    {"arquivo": "iphone-12-a.jpg", "cx": 0.47, "cy": 0.47, "bw": 0.37, "bh": 0.53},
+    {"arquivo": "iphone-12-b.jpg", "cx": 0.46, "cy": 0.595, "bw": 0.42, "bh": 0.59},
+    {"arquivo": "iphone-12-c.jpg", "cx": 0.485, "cy": 0.535, "bw": 0.47, "bh": 0.59},
+    {"arquivo": "iphone-12-d.jpg", "cx": 0.49, "cy": 0.585, "bw": 0.36, "bh": 0.55},
+    {"arquivo": "iphone-12-e.jpg", "cx": 0.52, "cy": 0.555, "bw": 0.42, "bh": 0.51},
+    {"arquivo": "iphone-12-f.jpg", "cx": 0.49, "cy": 0.56, "bw": 0.375, "bh": 0.545},
+    {"arquivo": "iphone-12-g.jpg", "cx": 0.525, "cy": 0.54, "bw": 0.45, "bh": 0.54},
+    {"arquivo": "iphone-12-h.jpg", "cx": 0.47, "cy": 0.585, "bw": 0.375, "bh": 0.54},
+    {"arquivo": "iphone-12-i.jpg", "cx": 0.535, "cy": 0.575, "bw": 0.43, "bh": 0.51},
+    {"arquivo": "iphone-12-j.jpg", "cx": 0.545, "cy": 0.61, "bw": 0.79, "bh": 0.54}
   ],
   "iPhone 12 Pro": [
     {"arquivo": "iphone-12-pro-a.jpg", "cx": 0.5, "cy": 0.65, "bw": 0.4, "bh": 0.55}
@@ -13,15 +27,16 @@
     {"arquivo": "iphone-13-a.jpg", "cx": 0.54, "cy": 0.5, "bw": 0.5, "bh": 0.53},
     {"arquivo": "iphone-13-b.jpg", "cx": 0.5, "cy": 0.59, "bw": 0.45, "bh": 0.57},
     {"arquivo": "iphone-13-c.jpg", "cx": 0.5, "cy": 0.53, "bw": 0.42, "bh": 0.48},
-    {"arquivo": "iphone-13-d.jpg", "cx": 0.56, "cy": 0.5, "bw": 0.88, "bh": 0.5}
+    {"arquivo": "iphone-13-d.jpg", "cx": 0.56, "cy": 0.5, "bw": 0.88, "bh": 0.5},
+    {"arquivo": "iphone-13-e.jpg", "cx": 0.485, "cy": 0.58, "bw": 0.41, "bh": 0.58},
+    {"arquivo": "iphone-13-f.jpg", "cx": 0.475, "cy": 0.615, "bw": 0.47, "bh": 0.6}
   ],
   "iPhone 13 mini": [
     {"arquivo": "iphone-13-mini-a.jpg", "cx": 0.51, "cy": 0.53, "bw": 0.42, "bh": 0.62}
   ],
   "iPhone 14": [
-    {"arquivo": "iphone-14-plus-a.jpg", "cx": 0.52, "cy": 0.51, "bw": 0.54, "bh": 0.67},
-    {"arquivo": "iphone-14-plus-b.jpg", "cx": 0.49, "cy": 0.5, "bw": 0.44, "bh": 0.55},
-    {"arquivo": "iphone-14-plus-c.jpg", "cx": 0.49, "cy": 0.47, "bw": 0.39, "bh": 0.63}
+    {"arquivo": "iphone-14-a.jpg", "cx": 0.49, "cy": 0.565, "bw": 0.4, "bh": 0.57},
+    {"arquivo": "iphone-14-b.jpg", "cx": 0.51, "cy": 0.52, "bw": 0.435, "bh": 0.565}
   ],
   "iPhone 14 Plus": [
     {"arquivo": "iphone-14-plus-a.jpg", "cx": 0.52, "cy": 0.51, "bw": 0.54, "bh": 0.67},
@@ -34,5 +49,17 @@
   "iPhone 15": [
     {"arquivo": "iphone-15-a.jpg", "cx": 0.5, "cy": 0.52, "bw": 0.46, "bh": 0.65},
     {"arquivo": "iphone-15-b.jpg", "cx": 0.47, "cy": 0.51, "bw": 0.35, "bh": 0.48}
+  ],
+  "iPhone 12 mini": [
+    {"arquivo": "iphone-12-mini-a.jpg", "cx": 0.495, "cy": 0.6, "bw": 0.35, "bh": 0.545},
+    {"arquivo": "iphone-12-mini-b.jpg", "cx": 0.53, "cy": 0.6, "bw": 0.395, "bh": 0.56}
+  ],
+  "iPhone 15 Pro": [
+    {"arquivo": "iphone-15-pro-a.jpg", "cx": 0.45, "cy": 0.5, "bw": 0.395, "bh": 0.585},
+    {"arquivo": "iphone-15-pro-b.jpg", "cx": 0.485, "cy": 0.575, "bw": 0.45, "bh": 0.58}
+  ],
+  "iPhone 17 Pro Max": [
+    {"arquivo": "iphone-17-pro-max-a.jpg", "cx": 0.485, "cy": 0.575, "bw": 0.42, "bh": 0.64},
+    {"arquivo": "iphone-17-pro-max-b.jpg", "cx": 0.55, "cy": 0.575, "bw": 0.47, "bh": 0.63}
   ]
 }
