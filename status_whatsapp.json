@@ -265,6 +265,14 @@
       "horario": 12,
       "destinatarios": 988,
       "foto": "iphone-13-mini-a.jpg"
+    },
+    {
+      "instancia": "CANOAS",
+      "device_id": "028c9f54-010c-40dd-af44-75fd601a3ca4",
+      "modelo": "iPhone 13 Pro Max",
+      "em": "2026-10-08T15:28:00+00:00",
+      "horario": 12,
+      "destinatarios": 983
     }
   ]
 }
