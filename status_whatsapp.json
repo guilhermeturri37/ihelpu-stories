@@ -168,6 +168,15 @@
       "horario": 10,
       "destinatarios": 1011,
       "foto": "iphone-15-pro-a.jpg"
+    },
+    {
+      "instancia": "Caxias do Sul",
+      "device_id": "ff05ea64-c07e-4a8e-ac30-a0bf3bf49449",
+      "modelo": "iPhone 14",
+      "em": "2026-10-08T13:26:28+00:00",
+      "horario": 10,
+      "destinatarios": 998,
+      "foto": "iphone-14-a.jpg"
     }
   ]
 }
