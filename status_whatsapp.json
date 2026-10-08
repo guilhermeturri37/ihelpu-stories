@@ -115,6 +115,14 @@
       "horario": 10,
       "destinatarios": 650,
       "foto": "iphone-11-b.jpg"
+    },
+    {
+      "instancia": "iHelpU Corp Emerson",
+      "device_id": "665a4477-cbd9-47e6-a9a1-81a06c3d9f04",
+      "modelo": "iPhone XS Max",
+      "em": "2026-10-08T13:14:04+00:00",
+      "horario": 10,
+      "destinatarios": 605
     }
   ]
 }
