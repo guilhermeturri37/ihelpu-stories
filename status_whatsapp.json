@@ -89,6 +89,14 @@
       "horario": 8,
       "destinatarios": 972,
       "foto": "iphone-11-a.jpg"
+    },
+    {
+      "instancia": "CANOAS",
+      "device_id": "689d5d56-4557-4793-ba9d-654af0a70ef3",
+      "modelo": "iPhone 15 Pro Max",
+      "em": "2026-10-08T11:31:23+00:00",
+      "horario": 8,
+      "destinatarios": 981
     }
   ]
 }
