@@ -80,6 +80,15 @@
       "em": "2026-10-08T11:26:44+00:00",
       "horario": 8,
       "destinatarios": 1020
+    },
+    {
+      "instancia": "Caxias do Sul",
+      "device_id": "00d97b8b-e620-4119-b3da-bc2fa5b5d1f3",
+      "modelo": "iPhone 11",
+      "em": "2026-10-08T11:29:01+00:00",
+      "horario": 8,
+      "destinatarios": 972,
+      "foto": "iphone-11-a.jpg"
     }
   ]
 }
