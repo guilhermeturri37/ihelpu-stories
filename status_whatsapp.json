@@ -238,6 +238,15 @@
       "horario": 12,
       "destinatarios": 965,
       "foto": "iphone-11-c.jpg"
+    },
+    {
+      "instancia": "ZONA NORTE 2",
+      "device_id": "4038b2d6-4dc4-47cc-b0fc-7a3a1b4c6bdf",
+      "modelo": "iPhone 11",
+      "em": "2026-10-08T15:22:07+00:00",
+      "horario": 12,
+      "destinatarios": 1083,
+      "foto": "iphone-11-c.jpg"
     }
   ]
 }
