@@ -42,9 +42,10 @@ LOJAS = {
     "CANOAS":              ("canoas", "Canoas"),
     "PELOTAS2":            ("pelotas", "Pelotas"),
 }
-# Quem ja esta no automatico. O envio para TODOS os contatos so foi medido nas menores;
-# as de 13 mil contatos ou mais entram depois de ver quanto tempo essas levam.
-ATIVAS = ["SAO LEOPOLDO 2", "iHelpU Corp Emerson", "TREND2"]
+# Quem esta no automatico: as dez, desde 08/10/2026 (pedido do Guilherme em 07/10, depois que
+# o envio passou a ir so para destinatarios() — 500 a 1.100 por loja, uns 2 min cada). Para
+# tirar uma loja do automatico, tirar daqui.
+ATIVAS = list(LOJAS)
 
 def fila(instancia, registro, ativos, hoje):
     """iPhones da propria loja primeiro, depois o estoque geral. Em cada grupo, inedito

@@ -95,8 +95,9 @@ chave em `op://iHelpU-Core/Evolution API - Lojas/password` e no secret `EVOLUTIO
   é gravado e enviado ao GitHub a cada loja (até 07/10/2026 14h34 era só no fim da rodada,
   e um disparo depois de uma queda no meio reenviaria para quem já tinha recebido).
 - **`LOJAS` mapeia instância → loja do marketplace; `ATIVAS` diz quais estão no automático.**
-  Em 07/10/2026 eram três (São Leopoldo, central e Trend). Ligar as outras sete só depois
-  de conferir, numa rodada real, o tempo de envio das três com a lista de `destinatarios()`.
+  Desde 08/10/2026 são as dez (pedido do Guilherme em 07/10/2026; até então eram São
+  Leopoldo, central e Trend). A rodada inteira deve levar uns 30 min; se passar muito
+  disso, olhar o tempo por loja no log antes de mexer em horário ou frequência.
 - **O Status vai para quem conversou com a loja nos últimos 60 dias (`DIAS_CONVERSA`), não
   para todos os contatos** (decisão do Guilherme em 07/10/2026). A Evolution 2.3.7 reenvia
   a imagem inteira a cada 10 destinatários (~0,13 s por destinatário) e ignora em silêncio
