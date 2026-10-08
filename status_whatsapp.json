@@ -177,6 +177,14 @@
       "horario": 10,
       "destinatarios": 998,
       "foto": "iphone-14-a.jpg"
+    },
+    {
+      "instancia": "CANOAS",
+      "device_id": "665a4477-cbd9-47e6-a9a1-81a06c3d9f04",
+      "modelo": "iPhone XS Max",
+      "em": "2026-10-08T13:28:24+00:00",
+      "horario": 10,
+      "destinatarios": 981
     }
   ]
 }
