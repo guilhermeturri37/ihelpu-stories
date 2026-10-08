@@ -28,6 +28,10 @@ launchd (Mac do Guilherme) ou n8n  →  workflow_dispatch  →  GitHub Actions  
   `battery_replacement_required`, a loja troca a bateria antes da retirada e o site mostra
   100% (regra `d1()` do site). Até 07/10/2026 o robô publicava o valor da vistoria — um
   13 mini saiu com 76% enquanto o marketplace dizia 100%. Vale para 12 dos 57 anúncios.
+- **Preço: usar sempre `preco(a)`.** O `asking_price` do RPC é o valor no Pix que o site
+  mostra ("R$ 900,00 — 15,18% OFF no PIX"). A arte é gerada na hora de publicar, com o
+  preço daquele momento; nunca guardar preço em arquivo. `preco()` mantém os centavos
+  quando o anúncio tem (até 08/10/2026 um anúncio de R$ 1.399,90 saía como R$ 1.399).
 - **Nunca escrever "sem juros" nem um valor de parcela calculado sem a taxa.** A tabela
   `installment_fees` tem 18 parcelas, com 12,5% em 12x e 15,18% em 18x. "Parcelamos em
   até 18x no cartão" é o que pode ser afirmado.
@@ -47,9 +51,12 @@ launchd (Mac do Guilherme) ou n8n  →  workflow_dispatch  →  GitHub Actions  
   pela camera (iPhone 11 e 12: duas lentes na vertical; 13, 14 e 15: na diagonal) — o nome
   do arquivo que vem da loja ja veio errado. A arte com foto do banco diz "imagem
   ilustrativa"; a que usa a foto do anuncio diz "foto real do aparelho anunciado".
-- **O iPhone 14 usa as fotos do 14 Plus, provisoriamente** (decisão do Guilherme em 07/10/2026:
-  os dois só diferem no tamanho, e numa foto de mão não dá para distinguir). Quando chegar
-  foto de um iPhone 14, trocar a lista do `"iPhone 14"` no `banco.json`.
+- **O iPhone 15 Pro Max usa as fotos do 15 Pro, provisoriamente** (decisão do Guilherme em
+  08/10/2026, como ele já tinha feito com o 14 e o 14 Plus: só muda o tamanho). Quando
+  chegar foto de um 15 Pro Max, trocar a lista do `"iPhone 15 Pro Max"` no `banco.json`.
+  O iPhone 14 tem fotos próprias desde 08/10/2026 e não usa mais as do 14 Plus.
+- **Foto nova entra somando, não substituindo** (Guilherme, 08/10/2026: "quanto mais opção
+  melhor"), inclusive foto com mais de um aparelho. As fotos de um modelo se revezam.
 - **Nunca subir foto de loja sem tirar o EXIF.** Os originais do iPhone trazem o GPS da
   loja e o repositorio e publico. Regravar com PIL, sem `exif`, antes de por em `banco/`.
 - **Fontes ficam em `fonts/`, nao no Google Fonts.** Quando a fonte da internet nao

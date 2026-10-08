@@ -92,6 +92,15 @@ def bateria(a):
     story dizer 76% de um aparelho que o marketplace anuncia com 100%."""
     return 100 if a.get("battery_replacement_required") else a.get("battery_health")
 
+def preco(a):
+    """Preco como o site mostra: e o `asking_price`, que no marketplace e o valor no Pix
+    ("R$ 900,00 — 15,18% OFF no PIX", conferido em 08/10/2026). Valor redondo sai sem
+    centavos; com centavos, sai com eles — o int() antigo publicava R$ 1.399 de um anuncio
+    de R$ 1.399,90."""
+    v = round(float(a["asking_price"]), 2)
+    inteiro = format(int(v), ",d").replace(",", ".")
+    return inteiro if v == int(v) else f"{inteiro},{round((v - int(v)) * 100):02d}"
+
 def foto_do_banco(a, registro):
     """Foto de loja do modelo do anuncio, a menos usada ate aqui — com varias fotos do mesmo
     modelo elas se revezam em vez de a mesma sair todo dia. None se o modelo nao tem foto."""
@@ -117,9 +126,8 @@ def montar_arte_iphone(a, destino, banco, cta="Chama no Direct", retirada="Retir
     cap = a.get("capacity") or a.get("storage") or ""
     estado = COND.get(a.get("aesthetic_condition"), "Seminovo")
     linha1 = " ".join(f"{modelo} {cap}".split()) + f" [{estado}]"
-    preco = format(int(a["asking_price"]), ",d").replace(",", ".")
     # Nunca "sem juros" nem valor de parcela: a tabela installment_fees cobra taxa (CLAUDE.md).
-    linhas = f"{html.escape(linha1)}<br><em>POR R$ {preco} NO PIX</em> OU<br>EM ATÉ 18X NO CARTÃO"
+    linhas = f"{html.escape(linha1)}<br><em>POR R$ {preco(a)} NO PIX</em> OU<br>EM ATÉ 18X NO CARTÃO"
     # Nome longo encolhe a fonte em vez de estourar a largura do story.
     fs = 50 if len(linha1) <= 38 else max(34, int(50 * 38 / len(linha1)))
     bat = bateria(a)
@@ -162,7 +170,7 @@ def montar_arte(a, destino, banco=None):
            .replace("FS_MODELO", str(fs))
            .replace("MODELO_NOME", modelo)
            .replace("ARMAZENAMENTO · Retire ainda hoje", specs)
-           .replace("R$ PRECO", "R$ " + format(int(a["asking_price"]), ",d").replace(",", ".")))
+           .replace("R$ PRECO", "R$ " + preco(a)))
     h = h.replace("BATERIA", str(bat)) if mostra_bat else \
         re.sub(r'<span class="pill badge-bat">.*?</span>', "", h, flags=re.S)
 

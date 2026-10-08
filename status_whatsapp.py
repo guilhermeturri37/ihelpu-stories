@@ -178,8 +178,7 @@ def main():
     for n, (inst, a, arq, banco) in enumerate(rodada):
         if n:
             time.sleep(PAUSA)
-        preco = format(int(a["asking_price"]), ",d").replace(",", ".")
-        legenda = " ".join(f"{a.get('model')} {a.get('capacity') or ''} por R$ {preco} no Pix. "
+        legenda = " ".join(f"{a.get('model')} {a.get('capacity') or ''} por R$ {P.preco(a)} no Pix. "
                            "Responda este status e fale com a gente.".split())
         inicio = time.time()
         try:

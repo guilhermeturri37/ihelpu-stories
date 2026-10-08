@@ -61,5 +61,9 @@
   "iPhone 17 Pro Max": [
     {"arquivo": "iphone-17-pro-max-a.jpg", "cx": 0.485, "cy": 0.575, "bw": 0.42, "bh": 0.64},
     {"arquivo": "iphone-17-pro-max-b.jpg", "cx": 0.55, "cy": 0.575, "bw": 0.47, "bh": 0.63}
+  ],
+  "iPhone 15 Pro Max": [
+    {"arquivo": "iphone-15-pro-a.jpg", "cx": 0.45, "cy": 0.5, "bw": 0.395, "bh": 0.585},
+    {"arquivo": "iphone-15-pro-b.jpg", "cx": 0.485, "cy": 0.575, "bw": 0.45, "bh": 0.58}
   ]
 }
