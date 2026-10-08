@@ -247,6 +247,15 @@
       "horario": 12,
       "destinatarios": 1083,
       "foto": "iphone-11-c.jpg"
+    },
+    {
+      "instancia": "NOVO HAMBURGO",
+      "device_id": "a819de66-02f8-4ffa-951e-8c8b5d607cf0",
+      "modelo": "iPhone 13 mini",
+      "em": "2026-10-08T15:24:05+00:00",
+      "horario": 12,
+      "destinatarios": 1015,
+      "foto": "iphone-13-mini-a.jpg"
     }
   ]
 }
