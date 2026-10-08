@@ -185,6 +185,15 @@
       "em": "2026-10-08T13:28:24+00:00",
       "horario": 10,
       "destinatarios": 981
+    },
+    {
+      "instancia": "PELOTAS2",
+      "device_id": "c7947662-2875-42b5-aaee-17ec40b0cae9",
+      "modelo": "iPhone 13",
+      "em": "2026-10-08T13:30:59+00:00",
+      "horario": 10,
+      "destinatarios": 920,
+      "foto": "iphone-13-b.jpg"
     }
   ]
 }
