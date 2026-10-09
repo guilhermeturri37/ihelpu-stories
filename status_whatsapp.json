@@ -547,6 +547,14 @@
       "em": "2026-10-09T15:12:03+00:00",
       "horario": 12,
       "destinatarios": 668
+    },
+    {
+      "instancia": "iHelpU Corp Emerson",
+      "device_id": "b4a24363-4379-4efd-a350-d4ba05cc8e71",
+      "modelo": "iPhone 11 Pro",
+      "em": "2026-10-09T15:13:42+00:00",
+      "horario": 12,
+      "destinatarios": 630
     }
   ]
 }
