@@ -582,6 +582,15 @@
       "horario": 12,
       "destinatarios": 972,
       "foto": "iphone-12-f.jpg"
+    },
+    {
+      "instancia": "ZONA NORTE 2",
+      "device_id": "c00333b5-395c-437f-829f-003ea65929cc",
+      "modelo": "iPhone 14 Plus",
+      "em": "2026-10-09T15:22:25+00:00",
+      "horario": 12,
+      "destinatarios": 1119,
+      "foto": "iphone-14-plus-b.jpg"
     }
   ]
 }
