@@ -564,6 +564,15 @@
       "horario": 12,
       "destinatarios": 543,
       "foto": "iphone-14-plus-b.jpg"
+    },
+    {
+      "instancia": "ZONASUL",
+      "device_id": "dfa82ecb-2339-4bdb-9e47-367314e224d1",
+      "modelo": "iPhone 15",
+      "em": "2026-10-09T15:17:33+00:00",
+      "horario": 12,
+      "destinatarios": 806,
+      "foto": "iphone-15-b.jpg"
     }
   ]
 }
