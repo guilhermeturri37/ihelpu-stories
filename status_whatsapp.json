@@ -539,6 +539,14 @@
       "em": "2026-10-09T13:32:20+00:00",
       "horario": 10,
       "destinatarios": 933
+    },
+    {
+      "instancia": "SAO LEOPOLDO 2",
+      "device_id": "1889aab3-3126-4de0-a2d6-3724fc1fe958",
+      "modelo": "iPhone 13 Pro Max",
+      "em": "2026-10-09T15:12:03+00:00",
+      "horario": 12,
+      "destinatarios": 668
     }
   ]
 }
