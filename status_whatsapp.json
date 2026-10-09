@@ -634,6 +634,15 @@
       "horario": 14,
       "destinatarios": 663,
       "foto": "iphone-13-b.jpg"
+    },
+    {
+      "instancia": "iHelpU Corp Emerson",
+      "device_id": "4189787d-edd5-4cd6-baa5-1ac60e617199",
+      "modelo": "iPhone 12",
+      "em": "2026-10-09T17:13:32+00:00",
+      "horario": 14,
+      "destinatarios": 619,
+      "foto": "iphone-12-g.jpg"
     }
   ]
 }
