@@ -496,6 +496,15 @@
       "horario": 10,
       "destinatarios": 971,
       "foto": "iphone-13-e.jpg"
+    },
+    {
+      "instancia": "ZONA NORTE 2",
+      "device_id": "df3a02ef-9ba9-43e5-a13c-be3880112105",
+      "modelo": "iPhone 13",
+      "em": "2026-10-09T13:22:26+00:00",
+      "horario": 10,
+      "destinatarios": 1105,
+      "foto": "iphone-13-e.jpg"
     }
   ]
 }
