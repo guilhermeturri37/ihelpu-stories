@@ -549,6 +549,14 @@
       "em": "2026-10-09T13:05:40+00:00",
       "horario": 10,
       "foto": "iphone-13-c.jpg"
+    },
+    {
+      "device_id": "49bff0a2-9cfc-4cbc-88a0-84f78074a219",
+      "modelo": "iPad 8ª geração 10.2\" 2020",
+      "story_id": null,
+      "em": "2026-10-09T14:05:25+00:00",
+      "horario": 11,
+      "estado": "publicando"
     }
   ]
 }
