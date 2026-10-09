@@ -370,6 +370,15 @@
       "em": "2026-10-09T11:11:41+00:00",
       "horario": 8,
       "destinatarios": 661
+    },
+    {
+      "instancia": "iHelpU Corp Emerson",
+      "device_id": "765ab76b-5ee4-48a0-9a67-71ee3a8d8f58",
+      "modelo": "iPhone 12",
+      "em": "2026-10-09T11:13:21+00:00",
+      "horario": 8,
+      "destinatarios": 625,
+      "foto": "iphone-12-d.jpg"
     }
   ]
 }
