@@ -487,6 +487,15 @@
       "horario": 10,
       "destinatarios": 809,
       "foto": "iphone-13-e.jpg"
+    },
+    {
+      "instancia": "SANTAMARIA",
+      "device_id": "77baa97a-811d-438b-b879-06ffce634e58",
+      "modelo": "iPhone 13",
+      "em": "2026-10-09T13:19:33+00:00",
+      "horario": 10,
+      "destinatarios": 971,
+      "foto": "iphone-13-e.jpg"
     }
   ]
 }
