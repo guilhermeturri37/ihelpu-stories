@@ -397,6 +397,15 @@
       "horario": 8,
       "destinatarios": 806,
       "foto": "iphone-11-d.jpg"
+    },
+    {
+      "instancia": "SANTAMARIA",
+      "device_id": "5fa06f59-9bd7-42fe-92ec-70bd30578b2c",
+      "modelo": "iPhone 11",
+      "em": "2026-10-09T11:18:30+00:00",
+      "horario": 8,
+      "destinatarios": 973,
+      "foto": "iphone-11-d.jpg"
     }
   ]
 }
