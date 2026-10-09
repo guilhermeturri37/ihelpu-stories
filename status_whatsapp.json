@@ -523,6 +523,14 @@
       "horario": 10,
       "destinatarios": 1022,
       "foto": "iphone-13-e.jpg"
+    },
+    {
+      "instancia": "CANOAS",
+      "device_id": "665a4477-cbd9-47e6-a9a1-81a06c3d9f04",
+      "modelo": "iPhone XS Max",
+      "em": "2026-10-09T13:29:50+00:00",
+      "horario": 10,
+      "destinatarios": 986
     }
   ]
 }
