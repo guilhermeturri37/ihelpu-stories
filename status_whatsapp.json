@@ -853,6 +853,14 @@
       "horario": 10,
       "destinatarios": 1125,
       "foto": "iphone-12-h.jpg"
+    },
+    {
+      "instancia": "NOVO HAMBURGO",
+      "device_id": "0fd3a408-17a2-45fe-9cc5-a1bb5d6dc2c6",
+      "modelo": "iPhone 16 Pro Max",
+      "em": "2026-10-10T13:24:42+00:00",
+      "horario": 10,
+      "destinatarios": 1021
     }
   ]
 }
