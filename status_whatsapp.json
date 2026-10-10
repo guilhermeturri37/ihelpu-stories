@@ -912,6 +912,15 @@
       "horario": 12,
       "destinatarios": 553,
       "foto": "iphone-12-i.jpg"
+    },
+    {
+      "instancia": "ZONASUL",
+      "device_id": "e5ab047e-c708-431e-8337-51fca63e563d",
+      "modelo": "iPhone 11",
+      "em": "2026-10-10T15:17:17+00:00",
+      "horario": 12,
+      "destinatarios": 811,
+      "foto": "iphone-11-b.jpg"
     }
   ]
 }
