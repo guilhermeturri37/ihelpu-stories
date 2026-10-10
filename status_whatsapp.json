@@ -740,6 +740,15 @@
       "horario": 8,
       "destinatarios": 552,
       "foto": "iphone-14-pro-max-a.jpg"
+    },
+    {
+      "instancia": "ZONASUL",
+      "device_id": "8c90a477-9954-4f16-a90b-24c4c2b9ca53",
+      "modelo": "iPhone 14 Pro Max",
+      "em": "2026-10-10T11:17:13+00:00",
+      "horario": 8,
+      "destinatarios": 808,
+      "foto": "iphone-14-pro-max-a.jpg"
     }
   ]
 }
