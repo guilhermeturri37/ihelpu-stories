@@ -1044,6 +1044,14 @@
       "horario": 14,
       "destinatarios": 1038,
       "foto": "iphone-12-j.jpg"
+    },
+    {
+      "instancia": "CANOAS",
+      "device_id": "0fd3a408-17a2-45fe-9cc5-a1bb5d6dc2c6",
+      "modelo": "iPhone 16 Pro Max",
+      "em": "2026-10-10T17:29:57+00:00",
+      "horario": 14,
+      "destinatarios": 986
     }
   ]
 }
