@@ -792,6 +792,14 @@
       "horario": 8,
       "destinatarios": 982,
       "foto": "iphone-15-pro-a.jpg"
+    },
+    {
+      "instancia": "PELOTAS2",
+      "device_id": "0fd3a408-17a2-45fe-9cc5-a1bb5d6dc2c6",
+      "modelo": "iPhone 16 Pro Max",
+      "em": "2026-10-10T11:32:30+00:00",
+      "horario": 8,
+      "destinatarios": 960
     }
   ]
 }
