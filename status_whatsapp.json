@@ -817,6 +817,15 @@
       "em": "2026-10-10T13:13:54+00:00",
       "horario": 10,
       "destinatarios": 664
+    },
+    {
+      "instancia": "TREND2",
+      "device_id": "a9159bcb-da4b-4a4b-8afc-a26f9adf3fbc",
+      "modelo": "iPhone 13",
+      "em": "2026-10-10T13:15:29+00:00",
+      "horario": 10,
+      "destinatarios": 554,
+      "foto": "iphone-13-a.jpg"
     }
   ]
 }
