@@ -948,6 +948,15 @@
       "horario": 12,
       "destinatarios": 1037,
       "foto": "iphone-12-i.jpg"
+    },
+    {
+      "instancia": "Caxias do Sul",
+      "device_id": "92f06add-313e-46b8-9e74-de5c74207f19",
+      "modelo": "iPhone 17 Pro Max",
+      "em": "2026-10-10T15:27:41+00:00",
+      "horario": 12,
+      "destinatarios": 1030,
+      "foto": "iphone-17-pro-max-a.jpg"
     }
   ]
 }
