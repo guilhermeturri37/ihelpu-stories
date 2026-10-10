@@ -903,6 +903,15 @@
       "em": "2026-10-10T15:13:54+00:00",
       "horario": 12,
       "destinatarios": 658
+    },
+    {
+      "instancia": "TREND2",
+      "device_id": "765ab76b-5ee4-48a0-9a67-71ee3a8d8f58",
+      "modelo": "iPhone 12",
+      "em": "2026-10-10T15:15:27+00:00",
+      "horario": 12,
+      "destinatarios": 553,
+      "foto": "iphone-12-i.jpg"
     }
   ]
 }
