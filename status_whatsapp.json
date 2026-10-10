@@ -861,6 +861,15 @@
       "em": "2026-10-10T13:24:42+00:00",
       "horario": 10,
       "destinatarios": 1021
+    },
+    {
+      "instancia": "Caxias do Sul",
+      "device_id": "68fa893c-24f8-4342-849c-adae869a02f0",
+      "modelo": "iPhone 12",
+      "em": "2026-10-10T13:26:52+00:00",
+      "horario": 10,
+      "destinatarios": 1021,
+      "foto": "iphone-12-h.jpg"
     }
   ]
 }
