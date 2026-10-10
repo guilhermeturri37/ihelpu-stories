@@ -731,6 +731,15 @@
       "horario": 8,
       "destinatarios": 663,
       "foto": "iphone-14-pro-max-a.jpg"
+    },
+    {
+      "instancia": "TREND2",
+      "device_id": "c6b5d753-644a-4d0d-8b6a-3d13963dc11e",
+      "modelo": "iPhone 14 Pro Max",
+      "em": "2026-10-10T11:15:26+00:00",
+      "horario": 8,
+      "destinatarios": 552,
+      "foto": "iphone-14-pro-max-a.jpg"
     }
   ]
 }
