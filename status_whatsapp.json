@@ -722,6 +722,15 @@
       "em": "2026-10-10T11:11:53+00:00",
       "horario": 8,
       "destinatarios": 664
+    },
+    {
+      "instancia": "iHelpU Corp Emerson",
+      "device_id": "5d601c35-f7a9-4e71-aa1f-6ef96751efb1",
+      "modelo": "iPhone 14 Pro Max",
+      "em": "2026-10-10T11:13:55+00:00",
+      "horario": 8,
+      "destinatarios": 663,
+      "foto": "iphone-14-pro-max-a.jpg"
     }
   ]
 }
