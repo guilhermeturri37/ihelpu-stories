@@ -775,6 +775,14 @@
       "horario": 8,
       "destinatarios": 1029,
       "foto": "iphone-14-pro-max-a.jpg"
+    },
+    {
+      "instancia": "Caxias do Sul",
+      "device_id": "33c590ff-e1d0-4637-a66c-44a8e81ba4ae",
+      "modelo": "iPhone 13 Pro Max",
+      "em": "2026-10-10T11:27:07+00:00",
+      "horario": 8,
+      "destinatarios": 1038
     }
   ]
 }
