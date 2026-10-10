@@ -966,6 +966,14 @@
       "horario": 12,
       "destinatarios": 985,
       "foto": "iphone-14-pro-max-a.jpg"
+    },
+    {
+      "instancia": "PELOTAS2",
+      "device_id": "b4a24363-4379-4efd-a350-d4ba05cc8e71",
+      "modelo": "iPhone 11 Pro",
+      "em": "2026-10-10T15:32:38+00:00",
+      "horario": 12,
+      "destinatarios": 944
     }
   ]
 }
