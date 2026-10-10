@@ -826,6 +826,15 @@
       "horario": 10,
       "destinatarios": 554,
       "foto": "iphone-13-a.jpg"
+    },
+    {
+      "instancia": "ZONASUL",
+      "device_id": "88ec091c-3219-44a0-8404-b582e2c30b82",
+      "modelo": "iPhone 12 Pro",
+      "em": "2026-10-10T13:17:19+00:00",
+      "horario": 10,
+      "destinatarios": 812,
+      "foto": "iphone-12-pro-a.jpg"
     }
   ]
 }
