@@ -1027,6 +1027,14 @@
       "horario": 14,
       "destinatarios": 1129,
       "foto": "iphone-14-a.jpg"
+    },
+    {
+      "instancia": "NOVO HAMBURGO",
+      "device_id": "7b6189bf-d2b9-4658-aebc-beb9d5a003ca",
+      "modelo": "iPhone 11 Pro",
+      "em": "2026-10-10T17:24:53+00:00",
+      "horario": 14,
+      "destinatarios": 1029
     }
   ]
 }
