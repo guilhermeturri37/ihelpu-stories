@@ -809,6 +809,14 @@
       "horario": 10,
       "destinatarios": 664,
       "foto": "iphone-11-a.jpg"
+    },
+    {
+      "instancia": "iHelpU Corp Emerson",
+      "device_id": "0fd3a408-17a2-45fe-9cc5-a1bb5d6dc2c6",
+      "modelo": "iPhone 16 Pro Max",
+      "em": "2026-10-10T13:13:54+00:00",
+      "horario": 10,
+      "destinatarios": 664
     }
   ]
 }
