@@ -957,6 +957,15 @@
       "horario": 12,
       "destinatarios": 1030,
       "foto": "iphone-17-pro-max-a.jpg"
+    },
+    {
+      "instancia": "CANOAS",
+      "device_id": "5d601c35-f7a9-4e71-aa1f-6ef96751efb1",
+      "modelo": "iPhone 14 Pro Max",
+      "em": "2026-10-10T15:30:26+00:00",
+      "horario": 12,
+      "destinatarios": 985,
+      "foto": "iphone-14-pro-max-a.jpg"
     }
   ]
 }
