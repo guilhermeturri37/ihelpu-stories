@@ -983,6 +983,14 @@
       "horario": 14,
       "destinatarios": 663,
       "foto": "iphone-14-pro-max-a.jpg"
+    },
+    {
+      "instancia": "iHelpU Corp Emerson",
+      "device_id": "38a8e752-2aeb-4294-8798-c2d2c7313550",
+      "modelo": "iPhone SE (2ª geração)",
+      "em": "2026-10-10T17:14:02+00:00",
+      "horario": 14,
+      "destinatarios": 654
     }
   ]
 }
