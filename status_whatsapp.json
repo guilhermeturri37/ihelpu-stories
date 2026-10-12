@@ -1245,6 +1245,15 @@
       "em": "2026-10-12T15:11:48+00:00",
       "horario": 12,
       "destinatarios": 664
+    },
+    {
+      "instancia": "iHelpU Corp Emerson",
+      "device_id": "a59b1d03-f3f0-4747-9bb2-64f95263bbcd",
+      "modelo": "iPhone 14 Plus",
+      "em": "2026-10-12T15:13:58+00:00",
+      "horario": 12,
+      "destinatarios": 672,
+      "foto": "iphone-14-plus-a.jpg"
     }
   ]
 }
