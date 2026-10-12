@@ -1203,6 +1203,14 @@
       "horario": 10,
       "destinatarios": 1089,
       "foto": "iphone-13-c.jpg"
+    },
+    {
+      "instancia": "NOVO HAMBURGO",
+      "device_id": "38a8e752-2aeb-4294-8798-c2d2c7313550",
+      "modelo": "iPhone SE (2ª geração)",
+      "em": "2026-10-12T13:24:49+00:00",
+      "horario": 10,
+      "destinatarios": 1009
     }
   ]
 }
