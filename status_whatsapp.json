@@ -1123,6 +1123,15 @@
       "horario": 8,
       "destinatarios": 1011,
       "foto": "iphone-14-pro-max-a.jpg"
+    },
+    {
+      "instancia": "Caxias do Sul",
+      "device_id": "c4d0f393-142c-459c-b6e8-acfa8ee557be",
+      "modelo": "iPhone 12 mini",
+      "em": "2026-10-12T11:27:44+00:00",
+      "horario": 8,
+      "destinatarios": 1014,
+      "foto": "iphone-12-mini-a.jpg"
     }
   ]
 }
