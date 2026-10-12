@@ -1324,6 +1324,14 @@
       "em": "2026-10-12T15:31:57+00:00",
       "horario": 12,
       "destinatarios": 937
+    },
+    {
+      "instancia": "SAO LEOPOLDO 2",
+      "device_id": "0fd3a408-17a2-45fe-9cc5-a1bb5d6dc2c6",
+      "modelo": "iPhone 16 Pro Max",
+      "em": "2026-10-12T17:12:20+00:00",
+      "horario": 14,
+      "destinatarios": 662
     }
   ]
 }
