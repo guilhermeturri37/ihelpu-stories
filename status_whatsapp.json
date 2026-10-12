@@ -1341,6 +1341,15 @@
       "horario": 14,
       "destinatarios": 639,
       "foto": "iphone-12-d.jpg"
+    },
+    {
+      "instancia": "TREND2",
+      "device_id": "765ab76b-5ee4-48a0-9a67-71ee3a8d8f58",
+      "modelo": "iPhone 12",
+      "em": "2026-10-12T17:16:05+00:00",
+      "horario": 14,
+      "destinatarios": 545,
+      "foto": "iphone-12-d.jpg"
     }
   ]
 }
