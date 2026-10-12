@@ -1069,6 +1069,15 @@
       "em": "2026-10-12T11:11:55+00:00",
       "horario": 8,
       "destinatarios": 663
+    },
+    {
+      "instancia": "iHelpU Corp Emerson",
+      "device_id": "dfa82ecb-2339-4bdb-9e47-367314e224d1",
+      "modelo": "iPhone 15",
+      "em": "2026-10-12T11:14:01+00:00",
+      "horario": 8,
+      "destinatarios": 682,
+      "foto": "iphone-15-b.jpg"
     }
   ]
 }
