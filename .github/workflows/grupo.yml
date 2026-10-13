@@ -1,0 +1,61 @@
+name: Artes do Status no grupo
+
+on:
+  # Sem 'schedule', como nos outros: o cron do GitHub atrasa horas. Quem pede a entrega
+  # (8h30, segunda a sabado) e o n8n "Stories Marketplace — Disparador". Pedido fora de hora
+  # o entrega_grupo.py ignora; pedido repetido so entrega as lojas que ainda nao receberam.
+  workflow_dispatch:
+    inputs:
+      previa:
+        description: 'So gerar as artes (baixar em Artifacts). Nao envia nada'
+        type: boolean
+        default: false
+      forcar:
+        description: 'Entregar agora, ignorando horario e domingo (loja que ja recebeu hoje nao recebe de novo)'
+        type: boolean
+        default: false
+      teste_para:
+        description: 'Enviar para este numero em vez do grupo, sem registrar (ex.: 555181125863)'
+        type: string
+        default: ''
+      instancias:
+        description: 'Restringir a estas instancias da Evolution, separadas por virgula (vazio = todas)'
+        type: string
+        default: ''
+
+concurrency:
+  group: grupo
+  cancel-in-progress: false
+
+jobs:
+  entregar:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write        # commita o registro e empurra as artes para o ramo artes-grupo
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Identidade do git
+        run: |
+          git config user.name "Story Bot"
+          git config user.email "guilherme@ihelpu.com.br"
+
+      - name: Pillow (as artes vao em JPEG para o grupo)
+        run: python3 -m pip install --quiet pillow
+
+      - name: Entregar
+        env:
+          EVOLUTION_API_KEY: ${{ secrets.EVOLUTION_API_KEY }}
+          SUPABASE_ANON_KEY: ${{ secrets.SUPABASE_ANON_KEY }}
+          PREVIA: ${{ inputs.previa && '1' || '0' }}
+          FORCAR: ${{ inputs.forcar && '1' || '0' }}
+          TESTE_PARA: ${{ inputs.teste_para }}
+          INSTANCIAS: ${{ inputs.instancias }}
+        run: python3 entrega_grupo.py
+
+      - name: Guardar as previas
+        if: ${{ inputs.previa }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: previas-grupo
+          path: previa/

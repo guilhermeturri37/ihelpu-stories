@@ -126,6 +126,30 @@ chave em `op://iHelpU-Core/Evolution API - Lojas/password` e no secret `EVOLUTIO
   `/chat/whatsappNumbers`; número do RS perde o 9). **Para ver a arte: `PREVIA=1`.**
 - **Envio "incerto" fica no registro** (`status_whatsapp.json`) para não sair em dobro.
 
+## Artes do Status no grupo dos gerentes (desde 14/10/2026)
+
+`entrega_grupo.py` + `.github/workflows/grupo.yml` entregam no grupo de WhatsApp "iHelpU
+Todas" (`120363431408903236@g.us`, onde estão os números das lojas e a central) as artes
+que cada gerente posta no Status **pelo celular**. Pedido do Guilherme em 13/10/2026,
+combinado com os gerentes: o Status postado pelo aplicativo vai para a agenda inteira da
+loja; o automático só alcança quem conversou nos últimos 60 dias.
+
+- **8h30, segunda a sábado, 5 artes por loja, sempre separadas por loja:** um texto com o
+  nome da loja e, em seguida, as artes dela. Quem envia é a instância da central
+  (`iHelpU Corp Emerson`). Quem dispara é o n8n (cron `30 8 * * 1-6`).
+- **A legenda da imagem é a que vai ao cliente** — ela acompanha a imagem quando o gerente
+  encaminha para "Meu status". Por isso o nome da loja vai no texto antes das imagens,
+  nunca na legenda.
+- **Registro próprio (`entrega_grupo.json`)**, gravado a cada loja: pedido repetido no
+  mesmo dia só entrega as lojas que faltam. `FORCAR` ignora horário e domingo, não essa trava.
+- **Para testar sem escrever no grupo: `TESTE_PARA=<número>`** (input `teste_para`), que
+  manda para o número e não registra; com `INSTANCIAS` dá para mandar uma loja só.
+  **Para ver as artes: `PREVIA=1`.**
+- **As artes vão em JPEG** (~250 KB; o PNG tem ~1,3 MB e são 50 por dia no celular de cada
+  gerente). O workflow instala o Pillow; sem ele a arte segue em PNG.
+- Ramo das artes: `artes-grupo` (não usar o `artes-status`: a rodada das 8h10 do Status
+  automático ainda está enviando às 8h30).
+
 ## Limites conhecidos
 
 - Só publica com o **Mac ligado e o usuário logado** — o Mac está configurado para
