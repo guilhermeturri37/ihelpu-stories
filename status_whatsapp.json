@@ -1508,6 +1508,15 @@
       "horario": 10,
       "destinatarios": 662,
       "foto": "iphone-11-d.jpg"
+    },
+    {
+      "instancia": "iHelpU Corp Emerson",
+      "device_id": "4038b2d6-4dc4-47cc-b0fc-7a3a1b4c6bdf",
+      "modelo": "iPhone 11",
+      "em": "2026-10-13T13:13:43+00:00",
+      "horario": 10,
+      "destinatarios": 652,
+      "foto": "iphone-11-d.jpg"
     }
   ]
 }
