@@ -1562,6 +1562,15 @@
       "horario": 10,
       "destinatarios": 1003,
       "foto": "iphone-14-plus-b.jpg"
+    },
+    {
+      "instancia": "Caxias do Sul",
+      "device_id": "a00021b4-e339-47ca-bf8e-bc4b321a7716",
+      "modelo": "iPhone 11",
+      "em": "2026-10-13T13:28:37+00:00",
+      "horario": 10,
+      "destinatarios": 1025,
+      "foto": "iphone-11-d.jpg"
     }
   ]
 }
