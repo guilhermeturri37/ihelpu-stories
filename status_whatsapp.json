@@ -1499,6 +1499,15 @@
       "em": "2026-10-13T11:32:19+00:00",
       "horario": 8,
       "destinatarios": 935
+    },
+    {
+      "instancia": "SAO LEOPOLDO 2",
+      "device_id": "8e2fa0e2-e413-4367-8080-c8410f5d3df0",
+      "modelo": "iPhone 11",
+      "em": "2026-10-13T13:11:37+00:00",
+      "horario": 10,
+      "destinatarios": 662,
+      "foto": "iphone-11-d.jpg"
     }
   ]
 }
