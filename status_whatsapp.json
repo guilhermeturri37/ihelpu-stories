@@ -1757,6 +1757,14 @@
       "horario": 14,
       "destinatarios": 914,
       "foto": "iphone-12-c.jpg"
+    },
+    {
+      "instancia": "PELOTAS2",
+      "device_id": "139ffc8c-32a7-40af-a671-a1c60bd34a7e",
+      "modelo": "iPhone 16e",
+      "em": "2026-10-13T17:32:36+00:00",
+      "horario": 14,
+      "destinatarios": 940
     }
   ]
 }
