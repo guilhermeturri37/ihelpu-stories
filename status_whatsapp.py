@@ -28,6 +28,12 @@ RAW = "https://raw.githubusercontent.com/guilhermeturri37/ihelpu-stories"
 HORARIOS = [8, 10, 12, 14]
 PAUSA = 45                      # segundos entre uma loja e a seguinte
 DIAS_CONVERSA = 60              # o Status vai para quem conversou com a loja nesse prazo
+# O Status automatico esta DESLIGADO a partir desta data (decisao do Guilherme em 13/10/2026):
+# os gerentes passam a postar pelo celular, que alcanca a agenda inteira, com as artes que o
+# entrega_grupo.py manda no grupo as 8h30. Os dois juntos fariam quem conversou nos ultimos 60
+# dias ver arte repetida. O n8n continua pedindo as rodadas; elas saem como "desligado".
+# Para religar: None. PREVIA, TESTE_PARA e FORCAR seguem funcionando.
+DESLIGADO_DESDE = "2026-10-14"
 # instancia da Evolution -> (loja no marketplace, nome que vai na arte). A central nao tem
 # loja: mostra o estoque geral. Em ordem crescente de contatos guardados (07/10/2026).
 LOJAS = {
@@ -142,6 +148,8 @@ def main():
         sys.exit(f"instancia desconhecida: {fora}; conhecidas: {list(LOJAS)}")
     P.log(f"== {agora:%Y-%m-%d %H:%M} BRT — Status do WhatsApp ==")
     if not (previa or forcar or so_para):
+        if DESLIGADO_DESDE and hoje >= DESLIGADO_DESDE:
+            return P.ignorar("desligado", f"Status automatico desligado desde {DESLIGADO_DESDE}: as lojas postam pelo celular")
         if agora.weekday() == 6:
             return P.ignorar("domingo", "domingo nao publica (segunda a sabado)")
         if hora not in HORARIOS:

@@ -90,6 +90,12 @@ launchd (Mac do Guilherme) ou n8n  →  workflow_dispatch  →  GitHub Actions  
 
 ## Status do WhatsApp (desde 07/10/2026)
 
+> **DESLIGADO desde 14/10/2026** (`DESLIGADO_DESDE` no `status_whatsapp.py`), por decisão do
+> Guilherme em 13/10/2026: os gerentes postam o Status pelo celular com as artes da entrega
+> no grupo (seção seguinte). O n8n continua pedindo as rodadas e elas saem como `desligado`.
+> Não religar junto com a postagem manual sem ele pedir: o público dos 60 dias veria arte
+> repetida. O que segue descreve como o automático funciona, para quando for religado.
+
 `status_whatsapp.py` + `.github/workflows/status.yml` publicam a mesma arte no Status do
 WhatsApp das lojas, pela Evolution API (`https://evolutionapi.ihelpu.com.br`, versão 2.3.7,
 chave em `op://iHelpU-Core/Evolution API - Lojas/password` e no secret `EVOLUTION_API_KEY`).
