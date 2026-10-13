@@ -1429,6 +1429,15 @@
       "horario": 8,
       "destinatarios": 648,
       "foto": "iphone-12-e.jpg"
+    },
+    {
+      "instancia": "TREND2",
+      "device_id": "a59b1d03-f3f0-4747-9bb2-64f95263bbcd",
+      "modelo": "iPhone 14 Plus",
+      "em": "2026-10-13T11:15:24+00:00",
+      "horario": 8,
+      "destinatarios": 544,
+      "foto": "iphone-14-plus-c.jpg"
     }
   ]
 }
