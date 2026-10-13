@@ -1553,6 +1553,15 @@
       "horario": 10,
       "destinatarios": 1072,
       "foto": "iphone-12-f.jpg"
+    },
+    {
+      "instancia": "NOVO HAMBURGO",
+      "device_id": "a59b1d03-f3f0-4747-9bb2-64f95263bbcd",
+      "modelo": "iPhone 14 Plus",
+      "em": "2026-10-13T13:26:06+00:00",
+      "horario": 10,
+      "destinatarios": 1003,
+      "foto": "iphone-14-plus-b.jpg"
     }
   ]
 }
