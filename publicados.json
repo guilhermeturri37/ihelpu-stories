@@ -807,10 +807,9 @@
     {
       "device_id": "00d97b8b-e620-4119-b3da-bc2fa5b5d1f3",
       "modelo": "iPhone 11",
-      "story_id": null,
-      "em": "2026-10-15T13:00:38+00:00",
+      "story_id": "18166381888487575",
+      "em": "2026-10-15T13:00:50+00:00",
       "horario": 10,
-      "estado": "publicando",
       "foto": "iphone-11-b.jpg"
     }
   ]
