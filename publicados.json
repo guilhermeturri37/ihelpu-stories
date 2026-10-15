@@ -834,6 +834,14 @@
       "em": "2026-10-15T16:05:46+00:00",
       "horario": 13,
       "foto": "iphone-11-c.jpg"
+    },
+    {
+      "device_id": "38a8e752-2aeb-4294-8798-c2d2c7313550",
+      "modelo": "iPhone SE (2ª geração)",
+      "story_id": null,
+      "em": "2026-10-15T17:05:19+00:00",
+      "horario": 14,
+      "estado": "publicando"
     }
   ]
 }
