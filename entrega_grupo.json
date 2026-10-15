@@ -741,6 +741,43 @@
       "em": "2026-10-15T11:36:17+00:00",
       "horario": 8,
       "foto": "iphone-13-e.jpg"
+    },
+    {
+      "instancia": "PELOTAS2",
+      "device_id": "c7947662-2875-42b5-aaee-17ec40b0cae9",
+      "modelo": "iPhone 13",
+      "em": "2026-10-15T11:36:46+00:00",
+      "horario": 8,
+      "foto": "iphone-13-f.jpg"
+    },
+    {
+      "instancia": "PELOTAS2",
+      "device_id": "0fd3a408-17a2-45fe-9cc5-a1bb5d6dc2c6",
+      "modelo": "iPhone 16 Pro Max",
+      "em": "2026-10-15T11:36:46+00:00",
+      "horario": 8
+    },
+    {
+      "instancia": "PELOTAS2",
+      "device_id": "b4a24363-4379-4efd-a350-d4ba05cc8e71",
+      "modelo": "iPhone 11 Pro",
+      "em": "2026-10-15T11:36:46+00:00",
+      "horario": 8
+    },
+    {
+      "instancia": "PELOTAS2",
+      "device_id": "139ffc8c-32a7-40af-a671-a1c60bd34a7e",
+      "modelo": "iPhone 16e",
+      "em": "2026-10-15T11:36:46+00:00",
+      "horario": 8
+    },
+    {
+      "instancia": "PELOTAS2",
+      "device_id": "77f80bd3-0271-46d2-8604-b171d4b60dcc",
+      "modelo": "iPhone 15",
+      "em": "2026-10-15T11:36:46+00:00",
+      "horario": 8,
+      "foto": "iphone-15-b.jpg"
     }
   ]
 }
