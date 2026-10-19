@@ -7,7 +7,8 @@ quem conversou nos ultimos 60 dias — ver status_whatsapp.py). O robo monta as 
 quem posta e o gerente.
 
 Todo dia as 8h30, de segunda a sabado: POR_LOJA artes por loja, sempre separadas por loja —
-um texto com o nome da loja e, em seguida, as artes dela. Quem envia e o numero da central.
+um texto com o nome da loja e, em seguida, as artes dela. Quem envia e o numero da central;
+se ele estiver desconectado, a instancia "andre" (REMETENTES).
 A legenda de cada imagem e a que vai ao cliente: ela acompanha a imagem quando o gerente
 encaminha para "Meu status". O nome da loja NAO vai na legenda por isso.
 
@@ -27,16 +28,40 @@ import status_whatsapp as S
 RAIZ = pathlib.Path(__file__).parent
 REGISTRO = RAIZ / "entrega_grupo.json"
 GRUPO = "120363431408903236@g.us"       # "iHelpU Todas": os numeros das lojas e a central
-REMETENTE = "iHelpU Corp Emerson"       # instancia da central, que esta no grupo
+# Quem envia, em ordem: a central e, se ela estiver desconectada, a instancia "andre" (pedido do
+# Guilherme em 19/10/2026: a central caiu em 15/10 com 401 e as entregas de 16, 17 e 19/10
+# falharam inteiras com "Connection Closed", sem ninguem perceber). As duas estao no grupo.
+REMETENTES = ["iHelpU Corp Emerson", "andre"]
+remetente = REMETENTES[0]
 POR_LOJA = 5
 HORA = 8                                # a entrega e as 8h30; fora da hora 8 o pedido e ignorado
 RAMO = "artes-grupo"                    # proprio: o artes-status e do Status automatico
 PAUSA = 2                               # segundos entre uma mensagem e a seguinte
 
+def conectado(instancia):
+    try:
+        req = urllib.request.Request(f"{S.EVO}/instance/connectionState/{urllib.parse.quote(instancia)}",
+                                     headers={"apikey": os.environ["EVOLUTION_API_KEY"]})
+        return json.load(urllib.request.urlopen(req, timeout=60))["instance"]["state"] == "open"
+    except Exception:
+        return False
+
 def evo(caminho, corpo):
-    """("ok", id) ou ("erro", motivo). Mensagem comum para um grupo: sem a lista de
-    destinatarios do Status, entao a resposta vem em segundos."""
-    req = urllib.request.Request(f"{S.EVO}/{caminho}/{urllib.parse.quote(REMETENTE)}",
+    """("ok", id) ou ("erro", motivo). Se o remetente cair no meio da entrega, passa para o
+    proximo de REMETENTES e reenvia a mesma mensagem."""
+    global remetente
+    while True:
+        estado, detalhe = enviar(remetente, caminho, corpo)
+        if estado == "ok" or "Connection Closed" not in detalhe or remetente == REMETENTES[-1]:
+            return estado, detalhe
+        reserva = REMETENTES[REMETENTES.index(remetente) + 1]
+        P.anotar("grupo", f"{remetente} desconectada no meio da entrega; seguindo pela {reserva}", nivel="warning")
+        remetente = reserva
+
+def enviar(instancia, caminho, corpo):
+    """Mensagem comum para um grupo: sem a lista de destinatarios do Status, entao a resposta
+    vem em segundos."""
+    req = urllib.request.Request(f"{S.EVO}/{caminho}/{urllib.parse.quote(instancia)}",
         data=json.dumps(corpo).encode(), method="POST",
         headers={"apikey": os.environ["EVOLUTION_API_KEY"], "Content-Type": "application/json"})
     try:
@@ -120,6 +145,11 @@ def main():
 
     urls = dict(zip([arq.name for _, itens in blocos for _, arq, _ in itens],
                     P.subir_artes([arq for _, itens in blocos for _, arq, _ in itens], RAMO)))
+    global remetente
+    remetente = next((r for r in REMETENTES if conectado(r)), REMETENTES[0])
+    if remetente != REMETENTES[0]:
+        P.anotar("grupo", f"{REMETENTES[0]} desconectada; a entrega sai pela {remetente}", nivel="warning")
+    P.log(f"   remetente: {remetente}")
     destino = teste or GRUPO
     dia = agora.strftime("%d/%m")
     falhas = 0

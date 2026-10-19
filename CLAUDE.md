@@ -142,7 +142,9 @@ loja; o automático só alcança quem conversou nos últimos 60 dias.
 
 - **8h30, segunda a sábado, 5 artes por loja, sempre separadas por loja:** um texto com o
   nome da loja e, em seguida, as artes dela. Quem envia é a instância da central
-  (`iHelpU Corp Emerson`). Quem dispara é o n8n (cron `30 8 * * 1-6`).
+  (`iHelpU Corp Emerson`); se ela estiver desconectada, a instância `andre` (`REMETENTES`,
+  pedido do Guilherme em 19/10/2026 — a central caiu em 15/10 com 401 e as entregas de 16,
+  17 e 19/10 falharam inteiras sem ninguém perceber). Quem dispara é o n8n (cron `30 8 * * 1-6`).
 - **A legenda da imagem é a que vai ao cliente** — ela acompanha a imagem quando o gerente
   encaminha para "Meu status". Por isso o nome da loja vai no texto antes das imagens,
   nunca na legenda.
