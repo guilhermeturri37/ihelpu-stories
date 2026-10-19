@@ -1084,6 +1084,43 @@
       "em": "2026-10-19T14:17:57+00:00",
       "horario": 8,
       "foto": "iphone-12-b.jpg"
+    },
+    {
+      "instancia": "CANOAS",
+      "device_id": "38fc3c4a-1743-4df2-93ea-fc1eac26bcbd",
+      "modelo": "iPhone XR",
+      "em": "2026-10-19T14:18:28+00:00",
+      "horario": 8
+    },
+    {
+      "instancia": "CANOAS",
+      "device_id": "77f80bd3-0271-46d2-8604-b171d4b60dcc",
+      "modelo": "iPhone 15",
+      "em": "2026-10-19T14:18:28+00:00",
+      "horario": 8,
+      "foto": "iphone-15-a.jpg"
+    },
+    {
+      "instancia": "CANOAS",
+      "device_id": "2900f3eb-15a4-4644-9d31-4d68f1334c0e",
+      "modelo": "iPhone XS",
+      "em": "2026-10-19T14:18:28+00:00",
+      "horario": 8
+    },
+    {
+      "instancia": "CANOAS",
+      "device_id": "fb306e55-1270-48a3-b281-efc3c24c9065",
+      "modelo": "iPhone 14 Pro",
+      "em": "2026-10-19T14:18:28+00:00",
+      "horario": 8
+    },
+    {
+      "instancia": "CANOAS",
+      "device_id": "6d928917-20bc-4474-8c14-8c974f352c24",
+      "modelo": "iPhone 14",
+      "em": "2026-10-19T14:18:28+00:00",
+      "horario": 8,
+      "foto": "iphone-14-a.jpg"
     }
   ]
 }
