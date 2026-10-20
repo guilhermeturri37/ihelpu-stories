@@ -1390,6 +1390,45 @@
       "em": "2026-10-20T11:34:18+00:00",
       "horario": 8,
       "foto": "iphone-12-g.jpg"
+    },
+    {
+      "instancia": "NOVO HAMBURGO",
+      "device_id": "d530fff7-50a4-4dbc-a93d-018487f383cf",
+      "modelo": "iPhone 14 Plus",
+      "em": "2026-10-20T11:34:42+00:00",
+      "horario": 8,
+      "foto": "iphone-14-plus-c.jpg"
+    },
+    {
+      "instancia": "NOVO HAMBURGO",
+      "device_id": "f5d1b797-e7ca-4a19-a031-0752ed88540f",
+      "modelo": "iPhone 14",
+      "em": "2026-10-20T11:34:42+00:00",
+      "horario": 8,
+      "foto": "iphone-14-b.jpg"
+    },
+    {
+      "instancia": "NOVO HAMBURGO",
+      "device_id": "e1bf3206-b300-4fc2-aaa1-1b7768c4ee5f",
+      "modelo": "iPhone 15",
+      "em": "2026-10-20T11:34:42+00:00",
+      "horario": 8,
+      "foto": "iphone-15-b.jpg"
+    },
+    {
+      "instancia": "NOVO HAMBURGO",
+      "device_id": "4001d78c-6a2c-4df3-bd14-4276356a193e",
+      "modelo": "iPhone 13 Pro",
+      "em": "2026-10-20T11:34:42+00:00",
+      "horario": 8
+    },
+    {
+      "instancia": "NOVO HAMBURGO",
+      "device_id": "dfe434b0-9517-4d41-a08a-89720dcfb5bb",
+      "modelo": "iPhone 17 Pro Max",
+      "em": "2026-10-20T11:34:42+00:00",
+      "horario": 8,
+      "foto": "iphone-17-pro-max-b.jpg"
     }
   ]
 }
