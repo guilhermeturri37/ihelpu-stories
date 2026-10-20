@@ -1030,10 +1030,9 @@
     {
       "device_id": "e1bf3206-b300-4fc2-aaa1-1b7768c4ee5f",
       "modelo": "iPhone 15",
-      "story_id": null,
-      "em": "2026-10-20T14:00:32+00:00",
+      "story_id": "17974947675154123",
+      "em": "2026-10-20T14:00:42+00:00",
       "horario": 11,
-      "estado": "publicando",
       "foto": "iphone-15-a.jpg"
     }
   ]
