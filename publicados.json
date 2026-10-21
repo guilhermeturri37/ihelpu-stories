@@ -1077,6 +1077,15 @@
       "story_id": "18088208639290098",
       "em": "2026-10-21T14:11:32+00:00",
       "horario": 11
+    },
+    {
+      "device_id": "45017572-68b8-442d-b579-79e454870e05",
+      "modelo": "iPhone 11",
+      "story_id": null,
+      "em": "2026-10-21T15:01:48+00:00",
+      "horario": 12,
+      "estado": "publicando",
+      "foto": "iphone-11-d.jpg"
     }
   ]
 }
