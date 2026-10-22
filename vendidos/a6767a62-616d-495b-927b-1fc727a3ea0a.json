@@ -3,7 +3,7 @@
   "modelo": "iPhone 12",
   "loja": "caxias-do-sul",
   "vendido_em": "2026-10-22T19:53:38.342Z",
-  "estado": "publicando",
+  "estado": "publicado",
   "aparelho": {
     "id": "a6767a62-616d-495b-927b-1fc727a3ea0a",
     "model": "iPhone 12",
@@ -36,6 +36,7 @@
     ],
     "teste": false
   },
-  "em": "2026-10-22T19:54:11+00:00",
-  "foto": "iphone-12-a.jpg"
+  "em": "2026-10-22T19:54:23+00:00",
+  "foto": "iphone-12-a.jpg",
+  "story_id": "17872490691648930"
 }
