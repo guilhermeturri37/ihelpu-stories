@@ -88,6 +88,31 @@ launchd (Mac do Guilherme) ou n8n  →  workflow_dispatch  →  GitHub Actions  
   capability" significa que falta um **produto no app** da Meta. Checar o app antes de
   mexer em escopo: o token pode ter o escopo e a chamada falhar mesmo assim.
 
+## Story de vendido (desde 22/10/2026)
+
+`vendido.py` + `.github/workflows/vendido.yml` publicam um story "VENDIDO" quando um iPhone é
+vendido no marketplace. Pedido do Guilherme em 22/10/2026; arte, janela e ausência de preço
+aprovadas por ele no mesmo dia.
+
+- **Quem avisa é o marketplace (Lovable), no backend:** `workflow_dispatch` do `vendido.yml`
+  com o input `aparelho` = um TEXTO com JSON (`device_id`, `model`, `capacity`,
+  `aesthetic_condition`, `category`, `preferred_store`, `sold_at`, `photos`, `teste`). O
+  token fica no segredo `GITHUB_STORIES_DISPATCH_TOKEN` do Lovable (fine-grained, só este
+  repositório, só Actions: write). Aparelho vendido some do RPC, então os dados vêm no aviso.
+- **Janela: segunda a sábado, 8h às 21h, publica na hora.** Fora disso fica `pendente` e sai
+  na primeira rodada de stories do dia seguinte — o `story.yml` chama o `vendido.py` sem
+  aviso em toda rodada, e sem aviso ele só publica os pendentes.
+- **Um arquivo por venda (`vendidos/<device_id>.json`)** e **sem `concurrency` no
+  `vendido.yml`, de propósito:** no GitHub um pedido novo cancela o que estava na fila do
+  mesmo grupo, e o aviso só existe no input — cancelado, a venda se perderia. A reserva
+  (`publicando`) sobe para a main antes da Meta; duas rodadas no mesmo pendente dão conflito
+  no push e a segunda sai antes de publicar (simulado em 22/10/2026).
+- **Só iPhone; o aviso nunca traz preço nem dado de vendedor ou comprador**, e o
+  `ler_aviso()` descarta tudo que não usa. Foto do aviso só vale se for do bucket do
+  marketplace (`FOTOS_OK`). Arte: layout v2 + `CARIMBO`, sem preço e sem bateria.
+- **`"teste": true` só gera a arte** (artifact `arte-vendido`), sem registrar nem publicar.
+- Ramo das artes: `artes-vendido`.
+
 ## Status do WhatsApp (desde 07/10/2026)
 
 > **DESLIGADO desde 14/10/2026** (`DESLIGADO_DESDE` no `status_whatsapp.py`), por decisão do

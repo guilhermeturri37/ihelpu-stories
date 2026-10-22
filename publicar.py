@@ -119,20 +119,23 @@ def renderizar(pagina, destino):
     if not destino.exists() or destino.stat().st_size < 50_000:
         sys.exit("a arte nao foi gerada corretamente")
 
-def montar_arte_iphone(a, destino, banco, cta="Chama no Direct", retirada="Retire ainda hoje"):
+def montar_arte_iphone(a, destino, banco, cta="Chama no Direct", retirada="Retire ainda hoje",
+                       linhas=None, selo=None, resto=None, extra=""):
     """Layout v2 (template_v2.html): foto em tela cheia e etiqueta branca. Com foto do banco
-    quando o modelo tem; senao, a foto de costas do proprio anuncio (aparelho na bancada)."""
+    quando o modelo tem; senao, a foto de costas do proprio anuncio (aparelho na bancada).
+    linhas/selo/resto/extra trocam o texto da etiqueta, a pilula, o rodape e acrescentam HTML
+    (o story de vendido usa os quatro); sem eles, e a arte de venda de sempre."""
     modelo = (a.get("model") or "Seminovo").replace("iPhone ", "").replace("(", "").replace(")", "")
     cap = a.get("capacity") or a.get("storage") or ""
     estado = COND.get(a.get("aesthetic_condition"), "Seminovo")
     linha1 = " ".join(f"{modelo} {cap}".split()) + f" [{estado}]"
     # Nunca "sem juros" nem valor de parcela: a tabela installment_fees cobra taxa (CLAUDE.md).
-    linhas = f"{html.escape(linha1)}<br><em>POR R$ {preco(a)} NO PIX</em> OU<br>EM ATÉ 18X NO CARTÃO"
+    linhas = linhas or f"{html.escape(linha1)}<br><em>POR R$ {preco(a)} NO PIX</em> OU<br>EM ATÉ 18X NO CARTÃO"
     # Nome longo encolhe a fonte em vez de estourar a largura do story.
     fs = 50 if len(linha1) <= 38 else max(34, int(50 * 38 / len(linha1)))
     bat = bateria(a)
-    selo = f"Bateria {bat}% · {retirada}" if isinstance(bat, int) and bat > 0 else retirada
-    resto = "Valor à vista no Pix; parcelamos em até 18x no cartão. Sujeito à disponibilidade."
+    selo = selo or (f"Bateria {bat}% · {retirada}" if isinstance(bat, int) and bat > 0 else retirada)
+    resto = resto or "Valor à vista no Pix; parcelamos em até 18x no cartão. Sujeito à disponibilidade."
     if banco:
         foto = f"banco/{banco['arquivo']}"
         attrs = " ".join(f'data-{k}="{banco[k]}"' for k in ("cx", "cy", "bw", "bh"))
@@ -147,7 +150,7 @@ def montar_arte_iphone(a, destino, banco, cta="Chama no Direct", retirada="Retir
            .replace("ALVO_H_PX", str(alvo_h)).replace("ALVO_Y_PX", str(alvo_y))
            .replace("BLOCO_TOP", str(topo)).replace("FS_ETIQUETA", str(fs))
            .replace("RODAPE_TXT", rodape).replace("LINHAS", linhas).replace("SELO_TXT", selo)
-           .replace("CTA_TXT", cta))
+           .replace("CTA_TXT", cta).replace("</body>", extra + "</body>"))
     renderizar(h, destino)
 
 def montar_arte(a, destino, banco=None):

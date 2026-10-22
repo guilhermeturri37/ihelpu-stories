@@ -1,0 +1,47 @@
+name: Story de vendido
+
+on:
+  # Quem chama e o marketplace (Lovable), no backend, quando um iPhone e vendido, com o JSON
+  # do aparelho no input `aparelho` (ver vendido.py). Com "teste": true so gera a arte.
+  workflow_dispatch:
+    inputs:
+      aparelho:
+        description: 'JSON do aparelho vendido, enviado pelo marketplace (vazio = so publicar os pendentes)'
+        type: string
+        default: ''
+
+# Sem `concurrency` de proposito: no GitHub, um pedido novo cancela o que estava na fila do
+# mesmo grupo, e o aviso da venda so existe no input do pedido. Duas vendas seguidas rodam
+# juntas; o vendido.py guarda cada venda num arquivo proprio para isso funcionar.
+
+jobs:
+  vendido:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write        # registra a venda e empurra a arte para o ramo artes-vendido
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Identidade do git
+        run: |
+          git config user.name "Story Bot"
+          git config user.email "guilherme@ihelpu.com.br"
+
+      - name: Publicar
+        env:
+          IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+          SUPABASE_ANON_KEY: ${{ secrets.SUPABASE_ANON_KEY }}
+          IG_USER_ID: '17841400093603178'
+          APARELHO: ${{ inputs.aparelho }}
+        run: python3 vendido.py
+
+      - name: Guardar a arte
+        if: ${{ always() }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: arte-vendido
+          path: |
+            _story/
+            previa/
+          if-no-files-found: ignore
+          retention-days: 30

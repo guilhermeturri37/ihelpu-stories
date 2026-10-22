@@ -53,6 +53,16 @@ jobs:
           SO_ARTE: ${{ inputs.so_arte && '1' || '0' }}
         run: python3 publicar.py
 
+      # Story de vendido que chegou fora da janela (noite, domingo) sai na primeira rodada do
+      # dia: sem aviso, o vendido.py so publica os pendentes. Nada pendente, nada acontece.
+      - name: Vendidos pendentes
+        if: ${{ always() && !inputs.so_arte }}
+        env:
+          IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+          SUPABASE_ANON_KEY: ${{ secrets.SUPABASE_ANON_KEY }}
+          IG_USER_ID: '17841400093603178'
+        run: python3 vendido.py
+
       - name: Guardar as previas
         if: ${{ inputs.so_arte }}
         uses: actions/upload-artifact@v4
