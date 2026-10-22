@@ -1,0 +1,35 @@
+{
+  "device_id": "d7477c79-05ee-41f7-a187-b34dcb72fd50",
+  "modelo": "iPhone 13",
+  "loja": "zona-norte",
+  "vendido_em": "2026-10-22T18:42:59.803Z",
+  "estado": "pendente",
+  "aparelho": {
+    "id": "d7477c79-05ee-41f7-a187-b34dcb72fd50",
+    "model": "iPhone 13",
+    "capacity": "256GB",
+    "aesthetic_condition": "como_novo",
+    "category": "iphone",
+    "preferred_store": "zona-norte",
+    "sold_at": "2026-10-22T18:42:59.803Z",
+    "photos": [
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/fbd7e303-cd5d-446a-b473-b7f5202f3398/d7477c79-05ee-41f7-a187-b34dcb72fd50/front.jpeg",
+        "photo_type": "front"
+      },
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/fbd7e303-cd5d-446a-b473-b7f5202f3398/d7477c79-05ee-41f7-a187-b34dcb72fd50/back.jpeg",
+        "photo_type": "back"
+      },
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/8e889277-aad5-4b36-aaa3-6a0fce26907b/d7477c79-05ee-41f7-a187-b34dcb72fd50/extra_1.jpeg",
+        "photo_type": "extra_1"
+      },
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/8e889277-aad5-4b36-aaa3-6a0fce26907b/d7477c79-05ee-41f7-a187-b34dcb72fd50/extra_2.jpeg",
+        "photo_type": "extra_2"
+      }
+    ],
+    "teste": false
+  }
+}
