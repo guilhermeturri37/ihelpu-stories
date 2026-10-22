@@ -1,0 +1,39 @@
+{
+  "device_id": "a6767a62-616d-495b-927b-1fc727a3ea0a",
+  "modelo": "iPhone 12",
+  "loja": "caxias-do-sul",
+  "vendido_em": "2026-10-22T19:53:38.342Z",
+  "estado": "pendente",
+  "aparelho": {
+    "id": "a6767a62-616d-495b-927b-1fc727a3ea0a",
+    "model": "iPhone 12",
+    "capacity": "64GB",
+    "aesthetic_condition": "excelente",
+    "category": "iphone",
+    "preferred_store": "caxias-do-sul",
+    "sold_at": "2026-10-22T19:53:38.342Z",
+    "photos": [
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/1e5ede64-9814-428e-b1ef-7775ec1c2cb6/a6767a62-616d-495b-927b-1fc727a3ea0a/extra_1791918100907_2.jpg",
+        "photo_type": "extra_1791918100907_2"
+      },
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/1e5ede64-9814-428e-b1ef-7775ec1c2cb6/a6767a62-616d-495b-927b-1fc727a3ea0a/extra_1791918100907_3.jpg",
+        "photo_type": "extra_1791918100907_3"
+      },
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/1e5ede64-9814-428e-b1ef-7775ec1c2cb6/a6767a62-616d-495b-927b-1fc727a3ea0a/extra_1791918169793_1.jpg",
+        "photo_type": "extra_1791918169793_1"
+      },
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/1e5ede64-9814-428e-b1ef-7775ec1c2cb6/a6767a62-616d-495b-927b-1fc727a3ea0a/extra_1791918169793_2.jpg",
+        "photo_type": "extra_1791918169793_2"
+      },
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/1e5ede64-9814-428e-b1ef-7775ec1c2cb6/a6767a62-616d-495b-927b-1fc727a3ea0a/extra_1791918169793_3.jpg",
+        "photo_type": "extra_1791918169793_3"
+      }
+    ],
+    "teste": false
+  }
+}
