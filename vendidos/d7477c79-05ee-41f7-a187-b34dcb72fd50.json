@@ -3,7 +3,7 @@
   "modelo": "iPhone 13",
   "loja": "zona-norte",
   "vendido_em": "2026-10-22T18:42:59.803Z",
-  "estado": "pendente",
+  "estado": "publicando",
   "aparelho": {
     "id": "d7477c79-05ee-41f7-a187-b34dcb72fd50",
     "model": "iPhone 13",
@@ -31,5 +31,7 @@
       }
     ],
     "teste": false
-  }
+  },
+  "em": "2026-10-22T18:43:32+00:00",
+  "foto": "iphone-13-a.jpg"
 }
