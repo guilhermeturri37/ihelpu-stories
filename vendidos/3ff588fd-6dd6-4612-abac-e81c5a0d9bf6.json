@@ -3,7 +3,7 @@
   "modelo": "iPhone 12",
   "loja": "sao-leopoldo",
   "vendido_em": "2026-10-22T20:07:08.837Z",
-  "estado": "publicando",
+  "estado": "publicado",
   "aparelho": {
     "id": "3ff588fd-6dd6-4612-abac-e81c5a0d9bf6",
     "model": "iPhone 12",
@@ -24,6 +24,7 @@
     ],
     "teste": false
   },
-  "em": "2026-10-22T20:07:39+00:00",
-  "foto": "iphone-12-b.jpg"
+  "em": "2026-10-22T20:07:50+00:00",
+  "foto": "iphone-12-b.jpg",
+  "story_id": "18129590644831298"
 }
