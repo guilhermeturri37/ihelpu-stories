@@ -3,7 +3,7 @@
   "modelo": "iPhone 11 Pro",
   "loja": "pelotas",
   "vendido_em": "2026-10-23T20:51:17.059Z",
-  "estado": "pendente",
+  "estado": "publicando",
   "aparelho": {
     "id": "84942f8c-e415-4836-b941-9da006872d97",
     "model": "iPhone 11 Pro",
@@ -27,5 +27,6 @@
       }
     ],
     "teste": false
-  }
+  },
+  "em": "2026-10-23T20:51:45+00:00"
 }
