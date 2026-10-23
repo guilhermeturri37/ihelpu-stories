@@ -2487,6 +2487,44 @@
       "modelo": "iPhone 11 Pro",
       "em": "2026-10-23T11:34:25+00:00",
       "horario": 8
+    },
+    {
+      "instancia": "ZONA NORTE 2",
+      "device_id": "644222f4-0bfc-4750-84b4-4c6bd787ddf4",
+      "modelo": "iPhone 13 Pro Max",
+      "em": "2026-10-23T11:34:58+00:00",
+      "horario": 8
+    },
+    {
+      "instancia": "ZONA NORTE 2",
+      "device_id": "b84867a9-ca45-44ae-ac77-43ba0ded7c5f",
+      "modelo": "iPhone X",
+      "em": "2026-10-23T11:34:58+00:00",
+      "horario": 8
+    },
+    {
+      "instancia": "ZONA NORTE 2",
+      "device_id": "97ffd31b-3d5f-4783-be08-48bbff5d9ff0",
+      "modelo": "iPhone 14 Pro Max",
+      "em": "2026-10-23T11:34:58+00:00",
+      "horario": 8,
+      "foto": "iphone-14-pro-max-a.jpg"
+    },
+    {
+      "instancia": "ZONA NORTE 2",
+      "device_id": "dfa29adc-e79d-4c81-9ed1-0a31705e8b42",
+      "modelo": "iPhone 15",
+      "em": "2026-10-23T11:34:58+00:00",
+      "horario": 8,
+      "foto": "iphone-15-a.jpg"
+    },
+    {
+      "instancia": "ZONA NORTE 2",
+      "device_id": "df3a02ef-9ba9-43e5-a13c-be3880112105",
+      "modelo": "iPhone 13",
+      "em": "2026-10-23T11:34:58+00:00",
+      "horario": 8,
+      "foto": "iphone-13-a.jpg"
     }
   ]
 }
