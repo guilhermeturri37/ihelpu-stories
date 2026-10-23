@@ -3,7 +3,7 @@
   "modelo": "iPhone 12",
   "loja": "zona-sul",
   "vendido_em": "2026-10-23T18:41:10.221Z",
-  "estado": "pendente",
+  "estado": "publicando",
   "aparelho": {
     "id": "c52b0001-3fc7-425e-9d76-3b02ce440b21",
     "model": "iPhone 12",
@@ -23,5 +23,7 @@
       }
     ],
     "teste": false
-  }
+  },
+  "em": "2026-10-23T18:41:37+00:00",
+  "foto": "iphone-12-c.jpg"
 }
