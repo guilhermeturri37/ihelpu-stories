@@ -1,0 +1,39 @@
+{
+  "device_id": "8c9a10de-ffe2-413c-b3be-66c61cc0df88",
+  "modelo": "iPhone 14 Pro",
+  "loja": "trend",
+  "vendido_em": "2026-10-23T13:46:32.981Z",
+  "estado": "pendente",
+  "aparelho": {
+    "id": "8c9a10de-ffe2-413c-b3be-66c61cc0df88",
+    "model": "iPhone 14 Pro",
+    "capacity": "256GB",
+    "aesthetic_condition": "excelente",
+    "category": "iphone",
+    "preferred_store": "trend",
+    "sold_at": "2026-10-23T13:46:32.981Z",
+    "photos": [
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/b60d56f8-42a2-4a70-827f-5a66d3090743/8c9a10de-ffe2-413c-b3be-66c61cc0df88/front.jpeg",
+        "photo_type": "front"
+      },
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/b60d56f8-42a2-4a70-827f-5a66d3090743/8c9a10de-ffe2-413c-b3be-66c61cc0df88/back.jpeg",
+        "photo_type": "back"
+      },
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/b60d56f8-42a2-4a70-827f-5a66d3090743/8c9a10de-ffe2-413c-b3be-66c61cc0df88/extra_1.jpeg",
+        "photo_type": "extra_1"
+      },
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/b60d56f8-42a2-4a70-827f-5a66d3090743/8c9a10de-ffe2-413c-b3be-66c61cc0df88/extra_2.jpeg",
+        "photo_type": "extra_2"
+      },
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/b60d56f8-42a2-4a70-827f-5a66d3090743/8c9a10de-ffe2-413c-b3be-66c61cc0df88/extra_3.jpeg",
+        "photo_type": "extra_3"
+      }
+    ],
+    "teste": false
+  }
+}
