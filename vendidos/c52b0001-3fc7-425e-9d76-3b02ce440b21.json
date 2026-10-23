@@ -1,0 +1,27 @@
+{
+  "device_id": "c52b0001-3fc7-425e-9d76-3b02ce440b21",
+  "modelo": "iPhone 12",
+  "loja": "zona-sul",
+  "vendido_em": "2026-10-23T18:41:10.221Z",
+  "estado": "pendente",
+  "aparelho": {
+    "id": "c52b0001-3fc7-425e-9d76-3b02ce440b21",
+    "model": "iPhone 12",
+    "capacity": "64GB",
+    "aesthetic_condition": "excelente",
+    "category": "iphone",
+    "preferred_store": "zona-sul",
+    "sold_at": "2026-10-23T18:41:10.221Z",
+    "photos": [
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/fbd7e303-cd5d-446a-b473-b7f5202f3398/c52b0001-3fc7-425e-9d76-3b02ce440b21/front.jpeg",
+        "photo_type": "front"
+      },
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/fbd7e303-cd5d-446a-b473-b7f5202f3398/c52b0001-3fc7-425e-9d76-3b02ce440b21/back.jpeg",
+        "photo_type": "back"
+      }
+    ],
+    "teste": false
+  }
+}
