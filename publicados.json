@@ -1210,10 +1210,9 @@
     {
       "device_id": "88239a4d-a157-4f32-954c-41747c9f632a",
       "modelo": "MacBook Pro 13\" M1 2020",
-      "story_id": null,
-      "em": "2026-10-24T11:01:42+00:00",
-      "horario": 8,
-      "estado": "publicando"
+      "story_id": "17855721489697197",
+      "em": "2026-10-24T11:01:53+00:00",
+      "horario": 8
     }
   ]
 }
