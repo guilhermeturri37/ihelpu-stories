@@ -1,0 +1,35 @@
+{
+  "device_id": "644222f4-0bfc-4750-84b4-4c6bd787ddf4",
+  "modelo": "iPhone 13 Pro Max",
+  "loja": "zona-norte",
+  "vendido_em": "2026-10-26T18:52:57.893Z",
+  "estado": "pendente",
+  "aparelho": {
+    "id": "644222f4-0bfc-4750-84b4-4c6bd787ddf4",
+    "model": "iPhone 13 Pro Max",
+    "capacity": "128GB",
+    "aesthetic_condition": "excelente",
+    "category": "iphone",
+    "preferred_store": "zona-norte",
+    "sold_at": "2026-10-26T18:52:57.893Z",
+    "photos": [
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/94c41155-d01b-437a-a755-384023c3768f/644222f4-0bfc-4750-84b4-4c6bd787ddf4/front.jpeg",
+        "photo_type": "front"
+      },
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/94c41155-d01b-437a-a755-384023c3768f/644222f4-0bfc-4750-84b4-4c6bd787ddf4/back.jpeg",
+        "photo_type": "back"
+      },
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/8e889277-aad5-4b36-aaa3-6a0fce26907b/644222f4-0bfc-4750-84b4-4c6bd787ddf4/extra_1.jpeg",
+        "photo_type": "extra_1"
+      },
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/8e889277-aad5-4b36-aaa3-6a0fce26907b/644222f4-0bfc-4750-84b4-4c6bd787ddf4/extra_2.jpeg",
+        "photo_type": "extra_2"
+      }
+    ],
+    "teste": false
+  }
+}
