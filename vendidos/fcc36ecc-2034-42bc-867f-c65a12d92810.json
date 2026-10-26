@@ -1,0 +1,31 @@
+{
+  "device_id": "fcc36ecc-2034-42bc-867f-c65a12d92810",
+  "modelo": "iPhone 12",
+  "loja": "pelotas",
+  "vendido_em": "2026-10-26T17:31:56.590Z",
+  "estado": "pendente",
+  "aparelho": {
+    "id": "fcc36ecc-2034-42bc-867f-c65a12d92810",
+    "model": "iPhone 12",
+    "capacity": "128GB",
+    "aesthetic_condition": "excelente",
+    "category": "iphone",
+    "preferred_store": "pelotas",
+    "sold_at": "2026-10-26T17:31:56.590Z",
+    "photos": [
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/28e9cf21-c5b1-406d-90e0-45870a906bdb/fcc36ecc-2034-42bc-867f-c65a12d92810/extra_1792698355653_1.jpg",
+        "photo_type": "extra_1792698355653_1"
+      },
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/28e9cf21-c5b1-406d-90e0-45870a906bdb/fcc36ecc-2034-42bc-867f-c65a12d92810/extra_1792698355653_2.jpg",
+        "photo_type": "extra_1792698355653_2"
+      },
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/28e9cf21-c5b1-406d-90e0-45870a906bdb/fcc36ecc-2034-42bc-867f-c65a12d92810/extra_1792698355653_3.jpg",
+        "photo_type": "extra_1792698355653_3"
+      }
+    ],
+    "teste": false
+  }
+}
