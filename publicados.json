@@ -1302,10 +1302,9 @@
     {
       "device_id": "6bbbca31-3bf4-4fe4-9780-c7adcfeaf2da",
       "modelo": "iPhone 16 Pro",
-      "story_id": null,
-      "em": "2026-10-26T16:00:31+00:00",
-      "horario": 13,
-      "estado": "publicando"
+      "story_id": "18496172065110343",
+      "em": "2026-10-26T16:00:43+00:00",
+      "horario": 13
     }
   ]
 }
