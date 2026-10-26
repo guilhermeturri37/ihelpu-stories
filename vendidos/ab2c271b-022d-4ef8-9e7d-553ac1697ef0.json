@@ -1,0 +1,35 @@
+{
+  "device_id": "ab2c271b-022d-4ef8-9e7d-553ac1697ef0",
+  "modelo": "iPhone 12",
+  "loja": "trend",
+  "vendido_em": "2026-10-26T15:07:44.764Z",
+  "estado": "pendente",
+  "aparelho": {
+    "id": "ab2c271b-022d-4ef8-9e7d-553ac1697ef0",
+    "model": "iPhone 12",
+    "capacity": "128GB",
+    "aesthetic_condition": "excelente",
+    "category": "iphone",
+    "preferred_store": "trend",
+    "sold_at": "2026-10-26T15:07:44.764Z",
+    "photos": [
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/63355f91-8900-4106-b4d6-296fd9dacc5b/ab2c271b-022d-4ef8-9e7d-553ac1697ef0/front.jfif",
+        "photo_type": "front"
+      },
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/63355f91-8900-4106-b4d6-296fd9dacc5b/ab2c271b-022d-4ef8-9e7d-553ac1697ef0/back.jfif",
+        "photo_type": "back"
+      },
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/b60d56f8-42a2-4a70-827f-5a66d3090743/ab2c271b-022d-4ef8-9e7d-553ac1697ef0/extra_1.jpeg",
+        "photo_type": "extra_1"
+      },
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/b60d56f8-42a2-4a70-827f-5a66d3090743/ab2c271b-022d-4ef8-9e7d-553ac1697ef0/extra_2.jpeg",
+        "photo_type": "extra_2"
+      }
+    ],
+    "teste": false
+  }
+}
