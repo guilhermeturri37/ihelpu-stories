@@ -3,7 +3,7 @@
   "modelo": "iPhone X",
   "loja": "pelotas",
   "vendido_em": "2026-10-26T12:50:22.295Z",
-  "estado": "pendente",
+  "estado": "publicando",
   "aparelho": {
     "id": "05d8af6c-48e2-4708-9736-cecf57e31b51",
     "model": "iPhone X",
@@ -31,5 +31,6 @@
       }
     ],
     "teste": false
-  }
+  },
+  "em": "2026-10-26T12:50:55+00:00"
 }
