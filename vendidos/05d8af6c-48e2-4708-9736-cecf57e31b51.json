@@ -1,0 +1,35 @@
+{
+  "device_id": "05d8af6c-48e2-4708-9736-cecf57e31b51",
+  "modelo": "iPhone X",
+  "loja": "pelotas",
+  "vendido_em": "2026-10-26T12:50:22.295Z",
+  "estado": "pendente",
+  "aparelho": {
+    "id": "05d8af6c-48e2-4708-9736-cecf57e31b51",
+    "model": "iPhone X",
+    "capacity": "64GB",
+    "aesthetic_condition": "excelente",
+    "category": "iphone",
+    "preferred_store": "pelotas",
+    "sold_at": "2026-10-26T12:50:22.295Z",
+    "photos": [
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/28e9cf21-c5b1-406d-90e0-45870a906bdb/05d8af6c-48e2-4708-9736-cecf57e31b51/front.jpg",
+        "photo_type": "front"
+      },
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/28e9cf21-c5b1-406d-90e0-45870a906bdb/05d8af6c-48e2-4708-9736-cecf57e31b51/back.jpg",
+        "photo_type": "back"
+      },
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/28e9cf21-c5b1-406d-90e0-45870a906bdb/05d8af6c-48e2-4708-9736-cecf57e31b51/extra_1.jpg",
+        "photo_type": "extra_1"
+      },
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/28e9cf21-c5b1-406d-90e0-45870a906bdb/05d8af6c-48e2-4708-9736-cecf57e31b51/extra_2.jpg",
+        "photo_type": "extra_2"
+      }
+    ],
+    "teste": false
+  }
+}
