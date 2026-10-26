@@ -1,0 +1,27 @@
+{
+  "device_id": "2900f3eb-15a4-4644-9d31-4d68f1334c0e",
+  "modelo": "iPhone XS",
+  "loja": "zona-sul",
+  "vendido_em": "2026-10-26T20:04:34.191Z",
+  "estado": "pendente",
+  "aparelho": {
+    "id": "2900f3eb-15a4-4644-9d31-4d68f1334c0e",
+    "model": "iPhone XS",
+    "capacity": "256GB",
+    "aesthetic_condition": "como_novo",
+    "category": "iphone",
+    "preferred_store": "zona-sul",
+    "sold_at": "2026-10-26T20:04:34.191Z",
+    "photos": [
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/0ddbce43-a0bc-4894-b678-8d34e77f7d8b/2900f3eb-15a4-4644-9d31-4d68f1334c0e/front.jpeg",
+        "photo_type": "front"
+      },
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/0ddbce43-a0bc-4894-b678-8d34e77f7d8b/2900f3eb-15a4-4644-9d31-4d68f1334c0e/back.jpeg",
+        "photo_type": "back"
+      }
+    ],
+    "teste": false
+  }
+}
