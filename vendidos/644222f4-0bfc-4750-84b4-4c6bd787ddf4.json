@@ -3,7 +3,7 @@
   "modelo": "iPhone 13 Pro Max",
   "loja": "zona-norte",
   "vendido_em": "2026-10-26T18:52:57.893Z",
-  "estado": "pendente",
+  "estado": "publicando",
   "aparelho": {
     "id": "644222f4-0bfc-4750-84b4-4c6bd787ddf4",
     "model": "iPhone 13 Pro Max",
@@ -31,5 +31,6 @@
       }
     ],
     "teste": false
-  }
+  },
+  "em": "2026-10-26T18:53:23+00:00"
 }
