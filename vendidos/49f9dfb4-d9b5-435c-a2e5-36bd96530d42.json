@@ -3,7 +3,7 @@
   "modelo": "iPhone 13",
   "loja": "sao-leopoldo",
   "vendido_em": "2026-10-27T13:35:44.852Z",
-  "estado": "pendente",
+  "estado": "publicando",
   "aparelho": {
     "id": "49f9dfb4-d9b5-435c-a2e5-36bd96530d42",
     "model": "iPhone 13",
@@ -23,5 +23,7 @@
       }
     ],
     "teste": false
-  }
+  },
+  "em": "2026-10-27T13:36:10+00:00",
+  "foto": "iphone-13-c.jpg"
 }
