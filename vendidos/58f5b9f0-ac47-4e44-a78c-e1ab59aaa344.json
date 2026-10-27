@@ -1,0 +1,27 @@
+{
+  "device_id": "58f5b9f0-ac47-4e44-a78c-e1ab59aaa344",
+  "modelo": "iPhone 15",
+  "loja": "novo-hamburgo",
+  "vendido_em": "2026-10-27T18:43:42.919Z",
+  "estado": "pendente",
+  "aparelho": {
+    "id": "58f5b9f0-ac47-4e44-a78c-e1ab59aaa344",
+    "model": "iPhone 15",
+    "capacity": "256GB",
+    "aesthetic_condition": "excelente",
+    "category": "iphone",
+    "preferred_store": "novo-hamburgo",
+    "sold_at": "2026-10-27T18:43:42.919Z",
+    "photos": [
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/3c7eea70-6029-47ff-bc75-46dd1d110cca/58f5b9f0-ac47-4e44-a78c-e1ab59aaa344/front.jpeg",
+        "photo_type": "front"
+      },
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/3c7eea70-6029-47ff-bc75-46dd1d110cca/58f5b9f0-ac47-4e44-a78c-e1ab59aaa344/back.jpeg",
+        "photo_type": "back"
+      }
+    ],
+    "teste": false
+  }
+}
