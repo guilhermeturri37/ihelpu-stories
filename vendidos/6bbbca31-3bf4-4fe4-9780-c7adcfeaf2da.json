@@ -3,7 +3,7 @@
   "modelo": "iPhone 16 Pro",
   "loja": "zona-norte",
   "vendido_em": "2026-10-27T21:00:46.852Z",
-  "estado": "pendente",
+  "estado": "publicando",
   "aparelho": {
     "id": "6bbbca31-3bf4-4fe4-9780-c7adcfeaf2da",
     "model": "iPhone 16 Pro",
@@ -23,5 +23,6 @@
       }
     ],
     "teste": false
-  }
+  },
+  "em": "2026-10-27T21:01:12+00:00"
 }
