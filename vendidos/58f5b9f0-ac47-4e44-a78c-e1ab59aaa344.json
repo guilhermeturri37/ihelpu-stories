@@ -3,7 +3,7 @@
   "modelo": "iPhone 15",
   "loja": "novo-hamburgo",
   "vendido_em": "2026-10-27T18:43:42.919Z",
-  "estado": "publicando",
+  "estado": "publicado",
   "aparelho": {
     "id": "58f5b9f0-ac47-4e44-a78c-e1ab59aaa344",
     "model": "iPhone 15",
@@ -24,6 +24,7 @@
     ],
     "teste": false
   },
-  "em": "2026-10-27T18:44:31+00:00",
-  "foto": "iphone-15-a.jpg"
+  "em": "2026-10-27T18:44:39+00:00",
+  "foto": "iphone-15-a.jpg",
+  "story_id": "18465888736138014"
 }
