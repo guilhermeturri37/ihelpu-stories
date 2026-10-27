@@ -3,7 +3,7 @@
   "modelo": "iPhone 13 Pro",
   "loja": "novo-hamburgo",
   "vendido_em": "2026-10-27T16:31:02.683Z",
-  "estado": "pendente",
+  "estado": "publicando",
   "aparelho": {
     "id": "4001d78c-6a2c-4df3-bd14-4276356a193e",
     "model": "iPhone 13 Pro",
@@ -23,5 +23,6 @@
       }
     ],
     "teste": false
-  }
+  },
+  "em": "2026-10-27T16:32:11+00:00"
 }
