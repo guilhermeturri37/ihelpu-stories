@@ -3470,6 +3470,45 @@
       "em": "2026-10-27T11:32:38+00:00",
       "horario": 8,
       "foto": "iphone-11-g.jpg"
+    },
+    {
+      "instancia": "iHelpU Corp Emerson",
+      "device_id": "a236984b-d359-42da-8717-47a5fdacc5bc",
+      "modelo": "iPhone 11",
+      "em": "2026-10-27T11:33:03+00:00",
+      "horario": 8,
+      "foto": "iphone-11-a.jpg"
+    },
+    {
+      "instancia": "iHelpU Corp Emerson",
+      "device_id": "58f5b9f0-ac47-4e44-a78c-e1ab59aaa344",
+      "modelo": "iPhone 15",
+      "em": "2026-10-27T11:33:03+00:00",
+      "horario": 8,
+      "foto": "iphone-15-b.jpg"
+    },
+    {
+      "instancia": "iHelpU Corp Emerson",
+      "device_id": "d286b604-a653-47af-a7ce-5100ab12f50e",
+      "modelo": "iPhone 15 Pro",
+      "em": "2026-10-27T11:33:03+00:00",
+      "horario": 8,
+      "foto": "iphone-15-pro-b.jpg"
+    },
+    {
+      "instancia": "iHelpU Corp Emerson",
+      "device_id": "2ac45d92-c338-4883-85a6-6ad0be85f16b",
+      "modelo": "iPhone 16 Pro Max",
+      "em": "2026-10-27T11:33:03+00:00",
+      "horario": 8
+    },
+    {
+      "instancia": "iHelpU Corp Emerson",
+      "device_id": "2674eabe-a7e5-4874-9e85-0a8f977eb1e1",
+      "modelo": "iPhone 13",
+      "em": "2026-10-27T11:33:03+00:00",
+      "horario": 8,
+      "foto": "iphone-13-e.jpg"
     }
   ]
 }
