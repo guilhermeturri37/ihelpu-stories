@@ -1,0 +1,27 @@
+{
+  "device_id": "49f9dfb4-d9b5-435c-a2e5-36bd96530d42",
+  "modelo": "iPhone 13",
+  "loja": "sao-leopoldo",
+  "vendido_em": "2026-10-27T13:35:44.852Z",
+  "estado": "pendente",
+  "aparelho": {
+    "id": "49f9dfb4-d9b5-435c-a2e5-36bd96530d42",
+    "model": "iPhone 13",
+    "capacity": "256GB",
+    "aesthetic_condition": "como_novo",
+    "category": "iphone",
+    "preferred_store": "sao-leopoldo",
+    "sold_at": "2026-10-27T13:35:44.852Z",
+    "photos": [
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/a57d5dfd-2f07-4dac-93be-876f00e5c637/49f9dfb4-d9b5-435c-a2e5-36bd96530d42/front.jpeg",
+        "photo_type": "front"
+      },
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/a57d5dfd-2f07-4dac-93be-876f00e5c637/49f9dfb4-d9b5-435c-a2e5-36bd96530d42/back.jpeg",
+        "photo_type": "back"
+      }
+    ],
+    "teste": false
+  }
+}
