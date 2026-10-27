@@ -1,0 +1,27 @@
+{
+  "device_id": "4001d78c-6a2c-4df3-bd14-4276356a193e",
+  "modelo": "iPhone 13 Pro",
+  "loja": "novo-hamburgo",
+  "vendido_em": "2026-10-27T16:31:02.683Z",
+  "estado": "pendente",
+  "aparelho": {
+    "id": "4001d78c-6a2c-4df3-bd14-4276356a193e",
+    "model": "iPhone 13 Pro",
+    "capacity": "128GB",
+    "aesthetic_condition": "excelente",
+    "category": "iphone",
+    "preferred_store": "novo-hamburgo",
+    "sold_at": "2026-10-27T16:31:02.683Z",
+    "photos": [
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/7c787893-ee80-4628-ba86-d8693adbbccd/4001d78c-6a2c-4df3-bd14-4276356a193e/front.jpeg",
+        "photo_type": "front"
+      },
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/7c787893-ee80-4628-ba86-d8693adbbccd/4001d78c-6a2c-4df3-bd14-4276356a193e/back.jpeg",
+        "photo_type": "back"
+      }
+    ],
+    "teste": false
+  }
+}
