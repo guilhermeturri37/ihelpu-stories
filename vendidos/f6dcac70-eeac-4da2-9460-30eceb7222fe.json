@@ -3,7 +3,7 @@
   "modelo": "iPhone 15 Pro",
   "loja": "novo-hamburgo",
   "vendido_em": "2026-10-28T20:35:58.784Z",
-  "estado": "publicando",
+  "estado": "publicado",
   "aparelho": {
     "id": "f6dcac70-eeac-4da2-9460-30eceb7222fe",
     "model": "iPhone 15 Pro",
@@ -24,6 +24,7 @@
     ],
     "teste": false
   },
-  "em": "2026-10-28T20:36:33+00:00",
-  "foto": "iphone-15-pro-a.jpg"
+  "em": "2026-10-28T20:36:42+00:00",
+  "foto": "iphone-15-pro-a.jpg",
+  "story_id": "18644390356063226"
 }
