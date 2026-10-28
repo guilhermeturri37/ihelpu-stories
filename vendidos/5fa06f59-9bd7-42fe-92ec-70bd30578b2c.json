@@ -1,0 +1,31 @@
+{
+  "device_id": "5fa06f59-9bd7-42fe-92ec-70bd30578b2c",
+  "modelo": "iPhone 11",
+  "loja": "santa-maria",
+  "vendido_em": "2026-10-28T18:37:26.588Z",
+  "estado": "pendente",
+  "aparelho": {
+    "id": "5fa06f59-9bd7-42fe-92ec-70bd30578b2c",
+    "model": "iPhone 11",
+    "capacity": "128GB",
+    "aesthetic_condition": "excelente",
+    "category": "iphone",
+    "preferred_store": "santa-maria",
+    "sold_at": "2026-10-28T18:37:26.588Z",
+    "photos": [
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/a1bd024b-cae6-443d-9647-396018d9acdd/5fa06f59-9bd7-42fe-92ec-70bd30578b2c/extra_1790452583503_1.jpg",
+        "photo_type": "extra_1790452583503_1"
+      },
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/a1bd024b-cae6-443d-9647-396018d9acdd/5fa06f59-9bd7-42fe-92ec-70bd30578b2c/extra_1790452583503_2.jpg",
+        "photo_type": "extra_1790452583503_2"
+      },
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/a1bd024b-cae6-443d-9647-396018d9acdd/5fa06f59-9bd7-42fe-92ec-70bd30578b2c/extra_1790452583503_3.jpg",
+        "photo_type": "extra_1790452583503_3"
+      }
+    ],
+    "teste": false
+  }
+}
