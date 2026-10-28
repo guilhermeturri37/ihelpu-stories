@@ -1,0 +1,27 @@
+{
+  "device_id": "608043d5-51d9-4de8-8272-835b43e609e0",
+  "modelo": "iPhone 15",
+  "loja": "zona-sul",
+  "vendido_em": "2026-10-28T17:06:48.291Z",
+  "estado": "pendente",
+  "aparelho": {
+    "id": "608043d5-51d9-4de8-8272-835b43e609e0",
+    "model": "iPhone 15",
+    "capacity": "128GB",
+    "aesthetic_condition": "como_novo",
+    "category": "iphone",
+    "preferred_store": "zona-sul",
+    "sold_at": "2026-10-28T17:06:48.291Z",
+    "photos": [
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/fbd7e303-cd5d-446a-b473-b7f5202f3398/608043d5-51d9-4de8-8272-835b43e609e0/front.jpeg",
+        "photo_type": "front"
+      },
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/fbd7e303-cd5d-446a-b473-b7f5202f3398/608043d5-51d9-4de8-8272-835b43e609e0/back.jpeg",
+        "photo_type": "back"
+      }
+    ],
+    "teste": false
+  }
+}
