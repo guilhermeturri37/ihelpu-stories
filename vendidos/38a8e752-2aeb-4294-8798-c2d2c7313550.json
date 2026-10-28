@@ -1,0 +1,27 @@
+{
+  "device_id": "38a8e752-2aeb-4294-8798-c2d2c7313550",
+  "modelo": "iPhone SE (2ª geração)",
+  "loja": "zona-norte",
+  "vendido_em": "2026-10-28T13:39:11.678Z",
+  "estado": "pendente",
+  "aparelho": {
+    "id": "38a8e752-2aeb-4294-8798-c2d2c7313550",
+    "model": "iPhone SE (2ª geração)",
+    "capacity": "256GB",
+    "aesthetic_condition": "excelente",
+    "category": "iphone",
+    "preferred_store": "zona-norte",
+    "sold_at": "2026-10-28T13:39:11.678Z",
+    "photos": [
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/0addc8ae-cf5a-4837-a68d-c74d711513c3/38a8e752-2aeb-4294-8798-c2d2c7313550/front.jpeg",
+        "photo_type": "front"
+      },
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/0addc8ae-cf5a-4837-a68d-c74d711513c3/38a8e752-2aeb-4294-8798-c2d2c7313550/back.jpeg",
+        "photo_type": "back"
+      }
+    ],
+    "teste": false
+  }
+}
