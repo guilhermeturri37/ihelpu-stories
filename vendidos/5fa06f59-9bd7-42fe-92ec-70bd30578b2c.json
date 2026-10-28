@@ -3,7 +3,7 @@
   "modelo": "iPhone 11",
   "loja": "santa-maria",
   "vendido_em": "2026-10-28T18:37:26.588Z",
-  "estado": "publicando",
+  "estado": "publicado",
   "aparelho": {
     "id": "5fa06f59-9bd7-42fe-92ec-70bd30578b2c",
     "model": "iPhone 11",
@@ -28,6 +28,7 @@
     ],
     "teste": false
   },
-  "em": "2026-10-28T18:37:54+00:00",
-  "foto": "iphone-11-b.jpg"
+  "em": "2026-10-28T18:38:05+00:00",
+  "foto": "iphone-11-b.jpg",
+  "story_id": "18111809675609922"
 }
