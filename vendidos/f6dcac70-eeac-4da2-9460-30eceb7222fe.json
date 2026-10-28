@@ -1,0 +1,27 @@
+{
+  "device_id": "f6dcac70-eeac-4da2-9460-30eceb7222fe",
+  "modelo": "iPhone 15 Pro",
+  "loja": "novo-hamburgo",
+  "vendido_em": "2026-10-28T20:35:58.784Z",
+  "estado": "pendente",
+  "aparelho": {
+    "id": "f6dcac70-eeac-4da2-9460-30eceb7222fe",
+    "model": "iPhone 15 Pro",
+    "capacity": "128GB",
+    "aesthetic_condition": "excelente",
+    "category": "iphone",
+    "preferred_store": "novo-hamburgo",
+    "sold_at": "2026-10-28T20:35:58.784Z",
+    "photos": [
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/3c7eea70-6029-47ff-bc75-46dd1d110cca/f6dcac70-eeac-4da2-9460-30eceb7222fe/front.jpeg",
+        "photo_type": "front"
+      },
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/3c7eea70-6029-47ff-bc75-46dd1d110cca/f6dcac70-eeac-4da2-9460-30eceb7222fe/back.jpeg",
+        "photo_type": "back"
+      }
+    ],
+    "teste": false
+  }
+}
