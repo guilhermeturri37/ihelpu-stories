@@ -3,7 +3,7 @@
   "modelo": "iPhone SE (2ª geração)",
   "loja": "zona-norte",
   "vendido_em": "2026-10-28T13:39:11.678Z",
-  "estado": "pendente",
+  "estado": "publicando",
   "aparelho": {
     "id": "38a8e752-2aeb-4294-8798-c2d2c7313550",
     "model": "iPhone SE (2ª geração)",
@@ -23,5 +23,6 @@
       }
     ],
     "teste": false
-  }
+  },
+  "em": "2026-10-28T13:39:31+00:00"
 }
