@@ -1,0 +1,27 @@
+{
+  "device_id": "8e2fa0e2-e413-4367-8080-c8410f5d3df0",
+  "modelo": "iPhone 11",
+  "loja": "sao-leopoldo",
+  "vendido_em": "2026-10-28T17:40:41.636Z",
+  "estado": "pendente",
+  "aparelho": {
+    "id": "8e2fa0e2-e413-4367-8080-c8410f5d3df0",
+    "model": "iPhone 11",
+    "capacity": "128GB",
+    "aesthetic_condition": "excelente",
+    "category": "iphone",
+    "preferred_store": "sao-leopoldo",
+    "sold_at": "2026-10-28T17:40:41.636Z",
+    "photos": [
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/892de25d-cf26-41ae-b35d-52a39c04f653/8e2fa0e2-e413-4367-8080-c8410f5d3df0/front.jpeg",
+        "photo_type": "front"
+      },
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/892de25d-cf26-41ae-b35d-52a39c04f653/8e2fa0e2-e413-4367-8080-c8410f5d3df0/back.jpeg",
+        "photo_type": "back"
+      }
+    ],
+    "teste": false
+  }
+}
