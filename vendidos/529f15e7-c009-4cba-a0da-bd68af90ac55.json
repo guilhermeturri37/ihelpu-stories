@@ -3,7 +3,7 @@
   "modelo": "iPhone 13",
   "loja": "santa-maria",
   "vendido_em": "2026-10-29T19:18:30.839Z",
-  "estado": "pendente",
+  "estado": "publicando",
   "aparelho": {
     "id": "529f15e7-c009-4cba-a0da-bd68af90ac55",
     "model": "iPhone 13",
@@ -39,5 +39,7 @@
       }
     ],
     "teste": false
-  }
+  },
+  "em": "2026-10-29T19:18:55+00:00",
+  "foto": "iphone-13-d.jpg"
 }
