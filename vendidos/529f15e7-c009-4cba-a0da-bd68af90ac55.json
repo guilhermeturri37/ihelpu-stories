@@ -1,0 +1,43 @@
+{
+  "device_id": "529f15e7-c009-4cba-a0da-bd68af90ac55",
+  "modelo": "iPhone 13",
+  "loja": "santa-maria",
+  "vendido_em": "2026-10-29T19:18:30.839Z",
+  "estado": "pendente",
+  "aparelho": {
+    "id": "529f15e7-c009-4cba-a0da-bd68af90ac55",
+    "model": "iPhone 13",
+    "capacity": "128GB",
+    "aesthetic_condition": "excelente",
+    "category": "iphone",
+    "preferred_store": "santa-maria",
+    "sold_at": "2026-10-29T19:18:30.839Z",
+    "photos": [
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/a1bd024b-cae6-443d-9647-396018d9acdd/529f15e7-c009-4cba-a0da-bd68af90ac55/front.jpg",
+        "photo_type": "front"
+      },
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/a1bd024b-cae6-443d-9647-396018d9acdd/529f15e7-c009-4cba-a0da-bd68af90ac55/extra_1.jpg",
+        "photo_type": "extra_1"
+      },
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/a1bd024b-cae6-443d-9647-396018d9acdd/529f15e7-c009-4cba-a0da-bd68af90ac55/extra_2.jpg",
+        "photo_type": "extra_2"
+      },
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/a1bd024b-cae6-443d-9647-396018d9acdd/529f15e7-c009-4cba-a0da-bd68af90ac55/extra_3.jpg",
+        "photo_type": "extra_3"
+      },
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/a1bd024b-cae6-443d-9647-396018d9acdd/529f15e7-c009-4cba-a0da-bd68af90ac55/extra_1790631359934_1.jpg",
+        "photo_type": "extra_1790631359934_1"
+      },
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/a1bd024b-cae6-443d-9647-396018d9acdd/529f15e7-c009-4cba-a0da-bd68af90ac55/extra_1790631359934_2.jpg",
+        "photo_type": "extra_1790631359934_2"
+      }
+    ],
+    "teste": false
+  }
+}
