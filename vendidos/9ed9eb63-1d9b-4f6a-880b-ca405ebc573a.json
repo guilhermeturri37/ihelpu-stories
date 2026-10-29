@@ -1,0 +1,27 @@
+{
+  "device_id": "9ed9eb63-1d9b-4f6a-880b-ca405ebc573a",
+  "modelo": "iPhone 12",
+  "loja": "zona-norte",
+  "vendido_em": "2026-10-29T12:33:36.343Z",
+  "estado": "pendente",
+  "aparelho": {
+    "id": "9ed9eb63-1d9b-4f6a-880b-ca405ebc573a",
+    "model": "iPhone 12",
+    "capacity": "64GB",
+    "aesthetic_condition": "excelente",
+    "category": "iphone",
+    "preferred_store": "zona-norte",
+    "sold_at": "2026-10-29T12:33:36.343Z",
+    "photos": [
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/0ddbce43-a0bc-4894-b678-8d34e77f7d8b/9ed9eb63-1d9b-4f6a-880b-ca405ebc573a/front.jpeg",
+        "photo_type": "front"
+      },
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/0ddbce43-a0bc-4894-b678-8d34e77f7d8b/9ed9eb63-1d9b-4f6a-880b-ca405ebc573a/back.jpeg",
+        "photo_type": "back"
+      }
+    ],
+    "teste": false
+  }
+}
