@@ -3,7 +3,7 @@
   "modelo": "iPhone 11",
   "loja": "zona-norte",
   "vendido_em": "2026-10-29T23:54:54.762Z",
-  "estado": "publicando",
+  "estado": "publicado",
   "aparelho": {
     "id": "833e7cfe-7f14-4ed2-80d8-cdcf2232fdb8",
     "model": "iPhone 11",
@@ -24,6 +24,7 @@
     ],
     "teste": false
   },
-  "em": "2026-10-29T23:55:13+00:00",
-  "foto": "iphone-11-c.jpg"
+  "em": "2026-10-29T23:55:25+00:00",
+  "foto": "iphone-11-c.jpg",
+  "story_id": "18134066818797243"
 }
