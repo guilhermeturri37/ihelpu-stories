@@ -1,0 +1,27 @@
+{
+  "device_id": "f5a54a65-ec5d-4833-b91e-2e99f0be5083",
+  "modelo": "iPhone 11",
+  "loja": "novo-hamburgo",
+  "vendido_em": "2026-10-30T11:56:05.838Z",
+  "estado": "pendente",
+  "aparelho": {
+    "id": "f5a54a65-ec5d-4833-b91e-2e99f0be5083",
+    "model": "iPhone 11",
+    "capacity": "64GB",
+    "aesthetic_condition": "excelente",
+    "category": "iphone",
+    "preferred_store": "novo-hamburgo",
+    "sold_at": "2026-10-30T11:56:05.838Z",
+    "photos": [
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/3c7eea70-6029-47ff-bc75-46dd1d110cca/f5a54a65-ec5d-4833-b91e-2e99f0be5083/front.jpeg",
+        "photo_type": "front"
+      },
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/3c7eea70-6029-47ff-bc75-46dd1d110cca/f5a54a65-ec5d-4833-b91e-2e99f0be5083/back.jpeg",
+        "photo_type": "back"
+      }
+    ],
+    "teste": false
+  }
+}
