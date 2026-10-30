@@ -1,0 +1,35 @@
+{
+  "device_id": "0792a7c3-22b5-42ea-9506-1a27a50bb852",
+  "modelo": "iPhone 14",
+  "loja": "pelotas",
+  "vendido_em": "2026-10-30T17:25:11.656Z",
+  "estado": "pendente",
+  "aparelho": {
+    "id": "0792a7c3-22b5-42ea-9506-1a27a50bb852",
+    "model": "iPhone 14",
+    "capacity": "128GB",
+    "aesthetic_condition": "excelente",
+    "category": "iphone",
+    "preferred_store": "pelotas",
+    "sold_at": "2026-10-30T17:25:11.656Z",
+    "photos": [
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/3c7eea70-6029-47ff-bc75-46dd1d110cca/0792a7c3-22b5-42ea-9506-1a27a50bb852/front.jpg",
+        "photo_type": "front"
+      },
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/3c7eea70-6029-47ff-bc75-46dd1d110cca/0792a7c3-22b5-42ea-9506-1a27a50bb852/back.jpg",
+        "photo_type": "back"
+      },
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/28e9cf21-c5b1-406d-90e0-45870a906bdb/0792a7c3-22b5-42ea-9506-1a27a50bb852/extra_1.jpg",
+        "photo_type": "extra_1"
+      },
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/28e9cf21-c5b1-406d-90e0-45870a906bdb/0792a7c3-22b5-42ea-9506-1a27a50bb852/extra_2.jpg",
+        "photo_type": "extra_2"
+      }
+    ],
+    "teste": false
+  }
+}
