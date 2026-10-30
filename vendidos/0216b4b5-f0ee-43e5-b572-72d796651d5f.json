@@ -1,0 +1,27 @@
+{
+  "device_id": "0216b4b5-f0ee-43e5-b572-72d796651d5f",
+  "modelo": "iPhone 13 mini",
+  "loja": "zona-norte",
+  "vendido_em": "2026-10-30T16:57:21.170Z",
+  "estado": "pendente",
+  "aparelho": {
+    "id": "0216b4b5-f0ee-43e5-b572-72d796651d5f",
+    "model": "iPhone 13 mini",
+    "capacity": "512GB",
+    "aesthetic_condition": "excelente",
+    "category": "iphone",
+    "preferred_store": "zona-norte",
+    "sold_at": "2026-10-30T16:57:21.170Z",
+    "photos": [
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/72691905-4553-47c1-86f5-6cf63f0649fc/0216b4b5-f0ee-43e5-b572-72d796651d5f/front.jpeg",
+        "photo_type": "front"
+      },
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/72691905-4553-47c1-86f5-6cf63f0649fc/0216b4b5-f0ee-43e5-b572-72d796651d5f/back.jpeg",
+        "photo_type": "back"
+      }
+    ],
+    "teste": false
+  }
+}
