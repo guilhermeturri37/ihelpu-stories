@@ -3,7 +3,7 @@
   "modelo": "iPhone XR",
   "loja": "caxias-do-sul",
   "vendido_em": "2026-10-30T17:08:01.767Z",
-  "estado": "publicando",
+  "estado": "publicado",
   "aparelho": {
     "id": "a1ab04db-4427-49e4-bcd9-4bd45a472919",
     "model": "iPhone XR",
@@ -24,5 +24,6 @@
     ],
     "teste": false
   },
-  "em": "2026-10-30T17:25:49+00:00"
+  "em": "2026-10-30T17:25:59+00:00",
+  "story_id": "18130311775842367"
 }
