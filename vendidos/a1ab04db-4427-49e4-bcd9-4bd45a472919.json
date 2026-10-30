@@ -1,0 +1,27 @@
+{
+  "device_id": "a1ab04db-4427-49e4-bcd9-4bd45a472919",
+  "modelo": "iPhone XR",
+  "loja": "caxias-do-sul",
+  "vendido_em": "2026-10-30T17:08:01.767Z",
+  "estado": "pendente",
+  "aparelho": {
+    "id": "a1ab04db-4427-49e4-bcd9-4bd45a472919",
+    "model": "iPhone XR",
+    "capacity": "64GB",
+    "aesthetic_condition": "excelente",
+    "category": "iphone",
+    "preferred_store": "caxias-do-sul",
+    "sold_at": "2026-10-30T17:08:01.767Z",
+    "photos": [
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/1c3a6198-e18a-4415-ba85-bcce48b874db/a1ab04db-4427-49e4-bcd9-4bd45a472919/front.jpg",
+        "photo_type": "front"
+      },
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/1c3a6198-e18a-4415-ba85-bcce48b874db/a1ab04db-4427-49e4-bcd9-4bd45a472919/back.jpg",
+        "photo_type": "back"
+      }
+    ],
+    "teste": false
+  }
+}
