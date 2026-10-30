@@ -3,7 +3,7 @@
   "modelo": "iPhone 17 Pro Max",
   "loja": "caxias-do-sul",
   "vendido_em": "2026-10-30T13:25:17.042Z",
-  "estado": "pendente",
+  "estado": "publicando",
   "aparelho": {
     "id": "dfe434b0-9517-4d41-a08a-89720dcfb5bb",
     "model": "iPhone 17 Pro Max",
@@ -35,5 +35,7 @@
       }
     ],
     "teste": false
-  }
+  },
+  "em": "2026-10-30T13:25:47+00:00",
+  "foto": "iphone-17-pro-max-a.jpg"
 }
