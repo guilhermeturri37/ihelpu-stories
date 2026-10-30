@@ -3,7 +3,7 @@
   "modelo": "iPhone 14 Pro",
   "loja": "santa-maria",
   "vendido_em": "2026-10-30T18:33:00.956Z",
-  "estado": "pendente",
+  "estado": "publicando",
   "aparelho": {
     "id": "d3813d45-3e28-4d84-8b18-ec02bb0817d2",
     "model": "iPhone 14 Pro",
@@ -35,5 +35,6 @@
       }
     ],
     "teste": false
-  }
+  },
+  "em": "2026-10-30T18:33:32+00:00"
 }
