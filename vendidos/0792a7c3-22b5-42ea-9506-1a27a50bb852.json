@@ -3,7 +3,7 @@
   "modelo": "iPhone 14",
   "loja": "pelotas",
   "vendido_em": "2026-10-30T17:25:11.656Z",
-  "estado": "pendente",
+  "estado": "publicando",
   "aparelho": {
     "id": "0792a7c3-22b5-42ea-9506-1a27a50bb852",
     "model": "iPhone 14",
@@ -31,5 +31,7 @@
       }
     ],
     "teste": false
-  }
+  },
+  "em": "2026-10-30T17:25:31+00:00",
+  "foto": "iphone-14-a.jpg"
 }
