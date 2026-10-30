@@ -3,7 +3,7 @@
   "modelo": "iPhone 13 mini",
   "loja": "zona-norte",
   "vendido_em": "2026-10-30T16:57:21.170Z",
-  "estado": "pendente",
+  "estado": "publicando",
   "aparelho": {
     "id": "0216b4b5-f0ee-43e5-b572-72d796651d5f",
     "model": "iPhone 13 mini",
@@ -23,5 +23,7 @@
       }
     ],
     "teste": false
-  }
+  },
+  "em": "2026-10-30T16:57:50+00:00",
+  "foto": "iphone-13-mini-a.jpg"
 }
