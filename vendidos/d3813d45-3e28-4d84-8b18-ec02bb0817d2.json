@@ -1,0 +1,39 @@
+{
+  "device_id": "d3813d45-3e28-4d84-8b18-ec02bb0817d2",
+  "modelo": "iPhone 14 Pro",
+  "loja": "santa-maria",
+  "vendido_em": "2026-10-30T18:33:00.956Z",
+  "estado": "pendente",
+  "aparelho": {
+    "id": "d3813d45-3e28-4d84-8b18-ec02bb0817d2",
+    "model": "iPhone 14 Pro",
+    "capacity": "256GB",
+    "aesthetic_condition": "excelente",
+    "category": "iphone",
+    "preferred_store": "santa-maria",
+    "sold_at": "2026-10-30T18:33:00.956Z",
+    "photos": [
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/4294fda0-2901-4904-8d99-53ead8f0d6d4/d3813d45-3e28-4d84-8b18-ec02bb0817d2/front.jpg",
+        "photo_type": "front"
+      },
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/4294fda0-2901-4904-8d99-53ead8f0d6d4/d3813d45-3e28-4d84-8b18-ec02bb0817d2/back.jpg",
+        "photo_type": "back"
+      },
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/a1bd024b-cae6-443d-9647-396018d9acdd/d3813d45-3e28-4d84-8b18-ec02bb0817d2/extra_1.jpg",
+        "photo_type": "extra_1"
+      },
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/a1bd024b-cae6-443d-9647-396018d9acdd/d3813d45-3e28-4d84-8b18-ec02bb0817d2/extra_2.jpg",
+        "photo_type": "extra_2"
+      },
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/a1bd024b-cae6-443d-9647-396018d9acdd/d3813d45-3e28-4d84-8b18-ec02bb0817d2/extra_3.jpg",
+        "photo_type": "extra_3"
+      }
+    ],
+    "teste": false
+  }
+}
