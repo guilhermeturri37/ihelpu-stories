@@ -1,0 +1,39 @@
+{
+  "device_id": "dfe434b0-9517-4d41-a08a-89720dcfb5bb",
+  "modelo": "iPhone 17 Pro Max",
+  "loja": "caxias-do-sul",
+  "vendido_em": "2026-10-30T13:25:17.042Z",
+  "estado": "pendente",
+  "aparelho": {
+    "id": "dfe434b0-9517-4d41-a08a-89720dcfb5bb",
+    "model": "iPhone 17 Pro Max",
+    "capacity": "256GB",
+    "aesthetic_condition": "como_novo",
+    "category": "iphone",
+    "preferred_store": "caxias-do-sul",
+    "sold_at": "2026-10-30T13:25:17.042Z",
+    "photos": [
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/f1e73213-04a6-45aa-aeed-54ff286c7b45/dfe434b0-9517-4d41-a08a-89720dcfb5bb/front.jpg",
+        "photo_type": "front"
+      },
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/f1e73213-04a6-45aa-aeed-54ff286c7b45/dfe434b0-9517-4d41-a08a-89720dcfb5bb/back.jpg",
+        "photo_type": "back"
+      },
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/1e5ede64-9814-428e-b1ef-7775ec1c2cb6/dfe434b0-9517-4d41-a08a-89720dcfb5bb/extra_1.jpg",
+        "photo_type": "extra_1"
+      },
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/1e5ede64-9814-428e-b1ef-7775ec1c2cb6/dfe434b0-9517-4d41-a08a-89720dcfb5bb/extra_2.jpg",
+        "photo_type": "extra_2"
+      },
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/1e5ede64-9814-428e-b1ef-7775ec1c2cb6/dfe434b0-9517-4d41-a08a-89720dcfb5bb/extra_3.jpg",
+        "photo_type": "extra_3"
+      }
+    ],
+    "teste": false
+  }
+}
