@@ -3,7 +3,7 @@
   "modelo": "iPhone 14 Pro Max",
   "loja": "zona-norte",
   "vendido_em": "2026-10-31T18:37:03.338Z",
-  "estado": "pendente",
+  "estado": "publicando",
   "aparelho": {
     "id": "51e28aeb-deee-4954-9fba-bacdf180ed64",
     "model": "iPhone 14 Pro Max",
@@ -23,5 +23,7 @@
       }
     ],
     "teste": false
-  }
+  },
+  "em": "2026-10-31T18:37:21+00:00",
+  "foto": "iphone-14-pro-max-a.jpg"
 }
