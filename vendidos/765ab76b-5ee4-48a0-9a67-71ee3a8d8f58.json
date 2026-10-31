@@ -1,0 +1,27 @@
+{
+  "device_id": "765ab76b-5ee4-48a0-9a67-71ee3a8d8f58",
+  "modelo": "iPhone 12",
+  "loja": "trend",
+  "vendido_em": "2026-10-31T22:57:31.421Z",
+  "estado": "pendente",
+  "aparelho": {
+    "id": "765ab76b-5ee4-48a0-9a67-71ee3a8d8f58",
+    "model": "iPhone 12",
+    "capacity": "64GB",
+    "aesthetic_condition": "excelente",
+    "category": "iphone",
+    "preferred_store": "trend",
+    "sold_at": "2026-10-31T22:57:31.421Z",
+    "photos": [
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/b60d56f8-42a2-4a70-827f-5a66d3090743/765ab76b-5ee4-48a0-9a67-71ee3a8d8f58/extra_1791312260930_2.jpg",
+        "photo_type": "extra_1791312260930_2"
+      },
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/b60d56f8-42a2-4a70-827f-5a66d3090743/765ab76b-5ee4-48a0-9a67-71ee3a8d8f58/extra_1791312301905_2.jpg",
+        "photo_type": "extra_1791312301905_2"
+      }
+    ],
+    "teste": false
+  }
+}
