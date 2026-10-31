@@ -3,7 +3,7 @@
   "modelo": "iPhone 11",
   "loja": "novo-hamburgo",
   "vendido_em": "2026-10-31T18:55:39.086Z",
-  "estado": "publicando",
+  "estado": "publicado",
   "aparelho": {
     "id": "548a89c9-01dc-4dee-9a79-4592abbf35bf",
     "model": "iPhone 11",
@@ -24,6 +24,7 @@
     ],
     "teste": false
   },
-  "em": "2026-10-31T18:55:55+00:00",
-  "foto": "iphone-11-f.jpg"
+  "em": "2026-10-31T18:56:07+00:00",
+  "foto": "iphone-11-f.jpg",
+  "story_id": "18105313295633753"
 }
