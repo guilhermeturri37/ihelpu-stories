@@ -1,0 +1,39 @@
+{
+  "device_id": "77f80bd3-0271-46d2-8604-b171d4b60dcc",
+  "modelo": "iPhone 15",
+  "loja": "canoas",
+  "vendido_em": "2026-10-31T16:07:07.799Z",
+  "estado": "pendente",
+  "aparelho": {
+    "id": "77f80bd3-0271-46d2-8604-b171d4b60dcc",
+    "model": "iPhone 15",
+    "capacity": "128GB",
+    "aesthetic_condition": "excelente",
+    "category": "iphone",
+    "preferred_store": "canoas",
+    "sold_at": "2026-10-31T16:07:07.799Z",
+    "photos": [
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/e84fc9b5-d275-4e0b-be8b-6d700853ccb6/77f80bd3-0271-46d2-8604-b171d4b60dcc/front.jpg",
+        "photo_type": "front"
+      },
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/e84fc9b5-d275-4e0b-be8b-6d700853ccb6/77f80bd3-0271-46d2-8604-b171d4b60dcc/back.jpg",
+        "photo_type": "back"
+      },
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/e2a967bf-4475-4ef3-9599-baedc6fc70b2/77f80bd3-0271-46d2-8604-b171d4b60dcc/extra_1.jpg",
+        "photo_type": "extra_1"
+      },
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/e2a967bf-4475-4ef3-9599-baedc6fc70b2/77f80bd3-0271-46d2-8604-b171d4b60dcc/extra_2.jpg",
+        "photo_type": "extra_2"
+      },
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/e2a967bf-4475-4ef3-9599-baedc6fc70b2/77f80bd3-0271-46d2-8604-b171d4b60dcc/extra_3.jpg",
+        "photo_type": "extra_3"
+      }
+    ],
+    "teste": false
+  }
+}
