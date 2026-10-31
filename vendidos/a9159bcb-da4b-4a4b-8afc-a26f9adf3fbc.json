@@ -1,0 +1,31 @@
+{
+  "device_id": "a9159bcb-da4b-4a4b-8afc-a26f9adf3fbc",
+  "modelo": "iPhone 13",
+  "loja": "trend",
+  "vendido_em": "2026-10-31T18:57:28.184Z",
+  "estado": "pendente",
+  "aparelho": {
+    "id": "a9159bcb-da4b-4a4b-8afc-a26f9adf3fbc",
+    "model": "iPhone 13",
+    "capacity": "128GB",
+    "aesthetic_condition": "como_novo",
+    "category": "iphone",
+    "preferred_store": "trend",
+    "sold_at": "2026-10-31T18:57:28.184Z",
+    "photos": [
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/0ddbce43-a0bc-4894-b678-8d34e77f7d8b/a9159bcb-da4b-4a4b-8afc-a26f9adf3fbc/front.jpeg",
+        "photo_type": "front"
+      },
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/0ddbce43-a0bc-4894-b678-8d34e77f7d8b/a9159bcb-da4b-4a4b-8afc-a26f9adf3fbc/back.jpeg",
+        "photo_type": "back"
+      },
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/8e889277-aad5-4b36-aaa3-6a0fce26907b/a9159bcb-da4b-4a4b-8afc-a26f9adf3fbc/extra_1.jpeg",
+        "photo_type": "extra_1"
+      }
+    ],
+    "teste": false
+  }
+}
