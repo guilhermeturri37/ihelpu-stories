@@ -3,7 +3,7 @@
   "modelo": "iPhone 12",
   "loja": "trend",
   "vendido_em": "2026-10-31T22:57:31.421Z",
-  "estado": "pendente",
+  "estado": "publicando",
   "aparelho": {
     "id": "765ab76b-5ee4-48a0-9a67-71ee3a8d8f58",
     "model": "iPhone 12",
@@ -23,5 +23,7 @@
       }
     ],
     "teste": false
-  }
+  },
+  "em": "2026-10-31T22:57:48+00:00",
+  "foto": "iphone-12-h.jpg"
 }
