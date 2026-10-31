@@ -3,7 +3,7 @@
   "modelo": "iPhone 13",
   "loja": "trend",
   "vendido_em": "2026-10-31T18:57:28.184Z",
-  "estado": "pendente",
+  "estado": "publicando",
   "aparelho": {
     "id": "a9159bcb-da4b-4a4b-8afc-a26f9adf3fbc",
     "model": "iPhone 13",
@@ -27,5 +27,7 @@
       }
     ],
     "teste": false
-  }
+  },
+  "em": "2026-10-31T18:57:51+00:00",
+  "foto": "iphone-13-f.jpg"
 }
