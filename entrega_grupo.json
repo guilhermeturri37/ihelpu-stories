@@ -5036,6 +5036,46 @@
       "em": "2026-10-31T11:33:09+00:00",
       "horario": 8,
       "foto": "iphone-12-c.jpg"
+    },
+    {
+      "instancia": "TREND2",
+      "device_id": "765ab76b-5ee4-48a0-9a67-71ee3a8d8f58",
+      "modelo": "iPhone 12",
+      "em": "2026-10-31T11:33:39+00:00",
+      "horario": 8,
+      "foto": "iphone-12-d.jpg"
+    },
+    {
+      "instancia": "TREND2",
+      "device_id": "d286b604-a653-47af-a7ce-5100ab12f50e",
+      "modelo": "iPhone 15 Pro",
+      "em": "2026-10-31T11:33:39+00:00",
+      "horario": 8,
+      "foto": "iphone-15-pro-b.jpg"
+    },
+    {
+      "instancia": "TREND2",
+      "device_id": "5dd823aa-dcb6-4346-8f24-3b5f6eb98dac",
+      "modelo": "iPhone 15",
+      "em": "2026-10-31T11:33:39+00:00",
+      "horario": 8,
+      "foto": "iphone-15-a.jpg"
+    },
+    {
+      "instancia": "TREND2",
+      "device_id": "c6b5d753-644a-4d0d-8b6a-3d13963dc11e",
+      "modelo": "iPhone 14 Pro Max",
+      "em": "2026-10-31T11:33:39+00:00",
+      "horario": 8,
+      "foto": "iphone-14-pro-max-a.jpg"
+    },
+    {
+      "instancia": "TREND2",
+      "device_id": "a9159bcb-da4b-4a4b-8afc-a26f9adf3fbc",
+      "modelo": "iPhone 13",
+      "em": "2026-10-31T11:33:39+00:00",
+      "horario": 8,
+      "foto": "iphone-13-c.jpg"
     }
   ]
 }
