@@ -3,7 +3,7 @@
   "modelo": "iPhone 15",
   "loja": "canoas",
   "vendido_em": "2026-10-31T16:07:07.799Z",
-  "estado": "pendente",
+  "estado": "publicando",
   "aparelho": {
     "id": "77f80bd3-0271-46d2-8604-b171d4b60dcc",
     "model": "iPhone 15",
@@ -35,5 +35,7 @@
       }
     ],
     "teste": false
-  }
+  },
+  "em": "2026-10-31T16:07:37+00:00",
+  "foto": "iphone-15-a.jpg"
 }
