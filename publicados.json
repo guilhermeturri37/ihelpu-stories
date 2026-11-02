@@ -1606,6 +1606,15 @@
       "em": "2026-11-02T13:05:45+00:00",
       "horario": 10,
       "foto": "iphone-11-d.jpg"
+    },
+    {
+      "device_id": "ef2681ab-5b5a-485d-b629-3319cab126af",
+      "modelo": "iPhone 12",
+      "story_id": null,
+      "em": "2026-11-02T14:05:26+00:00",
+      "horario": 11,
+      "estado": "publicando",
+      "foto": "iphone-12-i.jpg"
     }
   ]
 }
