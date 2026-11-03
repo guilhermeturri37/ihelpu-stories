@@ -3,7 +3,7 @@
   "modelo": "iPhone 13",
   "loja": "pelotas",
   "vendido_em": "2026-11-03T19:33:55.109Z",
-  "estado": "publicando",
+  "estado": "publicado",
   "aparelho": {
     "id": "b7d24abf-ce3d-495b-8844-910b292018cd",
     "model": "iPhone 13",
@@ -28,6 +28,7 @@
     ],
     "teste": false
   },
-  "em": "2026-11-03T19:37:32+00:00",
-  "foto": "iphone-13-a.jpg"
+  "em": "2026-11-03T19:37:57+00:00",
+  "foto": "iphone-13-a.jpg",
+  "story_id": "17907726234599548"
 }
