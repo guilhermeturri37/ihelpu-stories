@@ -1,12 +1,11 @@
 #!/usr/bin/env python3
 """Publica um Story no @ihelpuoficial com um aparelho do marketplace iHelpU.
 
-Roda no GitHub Actions; quem pede, pede de hora em hora das 8 as 14h de Brasilia, de
-segunda a sabado: 7 stories por dia (pedido do Guilherme em 07/10/2026). Cada execucao
-decide sozinha se publica:
+Roda no GitHub Actions; pedem de hora em hora das 8 as 14h de Brasilia, mas so as 8h, 10h
+e 12h publicam, de segunda a sabado: 3 stories por dia (pedido do Guilherme em 03/11/2026;
+de 07/10 a 03/11 eram 7, um por hora). Cada execucao decide sozinha se publica:
   - escolhe o anuncio mais novo que ainda nao foi ao ar; quando os ineditos acabam, reprisa
-    o anuncio ativo que saiu ha mais tempo (7/dia nao se sustenta so com ineditos: entram
-    1 a 2 anuncios por dia). Nunca o mesmo aparelho duas vezes no mesmo dia
+    o anuncio ativo que saiu ha mais tempo. Nunca o mesmo aparelho duas vezes no mesmo dia
   - domingo nao publica
   - pula anuncio sem foto ou sem preco em vez de publicar algo quebrado
   - um story por horario: um segundo disparo na mesma hora nao publica de novo
@@ -34,7 +33,7 @@ RAW = "https://raw.githubusercontent.com/guilhermeturri37/ihelpu-stories"
 RAMO_ARTES = "artes-stories"      # proprio: o artes-status e do status_whatsapp.py
 RAMO_PREVIA = "artes-previa"      # o SO_ARTE ensaia o mesmo caminho sem tocar no de producao
 
-HORARIOS = [8, 9, 10, 11, 12, 13, 14]   # um story por horario
+HORARIOS = [8, 10, 12]                  # um story por horario; os pedidos das 9h, 11h, 13h e 14h caem em fora_da_janela
 META = len(HORARIOS)
 # Codigos que o media_publish devolveu, medidos, para container que existia e
 # estava FINISHED — "ainda nao da para publicar", nao "nunca vai dar".
@@ -359,8 +358,7 @@ def main():
     aptos = [a for a in ativos if (a.get("asking_price") or 0) > 0 and foto_de(a)
              and a["id"] not in ids_hoje]
     # Inedito primeiro, do mais novo para o mais antigo. Sem inedito, reprisa o anuncio
-    # ativo que esta ha mais tempo sem sair — com ~50 ativos, o mesmo aparelho volta mais
-    # ou menos uma vez por semana.
+    # ativo que esta ha mais tempo sem sair; nunca o mesmo aparelho duas vezes no dia.
     ineditos = sorted([a for a in aptos if a["id"] not in ultima_vez],
                       key=lambda a: a["created_at"], reverse=True)
     reprises = sorted([a for a in aptos if a["id"] in ultima_vez],

@@ -1,7 +1,7 @@
 # iHelpU Stories — CLAUDE.md
 
 Automação que publica Stories no **@ihelpuoficial** com aparelhos do marketplace
-de seminovos. Sai um story por hora, das 8h às 14h, de segunda a sábado (7 por dia).
+de seminovos. Sai um story às 8h, 10h e 12h, de segunda a sábado (3 por dia, desde 03/11/2026).
 
 ```
 launchd (Mac do Guilherme) ou n8n  →  workflow_dispatch  →  GitHub Actions  →  Story no ar
@@ -61,8 +61,8 @@ launchd (Mac do Guilherme) ou n8n  →  workflow_dispatch  →  GitHub Actions  
   loja e o repositorio e publico. Regravar com PIL, sem `exif`, antes de por em `banco/`.
 - **Fontes ficam em `fonts/`, nao no Google Fonts.** Quando a fonte da internet nao
   carrega a tempo, o Chrome renderiza com a fonte padrao e nao da erro nenhum.
-- **Aparelho pode reprisar, mas nunca no mesmo dia.** 7 stories/dia não se sustentam só
-  com anúncio inédito (entram 1 a 2 por dia). Sem inédito, sai o anúncio ativo que está há
+- **Aparelho pode reprisar, mas nunca no mesmo dia.** O ritmo foi de 7 stories/dia (07/10 a
+  03/11/2026), que não se sustentava só com anúncio inédito (entram 1 a 2 por dia). Sem inédito, sai o anúncio ativo que está há
   mais tempo sem aparecer. A regra antiga de "nunca repete aparelho" acabou em 07/10/2026.
 - **Mudou horário ou dia? São três lugares:** `HORARIOS` no `publicar.py`, o plist
   `~/Library/LaunchAgents/com.ihelpu.stories.plist` e o disparador do n8n.
