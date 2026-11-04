@@ -3,7 +3,7 @@
   "modelo": "iPhone 11",
   "loja": "caxias-do-sul",
   "vendido_em": "2026-11-04T16:01:34.977Z",
-  "estado": "pendente",
+  "estado": "publicando",
   "aparelho": {
     "id": "ebfb5e73-dd02-4274-a957-fe79590813fe",
     "model": "iPhone 11",
@@ -35,5 +35,7 @@
       }
     ],
     "teste": false
-  }
+  },
+  "em": "2026-11-04T16:02:30+00:00",
+  "foto": "iphone-11-c.jpg"
 }
