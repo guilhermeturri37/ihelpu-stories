@@ -6265,6 +6265,44 @@
       "em": "2026-11-04T11:34:03+00:00",
       "horario": 8,
       "foto": "iphone-11-d.jpg"
+    },
+    {
+      "instancia": "SANTAMARIA",
+      "device_id": "77baa97a-811d-438b-b879-06ffce634e58",
+      "modelo": "iPhone 13",
+      "em": "2026-11-04T11:34:28+00:00",
+      "horario": 8,
+      "foto": "iphone-13-a.jpg"
+    },
+    {
+      "instancia": "SANTAMARIA",
+      "device_id": "c9ebac6f-441b-4d81-9ab5-ca42d243348e",
+      "modelo": "iPhone 14",
+      "em": "2026-11-04T11:34:28+00:00",
+      "horario": 8,
+      "foto": "iphone-14-a.jpg"
+    },
+    {
+      "instancia": "SANTAMARIA",
+      "device_id": "0e810310-3461-4ce0-96ce-b94a36324818",
+      "modelo": "iPhone 13 Pro Max",
+      "em": "2026-11-04T11:34:28+00:00",
+      "horario": 8
+    },
+    {
+      "instancia": "SANTAMARIA",
+      "device_id": "4e453727-09a4-4ac0-aa6f-2e3ff6c05aa6",
+      "modelo": "iPhone 12 Pro Max",
+      "em": "2026-11-04T11:34:28+00:00",
+      "horario": 8
+    },
+    {
+      "instancia": "SANTAMARIA",
+      "device_id": "181f9f47-2c80-4c3f-ae89-ad2d7d6d5396",
+      "modelo": "iPhone 11",
+      "em": "2026-11-04T11:34:28+00:00",
+      "horario": 8,
+      "foto": "iphone-11-e.jpg"
     }
   ]
 }
