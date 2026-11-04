@@ -1,0 +1,39 @@
+{
+  "device_id": "ebfb5e73-dd02-4274-a957-fe79590813fe",
+  "modelo": "iPhone 11",
+  "loja": "caxias-do-sul",
+  "vendido_em": "2026-11-04T16:01:34.977Z",
+  "estado": "pendente",
+  "aparelho": {
+    "id": "ebfb5e73-dd02-4274-a957-fe79590813fe",
+    "model": "iPhone 11",
+    "capacity": "64GB",
+    "aesthetic_condition": "excelente",
+    "category": "iphone",
+    "preferred_store": "caxias-do-sul",
+    "sold_at": "2026-11-04T16:01:34.977Z",
+    "photos": [
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/250e58fe-f267-4c42-aa88-fb2046a0b468/ebfb5e73-dd02-4274-a957-fe79590813fe/front.jpeg",
+        "photo_type": "front"
+      },
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/250e58fe-f267-4c42-aa88-fb2046a0b468/ebfb5e73-dd02-4274-a957-fe79590813fe/back.jpeg",
+        "photo_type": "back"
+      },
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/1e5ede64-9814-428e-b1ef-7775ec1c2cb6/ebfb5e73-dd02-4274-a957-fe79590813fe/extra_1.jpeg",
+        "photo_type": "extra_1"
+      },
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/1e5ede64-9814-428e-b1ef-7775ec1c2cb6/ebfb5e73-dd02-4274-a957-fe79590813fe/extra_2.jpeg",
+        "photo_type": "extra_2"
+      },
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/1e5ede64-9814-428e-b1ef-7775ec1c2cb6/ebfb5e73-dd02-4274-a957-fe79590813fe/extra_3.jpeg",
+        "photo_type": "extra_3"
+      }
+    ],
+    "teste": false
+  }
+}
