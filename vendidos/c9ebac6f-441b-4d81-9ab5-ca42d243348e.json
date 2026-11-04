@@ -3,7 +3,7 @@
   "modelo": "iPhone 14",
   "loja": "caxias-do-sul",
   "vendido_em": "2026-11-04T19:59:47.422Z",
-  "estado": "pendente",
+  "estado": "publicando",
   "aparelho": {
     "id": "c9ebac6f-441b-4d81-9ab5-ca42d243348e",
     "model": "iPhone 14",
@@ -35,5 +35,7 @@
       }
     ],
     "teste": false
-  }
+  },
+  "em": "2026-11-04T20:00:16+00:00",
+  "foto": "iphone-14-b.jpg"
 }
