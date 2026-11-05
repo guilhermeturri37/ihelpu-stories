@@ -3,7 +3,7 @@
   "modelo": "iPhone 15",
   "loja": "zona-norte",
   "vendido_em": "2026-11-05T15:53:09.779Z",
-  "estado": "pendente",
+  "estado": "publicando",
   "aparelho": {
     "id": "dfa29adc-e79d-4c81-9ed1-0a31705e8b42",
     "model": "iPhone 15",
@@ -23,5 +23,7 @@
       }
     ],
     "teste": false
-  }
+  },
+  "em": "2026-11-05T15:54:09+00:00",
+  "foto": "iphone-15-b.jpg"
 }
