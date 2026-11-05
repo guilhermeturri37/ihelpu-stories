@@ -1,0 +1,27 @@
+{
+  "device_id": "dfa29adc-e79d-4c81-9ed1-0a31705e8b42",
+  "modelo": "iPhone 15",
+  "loja": "zona-norte",
+  "vendido_em": "2026-11-05T15:53:09.779Z",
+  "estado": "pendente",
+  "aparelho": {
+    "id": "dfa29adc-e79d-4c81-9ed1-0a31705e8b42",
+    "model": "iPhone 15",
+    "capacity": "128GB",
+    "aesthetic_condition": "excelente",
+    "category": "iphone",
+    "preferred_store": "zona-norte",
+    "sold_at": "2026-11-05T15:53:09.779Z",
+    "photos": [
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/fbd7e303-cd5d-446a-b473-b7f5202f3398/dfa29adc-e79d-4c81-9ed1-0a31705e8b42/front.jpeg",
+        "photo_type": "front"
+      },
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/fbd7e303-cd5d-446a-b473-b7f5202f3398/dfa29adc-e79d-4c81-9ed1-0a31705e8b42/back.jpeg",
+        "photo_type": "back"
+      }
+    ],
+    "teste": false
+  }
+}
