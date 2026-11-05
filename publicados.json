@@ -1701,10 +1701,9 @@
     {
       "device_id": "d90315ef-ee46-468d-af10-dc78d796c2c0",
       "modelo": "iPhone 13",
-      "story_id": null,
-      "em": "2026-11-05T15:05:26+00:00",
+      "story_id": "18355321477269481",
+      "em": "2026-11-05T15:05:34+00:00",
       "horario": 12,
-      "estado": "publicando",
       "foto": "iphone-13-a.jpg"
     }
   ]
