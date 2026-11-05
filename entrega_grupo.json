@@ -6494,6 +6494,43 @@
       "em": "2026-11-04T11:36:37+00:00",
       "horario": 8,
       "foto": "iphone-14-a.jpg"
+    },
+    {
+      "instancia": "SAO LEOPOLDO 2",
+      "device_id": "8e534392-a9be-4acd-a68d-bfb95a1bf2fa",
+      "modelo": "iPhone 15",
+      "em": "2026-11-05T11:32:15+00:00",
+      "horario": 8,
+      "foto": "iphone-15-a.jpg"
+    },
+    {
+      "instancia": "SAO LEOPOLDO 2",
+      "device_id": "2735b651-bc8f-4fbc-aeb6-605244ccf294",
+      "modelo": "iPhone XS",
+      "em": "2026-11-05T11:32:15+00:00",
+      "horario": 8
+    },
+    {
+      "instancia": "SAO LEOPOLDO 2",
+      "device_id": "e84c0383-3318-4adf-a214-5f2333403529",
+      "modelo": "iPhone 13",
+      "em": "2026-11-05T11:32:15+00:00",
+      "horario": 8,
+      "foto": "iphone-13-e.jpg"
+    },
+    {
+      "instancia": "SAO LEOPOLDO 2",
+      "device_id": "f2b1c776-c81e-40af-9682-072f5f5ad051",
+      "modelo": "iPhone 14 Pro",
+      "em": "2026-11-05T11:32:15+00:00",
+      "horario": 8
+    },
+    {
+      "instancia": "SAO LEOPOLDO 2",
+      "device_id": "0e810310-3461-4ce0-96ce-b94a36324818",
+      "modelo": "iPhone 13 Pro Max",
+      "em": "2026-11-05T11:32:15+00:00",
+      "horario": 8
     }
   ]
 }
