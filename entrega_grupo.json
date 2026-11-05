@@ -6754,6 +6754,44 @@
       "modelo": "iPhone XS Max",
       "em": "2026-11-05T11:35:03+00:00",
       "horario": 8
+    },
+    {
+      "instancia": "Caxias do Sul",
+      "device_id": "6ebe8d1a-5caf-4029-831c-e95343c3d0cb",
+      "modelo": "iPhone XS Max",
+      "em": "2026-11-05T11:35:28+00:00",
+      "horario": 8
+    },
+    {
+      "instancia": "Caxias do Sul",
+      "device_id": "14c24a45-343f-44eb-b170-1e6fac340689",
+      "modelo": "iPhone 16",
+      "em": "2026-11-05T11:35:28+00:00",
+      "horario": 8
+    },
+    {
+      "instancia": "Caxias do Sul",
+      "device_id": "55ebcb57-4893-4c81-a727-342e48d13fb4",
+      "modelo": "iPhone 11",
+      "em": "2026-11-05T11:35:28+00:00",
+      "horario": 8,
+      "foto": "iphone-11-d.jpg"
+    },
+    {
+      "instancia": "Caxias do Sul",
+      "device_id": "26e1d3aa-1e80-4e89-bef0-ab006002dca3",
+      "modelo": "iPhone 13",
+      "em": "2026-11-05T11:35:28+00:00",
+      "horario": 8,
+      "foto": "iphone-13-c.jpg"
+    },
+    {
+      "instancia": "Caxias do Sul",
+      "device_id": "7def6ab7-6684-4d87-9722-0d49c66f2213",
+      "modelo": "iPhone 14",
+      "em": "2026-11-05T11:35:28+00:00",
+      "horario": 8,
+      "foto": "iphone-14-b.jpg"
     }
   ]
 }
