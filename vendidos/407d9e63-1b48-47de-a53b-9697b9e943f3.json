@@ -1,0 +1,27 @@
+{
+  "device_id": "407d9e63-1b48-47de-a53b-9697b9e943f3",
+  "modelo": "iPhone 14",
+  "loja": "zona-sul",
+  "vendido_em": "2026-11-05T14:57:12.747Z",
+  "estado": "pendente",
+  "aparelho": {
+    "id": "407d9e63-1b48-47de-a53b-9697b9e943f3",
+    "model": "iPhone 14",
+    "capacity": "128GB",
+    "aesthetic_condition": "excelente",
+    "category": "iphone",
+    "preferred_store": "zona-sul",
+    "sold_at": "2026-11-05T14:57:12.747Z",
+    "photos": [
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/0ddbce43-a0bc-4894-b678-8d34e77f7d8b/407d9e63-1b48-47de-a53b-9697b9e943f3/front.jpeg",
+        "photo_type": "front"
+      },
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/0ddbce43-a0bc-4894-b678-8d34e77f7d8b/407d9e63-1b48-47de-a53b-9697b9e943f3/back.jpeg",
+        "photo_type": "back"
+      }
+    ],
+    "teste": false
+  }
+}
