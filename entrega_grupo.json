@@ -6830,6 +6830,42 @@
       "modelo": "iPhone XR",
       "em": "2026-11-05T11:35:56+00:00",
       "horario": 8
+    },
+    {
+      "instancia": "PELOTAS2",
+      "device_id": "6c727ddc-7369-4d8c-b430-d63a4e779add",
+      "modelo": "iPhone 17 Pro",
+      "em": "2026-11-05T11:36:25+00:00",
+      "horario": 8
+    },
+    {
+      "instancia": "PELOTAS2",
+      "device_id": "dde3cedd-6c48-47c8-9b27-531c0cd73804",
+      "modelo": "iPhone 15",
+      "em": "2026-11-05T11:36:25+00:00",
+      "horario": 8,
+      "foto": "iphone-15-a.jpg"
+    },
+    {
+      "instancia": "PELOTAS2",
+      "device_id": "0764820c-b32d-48af-a96f-d43079dc8f96",
+      "modelo": "iPhone 16e",
+      "em": "2026-11-05T11:36:25+00:00",
+      "horario": 8
+    },
+    {
+      "instancia": "PELOTAS2",
+      "device_id": "b4a24363-4379-4efd-a350-d4ba05cc8e71",
+      "modelo": "iPhone 11 Pro",
+      "em": "2026-11-05T11:36:25+00:00",
+      "horario": 8
+    },
+    {
+      "instancia": "PELOTAS2",
+      "device_id": "b5186728-02d5-4eef-828b-2980ae9f6852",
+      "modelo": "iPhone 12 Pro Max",
+      "em": "2026-11-05T11:36:25+00:00",
+      "horario": 8
     }
   ]
 }
