@@ -1,0 +1,39 @@
+{
+  "device_id": "6ebe8d1a-5caf-4029-831c-e95343c3d0cb",
+  "modelo": "iPhone XS Max",
+  "loja": "caxias-do-sul",
+  "vendido_em": "2026-11-06T20:02:25.084Z",
+  "estado": "pendente",
+  "aparelho": {
+    "id": "6ebe8d1a-5caf-4029-831c-e95343c3d0cb",
+    "model": "iPhone XS Max",
+    "capacity": "256GB",
+    "aesthetic_condition": "excelente",
+    "category": "iphone",
+    "preferred_store": "caxias-do-sul",
+    "sold_at": "2026-11-06T20:02:25.084Z",
+    "photos": [
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/58e9e5ab-6ec5-4ef3-8a6b-e08968417c82/6ebe8d1a-5caf-4029-831c-e95343c3d0cb/front.jpg",
+        "photo_type": "front"
+      },
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/58e9e5ab-6ec5-4ef3-8a6b-e08968417c82/6ebe8d1a-5caf-4029-831c-e95343c3d0cb/back.jpg",
+        "photo_type": "back"
+      },
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/1e5ede64-9814-428e-b1ef-7775ec1c2cb6/6ebe8d1a-5caf-4029-831c-e95343c3d0cb/extra_1.jpg",
+        "photo_type": "extra_1"
+      },
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/1e5ede64-9814-428e-b1ef-7775ec1c2cb6/6ebe8d1a-5caf-4029-831c-e95343c3d0cb/extra_2.jpg",
+        "photo_type": "extra_2"
+      },
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/1e5ede64-9814-428e-b1ef-7775ec1c2cb6/6ebe8d1a-5caf-4029-831c-e95343c3d0cb/extra_3.jpg",
+        "photo_type": "extra_3"
+      }
+    ],
+    "teste": false
+  }
+}
