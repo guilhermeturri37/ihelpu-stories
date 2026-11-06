@@ -3,7 +3,7 @@
   "modelo": "iPhone XS Max",
   "loja": "caxias-do-sul",
   "vendido_em": "2026-11-06T20:02:25.084Z",
-  "estado": "pendente",
+  "estado": "publicando",
   "aparelho": {
     "id": "6ebe8d1a-5caf-4029-831c-e95343c3d0cb",
     "model": "iPhone XS Max",
@@ -35,5 +35,6 @@
       }
     ],
     "teste": false
-  }
+  },
+  "em": "2026-11-06T20:03:34+00:00"
 }
