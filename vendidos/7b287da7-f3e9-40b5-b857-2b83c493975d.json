@@ -1,0 +1,27 @@
+{
+  "device_id": "7b287da7-f3e9-40b5-b857-2b83c493975d",
+  "modelo": "iPhone 14",
+  "loja": "zona-norte",
+  "vendido_em": "2026-11-06T19:07:52.913Z",
+  "estado": "pendente",
+  "aparelho": {
+    "id": "7b287da7-f3e9-40b5-b857-2b83c493975d",
+    "model": "iPhone 14",
+    "capacity": "256GB",
+    "aesthetic_condition": "excelente",
+    "category": "iphone",
+    "preferred_store": "zona-norte",
+    "sold_at": "2026-11-06T19:07:52.913Z",
+    "photos": [
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/ccf499a8-ceb2-4294-a286-413f2d2cbd5d/7b287da7-f3e9-40b5-b857-2b83c493975d/front.jpeg",
+        "photo_type": "front"
+      },
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/ccf499a8-ceb2-4294-a286-413f2d2cbd5d/7b287da7-f3e9-40b5-b857-2b83c493975d/back.jpeg",
+        "photo_type": "back"
+      }
+    ],
+    "teste": false
+  }
+}
