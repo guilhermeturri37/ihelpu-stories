@@ -1,0 +1,39 @@
+{
+  "device_id": "999ea6fe-8348-402d-8c1f-9d7c67156238",
+  "modelo": "iPhone 13 Pro Max",
+  "loja": "santa-maria",
+  "vendido_em": "2026-11-07T19:00:24.233Z",
+  "estado": "pendente",
+  "aparelho": {
+    "id": "999ea6fe-8348-402d-8c1f-9d7c67156238",
+    "model": "iPhone 13 Pro Max",
+    "capacity": "128GB",
+    "aesthetic_condition": "excelente",
+    "category": "iphone",
+    "preferred_store": "santa-maria",
+    "sold_at": "2026-11-07T19:00:24.233Z",
+    "photos": [
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/a1bd024b-cae6-443d-9647-396018d9acdd/999ea6fe-8348-402d-8c1f-9d7c67156238/front.jpg",
+        "photo_type": "front"
+      },
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/a1bd024b-cae6-443d-9647-396018d9acdd/999ea6fe-8348-402d-8c1f-9d7c67156238/back.jpg",
+        "photo_type": "back"
+      },
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/a1bd024b-cae6-443d-9647-396018d9acdd/999ea6fe-8348-402d-8c1f-9d7c67156238/extra_1.jpg",
+        "photo_type": "extra_1"
+      },
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/a1bd024b-cae6-443d-9647-396018d9acdd/999ea6fe-8348-402d-8c1f-9d7c67156238/extra_2.jpg",
+        "photo_type": "extra_2"
+      },
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/a1bd024b-cae6-443d-9647-396018d9acdd/999ea6fe-8348-402d-8c1f-9d7c67156238/extra_3.jpg",
+        "photo_type": "extra_3"
+      }
+    ],
+    "teste": false
+  }
+}
