@@ -3,7 +3,7 @@
   "modelo": "iPhone 16",
   "loja": "caxias-do-sul",
   "vendido_em": "2026-11-07T16:29:26.972Z",
-  "estado": "pendente",
+  "estado": "publicando",
   "aparelho": {
     "id": "14c24a45-343f-44eb-b170-1e6fac340689",
     "model": "iPhone 16",
@@ -27,5 +27,6 @@
       }
     ],
     "teste": false
-  }
+  },
+  "em": "2026-11-07T16:29:45+00:00"
 }
