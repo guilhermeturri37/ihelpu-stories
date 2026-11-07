@@ -3,7 +3,7 @@
   "modelo": "iPhone 15 Pro Max",
   "loja": "zona-norte",
   "vendido_em": "2026-11-07T12:45:12.784Z",
-  "estado": "publicando",
+  "estado": "publicado",
   "aparelho": {
     "id": "fe4697c5-f71d-4e0e-a130-983953704b53",
     "model": "iPhone 15 Pro Max",
@@ -36,6 +36,7 @@
     ],
     "teste": false
   },
-  "em": "2026-11-07T12:45:30+00:00",
-  "foto": "iphone-15-pro-a.jpg"
+  "em": "2026-11-07T12:45:39+00:00",
+  "foto": "iphone-15-pro-a.jpg",
+  "story_id": "18378072019242021"
 }
