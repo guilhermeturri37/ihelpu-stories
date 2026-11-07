@@ -3,7 +3,7 @@
   "modelo": "iPhone 12 Pro",
   "loja": "zona-sul",
   "vendido_em": "2026-11-07T16:47:58.521Z",
-  "estado": "publicando",
+  "estado": "publicado",
   "aparelho": {
     "id": "51df6824-ff82-4698-be8b-ce055afeaf70",
     "model": "iPhone 12 Pro",
@@ -24,6 +24,7 @@
     ],
     "teste": false
   },
-  "em": "2026-11-07T16:48:14+00:00",
-  "foto": "iphone-12-pro-a.jpg"
+  "em": "2026-11-07T16:48:23+00:00",
+  "foto": "iphone-12-pro-a.jpg",
+  "story_id": "18202705324377122"
 }
