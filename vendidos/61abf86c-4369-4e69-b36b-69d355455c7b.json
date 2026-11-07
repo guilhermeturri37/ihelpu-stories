@@ -1,0 +1,27 @@
+{
+  "device_id": "61abf86c-4369-4e69-b36b-69d355455c7b",
+  "modelo": "iPhone 11",
+  "loja": "canoas",
+  "vendido_em": "2026-11-07T15:02:43.936Z",
+  "estado": "pendente",
+  "aparelho": {
+    "id": "61abf86c-4369-4e69-b36b-69d355455c7b",
+    "model": "iPhone 11",
+    "capacity": "64GB",
+    "aesthetic_condition": "como_novo",
+    "category": "iphone",
+    "preferred_store": "canoas",
+    "sold_at": "2026-11-07T15:02:43.936Z",
+    "photos": [
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/55c30d17-0a20-49cf-9cc3-4e8905cc0ab9/61abf86c-4369-4e69-b36b-69d355455c7b/front.jpg",
+        "photo_type": "front"
+      },
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/55c30d17-0a20-49cf-9cc3-4e8905cc0ab9/61abf86c-4369-4e69-b36b-69d355455c7b/back.jpg",
+        "photo_type": "back"
+      }
+    ],
+    "teste": false
+  }
+}
