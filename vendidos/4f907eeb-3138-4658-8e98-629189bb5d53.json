@@ -1,0 +1,27 @@
+{
+  "device_id": "4f907eeb-3138-4658-8e98-629189bb5d53",
+  "modelo": "iPhone 14",
+  "loja": "trend",
+  "vendido_em": "2026-11-07T18:34:47.875Z",
+  "estado": "pendente",
+  "aparelho": {
+    "id": "4f907eeb-3138-4658-8e98-629189bb5d53",
+    "model": "iPhone 14",
+    "capacity": "128GB",
+    "aesthetic_condition": "excelente",
+    "category": "iphone",
+    "preferred_store": "trend",
+    "sold_at": "2026-11-07T18:34:47.875Z",
+    "photos": [
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/1ae3161d-8353-4c33-aa4c-2e50abd5dd95/4f907eeb-3138-4658-8e98-629189bb5d53/front.jpeg",
+        "photo_type": "front"
+      },
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/1ae3161d-8353-4c33-aa4c-2e50abd5dd95/4f907eeb-3138-4658-8e98-629189bb5d53/back.jpeg",
+        "photo_type": "back"
+      }
+    ],
+    "teste": false
+  }
+}
