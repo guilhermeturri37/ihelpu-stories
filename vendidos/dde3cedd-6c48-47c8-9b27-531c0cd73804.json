@@ -1,0 +1,31 @@
+{
+  "device_id": "dde3cedd-6c48-47c8-9b27-531c0cd73804",
+  "modelo": "iPhone 15",
+  "loja": "pelotas",
+  "vendido_em": "2026-11-07T18:26:28.689Z",
+  "estado": "pendente",
+  "aparelho": {
+    "id": "dde3cedd-6c48-47c8-9b27-531c0cd73804",
+    "model": "iPhone 15",
+    "capacity": "128GB",
+    "aesthetic_condition": "excelente",
+    "category": "iphone",
+    "preferred_store": "pelotas",
+    "sold_at": "2026-11-07T18:26:28.689Z",
+    "photos": [
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/28e9cf21-c5b1-406d-90e0-45870a906bdb/dde3cedd-6c48-47c8-9b27-531c0cd73804/extra_1793303941212_1.jpg",
+        "photo_type": "extra_1793303941212_1"
+      },
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/28e9cf21-c5b1-406d-90e0-45870a906bdb/dde3cedd-6c48-47c8-9b27-531c0cd73804/extra_1793303941212_2.jpg",
+        "photo_type": "extra_1793303941212_2"
+      },
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/28e9cf21-c5b1-406d-90e0-45870a906bdb/dde3cedd-6c48-47c8-9b27-531c0cd73804/extra_1793303941212_3.jpg",
+        "photo_type": "extra_1793303941212_3"
+      }
+    ],
+    "teste": false
+  }
+}
