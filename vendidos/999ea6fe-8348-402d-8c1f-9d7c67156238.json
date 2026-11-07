@@ -3,7 +3,7 @@
   "modelo": "iPhone 13 Pro Max",
   "loja": "santa-maria",
   "vendido_em": "2026-11-07T19:00:24.233Z",
-  "estado": "publicando",
+  "estado": "publicado",
   "aparelho": {
     "id": "999ea6fe-8348-402d-8c1f-9d7c67156238",
     "model": "iPhone 13 Pro Max",
@@ -36,5 +36,6 @@
     ],
     "teste": false
   },
-  "em": "2026-11-07T19:00:47+00:00"
+  "em": "2026-11-07T19:00:57+00:00",
+  "story_id": "18130741459852510"
 }
