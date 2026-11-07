@@ -1,0 +1,27 @@
+{
+  "device_id": "51df6824-ff82-4698-be8b-ce055afeaf70",
+  "modelo": "iPhone 12 Pro",
+  "loja": "zona-sul",
+  "vendido_em": "2026-11-07T16:47:58.521Z",
+  "estado": "pendente",
+  "aparelho": {
+    "id": "51df6824-ff82-4698-be8b-ce055afeaf70",
+    "model": "iPhone 12 Pro",
+    "capacity": "256GB",
+    "aesthetic_condition": "excelente",
+    "category": "iphone",
+    "preferred_store": "zona-sul",
+    "sold_at": "2026-11-07T16:47:58.521Z",
+    "photos": [
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/4e3f5faf-b545-40d6-85cb-c3513665d3bb/51df6824-ff82-4698-be8b-ce055afeaf70/front.jpeg",
+        "photo_type": "front"
+      },
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/4e3f5faf-b545-40d6-85cb-c3513665d3bb/51df6824-ff82-4698-be8b-ce055afeaf70/back.jpeg",
+        "photo_type": "back"
+      }
+    ],
+    "teste": false
+  }
+}
