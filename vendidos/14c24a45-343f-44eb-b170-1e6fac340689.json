@@ -1,0 +1,31 @@
+{
+  "device_id": "14c24a45-343f-44eb-b170-1e6fac340689",
+  "modelo": "iPhone 16",
+  "loja": "caxias-do-sul",
+  "vendido_em": "2026-11-07T16:29:26.972Z",
+  "estado": "pendente",
+  "aparelho": {
+    "id": "14c24a45-343f-44eb-b170-1e6fac340689",
+    "model": "iPhone 16",
+    "capacity": "128GB",
+    "aesthetic_condition": "excelente",
+    "category": "iphone",
+    "preferred_store": "caxias-do-sul",
+    "sold_at": "2026-11-07T16:29:26.972Z",
+    "photos": [
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/1e5ede64-9814-428e-b1ef-7775ec1c2cb6/14c24a45-343f-44eb-b170-1e6fac340689/extra_1793812750138_1.jpeg",
+        "photo_type": "extra_1793812750138_1"
+      },
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/1e5ede64-9814-428e-b1ef-7775ec1c2cb6/14c24a45-343f-44eb-b170-1e6fac340689/extra_1793812750138_2.jpeg",
+        "photo_type": "extra_1793812750138_2"
+      },
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/1e5ede64-9814-428e-b1ef-7775ec1c2cb6/14c24a45-343f-44eb-b170-1e6fac340689/extra_1793812750138_3.jpeg",
+        "photo_type": "extra_1793812750138_3"
+      }
+    ],
+    "teste": false
+  }
+}
