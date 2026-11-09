@@ -1763,10 +1763,9 @@
     {
       "device_id": "8cde1655-9cc2-428c-be4c-fa9900a22150",
       "modelo": "iPhone 16 Pro Max",
-      "story_id": null,
-      "em": "2026-11-09T13:00:30+00:00",
-      "horario": 10,
-      "estado": "publicando"
+      "story_id": "17997263135841463",
+      "em": "2026-11-09T13:00:40+00:00",
+      "horario": 10
     }
   ]
 }
