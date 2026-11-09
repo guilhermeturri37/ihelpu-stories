@@ -1,0 +1,35 @@
+{
+  "device_id": "1bde4b00-9653-4707-bade-059ea8252caa",
+  "modelo": "iPhone 8 Plus",
+  "loja": "caxias-do-sul",
+  "vendido_em": "2026-11-09T16:33:21.540Z",
+  "estado": "pendente",
+  "aparelho": {
+    "id": "1bde4b00-9653-4707-bade-059ea8252caa",
+    "model": "iPhone 8 Plus",
+    "capacity": "64GB",
+    "aesthetic_condition": "excelente",
+    "category": "iphone",
+    "preferred_store": "caxias-do-sul",
+    "sold_at": "2026-11-09T16:33:21.540Z",
+    "photos": [
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/1e5ede64-9814-428e-b1ef-7775ec1c2cb6/1bde4b00-9653-4707-bade-059ea8252caa/front.jpg",
+        "photo_type": "front"
+      },
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/1e5ede64-9814-428e-b1ef-7775ec1c2cb6/1bde4b00-9653-4707-bade-059ea8252caa/back.jpg",
+        "photo_type": "back"
+      },
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/1e5ede64-9814-428e-b1ef-7775ec1c2cb6/1bde4b00-9653-4707-bade-059ea8252caa/extra_1.jpg",
+        "photo_type": "extra_1"
+      },
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/1e5ede64-9814-428e-b1ef-7775ec1c2cb6/1bde4b00-9653-4707-bade-059ea8252caa/extra_2.jpg",
+        "photo_type": "extra_2"
+      }
+    ],
+    "teste": false
+  }
+}
