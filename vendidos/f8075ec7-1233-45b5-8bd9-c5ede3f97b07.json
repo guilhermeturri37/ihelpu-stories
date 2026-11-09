@@ -1,0 +1,39 @@
+{
+  "device_id": "f8075ec7-1233-45b5-8bd9-c5ede3f97b07",
+  "modelo": "iPhone 12",
+  "loja": "canoas",
+  "vendido_em": "2026-11-09T12:37:53.683Z",
+  "estado": "pendente",
+  "aparelho": {
+    "id": "f8075ec7-1233-45b5-8bd9-c5ede3f97b07",
+    "model": "iPhone 12",
+    "capacity": "128GB",
+    "aesthetic_condition": "excelente",
+    "category": "iphone",
+    "preferred_store": "canoas",
+    "sold_at": "2026-11-09T12:37:53.683Z",
+    "photos": [
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/e2a967bf-4475-4ef3-9599-baedc6fc70b2/f8075ec7-1233-45b5-8bd9-c5ede3f97b07/front.jpg",
+        "photo_type": "front"
+      },
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/e2a967bf-4475-4ef3-9599-baedc6fc70b2/f8075ec7-1233-45b5-8bd9-c5ede3f97b07/back.jpg",
+        "photo_type": "back"
+      },
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/e2a967bf-4475-4ef3-9599-baedc6fc70b2/f8075ec7-1233-45b5-8bd9-c5ede3f97b07/extra_1.jpg",
+        "photo_type": "extra_1"
+      },
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/e2a967bf-4475-4ef3-9599-baedc6fc70b2/f8075ec7-1233-45b5-8bd9-c5ede3f97b07/extra_2.jpg",
+        "photo_type": "extra_2"
+      },
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/e2a967bf-4475-4ef3-9599-baedc6fc70b2/f8075ec7-1233-45b5-8bd9-c5ede3f97b07/extra_3.jpg",
+        "photo_type": "extra_3"
+      }
+    ],
+    "teste": false
+  }
+}
