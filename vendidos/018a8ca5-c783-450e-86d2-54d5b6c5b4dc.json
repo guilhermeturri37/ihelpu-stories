@@ -3,7 +3,7 @@
   "modelo": "iPhone 11",
   "loja": "canoas",
   "vendido_em": "2026-11-09T17:22:42.722Z",
-  "estado": "pendente",
+  "estado": "publicando",
   "aparelho": {
     "id": "018a8ca5-c783-450e-86d2-54d5b6c5b4dc",
     "model": "iPhone 11",
@@ -35,5 +35,7 @@
       }
     ],
     "teste": false
-  }
+  },
+  "em": "2026-11-09T17:23:07+00:00",
+  "foto": "iphone-11-e.jpg"
 }
