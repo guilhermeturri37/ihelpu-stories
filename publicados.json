@@ -1766,6 +1766,15 @@
       "story_id": "17997263135841463",
       "em": "2026-11-09T13:00:40+00:00",
       "horario": 10
+    },
+    {
+      "device_id": "a27d7106-6b75-4ef5-affc-179ffd77dac7",
+      "modelo": "iPhone 13",
+      "story_id": null,
+      "em": "2026-11-09T15:00:22+00:00",
+      "horario": 12,
+      "estado": "publicando",
+      "foto": "iphone-13-c.jpg"
     }
   ]
 }
