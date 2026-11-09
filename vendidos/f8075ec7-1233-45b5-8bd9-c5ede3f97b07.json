@@ -3,7 +3,7 @@
   "modelo": "iPhone 12",
   "loja": "canoas",
   "vendido_em": "2026-11-09T12:37:53.683Z",
-  "estado": "publicando",
+  "estado": "publicado",
   "aparelho": {
     "id": "f8075ec7-1233-45b5-8bd9-c5ede3f97b07",
     "model": "iPhone 12",
@@ -36,6 +36,7 @@
     ],
     "teste": false
   },
-  "em": "2026-11-09T12:38:20+00:00",
-  "foto": "iphone-12-j.jpg"
+  "em": "2026-11-09T12:38:33+00:00",
+  "foto": "iphone-12-j.jpg",
+  "story_id": "17976109008141731"
 }
