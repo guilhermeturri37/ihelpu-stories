@@ -3,7 +3,7 @@
   "modelo": "iPhone 8 Plus",
   "loja": "caxias-do-sul",
   "vendido_em": "2026-11-09T16:33:21.540Z",
-  "estado": "pendente",
+  "estado": "publicando",
   "aparelho": {
     "id": "1bde4b00-9653-4707-bade-059ea8252caa",
     "model": "iPhone 8 Plus",
@@ -31,5 +31,6 @@
       }
     ],
     "teste": false
-  }
+  },
+  "em": "2026-11-09T16:33:46+00:00"
 }
