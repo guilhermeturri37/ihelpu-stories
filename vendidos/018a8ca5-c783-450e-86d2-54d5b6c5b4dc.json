@@ -1,0 +1,39 @@
+{
+  "device_id": "018a8ca5-c783-450e-86d2-54d5b6c5b4dc",
+  "modelo": "iPhone 11",
+  "loja": "canoas",
+  "vendido_em": "2026-11-09T17:22:42.722Z",
+  "estado": "pendente",
+  "aparelho": {
+    "id": "018a8ca5-c783-450e-86d2-54d5b6c5b4dc",
+    "model": "iPhone 11",
+    "capacity": "64GB",
+    "aesthetic_condition": "excelente",
+    "category": "iphone",
+    "preferred_store": "canoas",
+    "sold_at": "2026-11-09T17:22:42.722Z",
+    "photos": [
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/e2a967bf-4475-4ef3-9599-baedc6fc70b2/018a8ca5-c783-450e-86d2-54d5b6c5b4dc/front.jpg",
+        "photo_type": "front"
+      },
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/e2a967bf-4475-4ef3-9599-baedc6fc70b2/018a8ca5-c783-450e-86d2-54d5b6c5b4dc/back.jpg",
+        "photo_type": "back"
+      },
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/e2a967bf-4475-4ef3-9599-baedc6fc70b2/018a8ca5-c783-450e-86d2-54d5b6c5b4dc/extra_1.jpg",
+        "photo_type": "extra_1"
+      },
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/e2a967bf-4475-4ef3-9599-baedc6fc70b2/018a8ca5-c783-450e-86d2-54d5b6c5b4dc/extra_2.jpg",
+        "photo_type": "extra_2"
+      },
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/e2a967bf-4475-4ef3-9599-baedc6fc70b2/018a8ca5-c783-450e-86d2-54d5b6c5b4dc/extra_3.jpg",
+        "photo_type": "extra_3"
+      }
+    ],
+    "teste": false
+  }
+}
