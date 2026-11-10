@@ -3,7 +3,7 @@
   "modelo": "iPhone 17 Pro",
   "loja": "pelotas",
   "vendido_em": "2026-11-10T20:48:31.475Z",
-  "estado": "pendente",
+  "estado": "publicando",
   "aparelho": {
     "id": "6c727ddc-7369-4d8c-b430-d63a4e779add",
     "model": "iPhone 17 Pro",
@@ -31,5 +31,6 @@
       }
     ],
     "teste": false
-  }
+  },
+  "em": "2026-11-10T20:48:53+00:00"
 }
