@@ -1,0 +1,27 @@
+{
+  "device_id": "7db819e3-c36b-4dc2-86fb-7549c1a29078",
+  "modelo": "iPhone X",
+  "loja": "sao-leopoldo",
+  "vendido_em": "2026-11-10T12:04:25.709Z",
+  "estado": "pendente",
+  "aparelho": {
+    "id": "7db819e3-c36b-4dc2-86fb-7549c1a29078",
+    "model": "iPhone X",
+    "capacity": "64GB",
+    "aesthetic_condition": "excelente",
+    "category": "iphone",
+    "preferred_store": "sao-leopoldo",
+    "sold_at": "2026-11-10T12:04:25.709Z",
+    "photos": [
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/4afd48e9-b185-4fcb-8ce0-11a98729b686/7db819e3-c36b-4dc2-86fb-7549c1a29078/front.jpeg",
+        "photo_type": "front"
+      },
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/4afd48e9-b185-4fcb-8ce0-11a98729b686/7db819e3-c36b-4dc2-86fb-7549c1a29078/back.jpeg",
+        "photo_type": "back"
+      }
+    ],
+    "teste": false
+  }
+}
