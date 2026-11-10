@@ -1,0 +1,35 @@
+{
+  "device_id": "6c727ddc-7369-4d8c-b430-d63a4e779add",
+  "modelo": "iPhone 17 Pro",
+  "loja": "pelotas",
+  "vendido_em": "2026-11-10T20:48:31.475Z",
+  "estado": "pendente",
+  "aparelho": {
+    "id": "6c727ddc-7369-4d8c-b430-d63a4e779add",
+    "model": "iPhone 17 Pro",
+    "capacity": "512GB",
+    "aesthetic_condition": "como_novo",
+    "category": "iphone",
+    "preferred_store": "pelotas",
+    "sold_at": "2026-11-10T20:48:31.475Z",
+    "photos": [
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/3c7eea70-6029-47ff-bc75-46dd1d110cca/6c727ddc-7369-4d8c-b430-d63a4e779add/front.jpg",
+        "photo_type": "front"
+      },
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/3c7eea70-6029-47ff-bc75-46dd1d110cca/6c727ddc-7369-4d8c-b430-d63a4e779add/back.jpg",
+        "photo_type": "back"
+      },
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/28e9cf21-c5b1-406d-90e0-45870a906bdb/6c727ddc-7369-4d8c-b430-d63a4e779add/extra_1.jpg",
+        "photo_type": "extra_1"
+      },
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/28e9cf21-c5b1-406d-90e0-45870a906bdb/6c727ddc-7369-4d8c-b430-d63a4e779add/extra_2.jpg",
+        "photo_type": "extra_2"
+      }
+    ],
+    "teste": false
+  }
+}
