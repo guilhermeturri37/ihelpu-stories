@@ -1,0 +1,27 @@
+{
+  "device_id": "b84867a9-ca45-44ae-ac77-43ba0ded7c5f",
+  "modelo": "iPhone X",
+  "loja": "zona-norte",
+  "vendido_em": "2026-11-11T16:25:14.225Z",
+  "estado": "pendente",
+  "aparelho": {
+    "id": "b84867a9-ca45-44ae-ac77-43ba0ded7c5f",
+    "model": "iPhone X",
+    "capacity": "64GB",
+    "aesthetic_condition": "excelente",
+    "category": "iphone",
+    "preferred_store": "zona-norte",
+    "sold_at": "2026-11-11T16:25:14.225Z",
+    "photos": [
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/fbd7e303-cd5d-446a-b473-b7f5202f3398/b84867a9-ca45-44ae-ac77-43ba0ded7c5f/front.jpeg",
+        "photo_type": "front"
+      },
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/fbd7e303-cd5d-446a-b473-b7f5202f3398/b84867a9-ca45-44ae-ac77-43ba0ded7c5f/back.jpeg",
+        "photo_type": "back"
+      }
+    ],
+    "teste": false
+  }
+}
