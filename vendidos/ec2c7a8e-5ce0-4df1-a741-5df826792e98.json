@@ -1,0 +1,27 @@
+{
+  "device_id": "ec2c7a8e-5ce0-4df1-a741-5df826792e98",
+  "modelo": "iPhone 17 Air",
+  "loja": "zona-norte",
+  "vendido_em": "2026-11-11T19:21:12.968Z",
+  "estado": "pendente",
+  "aparelho": {
+    "id": "ec2c7a8e-5ce0-4df1-a741-5df826792e98",
+    "model": "iPhone 17 Air",
+    "capacity": "256GB",
+    "aesthetic_condition": "como_novo",
+    "category": "iphone",
+    "preferred_store": "zona-norte",
+    "sold_at": "2026-11-11T19:21:12.968Z",
+    "photos": [
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/fbd7e303-cd5d-446a-b473-b7f5202f3398/ec2c7a8e-5ce0-4df1-a741-5df826792e98/front.jpeg",
+        "photo_type": "front"
+      },
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/fbd7e303-cd5d-446a-b473-b7f5202f3398/ec2c7a8e-5ce0-4df1-a741-5df826792e98/back.jpeg",
+        "photo_type": "back"
+      }
+    ],
+    "teste": false
+  }
+}
