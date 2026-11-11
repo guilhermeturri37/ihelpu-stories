@@ -3,7 +3,7 @@
   "modelo": "iPhone 13",
   "loja": "sao-leopoldo",
   "vendido_em": "2026-11-11T12:38:24.582Z",
-  "estado": "publicando",
+  "estado": "publicado",
   "aparelho": {
     "id": "e84c0383-3318-4adf-a214-5f2333403529",
     "model": "iPhone 13",
@@ -24,6 +24,7 @@
     ],
     "teste": false
   },
-  "em": "2026-11-11T12:38:42+00:00",
-  "foto": "iphone-13-b.jpg"
+  "em": "2026-11-11T12:38:56+00:00",
+  "foto": "iphone-13-b.jpg",
+  "story_id": "18134214571688601"
 }
