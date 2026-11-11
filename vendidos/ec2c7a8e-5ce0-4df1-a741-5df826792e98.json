@@ -3,7 +3,7 @@
   "modelo": "iPhone 17 Air",
   "loja": "zona-norte",
   "vendido_em": "2026-11-11T19:21:12.968Z",
-  "estado": "pendente",
+  "estado": "publicando",
   "aparelho": {
     "id": "ec2c7a8e-5ce0-4df1-a741-5df826792e98",
     "model": "iPhone 17 Air",
@@ -23,5 +23,6 @@
       }
     ],
     "teste": false
-  }
+  },
+  "em": "2026-11-11T19:21:35+00:00"
 }
