@@ -3,7 +3,7 @@
   "modelo": "iPhone X",
   "loja": "zona-norte",
   "vendido_em": "2026-11-11T16:25:14.225Z",
-  "estado": "pendente",
+  "estado": "publicando",
   "aparelho": {
     "id": "b84867a9-ca45-44ae-ac77-43ba0ded7c5f",
     "model": "iPhone X",
@@ -23,5 +23,6 @@
       }
     ],
     "teste": false
-  }
+  },
+  "em": "2026-11-11T16:25:39+00:00"
 }
