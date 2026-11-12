@@ -3,7 +3,7 @@
   "modelo": "iPhone 13",
   "loja": "zona-sul",
   "vendido_em": "2026-11-12T20:53:24.602Z",
-  "estado": "publicando",
+  "estado": "publicado",
   "aparelho": {
     "id": "606f4d7f-e5c9-4fcc-9337-061950ae0cb8",
     "model": "iPhone 13",
@@ -32,6 +32,7 @@
     ],
     "teste": false
   },
-  "em": "2026-11-12T20:53:59+00:00",
-  "foto": "iphone-13-d.jpg"
+  "em": "2026-11-12T20:54:10+00:00",
+  "foto": "iphone-13-d.jpg",
+  "story_id": "18192561913411099"
 }
