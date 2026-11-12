@@ -3,7 +3,7 @@
   "modelo": "iPhone 15 Pro Max",
   "loja": "caxias-do-sul",
   "vendido_em": "2026-11-12T17:43:32.366Z",
-  "estado": "publicando",
+  "estado": "publicado",
   "aparelho": {
     "id": "f5555c90-45ee-4da9-b404-a9d855d9b75e",
     "model": "iPhone 15 Pro Max",
@@ -32,6 +32,7 @@
     ],
     "teste": false
   },
-  "em": "2026-11-12T17:43:50+00:00",
-  "foto": "iphone-15-pro-b.jpg"
+  "em": "2026-11-12T17:44:04+00:00",
+  "foto": "iphone-15-pro-b.jpg",
+  "story_id": "18487332172114296"
 }
