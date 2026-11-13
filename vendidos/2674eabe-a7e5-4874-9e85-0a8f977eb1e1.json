@@ -1,0 +1,39 @@
+{
+  "device_id": "2674eabe-a7e5-4874-9e85-0a8f977eb1e1",
+  "modelo": "iPhone 13",
+  "loja": "caxias-do-sul",
+  "vendido_em": "2026-11-13T18:08:09.190Z",
+  "estado": "pendente",
+  "aparelho": {
+    "id": "2674eabe-a7e5-4874-9e85-0a8f977eb1e1",
+    "model": "iPhone 13",
+    "capacity": "128GB",
+    "aesthetic_condition": "excelente",
+    "category": "iphone",
+    "preferred_store": "caxias-do-sul",
+    "sold_at": "2026-11-13T18:08:09.190Z",
+    "photos": [
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/ae0ed7d1-6dbb-463b-a815-8314ac151d1e/2674eabe-a7e5-4874-9e85-0a8f977eb1e1/front.jpg",
+        "photo_type": "front"
+      },
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/ae0ed7d1-6dbb-463b-a815-8314ac151d1e/2674eabe-a7e5-4874-9e85-0a8f977eb1e1/back.jpg",
+        "photo_type": "back"
+      },
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/1e5ede64-9814-428e-b1ef-7775ec1c2cb6/2674eabe-a7e5-4874-9e85-0a8f977eb1e1/extra_1.jpg",
+        "photo_type": "extra_1"
+      },
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/1e5ede64-9814-428e-b1ef-7775ec1c2cb6/2674eabe-a7e5-4874-9e85-0a8f977eb1e1/extra_2.jpg",
+        "photo_type": "extra_2"
+      },
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/1e5ede64-9814-428e-b1ef-7775ec1c2cb6/2674eabe-a7e5-4874-9e85-0a8f977eb1e1/extra_3.jpg",
+        "photo_type": "extra_3"
+      }
+    ],
+    "teste": false
+  }
+}
