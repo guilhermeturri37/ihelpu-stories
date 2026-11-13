@@ -3,7 +3,7 @@
   "modelo": "iPhone 12 Pro Max",
   "loja": "zona-norte",
   "vendido_em": "2026-11-13T17:28:01.625Z",
-  "estado": "pendente",
+  "estado": "publicando",
   "aparelho": {
     "id": "b5186728-02d5-4eef-828b-2980ae9f6852",
     "model": "iPhone 12 Pro Max",
@@ -31,5 +31,6 @@
       }
     ],
     "teste": false
-  }
+  },
+  "em": "2026-11-13T17:28:31+00:00"
 }
