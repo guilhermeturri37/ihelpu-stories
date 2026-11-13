@@ -1,0 +1,39 @@
+{
+  "device_id": "d90315ef-ee46-468d-af10-dc78d796c2c0",
+  "modelo": "iPhone 13",
+  "loja": "canoas",
+  "vendido_em": "2026-11-13T18:26:49.483Z",
+  "estado": "pendente",
+  "aparelho": {
+    "id": "d90315ef-ee46-468d-af10-dc78d796c2c0",
+    "model": "iPhone 13",
+    "capacity": "128GB",
+    "aesthetic_condition": "excelente",
+    "category": "iphone",
+    "preferred_store": "canoas",
+    "sold_at": "2026-11-13T18:26:49.483Z",
+    "photos": [
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/61cc76b7-a376-493d-977c-270ffd21bb38/d90315ef-ee46-468d-af10-dc78d796c2c0/front.jpg",
+        "photo_type": "front"
+      },
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/61cc76b7-a376-493d-977c-270ffd21bb38/d90315ef-ee46-468d-af10-dc78d796c2c0/back.jpg",
+        "photo_type": "back"
+      },
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/e2a967bf-4475-4ef3-9599-baedc6fc70b2/d90315ef-ee46-468d-af10-dc78d796c2c0/extra_1.jpg",
+        "photo_type": "extra_1"
+      },
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/e2a967bf-4475-4ef3-9599-baedc6fc70b2/d90315ef-ee46-468d-af10-dc78d796c2c0/extra_2.jpg",
+        "photo_type": "extra_2"
+      },
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/e2a967bf-4475-4ef3-9599-baedc6fc70b2/d90315ef-ee46-468d-af10-dc78d796c2c0/extra_3.jpg",
+        "photo_type": "extra_3"
+      }
+    ],
+    "teste": false
+  }
+}
