@@ -3,7 +3,7 @@
   "modelo": "iPhone 13",
   "loja": "caxias-do-sul",
   "vendido_em": "2026-11-13T18:43:41.645Z",
-  "estado": "publicando",
+  "estado": "publicado",
   "aparelho": {
     "id": "26e1d3aa-1e80-4e89-bef0-ab006002dca3",
     "model": "iPhone 13",
@@ -32,6 +32,7 @@
     ],
     "teste": false
   },
-  "em": "2026-11-13T18:44:04+00:00",
-  "foto": "iphone-13-a.jpg"
+  "em": "2026-11-13T18:44:14+00:00",
+  "foto": "iphone-13-a.jpg",
+  "story_id": "17982955341129579"
 }
