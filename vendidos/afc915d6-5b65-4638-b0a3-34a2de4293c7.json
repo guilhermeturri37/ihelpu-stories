@@ -1,0 +1,35 @@
+{
+  "device_id": "afc915d6-5b65-4638-b0a3-34a2de4293c7",
+  "modelo": "iPhone SE (2ª geração)",
+  "loja": "canoas",
+  "vendido_em": "2026-11-13T19:42:35.757Z",
+  "estado": "pendente",
+  "aparelho": {
+    "id": "afc915d6-5b65-4638-b0a3-34a2de4293c7",
+    "model": "iPhone SE (2ª geração)",
+    "capacity": "64GB",
+    "aesthetic_condition": "excelente",
+    "category": "iphone",
+    "preferred_store": "canoas",
+    "sold_at": "2026-11-13T19:42:35.757Z",
+    "photos": [
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/e008e39b-6ff9-477a-a87c-549f7aac553a/afc915d6-5b65-4638-b0a3-34a2de4293c7/back.jpg",
+        "photo_type": "back"
+      },
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/e2a967bf-4475-4ef3-9599-baedc6fc70b2/afc915d6-5b65-4638-b0a3-34a2de4293c7/extra_1793821528135_1.jpg",
+        "photo_type": "extra_1793821528135_1"
+      },
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/e2a967bf-4475-4ef3-9599-baedc6fc70b2/afc915d6-5b65-4638-b0a3-34a2de4293c7/extra_1793821528135_2.jpg",
+        "photo_type": "extra_1793821528135_2"
+      },
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/e2a967bf-4475-4ef3-9599-baedc6fc70b2/afc915d6-5b65-4638-b0a3-34a2de4293c7/extra_1793821528135_3.jpg",
+        "photo_type": "extra_1793821528135_3"
+      }
+    ],
+    "teste": false
+  }
+}
