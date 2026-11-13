@@ -3,7 +3,7 @@
   "modelo": "iPhone SE (2ª geração)",
   "loja": "canoas",
   "vendido_em": "2026-11-13T19:42:35.757Z",
-  "estado": "pendente",
+  "estado": "publicando",
   "aparelho": {
     "id": "afc915d6-5b65-4638-b0a3-34a2de4293c7",
     "model": "iPhone SE (2ª geração)",
@@ -31,5 +31,6 @@
       }
     ],
     "teste": false
-  }
+  },
+  "em": "2026-11-13T19:43:02+00:00"
 }
