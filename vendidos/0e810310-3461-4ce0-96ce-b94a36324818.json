@@ -1,0 +1,27 @@
+{
+  "device_id": "0e810310-3461-4ce0-96ce-b94a36324818",
+  "modelo": "iPhone 13 Pro Max",
+  "loja": "sao-leopoldo",
+  "vendido_em": "2026-11-13T20:04:06.314Z",
+  "estado": "pendente",
+  "aparelho": {
+    "id": "0e810310-3461-4ce0-96ce-b94a36324818",
+    "model": "iPhone 13 Pro Max",
+    "capacity": "256GB",
+    "aesthetic_condition": "como_novo",
+    "category": "iphone",
+    "preferred_store": "sao-leopoldo",
+    "sold_at": "2026-11-13T20:04:06.314Z",
+    "photos": [
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/9abc9bc8-82fe-4e33-a18a-ae0f77bba9da/0e810310-3461-4ce0-96ce-b94a36324818/front.jpeg",
+        "photo_type": "front"
+      },
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/9abc9bc8-82fe-4e33-a18a-ae0f77bba9da/0e810310-3461-4ce0-96ce-b94a36324818/back.jpeg",
+        "photo_type": "back"
+      }
+    ],
+    "teste": false
+  }
+}
