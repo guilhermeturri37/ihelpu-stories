@@ -3,7 +3,7 @@
   "modelo": "iPhone 16 Pro Max",
   "loja": "zona-norte",
   "vendido_em": "2026-11-13T21:12:41.905Z",
-  "estado": "pendente",
+  "estado": "publicando",
   "aparelho": {
     "id": "8cde1655-9cc2-428c-be4c-fa9900a22150",
     "model": "iPhone 16 Pro Max",
@@ -23,5 +23,6 @@
       }
     ],
     "teste": false
-  }
+  },
+  "em": "2026-11-13T21:13:07+00:00"
 }
