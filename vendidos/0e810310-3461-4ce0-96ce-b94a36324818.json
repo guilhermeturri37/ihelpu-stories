@@ -3,7 +3,7 @@
   "modelo": "iPhone 13 Pro Max",
   "loja": "sao-leopoldo",
   "vendido_em": "2026-11-13T20:04:06.314Z",
-  "estado": "pendente",
+  "estado": "publicando",
   "aparelho": {
     "id": "0e810310-3461-4ce0-96ce-b94a36324818",
     "model": "iPhone 13 Pro Max",
@@ -23,5 +23,6 @@
       }
     ],
     "teste": false
-  }
+  },
+  "em": "2026-11-13T20:04:24+00:00"
 }
