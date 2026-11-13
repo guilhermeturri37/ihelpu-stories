@@ -3,7 +3,7 @@
   "modelo": "iPhone 13",
   "loja": "canoas",
   "vendido_em": "2026-11-13T18:26:49.483Z",
-  "estado": "pendente",
+  "estado": "publicando",
   "aparelho": {
     "id": "d90315ef-ee46-468d-af10-dc78d796c2c0",
     "model": "iPhone 13",
@@ -35,5 +35,7 @@
       }
     ],
     "teste": false
-  }
+  },
+  "em": "2026-11-13T18:27:17+00:00",
+  "foto": "iphone-13-f.jpg"
 }
