@@ -1,0 +1,35 @@
+{
+  "device_id": "b5186728-02d5-4eef-828b-2980ae9f6852",
+  "modelo": "iPhone 12 Pro Max",
+  "loja": "zona-norte",
+  "vendido_em": "2026-11-13T17:28:01.625Z",
+  "estado": "pendente",
+  "aparelho": {
+    "id": "b5186728-02d5-4eef-828b-2980ae9f6852",
+    "model": "iPhone 12 Pro Max",
+    "capacity": "512GB",
+    "aesthetic_condition": "excelente",
+    "category": "iphone",
+    "preferred_store": "zona-norte",
+    "sold_at": "2026-11-13T17:28:01.625Z",
+    "photos": [
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/3bb0e517-a20b-4b55-9519-75c1ff7a0263/b5186728-02d5-4eef-828b-2980ae9f6852/front.jpg",
+        "photo_type": "front"
+      },
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/3bb0e517-a20b-4b55-9519-75c1ff7a0263/b5186728-02d5-4eef-828b-2980ae9f6852/back.jpg",
+        "photo_type": "back"
+      },
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/8e889277-aad5-4b36-aaa3-6a0fce26907b/b5186728-02d5-4eef-828b-2980ae9f6852/extra_1.JPG",
+        "photo_type": "extra_1"
+      },
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/8e889277-aad5-4b36-aaa3-6a0fce26907b/b5186728-02d5-4eef-828b-2980ae9f6852/extra_2.JPG",
+        "photo_type": "extra_2"
+      }
+    ],
+    "teste": false
+  }
+}
