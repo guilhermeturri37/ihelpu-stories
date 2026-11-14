@@ -1,0 +1,27 @@
+{
+  "device_id": "77aea18b-8d51-4452-b892-f25738e990dd",
+  "modelo": "iPhone 11",
+  "loja": "zona-sul",
+  "vendido_em": "2026-11-14T14:28:19.801Z",
+  "estado": "pendente",
+  "aparelho": {
+    "id": "77aea18b-8d51-4452-b892-f25738e990dd",
+    "model": "iPhone 11",
+    "capacity": "64GB",
+    "aesthetic_condition": "como_novo",
+    "category": "iphone",
+    "preferred_store": "zona-sul",
+    "sold_at": "2026-11-14T14:28:19.801Z",
+    "photos": [
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/fbd7e303-cd5d-446a-b473-b7f5202f3398/77aea18b-8d51-4452-b892-f25738e990dd/front.jpeg",
+        "photo_type": "front"
+      },
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/fbd7e303-cd5d-446a-b473-b7f5202f3398/77aea18b-8d51-4452-b892-f25738e990dd/back.jpeg",
+        "photo_type": "back"
+      }
+    ],
+    "teste": false
+  }
+}
