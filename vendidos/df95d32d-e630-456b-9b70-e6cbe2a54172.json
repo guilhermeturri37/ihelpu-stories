@@ -1,0 +1,39 @@
+{
+  "device_id": "df95d32d-e630-456b-9b70-e6cbe2a54172",
+  "modelo": "iPhone 16 Pro Max",
+  "loja": "zona-norte",
+  "vendido_em": "2026-11-14T19:05:20.980Z",
+  "estado": "pendente",
+  "aparelho": {
+    "id": "df95d32d-e630-456b-9b70-e6cbe2a54172",
+    "model": "iPhone 16 Pro Max",
+    "capacity": "256GB",
+    "aesthetic_condition": "excelente",
+    "category": "iphone",
+    "preferred_store": "zona-norte",
+    "sold_at": "2026-11-14T19:05:20.980Z",
+    "photos": [
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/d1113f2e-0638-433f-90a1-b86241e40377/df95d32d-e630-456b-9b70-e6cbe2a54172/front.jpeg",
+        "photo_type": "front"
+      },
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/d1113f2e-0638-433f-90a1-b86241e40377/df95d32d-e630-456b-9b70-e6cbe2a54172/back.jpeg",
+        "photo_type": "back"
+      },
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/8e889277-aad5-4b36-aaa3-6a0fce26907b/df95d32d-e630-456b-9b70-e6cbe2a54172/extra_1.jpeg",
+        "photo_type": "extra_1"
+      },
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/8e889277-aad5-4b36-aaa3-6a0fce26907b/df95d32d-e630-456b-9b70-e6cbe2a54172/extra_2.jpeg",
+        "photo_type": "extra_2"
+      },
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/8e889277-aad5-4b36-aaa3-6a0fce26907b/df95d32d-e630-456b-9b70-e6cbe2a54172/extra_3.jpeg",
+        "photo_type": "extra_3"
+      }
+    ],
+    "teste": false
+  }
+}
