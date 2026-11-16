@@ -1,0 +1,39 @@
+{
+  "device_id": "3a421fe7-0d9a-4207-be5b-c41b2ecc9d82",
+  "modelo": "iPhone 15 Pro",
+  "loja": "caxias-do-sul",
+  "vendido_em": "2026-11-16T17:03:10.705Z",
+  "estado": "pendente",
+  "aparelho": {
+    "id": "3a421fe7-0d9a-4207-be5b-c41b2ecc9d82",
+    "model": "iPhone 15 Pro",
+    "capacity": "256GB",
+    "aesthetic_condition": "excelente",
+    "category": "iphone",
+    "preferred_store": "caxias-do-sul",
+    "sold_at": "2026-11-16T17:03:10.705Z",
+    "photos": [
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/0babd5ee-bfd6-49eb-a67f-0921e29d9917/3a421fe7-0d9a-4207-be5b-c41b2ecc9d82/front.jpg",
+        "photo_type": "front"
+      },
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/0babd5ee-bfd6-49eb-a67f-0921e29d9917/3a421fe7-0d9a-4207-be5b-c41b2ecc9d82/back.jpg",
+        "photo_type": "back"
+      },
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/1e5ede64-9814-428e-b1ef-7775ec1c2cb6/3a421fe7-0d9a-4207-be5b-c41b2ecc9d82/extra_1.jpg",
+        "photo_type": "extra_1"
+      },
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/1e5ede64-9814-428e-b1ef-7775ec1c2cb6/3a421fe7-0d9a-4207-be5b-c41b2ecc9d82/extra_2.jpg",
+        "photo_type": "extra_2"
+      },
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/1e5ede64-9814-428e-b1ef-7775ec1c2cb6/3a421fe7-0d9a-4207-be5b-c41b2ecc9d82/extra_3.jpg",
+        "photo_type": "extra_3"
+      }
+    ],
+    "teste": false
+  }
+}
