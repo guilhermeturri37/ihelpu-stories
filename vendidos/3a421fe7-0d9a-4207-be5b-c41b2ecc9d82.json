@@ -3,7 +3,7 @@
   "modelo": "iPhone 15 Pro",
   "loja": "caxias-do-sul",
   "vendido_em": "2026-11-16T17:03:10.705Z",
-  "estado": "pendente",
+  "estado": "publicando",
   "aparelho": {
     "id": "3a421fe7-0d9a-4207-be5b-c41b2ecc9d82",
     "model": "iPhone 15 Pro",
@@ -35,5 +35,7 @@
       }
     ],
     "teste": false
-  }
+  },
+  "em": "2026-11-16T17:03:59+00:00",
+  "foto": "iphone-15-pro-a.jpg"
 }
