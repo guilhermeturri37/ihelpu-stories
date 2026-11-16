@@ -3,7 +3,7 @@
   "modelo": "iPhone 17 Pro Max",
   "loja": "zona-norte",
   "vendido_em": "2026-11-16T19:49:01.821Z",
-  "estado": "pendente",
+  "estado": "publicando",
   "aparelho": {
     "id": "55be948b-be98-42ed-abca-0e2c1f36b748",
     "model": "iPhone 17 Pro Max",
@@ -35,5 +35,7 @@
       }
     ],
     "teste": false
-  }
+  },
+  "em": "2026-11-16T19:49:24+00:00",
+  "foto": "iphone-17-pro-max-b.jpg"
 }
