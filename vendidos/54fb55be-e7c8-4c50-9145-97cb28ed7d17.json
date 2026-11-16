@@ -1,0 +1,39 @@
+{
+  "device_id": "54fb55be-e7c8-4c50-9145-97cb28ed7d17",
+  "modelo": "iPhone 12",
+  "loja": "zona-norte",
+  "vendido_em": "2026-11-16T13:20:51.334Z",
+  "estado": "pendente",
+  "aparelho": {
+    "id": "54fb55be-e7c8-4c50-9145-97cb28ed7d17",
+    "model": "iPhone 12",
+    "capacity": "64GB",
+    "aesthetic_condition": "excelente",
+    "category": "iphone",
+    "preferred_store": "zona-norte",
+    "sold_at": "2026-11-16T13:20:51.334Z",
+    "photos": [
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/31dff059-c166-4adc-b2d7-24846d545093/54fb55be-e7c8-4c50-9145-97cb28ed7d17/front.jpeg",
+        "photo_type": "front"
+      },
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/31dff059-c166-4adc-b2d7-24846d545093/54fb55be-e7c8-4c50-9145-97cb28ed7d17/back.jpeg",
+        "photo_type": "back"
+      },
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/8e889277-aad5-4b36-aaa3-6a0fce26907b/54fb55be-e7c8-4c50-9145-97cb28ed7d17/extra_1.jpeg",
+        "photo_type": "extra_1"
+      },
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/8e889277-aad5-4b36-aaa3-6a0fce26907b/54fb55be-e7c8-4c50-9145-97cb28ed7d17/extra_2.jpeg",
+        "photo_type": "extra_2"
+      },
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/8e889277-aad5-4b36-aaa3-6a0fce26907b/54fb55be-e7c8-4c50-9145-97cb28ed7d17/extra_3.jpeg",
+        "photo_type": "extra_3"
+      }
+    ],
+    "teste": false
+  }
+}
