@@ -3,7 +3,7 @@
   "modelo": "iPhone 11",
   "loja": "sao-leopoldo",
   "vendido_em": "2026-11-16T17:22:53.361Z",
-  "estado": "publicando",
+  "estado": "publicado",
   "aparelho": {
     "id": "e1035dd7-ac5c-47cb-9b9a-6e66842bd511",
     "model": "iPhone 11",
@@ -24,6 +24,7 @@
     ],
     "teste": false
   },
-  "em": "2026-11-16T17:27:03+00:00",
-  "foto": "iphone-11-b.jpg"
+  "em": "2026-11-16T17:27:14+00:00",
+  "foto": "iphone-11-b.jpg",
+  "story_id": "17968497920981987"
 }
