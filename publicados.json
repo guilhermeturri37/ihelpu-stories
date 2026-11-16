@@ -1908,6 +1908,14 @@
       "em": "2026-11-16T13:00:43+00:00",
       "horario": 10,
       "foto": "iphone-13-f.jpg"
+    },
+    {
+      "device_id": "1d99f1d6-ba9f-4077-b0ff-9f9682ec10d7",
+      "modelo": "MacBook Pro 13\" Intel 2016 (A1706)",
+      "story_id": null,
+      "em": "2026-11-16T15:00:37+00:00",
+      "horario": 12,
+      "estado": "publicando"
     }
   ]
 }
