@@ -1,0 +1,27 @@
+{
+  "device_id": "97ffd31b-3d5f-4783-be08-48bbff5d9ff0",
+  "modelo": "iPhone 14 Pro Max",
+  "loja": "zona-norte",
+  "vendido_em": "2026-11-16T19:38:03.935Z",
+  "estado": "pendente",
+  "aparelho": {
+    "id": "97ffd31b-3d5f-4783-be08-48bbff5d9ff0",
+    "model": "iPhone 14 Pro Max",
+    "capacity": "128GB",
+    "aesthetic_condition": "como_novo",
+    "category": "iphone",
+    "preferred_store": "zona-norte",
+    "sold_at": "2026-11-16T19:38:03.935Z",
+    "photos": [
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/fbd7e303-cd5d-446a-b473-b7f5202f3398/97ffd31b-3d5f-4783-be08-48bbff5d9ff0/front.jpeg",
+        "photo_type": "front"
+      },
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/fbd7e303-cd5d-446a-b473-b7f5202f3398/97ffd31b-3d5f-4783-be08-48bbff5d9ff0/back.jpeg",
+        "photo_type": "back"
+      }
+    ],
+    "teste": false
+  }
+}
