@@ -3,7 +3,7 @@
   "modelo": "iPhone 12",
   "loja": "pelotas",
   "vendido_em": "2026-11-16T13:20:51.334Z",
-  "estado": "pendente",
+  "estado": "publicando",
   "aparelho": {
     "id": "58d227c4-a950-41ed-a11a-3bd53f0198ab",
     "model": "iPhone 12",
@@ -31,5 +31,7 @@
       }
     ],
     "teste": false
-  }
+  },
+  "em": "2026-11-16T13:21:15+00:00",
+  "foto": "iphone-12-a.jpg"
 }
