@@ -3,7 +3,7 @@
   "modelo": "iPhone 11 Pro Max",
   "loja": "zona-sul",
   "vendido_em": "2026-11-17T12:44:11.597Z",
-  "estado": "pendente",
+  "estado": "publicando",
   "aparelho": {
     "id": "83258d08-fed2-4fc0-9817-01710ca769b1",
     "model": "iPhone 11 Pro Max",
@@ -27,5 +27,6 @@
       }
     ],
     "teste": false
-  }
+  },
+  "em": "2026-11-17T12:44:41+00:00"
 }
