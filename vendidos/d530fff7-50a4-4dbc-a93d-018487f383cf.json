@@ -1,0 +1,27 @@
+{
+  "device_id": "d530fff7-50a4-4dbc-a93d-018487f383cf",
+  "modelo": "iPhone 14 Plus",
+  "loja": "novo-hamburgo",
+  "vendido_em": "2026-11-18T18:53:25.663Z",
+  "estado": "pendente",
+  "aparelho": {
+    "id": "d530fff7-50a4-4dbc-a93d-018487f383cf",
+    "model": "iPhone 14 Plus",
+    "capacity": "128GB",
+    "aesthetic_condition": "excelente",
+    "category": "iphone",
+    "preferred_store": "novo-hamburgo",
+    "sold_at": "2026-11-18T18:53:25.663Z",
+    "photos": [
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/3c7eea70-6029-47ff-bc75-46dd1d110cca/d530fff7-50a4-4dbc-a93d-018487f383cf/front.jpeg",
+        "photo_type": "front"
+      },
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/3c7eea70-6029-47ff-bc75-46dd1d110cca/d530fff7-50a4-4dbc-a93d-018487f383cf/back.jpeg",
+        "photo_type": "back"
+      }
+    ],
+    "teste": false
+  }
+}
