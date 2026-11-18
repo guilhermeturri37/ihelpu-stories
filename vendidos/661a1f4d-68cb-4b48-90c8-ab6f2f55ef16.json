@@ -1,0 +1,35 @@
+{
+  "device_id": "661a1f4d-68cb-4b48-90c8-ab6f2f55ef16",
+  "modelo": "iPhone 12",
+  "loja": "zona-sul",
+  "vendido_em": "2026-11-18T17:27:49.319Z",
+  "estado": "pendente",
+  "aparelho": {
+    "id": "661a1f4d-68cb-4b48-90c8-ab6f2f55ef16",
+    "model": "iPhone 12",
+    "capacity": "256GB",
+    "aesthetic_condition": "excelente",
+    "category": "iphone",
+    "preferred_store": "zona-sul",
+    "sold_at": "2026-11-18T17:27:49.319Z",
+    "photos": [
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/31d2549e-34db-45c0-bff2-dd9e111aa37b/661a1f4d-68cb-4b48-90c8-ab6f2f55ef16/front.jpeg",
+        "photo_type": "front"
+      },
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/31d2549e-34db-45c0-bff2-dd9e111aa37b/661a1f4d-68cb-4b48-90c8-ab6f2f55ef16/back.jpeg",
+        "photo_type": "back"
+      },
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/31d2549e-34db-45c0-bff2-dd9e111aa37b/661a1f4d-68cb-4b48-90c8-ab6f2f55ef16/extra_1.jpeg",
+        "photo_type": "extra_1"
+      },
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/31d2549e-34db-45c0-bff2-dd9e111aa37b/661a1f4d-68cb-4b48-90c8-ab6f2f55ef16/extra_2.jpeg",
+        "photo_type": "extra_2"
+      }
+    ],
+    "teste": false
+  }
+}
