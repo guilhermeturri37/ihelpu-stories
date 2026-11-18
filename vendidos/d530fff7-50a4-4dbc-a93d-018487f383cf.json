@@ -3,7 +3,7 @@
   "modelo": "iPhone 14 Plus",
   "loja": "novo-hamburgo",
   "vendido_em": "2026-11-18T18:53:25.663Z",
-  "estado": "pendente",
+  "estado": "publicando",
   "aparelho": {
     "id": "d530fff7-50a4-4dbc-a93d-018487f383cf",
     "model": "iPhone 14 Plus",
@@ -23,5 +23,7 @@
       }
     ],
     "teste": false
-  }
+  },
+  "em": "2026-11-18T18:54:07+00:00",
+  "foto": "iphone-14-plus-a.jpg"
 }
