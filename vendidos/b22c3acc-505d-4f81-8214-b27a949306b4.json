@@ -1,0 +1,27 @@
+{
+  "device_id": "b22c3acc-505d-4f81-8214-b27a949306b4",
+  "modelo": "iPhone XR",
+  "loja": "zona-sul",
+  "vendido_em": "2026-11-18T16:24:00.123Z",
+  "estado": "pendente",
+  "aparelho": {
+    "id": "b22c3acc-505d-4f81-8214-b27a949306b4",
+    "model": "iPhone XR",
+    "capacity": "64GB",
+    "aesthetic_condition": "excelente",
+    "category": "iphone",
+    "preferred_store": "zona-sul",
+    "sold_at": "2026-11-18T16:24:00.123Z",
+    "photos": [
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/b69636df-3057-430c-bc06-224d5e4857de/b22c3acc-505d-4f81-8214-b27a949306b4/front.jpeg",
+        "photo_type": "front"
+      },
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/b69636df-3057-430c-bc06-224d5e4857de/b22c3acc-505d-4f81-8214-b27a949306b4/back.jpeg",
+        "photo_type": "back"
+      }
+    ],
+    "teste": false
+  }
+}
