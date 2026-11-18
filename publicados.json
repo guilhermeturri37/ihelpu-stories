@@ -1938,6 +1938,14 @@
       "em": "2026-11-17T15:05:33+00:00",
       "horario": 12,
       "foto": "iphone-13-a.jpg"
+    },
+    {
+      "device_id": "c2ea3b80-5a61-4cae-a60f-28ee2ee473e7",
+      "modelo": "iPhone 16 Pro Max",
+      "story_id": null,
+      "em": "2026-11-18T11:05:14+00:00",
+      "horario": 8,
+      "estado": "publicando"
     }
   ]
 }
