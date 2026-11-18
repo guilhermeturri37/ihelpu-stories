@@ -1,0 +1,39 @@
+{
+  "device_id": "47feb851-bcac-419e-8d92-ce66799bcabb",
+  "modelo": "iPhone 8",
+  "loja": "caxias-do-sul",
+  "vendido_em": "2026-11-18T21:41:46.928Z",
+  "estado": "pendente",
+  "aparelho": {
+    "id": "47feb851-bcac-419e-8d92-ce66799bcabb",
+    "model": "iPhone 8",
+    "capacity": "64GB",
+    "aesthetic_condition": "excelente",
+    "category": "iphone",
+    "preferred_store": "caxias-do-sul",
+    "sold_at": "2026-11-18T21:41:46.928Z",
+    "photos": [
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/1e5ede64-9814-428e-b1ef-7775ec1c2cb6/47feb851-bcac-419e-8d92-ce66799bcabb/front.jpg",
+        "photo_type": "front"
+      },
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/1e5ede64-9814-428e-b1ef-7775ec1c2cb6/47feb851-bcac-419e-8d92-ce66799bcabb/back.jpg",
+        "photo_type": "back"
+      },
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/1e5ede64-9814-428e-b1ef-7775ec1c2cb6/47feb851-bcac-419e-8d92-ce66799bcabb/extra_1.jpg",
+        "photo_type": "extra_1"
+      },
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/1e5ede64-9814-428e-b1ef-7775ec1c2cb6/47feb851-bcac-419e-8d92-ce66799bcabb/extra_2.jpg",
+        "photo_type": "extra_2"
+      },
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/1e5ede64-9814-428e-b1ef-7775ec1c2cb6/47feb851-bcac-419e-8d92-ce66799bcabb/extra_3.jpg",
+        "photo_type": "extra_3"
+      }
+    ],
+    "teste": false
+  }
+}
