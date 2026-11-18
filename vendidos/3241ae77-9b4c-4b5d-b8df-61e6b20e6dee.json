@@ -3,7 +3,7 @@
   "modelo": "iPhone 12",
   "loja": "zona-norte",
   "vendido_em": "2026-11-18T16:06:57.525Z",
-  "estado": "publicando",
+  "estado": "publicado",
   "aparelho": {
     "id": "3241ae77-9b4c-4b5d-b8df-61e6b20e6dee",
     "model": "iPhone 12",
@@ -36,6 +36,7 @@
     ],
     "teste": false
   },
-  "em": "2026-11-18T16:07:15+00:00",
-  "foto": "iphone-12-c.jpg"
+  "em": "2026-11-18T16:07:23+00:00",
+  "foto": "iphone-12-c.jpg",
+  "story_id": "18360167479216586"
 }
