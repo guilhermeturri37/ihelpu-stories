@@ -1,0 +1,27 @@
+{
+  "device_id": "80be799e-fb56-438f-83c6-2f3b7cf0cf7e",
+  "modelo": "iPhone 15",
+  "loja": "sao-leopoldo",
+  "vendido_em": "2026-11-18T16:08:31.715Z",
+  "estado": "pendente",
+  "aparelho": {
+    "id": "80be799e-fb56-438f-83c6-2f3b7cf0cf7e",
+    "model": "iPhone 15",
+    "capacity": "128GB",
+    "aesthetic_condition": "como_novo",
+    "category": "iphone",
+    "preferred_store": "sao-leopoldo",
+    "sold_at": "2026-11-18T16:08:31.715Z",
+    "photos": [
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/9abc9bc8-82fe-4e33-a18a-ae0f77bba9da/80be799e-fb56-438f-83c6-2f3b7cf0cf7e/front.jpeg",
+        "photo_type": "front"
+      },
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/9abc9bc8-82fe-4e33-a18a-ae0f77bba9da/80be799e-fb56-438f-83c6-2f3b7cf0cf7e/back.jpeg",
+        "photo_type": "back"
+      }
+    ],
+    "teste": false
+  }
+}
