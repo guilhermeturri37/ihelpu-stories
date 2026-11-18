@@ -3,7 +3,7 @@
   "modelo": "iPhone XR",
   "loja": "zona-sul",
   "vendido_em": "2026-11-18T16:24:00.123Z",
-  "estado": "pendente",
+  "estado": "publicando",
   "aparelho": {
     "id": "b22c3acc-505d-4f81-8214-b27a949306b4",
     "model": "iPhone XR",
@@ -23,5 +23,6 @@
       }
     ],
     "teste": false
-  }
+  },
+  "em": "2026-11-18T16:24:22+00:00"
 }
