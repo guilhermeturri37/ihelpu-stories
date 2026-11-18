@@ -3,7 +3,7 @@
   "modelo": "iPhone 13 Pro Max",
   "loja": "pelotas",
   "vendido_em": "2026-11-18T19:33:03.719Z",
-  "estado": "pendente",
+  "estado": "publicando",
   "aparelho": {
     "id": "554af953-8803-4baa-b66b-376a4a59502e",
     "model": "iPhone 13 Pro Max",
@@ -27,5 +27,6 @@
       }
     ],
     "teste": false
-  }
+  },
+  "em": "2026-11-18T19:33:44+00:00"
 }
