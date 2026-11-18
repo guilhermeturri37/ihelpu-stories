@@ -3,7 +3,7 @@
   "modelo": "iPhone 8",
   "loja": "caxias-do-sul",
   "vendido_em": "2026-11-18T21:41:46.928Z",
-  "estado": "pendente",
+  "estado": "publicando",
   "aparelho": {
     "id": "47feb851-bcac-419e-8d92-ce66799bcabb",
     "model": "iPhone 8",
@@ -35,5 +35,6 @@
       }
     ],
     "teste": false
-  }
+  },
+  "em": "2026-11-18T21:42:21+00:00"
 }
