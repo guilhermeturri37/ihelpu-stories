@@ -1960,6 +1960,14 @@
       "story_id": "18412471468093370",
       "em": "2026-11-18T15:05:50+00:00",
       "horario": 12
+    },
+    {
+      "device_id": "b69182d1-e1cb-4465-bf00-c2a39ad02dd5",
+      "modelo": "iPhone 13 Pro Max",
+      "story_id": null,
+      "em": "2026-11-19T11:05:35+00:00",
+      "horario": 8,
+      "estado": "publicando"
     }
   ]
 }
