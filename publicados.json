@@ -1967,6 +1967,15 @@
       "story_id": "18084798404737341",
       "em": "2026-11-19T11:05:46+00:00",
       "horario": 8
+    },
+    {
+      "device_id": "066ee854-3ed1-4154-99e6-d514bf0fa3eb",
+      "modelo": "iPhone 15",
+      "story_id": null,
+      "em": "2026-11-19T13:05:38+00:00",
+      "horario": 10,
+      "estado": "publicando",
+      "foto": "iphone-15-b.jpg"
     }
   ]
 }
