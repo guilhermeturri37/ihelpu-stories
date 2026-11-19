@@ -1975,6 +1975,15 @@
       "em": "2026-11-19T13:05:46+00:00",
       "horario": 10,
       "foto": "iphone-15-b.jpg"
+    },
+    {
+      "device_id": "a629d994-777c-49a7-acbb-12b13802d8d3",
+      "modelo": "iPhone 14",
+      "story_id": null,
+      "em": "2026-11-19T15:05:21+00:00",
+      "horario": 12,
+      "estado": "publicando",
+      "foto": "iphone-14-a.jpg"
     }
   ]
 }
