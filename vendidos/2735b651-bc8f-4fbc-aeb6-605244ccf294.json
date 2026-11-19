@@ -1,0 +1,27 @@
+{
+  "device_id": "2735b651-bc8f-4fbc-aeb6-605244ccf294",
+  "modelo": "iPhone XS",
+  "loja": "sao-leopoldo",
+  "vendido_em": "2026-11-19T19:52:18.475Z",
+  "estado": "pendente",
+  "aparelho": {
+    "id": "2735b651-bc8f-4fbc-aeb6-605244ccf294",
+    "model": "iPhone XS",
+    "capacity": "64GB",
+    "aesthetic_condition": "excelente",
+    "category": "iphone",
+    "preferred_store": "sao-leopoldo",
+    "sold_at": "2026-11-19T19:52:18.475Z",
+    "photos": [
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/81aa1dd2-1ccf-4155-95c3-a5a862026539/2735b651-bc8f-4fbc-aeb6-605244ccf294/front.jpeg",
+        "photo_type": "front"
+      },
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/81aa1dd2-1ccf-4155-95c3-a5a862026539/2735b651-bc8f-4fbc-aeb6-605244ccf294/back.jpeg",
+        "photo_type": "back"
+      }
+    ],
+    "teste": false
+  }
+}
