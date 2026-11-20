@@ -11581,6 +11581,45 @@
       "em": "2026-11-20T11:33:21+00:00",
       "horario": 8,
       "foto": "iphone-12-i.jpg"
+    },
+    {
+      "instancia": "ZONASUL",
+      "device_id": "f6696270-c90f-4b9e-80e7-361e9f61a6b2",
+      "modelo": "iPhone 13 Pro Max",
+      "em": "2026-11-20T11:33:47+00:00",
+      "horario": 8
+    },
+    {
+      "instancia": "ZONASUL",
+      "device_id": "9abea7e4-c860-4bcf-afc1-f77050deaf4f",
+      "modelo": "iPhone 15 Pro Max",
+      "em": "2026-11-20T11:33:47+00:00",
+      "horario": 8,
+      "foto": "iphone-15-pro-a.jpg"
+    },
+    {
+      "instancia": "ZONASUL",
+      "device_id": "bfeeba0d-d8ba-4b68-84da-16e6dedf4fc1",
+      "modelo": "iPhone 14",
+      "em": "2026-11-20T11:33:47+00:00",
+      "horario": 8,
+      "foto": "iphone-14-a.jpg"
+    },
+    {
+      "instancia": "ZONASUL",
+      "device_id": "34494d2a-70b5-4f56-a032-bcf2a6e63ea7",
+      "modelo": "iPhone 15",
+      "em": "2026-11-20T11:33:47+00:00",
+      "horario": 8,
+      "foto": "iphone-15-a.jpg"
+    },
+    {
+      "instancia": "ZONASUL",
+      "device_id": "6a024775-3c89-4f40-86c8-2156360cfbb3",
+      "modelo": "iPhone 13",
+      "em": "2026-11-20T11:33:47+00:00",
+      "horario": 8,
+      "foto": "iphone-13-f.jpg"
     }
   ]
 }
