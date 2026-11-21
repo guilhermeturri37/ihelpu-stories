@@ -3,7 +3,7 @@
   "modelo": "iPhone 16",
   "loja": "canoas",
   "vendido_em": "2026-11-21T17:47:47.932Z",
-  "estado": "pendente",
+  "estado": "publicando",
   "aparelho": {
     "id": "c5a673f8-ee64-4360-85b8-94e354063905",
     "model": "iPhone 16",
@@ -27,5 +27,6 @@
       }
     ],
     "teste": false
-  }
+  },
+  "em": "2026-11-21T17:48:05+00:00"
 }
