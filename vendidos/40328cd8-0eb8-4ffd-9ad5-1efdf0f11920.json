@@ -3,7 +3,7 @@
   "modelo": "iPhone 11",
   "loja": "pelotas",
   "vendido_em": "2026-11-23T12:55:42.024Z",
-  "estado": "pendente",
+  "estado": "publicando",
   "aparelho": {
     "id": "40328cd8-0eb8-4ffd-9ad5-1efdf0f11920",
     "model": "iPhone 11",
@@ -35,5 +35,7 @@
       }
     ],
     "teste": false
-  }
+  },
+  "em": "2026-11-23T12:56:22+00:00",
+  "foto": "iphone-11-e.jpg"
 }
