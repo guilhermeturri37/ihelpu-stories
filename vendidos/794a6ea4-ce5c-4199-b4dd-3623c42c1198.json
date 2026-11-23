@@ -1,0 +1,31 @@
+{
+  "device_id": "794a6ea4-ce5c-4199-b4dd-3623c42c1198",
+  "modelo": "iPhone 15",
+  "loja": "canoas",
+  "vendido_em": "2026-11-23T17:22:58.265Z",
+  "estado": "pausado",
+  "aparelho": {
+    "id": "794a6ea4-ce5c-4199-b4dd-3623c42c1198",
+    "model": "iPhone 15",
+    "capacity": "256GB",
+    "aesthetic_condition": "como_novo",
+    "category": "iphone",
+    "preferred_store": "canoas",
+    "sold_at": "2026-11-23T17:22:58.265Z",
+    "photos": [
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/e2a967bf-4475-4ef3-9599-baedc6fc70b2/794a6ea4-ce5c-4199-b4dd-3623c42c1198/extra_1.jpg",
+        "photo_type": "extra_1"
+      },
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/e2a967bf-4475-4ef3-9599-baedc6fc70b2/794a6ea4-ce5c-4199-b4dd-3623c42c1198/extra_2.jpg",
+        "photo_type": "extra_2"
+      },
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/e2a967bf-4475-4ef3-9599-baedc6fc70b2/794a6ea4-ce5c-4199-b4dd-3623c42c1198/extra_3.jpg",
+        "photo_type": "extra_3"
+      }
+    ],
+    "teste": false
+  }
+}
