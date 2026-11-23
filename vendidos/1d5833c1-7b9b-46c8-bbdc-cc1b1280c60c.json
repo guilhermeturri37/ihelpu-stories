@@ -1,0 +1,43 @@
+{
+  "device_id": "1d5833c1-7b9b-46c8-bbdc-cc1b1280c60c",
+  "modelo": "iPhone 11 Pro Max",
+  "loja": "caxias-do-sul",
+  "vendido_em": "2026-11-23T20:37:37.494Z",
+  "estado": "pausado",
+  "aparelho": {
+    "id": "1d5833c1-7b9b-46c8-bbdc-cc1b1280c60c",
+    "model": "iPhone 11 Pro Max",
+    "capacity": "256GB",
+    "aesthetic_condition": "excelente",
+    "category": "iphone",
+    "preferred_store": "caxias-do-sul",
+    "sold_at": "2026-11-23T20:37:37.494Z",
+    "photos": [
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/1e5ede64-9814-428e-b1ef-7775ec1c2cb6/1d5833c1-7b9b-46c8-bbdc-cc1b1280c60c/extra_1794936944243_2.jpg",
+        "photo_type": "extra_1794936944243_2"
+      },
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/1e5ede64-9814-428e-b1ef-7775ec1c2cb6/1d5833c1-7b9b-46c8-bbdc-cc1b1280c60c/extra_1794937228556_1.jpg",
+        "photo_type": "extra_1794937228556_1"
+      },
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/1e5ede64-9814-428e-b1ef-7775ec1c2cb6/1d5833c1-7b9b-46c8-bbdc-cc1b1280c60c/extra_1794937228556_2.jpg",
+        "photo_type": "extra_1794937228556_2"
+      },
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/1e5ede64-9814-428e-b1ef-7775ec1c2cb6/1d5833c1-7b9b-46c8-bbdc-cc1b1280c60c/extra_1794937228556_3.jpg",
+        "photo_type": "extra_1794937228556_3"
+      },
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/1e5ede64-9814-428e-b1ef-7775ec1c2cb6/1d5833c1-7b9b-46c8-bbdc-cc1b1280c60c/extra_1794937261048_1.jpg",
+        "photo_type": "extra_1794937261048_1"
+      },
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/1e5ede64-9814-428e-b1ef-7775ec1c2cb6/1d5833c1-7b9b-46c8-bbdc-cc1b1280c60c/extra_1794937261048_2.jpg",
+        "photo_type": "extra_1794937261048_2"
+      }
+    ],
+    "teste": false
+  }
+}
