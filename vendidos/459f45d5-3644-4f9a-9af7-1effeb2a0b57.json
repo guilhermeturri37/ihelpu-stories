@@ -1,0 +1,31 @@
+{
+  "device_id": "459f45d5-3644-4f9a-9af7-1effeb2a0b57",
+  "modelo": "iPhone 15 Pro Max",
+  "loja": "zona-norte",
+  "vendido_em": "2026-11-23T16:33:58.974Z",
+  "estado": "pausado",
+  "aparelho": {
+    "id": "459f45d5-3644-4f9a-9af7-1effeb2a0b57",
+    "model": "iPhone 15 Pro Max",
+    "capacity": "256GB",
+    "aesthetic_condition": "excelente",
+    "category": "iphone",
+    "preferred_store": "zona-norte",
+    "sold_at": "2026-11-23T16:33:58.974Z",
+    "photos": [
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/d8f4ab63-436a-4e6b-a543-227286b6315e/459f45d5-3644-4f9a-9af7-1effeb2a0b57/front.jpeg",
+        "photo_type": "front"
+      },
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/d8f4ab63-436a-4e6b-a543-227286b6315e/459f45d5-3644-4f9a-9af7-1effeb2a0b57/back.jpeg",
+        "photo_type": "back"
+      },
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/8e889277-aad5-4b36-aaa3-6a0fce26907b/459f45d5-3644-4f9a-9af7-1effeb2a0b57/extra_1.jpeg",
+        "photo_type": "extra_1"
+      }
+    ],
+    "teste": false
+  }
+}
