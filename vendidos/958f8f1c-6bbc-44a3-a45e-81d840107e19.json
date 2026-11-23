@@ -1,0 +1,27 @@
+{
+  "device_id": "958f8f1c-6bbc-44a3-a45e-81d840107e19",
+  "modelo": "iPhone 15 Pro Max",
+  "loja": "novo-hamburgo",
+  "vendido_em": "2026-11-23T15:19:48.250Z",
+  "estado": "pausado",
+  "aparelho": {
+    "id": "958f8f1c-6bbc-44a3-a45e-81d840107e19",
+    "model": "iPhone 15 Pro Max",
+    "capacity": "256GB",
+    "aesthetic_condition": "excelente",
+    "category": "iphone",
+    "preferred_store": "novo-hamburgo",
+    "sold_at": "2026-11-23T15:19:48.250Z",
+    "photos": [
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/0152e3d1-b70d-4278-a1b8-40d1d1b5e1b0/958f8f1c-6bbc-44a3-a45e-81d840107e19/front.jpeg",
+        "photo_type": "front"
+      },
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/0152e3d1-b70d-4278-a1b8-40d1d1b5e1b0/958f8f1c-6bbc-44a3-a45e-81d840107e19/back.jpeg",
+        "photo_type": "back"
+      }
+    ],
+    "teste": false
+  }
+}
