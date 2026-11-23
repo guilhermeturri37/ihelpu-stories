@@ -1,0 +1,39 @@
+{
+  "device_id": "5cf01597-84e3-470a-be61-fae62d4927af",
+  "modelo": "iPhone 14",
+  "loja": "pelotas",
+  "vendido_em": "2026-11-23T15:44:55.859Z",
+  "estado": "pausado",
+  "aparelho": {
+    "id": "5cf01597-84e3-470a-be61-fae62d4927af",
+    "model": "iPhone 14",
+    "capacity": "128GB",
+    "aesthetic_condition": "excelente",
+    "category": "iphone",
+    "preferred_store": "pelotas",
+    "sold_at": "2026-11-23T15:44:55.859Z",
+    "photos": [
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/28e9cf21-c5b1-406d-90e0-45870a906bdb/5cf01597-84e3-470a-be61-fae62d4927af/extra_1795286874621_1.jpg",
+        "photo_type": "extra_1795286874621_1"
+      },
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/28e9cf21-c5b1-406d-90e0-45870a906bdb/5cf01597-84e3-470a-be61-fae62d4927af/extra_1795286874621_2.jpg",
+        "photo_type": "extra_1795286874621_2"
+      },
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/28e9cf21-c5b1-406d-90e0-45870a906bdb/5cf01597-84e3-470a-be61-fae62d4927af/extra_1795286874621_3.jpg",
+        "photo_type": "extra_1795286874621_3"
+      },
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/28e9cf21-c5b1-406d-90e0-45870a906bdb/5cf01597-84e3-470a-be61-fae62d4927af/extra_1795286907131_1.jpg",
+        "photo_type": "extra_1795286907131_1"
+      },
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/28e9cf21-c5b1-406d-90e0-45870a906bdb/5cf01597-84e3-470a-be61-fae62d4927af/extra_1795286907131_2.jpg",
+        "photo_type": "extra_1795286907131_2"
+      }
+    ],
+    "teste": false
+  }
+}
