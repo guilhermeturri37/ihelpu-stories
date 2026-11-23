@@ -1,0 +1,39 @@
+{
+  "device_id": "381f3f63-638a-43e3-9012-a48d3f8a8122",
+  "modelo": "iPhone 14",
+  "loja": "zona-norte",
+  "vendido_em": "2026-11-23T18:23:19.406Z",
+  "estado": "pausado",
+  "aparelho": {
+    "id": "381f3f63-638a-43e3-9012-a48d3f8a8122",
+    "model": "iPhone 14",
+    "capacity": "256GB",
+    "aesthetic_condition": "como_novo",
+    "category": "iphone",
+    "preferred_store": "zona-norte",
+    "sold_at": "2026-11-23T18:23:19.406Z",
+    "photos": [
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/8e889277-aad5-4b36-aaa3-6a0fce26907b/381f3f63-638a-43e3-9012-a48d3f8a8122/extra_1795121678280_1.jpeg",
+        "photo_type": "extra_1795121678280_1"
+      },
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/8e889277-aad5-4b36-aaa3-6a0fce26907b/381f3f63-638a-43e3-9012-a48d3f8a8122/extra_1795121678280_2.jpeg",
+        "photo_type": "extra_1795121678280_2"
+      },
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/8e889277-aad5-4b36-aaa3-6a0fce26907b/381f3f63-638a-43e3-9012-a48d3f8a8122/extra_1795121678280_3.jpeg",
+        "photo_type": "extra_1795121678280_3"
+      },
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/8e889277-aad5-4b36-aaa3-6a0fce26907b/381f3f63-638a-43e3-9012-a48d3f8a8122/extra_1795121705240_1.jpeg",
+        "photo_type": "extra_1795121705240_1"
+      },
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/8e889277-aad5-4b36-aaa3-6a0fce26907b/381f3f63-638a-43e3-9012-a48d3f8a8122/extra_1795121705240_2.jpeg",
+        "photo_type": "extra_1795121705240_2"
+      }
+    ],
+    "teste": false
+  }
+}
