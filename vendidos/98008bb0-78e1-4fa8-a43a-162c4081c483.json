@@ -1,0 +1,31 @@
+{
+  "device_id": "98008bb0-78e1-4fa8-a43a-162c4081c483",
+  "modelo": "iPhone 14 Pro",
+  "loja": "caxias-do-sul",
+  "vendido_em": "2026-11-23T19:05:52.945Z",
+  "estado": "pausado",
+  "aparelho": {
+    "id": "98008bb0-78e1-4fa8-a43a-162c4081c483",
+    "model": "iPhone 14 Pro",
+    "capacity": "128GB",
+    "aesthetic_condition": "como_novo",
+    "category": "iphone",
+    "preferred_store": "caxias-do-sul",
+    "sold_at": "2026-11-23T19:05:52.945Z",
+    "photos": [
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/1e5ede64-9814-428e-b1ef-7775ec1c2cb6/98008bb0-78e1-4fa8-a43a-162c4081c483/extra_1.jpg",
+        "photo_type": "extra_1"
+      },
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/1e5ede64-9814-428e-b1ef-7775ec1c2cb6/98008bb0-78e1-4fa8-a43a-162c4081c483/extra_2.jpg",
+        "photo_type": "extra_2"
+      },
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/1e5ede64-9814-428e-b1ef-7775ec1c2cb6/98008bb0-78e1-4fa8-a43a-162c4081c483/extra_3.jpg",
+        "photo_type": "extra_3"
+      }
+    ],
+    "teste": false
+  }
+}
