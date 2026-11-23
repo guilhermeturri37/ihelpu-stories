@@ -3,7 +3,7 @@
   "modelo": "iPhone 11",
   "loja": "pelotas",
   "vendido_em": "2026-11-23T03:10:27.180Z",
-  "estado": "publicando",
+  "estado": "publicado",
   "aparelho": {
     "id": "3292182d-0a68-4a7e-891d-4ad04b80d7d0",
     "model": "iPhone 11",
@@ -36,6 +36,7 @@
     ],
     "teste": false
   },
-  "em": "2026-11-23T11:05:48+00:00",
-  "foto": "iphone-11-d.jpg"
+  "em": "2026-11-23T11:05:57+00:00",
+  "foto": "iphone-11-d.jpg",
+  "story_id": "18082389149723979"
 }
