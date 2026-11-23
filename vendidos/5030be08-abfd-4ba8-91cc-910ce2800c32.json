@@ -3,7 +3,7 @@
   "modelo": "iPhone SE (2ª geração)",
   "loja": "pelotas",
   "vendido_em": "2026-11-23T12:42:21.292Z",
-  "estado": "publicando",
+  "estado": "publicado",
   "aparelho": {
     "id": "5030be08-abfd-4ba8-91cc-910ce2800c32",
     "model": "iPhone SE (2ª geração)",
@@ -28,5 +28,6 @@
     ],
     "teste": false
   },
-  "em": "2026-11-23T12:42:45+00:00"
+  "em": "2026-11-23T12:42:55+00:00",
+  "story_id": "18026364911944874"
 }
