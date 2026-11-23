@@ -1,0 +1,31 @@
+{
+  "device_id": "34494d2a-70b5-4f56-a032-bcf2a6e63ea7",
+  "modelo": "iPhone 15",
+  "loja": "zona-sul",
+  "vendido_em": "2026-11-23T20:54:37.197Z",
+  "estado": "pausado",
+  "aparelho": {
+    "id": "34494d2a-70b5-4f56-a032-bcf2a6e63ea7",
+    "model": "iPhone 15",
+    "capacity": "256GB",
+    "aesthetic_condition": "como_novo",
+    "category": "iphone",
+    "preferred_store": "zona-sul",
+    "sold_at": "2026-11-23T20:54:37.197Z",
+    "photos": [
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/31d2549e-34db-45c0-bff2-dd9e111aa37b/34494d2a-70b5-4f56-a032-bcf2a6e63ea7/extra_1.jpeg",
+        "photo_type": "extra_1"
+      },
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/31d2549e-34db-45c0-bff2-dd9e111aa37b/34494d2a-70b5-4f56-a032-bcf2a6e63ea7/extra_2.jpeg",
+        "photo_type": "extra_2"
+      },
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/31d2549e-34db-45c0-bff2-dd9e111aa37b/34494d2a-70b5-4f56-a032-bcf2a6e63ea7/extra_3.jpeg",
+        "photo_type": "extra_3"
+      }
+    ],
+    "teste": false
+  }
+}
