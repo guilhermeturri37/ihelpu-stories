@@ -1,0 +1,27 @@
+{
+  "device_id": "166ff02e-7b4b-4ea2-b4d0-a78a411dcd4a",
+  "modelo": "iPhone 11",
+  "loja": "zona-norte",
+  "vendido_em": "2026-11-23T16:00:34.444Z",
+  "estado": "pausado",
+  "aparelho": {
+    "id": "166ff02e-7b4b-4ea2-b4d0-a78a411dcd4a",
+    "model": "iPhone 11",
+    "capacity": "128GB",
+    "aesthetic_condition": "excelente",
+    "category": "iphone",
+    "preferred_store": "zona-norte",
+    "sold_at": "2026-11-23T16:00:34.444Z",
+    "photos": [
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/aa3ecffd-7587-487a-88d8-01f8d8dfa74d/166ff02e-7b4b-4ea2-b4d0-a78a411dcd4a/front.jpeg",
+        "photo_type": "front"
+      },
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/aa3ecffd-7587-487a-88d8-01f8d8dfa74d/166ff02e-7b4b-4ea2-b4d0-a78a411dcd4a/back.jpeg",
+        "photo_type": "back"
+      }
+    ],
+    "teste": false
+  }
+}
