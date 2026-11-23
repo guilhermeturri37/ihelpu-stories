@@ -31,6 +31,10 @@ RAIZ = pathlib.Path(__file__).parent
 PASTA = RAIZ / "vendidos"
 RAMO = "artes-vendido"                  # proprio: o artes-stories e do publicar.py
 JANELA = range(8, 21)                   # publica na hora entre 8h00 e 20h59, de segunda a sabado
+# Dias (inclusive) em que NENHUM story de vendido sai: a venda e registrada como "pausado" e nunca
+# e publicada, nem depois. Black Week de 23 a 28/11/2026 — pedido do Guilherme em 23/11, para nao
+# encher o Instagram de vendido na semana de mais vendas. Volta sozinho em 29/11. None = sem pausa.
+PAUSA = ("2026-11-23", "2026-11-28")
 FOTOS_OK = "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/"   # so foto do bucket do marketplace
 # preferred_store -> nome da loja na arte (os slugs do marketplace, como no status_whatsapp.py)
 LOJAS = {"sao-leopoldo": "São Leopoldo", "trend": "Trend", "zona-sul": "Zona Sul",
@@ -143,14 +147,17 @@ def main():
     except Exception as e:
         P.log(f"   aviso: nao consegui sincronizar antes de decidir ({e})")
     PASTA.mkdir(exist_ok=True)
+    pausado = bool(PAUSA) and PAUSA[0] <= agora.strftime("%Y-%m-%d") <= PAUSA[1]
     if a:
         if (PASTA / f"{a['id']}.json").exists():
             return P.ignorar("repetido", f"{a['model']} ({a['id'][:8]}) ja recebeu aviso de venda")
         gravar({"device_id": a["id"], "modelo": a["model"], "loja": a.get("preferred_store"),
-                "vendido_em": a.get("sold_at"), "estado": "pendente", "aparelho": a})
-        P.git_commit(f"Venda recebida: {a['model']} ({a['id'][:8]})")
+                "vendido_em": a.get("sold_at"), "estado": "pausado" if pausado else "pendente", "aparelho": a})
+        P.git_commit(f"Venda recebida: {a['model']} ({a['id'][:8]})" + (" — pausa, sem story" if pausado else ""))
         P.git_push()
         P.log(f"   venda recebida: {a['model']} ({a['id'][:8]})")
+    if pausado:
+        return P.ignorar("pausa", f"stories de vendido pausados de {PAUSA[0]} a {PAUSA[1]}; a venda fica registrada e nao sera publicada")
     registro = {"publicados": todos()}           # para as fotos do banco se revezarem entre os vendidos
     pendentes = [p for p in registro["publicados"] if p.get("estado") == "pendente"]
     if not pendentes:

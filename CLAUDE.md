@@ -111,6 +111,10 @@ aprovadas por ele no mesmo dia.
   `ler_aviso()` descarta tudo que não usa. Foto do aviso só vale se for do bucket do
   marketplace (`FOTOS_OK`). Arte: layout v2 + `CARIMBO`, sem preço e sem bateria.
 - **`"teste": true` só gera a arte** (artifact `arte-vendido`), sem registrar nem publicar.
+- **`PAUSA` (datas, inclusive) suspende os stories de vendido:** a venda é registrada como
+  `pausado` e nunca é publicada, nem depois da pausa. Usada na Black Week de 23 a 28/11/2026
+  (pedido do Guilherme em 23/11: não encher o Instagram de vendido). Volta sozinho no dia
+  seguinte ao fim; para uma nova pausa, trocar as datas.
 - Ramo das artes: `artes-vendido`.
 
 ## Status do WhatsApp (desde 07/10/2026)
