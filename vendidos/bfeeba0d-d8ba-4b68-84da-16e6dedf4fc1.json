@@ -3,7 +3,7 @@
   "modelo": "iPhone 14",
   "loja": "zona-sul",
   "vendido_em": "2026-11-23T12:04:30.958Z",
-  "estado": "pendente",
+  "estado": "publicando",
   "aparelho": {
     "id": "bfeeba0d-d8ba-4b68-84da-16e6dedf4fc1",
     "model": "iPhone 14",
@@ -27,5 +27,7 @@
       }
     ],
     "teste": false
-  }
+  },
+  "em": "2026-11-23T12:04:59+00:00",
+  "foto": "iphone-14-a.jpg"
 }
