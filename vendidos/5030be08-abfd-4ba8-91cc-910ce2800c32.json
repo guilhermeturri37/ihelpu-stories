@@ -1,0 +1,31 @@
+{
+  "device_id": "5030be08-abfd-4ba8-91cc-910ce2800c32",
+  "modelo": "iPhone SE (2ª geração)",
+  "loja": "pelotas",
+  "vendido_em": "2026-11-23T12:42:21.292Z",
+  "estado": "pendente",
+  "aparelho": {
+    "id": "5030be08-abfd-4ba8-91cc-910ce2800c32",
+    "model": "iPhone SE (2ª geração)",
+    "capacity": "64GB",
+    "aesthetic_condition": "excelente",
+    "category": "iphone",
+    "preferred_store": "pelotas",
+    "sold_at": "2026-11-23T12:42:21.292Z",
+    "photos": [
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/28e9cf21-c5b1-406d-90e0-45870a906bdb/5030be08-abfd-4ba8-91cc-910ce2800c32/extra_1795119035965_1.jpg",
+        "photo_type": "extra_1795119035965_1"
+      },
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/28e9cf21-c5b1-406d-90e0-45870a906bdb/5030be08-abfd-4ba8-91cc-910ce2800c32/extra_1795119035965_2.jpg",
+        "photo_type": "extra_1795119035965_2"
+      },
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/28e9cf21-c5b1-406d-90e0-45870a906bdb/5030be08-abfd-4ba8-91cc-910ce2800c32/extra_1795119035965_3.jpg",
+        "photo_type": "extra_1795119035965_3"
+      }
+    ],
+    "teste": false
+  }
+}
