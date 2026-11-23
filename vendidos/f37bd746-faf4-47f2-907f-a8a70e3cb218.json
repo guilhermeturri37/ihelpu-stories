@@ -3,7 +3,7 @@
   "modelo": "iPhone 15",
   "loja": "pelotas",
   "vendido_em": "2026-11-23T12:38:50.649Z",
-  "estado": "publicando",
+  "estado": "publicado",
   "aparelho": {
     "id": "f37bd746-faf4-47f2-907f-a8a70e3cb218",
     "model": "iPhone 15",
@@ -36,6 +36,7 @@
     ],
     "teste": false
   },
-  "em": "2026-11-23T12:39:13+00:00",
-  "foto": "iphone-15-a.jpg"
+  "em": "2026-11-23T12:39:22+00:00",
+  "foto": "iphone-15-a.jpg",
+  "story_id": "17914135806306994"
 }
