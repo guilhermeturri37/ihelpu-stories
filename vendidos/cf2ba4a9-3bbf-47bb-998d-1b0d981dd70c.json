@@ -1,0 +1,31 @@
+{
+  "device_id": "cf2ba4a9-3bbf-47bb-998d-1b0d981dd70c",
+  "modelo": "iPhone 12",
+  "loja": "zona-sul",
+  "vendido_em": "2026-11-23T13:34:40.873Z",
+  "estado": "pausado",
+  "aparelho": {
+    "id": "cf2ba4a9-3bbf-47bb-998d-1b0d981dd70c",
+    "model": "iPhone 12",
+    "capacity": "64GB",
+    "aesthetic_condition": "excelente",
+    "category": "iphone",
+    "preferred_store": "zona-sul",
+    "sold_at": "2026-11-23T13:34:40.873Z",
+    "photos": [
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/31d2549e-34db-45c0-bff2-dd9e111aa37b/cf2ba4a9-3bbf-47bb-998d-1b0d981dd70c/extra_1.jpeg",
+        "photo_type": "extra_1"
+      },
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/31d2549e-34db-45c0-bff2-dd9e111aa37b/cf2ba4a9-3bbf-47bb-998d-1b0d981dd70c/extra_2.jpeg",
+        "photo_type": "extra_2"
+      },
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/31d2549e-34db-45c0-bff2-dd9e111aa37b/cf2ba4a9-3bbf-47bb-998d-1b0d981dd70c/extra_3.jpeg",
+        "photo_type": "extra_3"
+      }
+    ],
+    "teste": false
+  }
+}
