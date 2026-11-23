@@ -1,0 +1,31 @@
+{
+  "device_id": "a629d994-777c-49a7-acbb-12b13802d8d3",
+  "modelo": "iPhone 14",
+  "loja": "caxias-do-sul",
+  "vendido_em": "2026-11-23T12:58:43.754Z",
+  "estado": "pendente",
+  "aparelho": {
+    "id": "a629d994-777c-49a7-acbb-12b13802d8d3",
+    "model": "iPhone 14",
+    "capacity": "128GB",
+    "aesthetic_condition": "como_novo",
+    "category": "iphone",
+    "preferred_store": "caxias-do-sul",
+    "sold_at": "2026-11-23T12:58:43.754Z",
+    "photos": [
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/1e5ede64-9814-428e-b1ef-7775ec1c2cb6/a629d994-777c-49a7-acbb-12b13802d8d3/extra_1.jpg",
+        "photo_type": "extra_1"
+      },
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/1e5ede64-9814-428e-b1ef-7775ec1c2cb6/a629d994-777c-49a7-acbb-12b13802d8d3/extra_2.jpg",
+        "photo_type": "extra_2"
+      },
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/1e5ede64-9814-428e-b1ef-7775ec1c2cb6/a629d994-777c-49a7-acbb-12b13802d8d3/extra_3.jpg",
+        "photo_type": "extra_3"
+      }
+    ],
+    "teste": false
+  }
+}
