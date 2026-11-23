@@ -1,0 +1,39 @@
+{
+  "device_id": "7ef2e263-ed7b-405e-b6b6-abecd56cdffc",
+  "modelo": "iPhone 15",
+  "loja": "zona-norte",
+  "vendido_em": "2026-11-23T19:34:31.616Z",
+  "estado": "pausado",
+  "aparelho": {
+    "id": "7ef2e263-ed7b-405e-b6b6-abecd56cdffc",
+    "model": "iPhone 15",
+    "capacity": "256GB",
+    "aesthetic_condition": "como_novo",
+    "category": "iphone",
+    "preferred_store": "zona-norte",
+    "sold_at": "2026-11-23T19:34:31.616Z",
+    "photos": [
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/8e889277-aad5-4b36-aaa3-6a0fce26907b/7ef2e263-ed7b-405e-b6b6-abecd56cdffc/extra_1795121401517_1.jpeg",
+        "photo_type": "extra_1795121401517_1"
+      },
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/8e889277-aad5-4b36-aaa3-6a0fce26907b/7ef2e263-ed7b-405e-b6b6-abecd56cdffc/extra_1795121401517_2.jpeg",
+        "photo_type": "extra_1795121401517_2"
+      },
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/8e889277-aad5-4b36-aaa3-6a0fce26907b/7ef2e263-ed7b-405e-b6b6-abecd56cdffc/extra_1795121401517_3.jpeg",
+        "photo_type": "extra_1795121401517_3"
+      },
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/8e889277-aad5-4b36-aaa3-6a0fce26907b/7ef2e263-ed7b-405e-b6b6-abecd56cdffc/extra_1795121431181_1.jpeg",
+        "photo_type": "extra_1795121431181_1"
+      },
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/8e889277-aad5-4b36-aaa3-6a0fce26907b/7ef2e263-ed7b-405e-b6b6-abecd56cdffc/extra_1795121431181_2.jpeg",
+        "photo_type": "extra_1795121431181_2"
+      }
+    ],
+    "teste": false
+  }
+}
