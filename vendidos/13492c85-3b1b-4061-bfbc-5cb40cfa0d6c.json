@@ -1,0 +1,39 @@
+{
+  "device_id": "13492c85-3b1b-4061-bfbc-5cb40cfa0d6c",
+  "modelo": "iPhone 15 Pro Max",
+  "loja": "zona-norte",
+  "vendido_em": "2026-11-23T13:52:04.285Z",
+  "estado": "pausado",
+  "aparelho": {
+    "id": "13492c85-3b1b-4061-bfbc-5cb40cfa0d6c",
+    "model": "iPhone 15 Pro Max",
+    "capacity": "1TB",
+    "aesthetic_condition": "como_novo",
+    "category": "iphone",
+    "preferred_store": "zona-norte",
+    "sold_at": "2026-11-23T13:52:04.285Z",
+    "photos": [
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/8e889277-aad5-4b36-aaa3-6a0fce26907b/13492c85-3b1b-4061-bfbc-5cb40cfa0d6c/extra_1795121049518_1.jpeg",
+        "photo_type": "extra_1795121049518_1"
+      },
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/8e889277-aad5-4b36-aaa3-6a0fce26907b/13492c85-3b1b-4061-bfbc-5cb40cfa0d6c/extra_1795121049518_2.jpeg",
+        "photo_type": "extra_1795121049518_2"
+      },
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/8e889277-aad5-4b36-aaa3-6a0fce26907b/13492c85-3b1b-4061-bfbc-5cb40cfa0d6c/extra_1795121049518_3.jpeg",
+        "photo_type": "extra_1795121049518_3"
+      },
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/8e889277-aad5-4b36-aaa3-6a0fce26907b/13492c85-3b1b-4061-bfbc-5cb40cfa0d6c/extra_1795121090983_1.jpeg",
+        "photo_type": "extra_1795121090983_1"
+      },
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/8e889277-aad5-4b36-aaa3-6a0fce26907b/13492c85-3b1b-4061-bfbc-5cb40cfa0d6c/extra_1795121090983_2.jpeg",
+        "photo_type": "extra_1795121090983_2"
+      }
+    ],
+    "teste": false
+  }
+}
