@@ -1,0 +1,27 @@
+{
+  "device_id": "a95038be-4927-441f-aae9-cb97b4dc34ba",
+  "modelo": "iPhone 13",
+  "loja": "caxias-do-sul",
+  "vendido_em": "2026-11-24T19:34:48.611Z",
+  "estado": "pausado",
+  "aparelho": {
+    "id": "a95038be-4927-441f-aae9-cb97b4dc34ba",
+    "model": "iPhone 13",
+    "capacity": "256GB",
+    "aesthetic_condition": "como_novo",
+    "category": "iphone",
+    "preferred_store": "caxias-do-sul",
+    "sold_at": "2026-11-24T19:34:48.611Z",
+    "photos": [
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/ee61dc54-ddd6-4b94-826c-a361dc8f927b/a95038be-4927-441f-aae9-cb97b4dc34ba/front.jpg",
+        "photo_type": "front"
+      },
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/ee61dc54-ddd6-4b94-826c-a361dc8f927b/a95038be-4927-441f-aae9-cb97b4dc34ba/back.jpg",
+        "photo_type": "back"
+      }
+    ],
+    "teste": false
+  }
+}
