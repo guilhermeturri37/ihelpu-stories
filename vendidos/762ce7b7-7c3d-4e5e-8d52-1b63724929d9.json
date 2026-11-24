@@ -1,0 +1,31 @@
+{
+  "device_id": "762ce7b7-7c3d-4e5e-8d52-1b63724929d9",
+  "modelo": "iPhone 13 Pro Max",
+  "loja": "pelotas",
+  "vendido_em": "2026-11-24T13:44:13.847Z",
+  "estado": "pausado",
+  "aparelho": {
+    "id": "762ce7b7-7c3d-4e5e-8d52-1b63724929d9",
+    "model": "iPhone 13 Pro Max",
+    "capacity": "256GB",
+    "aesthetic_condition": "excelente",
+    "category": "iphone",
+    "preferred_store": "pelotas",
+    "sold_at": "2026-11-24T13:44:13.847Z",
+    "photos": [
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/28e9cf21-c5b1-406d-90e0-45870a906bdb/762ce7b7-7c3d-4e5e-8d52-1b63724929d9/extra_1794832366627_1.jpg",
+        "photo_type": "extra_1794832366627_1"
+      },
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/28e9cf21-c5b1-406d-90e0-45870a906bdb/762ce7b7-7c3d-4e5e-8d52-1b63724929d9/extra_1794832366627_2.jpg",
+        "photo_type": "extra_1794832366627_2"
+      },
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/28e9cf21-c5b1-406d-90e0-45870a906bdb/762ce7b7-7c3d-4e5e-8d52-1b63724929d9/extra_1794832366627_3.jpg",
+        "photo_type": "extra_1794832366627_3"
+      }
+    ],
+    "teste": false
+  }
+}
