@@ -1,0 +1,27 @@
+{
+  "device_id": "890df849-0640-40b0-844a-9009b10cec19",
+  "modelo": "iPhone 14 Pro Max",
+  "loja": "santa-maria",
+  "vendido_em": "2026-11-24T15:08:50.984Z",
+  "estado": "pausado",
+  "aparelho": {
+    "id": "890df849-0640-40b0-844a-9009b10cec19",
+    "model": "iPhone 14 Pro Max",
+    "capacity": "256GB",
+    "aesthetic_condition": "excelente",
+    "category": "iphone",
+    "preferred_store": "santa-maria",
+    "sold_at": "2026-11-24T15:08:50.984Z",
+    "photos": [
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/863a6b03-2344-4a9c-b6a8-ab235ac32a52/890df849-0640-40b0-844a-9009b10cec19/front.jpeg",
+        "photo_type": "front"
+      },
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/863a6b03-2344-4a9c-b6a8-ab235ac32a52/890df849-0640-40b0-844a-9009b10cec19/back.jpeg",
+        "photo_type": "back"
+      }
+    ],
+    "teste": false
+  }
+}
