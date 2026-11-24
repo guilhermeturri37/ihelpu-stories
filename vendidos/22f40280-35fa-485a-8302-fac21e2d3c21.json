@@ -1,0 +1,27 @@
+{
+  "device_id": "22f40280-35fa-485a-8302-fac21e2d3c21",
+  "modelo": "iPhone 13",
+  "loja": "novo-hamburgo",
+  "vendido_em": "2026-11-24T17:10:52.015Z",
+  "estado": "pausado",
+  "aparelho": {
+    "id": "22f40280-35fa-485a-8302-fac21e2d3c21",
+    "model": "iPhone 13",
+    "capacity": "128GB",
+    "aesthetic_condition": "excelente",
+    "category": "iphone",
+    "preferred_store": "novo-hamburgo",
+    "sold_at": "2026-11-24T17:10:52.015Z",
+    "photos": [
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/302841c6-2ec8-4cd0-b2ab-92c08f1469b1/22f40280-35fa-485a-8302-fac21e2d3c21/front.jpeg",
+        "photo_type": "front"
+      },
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/302841c6-2ec8-4cd0-b2ab-92c08f1469b1/22f40280-35fa-485a-8302-fac21e2d3c21/back.jpeg",
+        "photo_type": "back"
+      }
+    ],
+    "teste": false
+  }
+}
