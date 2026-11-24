@@ -2063,10 +2063,9 @@
     {
       "device_id": "a3233f5b-1e63-4cd7-93a4-2fbf88485ddb",
       "modelo": "MacBook Neo 13\" 2026",
-      "story_id": null,
-      "em": "2026-11-24T13:00:31+00:00",
-      "horario": 10,
-      "estado": "publicando"
+      "story_id": "18485736571117078",
+      "em": "2026-11-24T13:00:42+00:00",
+      "horario": 10
     }
   ]
 }
