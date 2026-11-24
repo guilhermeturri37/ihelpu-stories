@@ -1,0 +1,39 @@
+{
+  "device_id": "835bb8e5-e43e-40e1-a3e7-7a32be172ab5",
+  "modelo": "iPhone 16 Pro",
+  "loja": "canoas",
+  "vendido_em": "2026-11-24T22:10:34.852Z",
+  "estado": "pausado",
+  "aparelho": {
+    "id": "835bb8e5-e43e-40e1-a3e7-7a32be172ab5",
+    "model": "iPhone 16 Pro",
+    "capacity": "256GB",
+    "aesthetic_condition": "como_novo",
+    "category": "iphone",
+    "preferred_store": "canoas",
+    "sold_at": "2026-11-24T22:10:34.852Z",
+    "photos": [
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/e2a967bf-4475-4ef3-9599-baedc6fc70b2/835bb8e5-e43e-40e1-a3e7-7a32be172ab5/front.jpg",
+        "photo_type": "front"
+      },
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/e2a967bf-4475-4ef3-9599-baedc6fc70b2/835bb8e5-e43e-40e1-a3e7-7a32be172ab5/back.jpg",
+        "photo_type": "back"
+      },
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/e2a967bf-4475-4ef3-9599-baedc6fc70b2/835bb8e5-e43e-40e1-a3e7-7a32be172ab5/extra_1.jpg",
+        "photo_type": "extra_1"
+      },
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/e2a967bf-4475-4ef3-9599-baedc6fc70b2/835bb8e5-e43e-40e1-a3e7-7a32be172ab5/extra_2.jpg",
+        "photo_type": "extra_2"
+      },
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/e2a967bf-4475-4ef3-9599-baedc6fc70b2/835bb8e5-e43e-40e1-a3e7-7a32be172ab5/extra_3.jpg",
+        "photo_type": "extra_3"
+      }
+    ],
+    "teste": false
+  }
+}
