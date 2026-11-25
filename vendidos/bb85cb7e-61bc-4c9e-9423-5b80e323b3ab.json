@@ -1,0 +1,31 @@
+{
+  "device_id": "bb85cb7e-61bc-4c9e-9423-5b80e323b3ab",
+  "modelo": "iPhone 16",
+  "loja": "trend",
+  "vendido_em": "2026-11-25T12:22:01.888Z",
+  "estado": "pausado",
+  "aparelho": {
+    "id": "bb85cb7e-61bc-4c9e-9423-5b80e323b3ab",
+    "model": "iPhone 16",
+    "capacity": "256GB",
+    "aesthetic_condition": "excelente",
+    "category": "iphone",
+    "preferred_store": "trend",
+    "sold_at": "2026-11-25T12:22:01.888Z",
+    "photos": [
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/b60d56f8-42a2-4a70-827f-5a66d3090743/bb85cb7e-61bc-4c9e-9423-5b80e323b3ab/extra_1.jpg",
+        "photo_type": "extra_1"
+      },
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/b60d56f8-42a2-4a70-827f-5a66d3090743/bb85cb7e-61bc-4c9e-9423-5b80e323b3ab/extra_2.jpg",
+        "photo_type": "extra_2"
+      },
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/b60d56f8-42a2-4a70-827f-5a66d3090743/bb85cb7e-61bc-4c9e-9423-5b80e323b3ab/extra_3.jpg",
+        "photo_type": "extra_3"
+      }
+    ],
+    "teste": false
+  }
+}
