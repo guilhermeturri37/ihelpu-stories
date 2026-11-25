@@ -1,0 +1,31 @@
+{
+  "device_id": "6a024775-3c89-4f40-86c8-2156360cfbb3",
+  "modelo": "iPhone 13",
+  "loja": "zona-sul",
+  "vendido_em": "2026-11-25T13:14:43.659Z",
+  "estado": "pausado",
+  "aparelho": {
+    "id": "6a024775-3c89-4f40-86c8-2156360cfbb3",
+    "model": "iPhone 13",
+    "capacity": "128GB",
+    "aesthetic_condition": "excelente",
+    "category": "iphone",
+    "preferred_store": "zona-sul",
+    "sold_at": "2026-11-25T13:14:43.659Z",
+    "photos": [
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/31d2549e-34db-45c0-bff2-dd9e111aa37b/6a024775-3c89-4f40-86c8-2156360cfbb3/extra_1.jpeg",
+        "photo_type": "extra_1"
+      },
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/31d2549e-34db-45c0-bff2-dd9e111aa37b/6a024775-3c89-4f40-86c8-2156360cfbb3/extra_2.jpeg",
+        "photo_type": "extra_2"
+      },
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/31d2549e-34db-45c0-bff2-dd9e111aa37b/6a024775-3c89-4f40-86c8-2156360cfbb3/extra_3.jpeg",
+        "photo_type": "extra_3"
+      }
+    ],
+    "teste": false
+  }
+}
