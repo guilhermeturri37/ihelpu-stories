@@ -1,0 +1,31 @@
+{
+  "device_id": "598273bb-5323-4022-8461-0df3e2170046",
+  "modelo": "iPhone 14",
+  "loja": "canoas",
+  "vendido_em": "2026-11-25T15:18:31.207Z",
+  "estado": "pausado",
+  "aparelho": {
+    "id": "598273bb-5323-4022-8461-0df3e2170046",
+    "model": "iPhone 14",
+    "capacity": "128GB",
+    "aesthetic_condition": "excelente",
+    "category": "iphone",
+    "preferred_store": "canoas",
+    "sold_at": "2026-11-25T15:18:31.207Z",
+    "photos": [
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/e2a967bf-4475-4ef3-9599-baedc6fc70b2/598273bb-5323-4022-8461-0df3e2170046/extra_1.jpg",
+        "photo_type": "extra_1"
+      },
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/e2a967bf-4475-4ef3-9599-baedc6fc70b2/598273bb-5323-4022-8461-0df3e2170046/extra_2.jpg",
+        "photo_type": "extra_2"
+      },
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/e2a967bf-4475-4ef3-9599-baedc6fc70b2/598273bb-5323-4022-8461-0df3e2170046/extra_3.jpg",
+        "photo_type": "extra_3"
+      }
+    ],
+    "teste": false
+  }
+}
