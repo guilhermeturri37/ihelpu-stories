@@ -1,0 +1,31 @@
+{
+  "device_id": "066ee854-3ed1-4154-99e6-d514bf0fa3eb",
+  "modelo": "iPhone 15",
+  "loja": "caxias-do-sul",
+  "vendido_em": "2026-11-25T19:43:22.087Z",
+  "estado": "pausado",
+  "aparelho": {
+    "id": "066ee854-3ed1-4154-99e6-d514bf0fa3eb",
+    "model": "iPhone 15",
+    "capacity": "256GB",
+    "aesthetic_condition": "como_novo",
+    "category": "iphone",
+    "preferred_store": "caxias-do-sul",
+    "sold_at": "2026-11-25T19:43:22.087Z",
+    "photos": [
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/1e5ede64-9814-428e-b1ef-7775ec1c2cb6/066ee854-3ed1-4154-99e6-d514bf0fa3eb/extra_1.jpeg",
+        "photo_type": "extra_1"
+      },
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/1e5ede64-9814-428e-b1ef-7775ec1c2cb6/066ee854-3ed1-4154-99e6-d514bf0fa3eb/extra_2.jpeg",
+        "photo_type": "extra_2"
+      },
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/1e5ede64-9814-428e-b1ef-7775ec1c2cb6/066ee854-3ed1-4154-99e6-d514bf0fa3eb/extra_3.jpeg",
+        "photo_type": "extra_3"
+      }
+    ],
+    "teste": false
+  }
+}
