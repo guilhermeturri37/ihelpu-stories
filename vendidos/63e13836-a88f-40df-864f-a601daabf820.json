@@ -1,0 +1,27 @@
+{
+  "device_id": "63e13836-a88f-40df-864f-a601daabf820",
+  "modelo": "iPhone 14",
+  "loja": "novo-hamburgo",
+  "vendido_em": "2026-11-25T15:29:05.733Z",
+  "estado": "pausado",
+  "aparelho": {
+    "id": "63e13836-a88f-40df-864f-a601daabf820",
+    "model": "iPhone 14",
+    "capacity": "128GB",
+    "aesthetic_condition": "excelente",
+    "category": "iphone",
+    "preferred_store": "novo-hamburgo",
+    "sold_at": "2026-11-25T15:29:05.733Z",
+    "photos": [
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/8de81858-772c-4f64-b049-b35eeaa79287/63e13836-a88f-40df-864f-a601daabf820/front.jpeg",
+        "photo_type": "front"
+      },
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/8de81858-772c-4f64-b049-b35eeaa79287/63e13836-a88f-40df-864f-a601daabf820/back.jpeg",
+        "photo_type": "back"
+      }
+    ],
+    "teste": false
+  }
+}
