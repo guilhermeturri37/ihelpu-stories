@@ -1,0 +1,31 @@
+{
+  "device_id": "b6e67ffa-3901-4bea-a604-2e208a31b27c",
+  "modelo": "iPhone 13",
+  "loja": "pelotas",
+  "vendido_em": "2026-11-25T19:07:51.184Z",
+  "estado": "pausado",
+  "aparelho": {
+    "id": "b6e67ffa-3901-4bea-a604-2e208a31b27c",
+    "model": "iPhone 13",
+    "capacity": "128GB",
+    "aesthetic_condition": "excelente",
+    "category": "iphone",
+    "preferred_store": "pelotas",
+    "sold_at": "2026-11-25T19:07:51.184Z",
+    "photos": [
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/3c7eea70-6029-47ff-bc75-46dd1d110cca/b6e67ffa-3901-4bea-a604-2e208a31b27c/front.jpg",
+        "photo_type": "front"
+      },
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/3c7eea70-6029-47ff-bc75-46dd1d110cca/b6e67ffa-3901-4bea-a604-2e208a31b27c/back.jpg",
+        "photo_type": "back"
+      },
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/28e9cf21-c5b1-406d-90e0-45870a906bdb/b6e67ffa-3901-4bea-a604-2e208a31b27c/extra_1.jpg",
+        "photo_type": "extra_1"
+      }
+    ],
+    "teste": false
+  }
+}
