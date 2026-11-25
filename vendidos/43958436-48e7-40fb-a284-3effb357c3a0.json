@@ -1,0 +1,27 @@
+{
+  "device_id": "43958436-48e7-40fb-a284-3effb357c3a0",
+  "modelo": "iPhone 16 Pro Max",
+  "loja": "zona-norte",
+  "vendido_em": "2026-11-25T12:42:40.185Z",
+  "estado": "pausado",
+  "aparelho": {
+    "id": "43958436-48e7-40fb-a284-3effb357c3a0",
+    "model": "iPhone 16 Pro Max",
+    "capacity": "256GB",
+    "aesthetic_condition": "como_novo",
+    "category": "iphone",
+    "preferred_store": "zona-norte",
+    "sold_at": "2026-11-25T12:42:40.185Z",
+    "photos": [
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/4c36f694-7a85-4d72-8e09-fbd3c1621b4c/43958436-48e7-40fb-a284-3effb357c3a0/front.jpeg",
+        "photo_type": "front"
+      },
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/4c36f694-7a85-4d72-8e09-fbd3c1621b4c/43958436-48e7-40fb-a284-3effb357c3a0/back.jpeg",
+        "photo_type": "back"
+      }
+    ],
+    "teste": false
+  }
+}
