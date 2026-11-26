@@ -1,0 +1,39 @@
+{
+  "device_id": "a701dacc-ae6c-43fc-a1e1-fe1cc189e20a",
+  "modelo": "iPhone 11",
+  "loja": "zona-sul",
+  "vendido_em": "2026-11-26T16:50:16.467Z",
+  "estado": "pausado",
+  "aparelho": {
+    "id": "a701dacc-ae6c-43fc-a1e1-fe1cc189e20a",
+    "model": "iPhone 11",
+    "capacity": "64GB",
+    "aesthetic_condition": "excelente",
+    "category": "iphone",
+    "preferred_store": "zona-sul",
+    "sold_at": "2026-11-26T16:50:16.467Z",
+    "photos": [
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/ebee0f0b-f7dc-4b19-adb8-219c44c10a17/a701dacc-ae6c-43fc-a1e1-fe1cc189e20a/front.jpeg",
+        "photo_type": "front"
+      },
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/ebee0f0b-f7dc-4b19-adb8-219c44c10a17/a701dacc-ae6c-43fc-a1e1-fe1cc189e20a/back.jpeg",
+        "photo_type": "back"
+      },
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/31d2549e-34db-45c0-bff2-dd9e111aa37b/a701dacc-ae6c-43fc-a1e1-fe1cc189e20a/extra_1795460035815_1.jpeg",
+        "photo_type": "extra_1795460035815_1"
+      },
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/31d2549e-34db-45c0-bff2-dd9e111aa37b/a701dacc-ae6c-43fc-a1e1-fe1cc189e20a/extra_1795460035815_2.jpeg",
+        "photo_type": "extra_1795460035815_2"
+      },
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/31d2549e-34db-45c0-bff2-dd9e111aa37b/a701dacc-ae6c-43fc-a1e1-fe1cc189e20a/extra_1795460035815_3.jpeg",
+        "photo_type": "extra_1795460035815_3"
+      }
+    ],
+    "teste": false
+  }
+}
