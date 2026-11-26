@@ -1,0 +1,39 @@
+{
+  "device_id": "b58f748d-5748-4532-ac40-d1b7f42ea5a0",
+  "modelo": "iPhone 11",
+  "loja": "santa-maria",
+  "vendido_em": "2026-11-26T16:55:35.603Z",
+  "estado": "pausado",
+  "aparelho": {
+    "id": "b58f748d-5748-4532-ac40-d1b7f42ea5a0",
+    "model": "iPhone 11",
+    "capacity": "128GB",
+    "aesthetic_condition": "excelente",
+    "category": "iphone",
+    "preferred_store": "santa-maria",
+    "sold_at": "2026-11-26T16:55:35.603Z",
+    "photos": [
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/a1bd024b-cae6-443d-9647-396018d9acdd/b58f748d-5748-4532-ac40-d1b7f42ea5a0/extra_1795303764512_1.jpg",
+        "photo_type": "extra_1795303764512_1"
+      },
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/a1bd024b-cae6-443d-9647-396018d9acdd/b58f748d-5748-4532-ac40-d1b7f42ea5a0/extra_1795303764512_2.jpg",
+        "photo_type": "extra_1795303764512_2"
+      },
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/a1bd024b-cae6-443d-9647-396018d9acdd/b58f748d-5748-4532-ac40-d1b7f42ea5a0/extra_1795303764512_3.jpg",
+        "photo_type": "extra_1795303764512_3"
+      },
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/a1bd024b-cae6-443d-9647-396018d9acdd/b58f748d-5748-4532-ac40-d1b7f42ea5a0/extra_1795303794993_1.jpg",
+        "photo_type": "extra_1795303794993_1"
+      },
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/a1bd024b-cae6-443d-9647-396018d9acdd/b58f748d-5748-4532-ac40-d1b7f42ea5a0/extra_1795303794993_2.jpg",
+        "photo_type": "extra_1795303794993_2"
+      }
+    ],
+    "teste": false
+  }
+}
