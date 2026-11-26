@@ -1,0 +1,27 @@
+{
+  "device_id": "0ab8ffef-f9c4-45e2-8b01-ee7998bb6efc",
+  "modelo": "iPhone 12",
+  "loja": "caxias-do-sul",
+  "vendido_em": "2026-11-26T19:20:00.909Z",
+  "estado": "pausado",
+  "aparelho": {
+    "id": "0ab8ffef-f9c4-45e2-8b01-ee7998bb6efc",
+    "model": "iPhone 12",
+    "capacity": "128GB",
+    "aesthetic_condition": "excelente",
+    "category": "iphone",
+    "preferred_store": "caxias-do-sul",
+    "sold_at": "2026-11-26T19:20:00.909Z",
+    "photos": [
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/ee61dc54-ddd6-4b94-826c-a361dc8f927b/0ab8ffef-f9c4-45e2-8b01-ee7998bb6efc/front.jpeg",
+        "photo_type": "front"
+      },
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/1e5ede64-9814-428e-b1ef-7775ec1c2cb6/0ab8ffef-f9c4-45e2-8b01-ee7998bb6efc/extra_3.jpeg",
+        "photo_type": "extra_3"
+      }
+    ],
+    "teste": false
+  }
+}
