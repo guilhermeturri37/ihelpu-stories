@@ -1,0 +1,27 @@
+{
+  "device_id": "22fc50a4-cde2-4d25-b250-23df6186e520",
+  "modelo": "iPhone 16e",
+  "loja": "sao-leopoldo",
+  "vendido_em": "2026-11-26T21:34:05.567Z",
+  "estado": "pausado",
+  "aparelho": {
+    "id": "22fc50a4-cde2-4d25-b250-23df6186e520",
+    "model": "iPhone 16e",
+    "capacity": "128GB",
+    "aesthetic_condition": "como_novo",
+    "category": "iphone",
+    "preferred_store": "sao-leopoldo",
+    "sold_at": "2026-11-26T21:34:05.567Z",
+    "photos": [
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/a57d5dfd-2f07-4dac-93be-876f00e5c637/22fc50a4-cde2-4d25-b250-23df6186e520/extra_1.jpeg",
+        "photo_type": "extra_1"
+      },
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/a57d5dfd-2f07-4dac-93be-876f00e5c637/22fc50a4-cde2-4d25-b250-23df6186e520/extra_2.jpeg",
+        "photo_type": "extra_2"
+      }
+    ],
+    "teste": false
+  }
+}
