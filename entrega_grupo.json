@@ -13550,6 +13550,44 @@
       "em": "2026-11-26T11:33:51+00:00",
       "horario": 8,
       "foto": "iphone-14-pro-max-a.jpg"
+    },
+    {
+      "instancia": "SANTAMARIA",
+      "device_id": "b58f748d-5748-4532-ac40-d1b7f42ea5a0",
+      "modelo": "iPhone 11",
+      "em": "2026-11-26T11:34:18+00:00",
+      "horario": 8,
+      "foto": "iphone-11-g.jpg"
+    },
+    {
+      "instancia": "SANTAMARIA",
+      "device_id": "809aaef1-66d8-4130-a97b-0e7d404ed709",
+      "modelo": "iPhone 12",
+      "em": "2026-11-26T11:34:18+00:00",
+      "horario": 8,
+      "foto": "iphone-12-e.jpg"
+    },
+    {
+      "instancia": "SANTAMARIA",
+      "device_id": "b233510f-a9cb-4d2f-97a4-6afcf5818e09",
+      "modelo": "iPhone 14 Plus",
+      "em": "2026-11-26T11:34:18+00:00",
+      "horario": 8,
+      "foto": "iphone-14-plus-c.jpg"
+    },
+    {
+      "instancia": "SANTAMARIA",
+      "device_id": "cea59d84-3ea1-4499-802a-d71c95b7f4e0",
+      "modelo": "iPhone XR",
+      "em": "2026-11-26T11:34:18+00:00",
+      "horario": 8
+    },
+    {
+      "instancia": "SANTAMARIA",
+      "device_id": "1135d691-b5fc-41e8-b4b7-78b560ae089c",
+      "modelo": "iPhone SE (2ª geração)",
+      "em": "2026-11-26T11:34:18+00:00",
+      "horario": 8
     }
   ]
 }
