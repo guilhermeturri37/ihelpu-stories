@@ -1,0 +1,39 @@
+{
+  "device_id": "5e2128e5-53e1-43e9-95ce-63d7d423870e",
+  "modelo": "iPhone 13 mini",
+  "loja": "canoas",
+  "vendido_em": "2026-11-26T19:20:42.882Z",
+  "estado": "pausado",
+  "aparelho": {
+    "id": "5e2128e5-53e1-43e9-95ce-63d7d423870e",
+    "model": "iPhone 13 mini",
+    "capacity": "256GB",
+    "aesthetic_condition": "excelente",
+    "category": "iphone",
+    "preferred_store": "canoas",
+    "sold_at": "2026-11-26T19:20:42.882Z",
+    "photos": [
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/be830dc9-df6d-47b5-a103-6b216a2c9fff/5e2128e5-53e1-43e9-95ce-63d7d423870e/front.jpeg",
+        "photo_type": "front"
+      },
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/be830dc9-df6d-47b5-a103-6b216a2c9fff/5e2128e5-53e1-43e9-95ce-63d7d423870e/back.jpeg",
+        "photo_type": "back"
+      },
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/e2a967bf-4475-4ef3-9599-baedc6fc70b2/5e2128e5-53e1-43e9-95ce-63d7d423870e/extra_1.jpg",
+        "photo_type": "extra_1"
+      },
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/e2a967bf-4475-4ef3-9599-baedc6fc70b2/5e2128e5-53e1-43e9-95ce-63d7d423870e/extra_2.jpg",
+        "photo_type": "extra_2"
+      },
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/e2a967bf-4475-4ef3-9599-baedc6fc70b2/5e2128e5-53e1-43e9-95ce-63d7d423870e/extra_3.jpg",
+        "photo_type": "extra_3"
+      }
+    ],
+    "teste": false
+  }
+}
