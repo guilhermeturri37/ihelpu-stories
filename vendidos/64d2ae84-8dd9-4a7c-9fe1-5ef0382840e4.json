@@ -1,0 +1,35 @@
+{
+  "device_id": "64d2ae84-8dd9-4a7c-9fe1-5ef0382840e4",
+  "modelo": "iPhone 11",
+  "loja": "pelotas",
+  "vendido_em": "2026-11-26T14:30:11.199Z",
+  "estado": "pausado",
+  "aparelho": {
+    "id": "64d2ae84-8dd9-4a7c-9fe1-5ef0382840e4",
+    "model": "iPhone 11",
+    "capacity": "128GB",
+    "aesthetic_condition": "excelente",
+    "category": "iphone",
+    "preferred_store": "pelotas",
+    "sold_at": "2026-11-26T14:30:11.199Z",
+    "photos": [
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/28e9cf21-c5b1-406d-90e0-45870a906bdb/64d2ae84-8dd9-4a7c-9fe1-5ef0382840e4/extra_1.jpg",
+        "photo_type": "extra_1"
+      },
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/28e9cf21-c5b1-406d-90e0-45870a906bdb/64d2ae84-8dd9-4a7c-9fe1-5ef0382840e4/extra_2.jpg",
+        "photo_type": "extra_2"
+      },
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/28e9cf21-c5b1-406d-90e0-45870a906bdb/64d2ae84-8dd9-4a7c-9fe1-5ef0382840e4/extra_1794589514297_1.jpg",
+        "photo_type": "extra_1794589514297_1"
+      },
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/28e9cf21-c5b1-406d-90e0-45870a906bdb/64d2ae84-8dd9-4a7c-9fe1-5ef0382840e4/extra_1794589571946_1.jpg",
+        "photo_type": "extra_1794589571946_1"
+      }
+    ],
+    "teste": false
+  }
+}
