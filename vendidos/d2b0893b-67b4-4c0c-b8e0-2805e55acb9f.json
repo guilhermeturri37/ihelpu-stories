@@ -1,0 +1,31 @@
+{
+  "device_id": "d2b0893b-67b4-4c0c-b8e0-2805e55acb9f",
+  "modelo": "iPhone 15 Pro Max",
+  "loja": "pelotas",
+  "vendido_em": "2026-11-26T18:24:41.227Z",
+  "estado": "pausado",
+  "aparelho": {
+    "id": "d2b0893b-67b4-4c0c-b8e0-2805e55acb9f",
+    "model": "iPhone 15 Pro Max",
+    "capacity": "256GB",
+    "aesthetic_condition": "excelente",
+    "category": "iphone",
+    "preferred_store": "pelotas",
+    "sold_at": "2026-11-26T18:24:41.227Z",
+    "photos": [
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/28e9cf21-c5b1-406d-90e0-45870a906bdb/d2b0893b-67b4-4c0c-b8e0-2805e55acb9f/extra_1795706853238_1.jpg",
+        "photo_type": "extra_1795706853238_1"
+      },
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/28e9cf21-c5b1-406d-90e0-45870a906bdb/d2b0893b-67b4-4c0c-b8e0-2805e55acb9f/extra_1795706853238_2.jpg",
+        "photo_type": "extra_1795706853238_2"
+      },
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/28e9cf21-c5b1-406d-90e0-45870a906bdb/d2b0893b-67b4-4c0c-b8e0-2805e55acb9f/extra_1795706853238_3.jpg",
+        "photo_type": "extra_1795706853238_3"
+      }
+    ],
+    "teste": false
+  }
+}
