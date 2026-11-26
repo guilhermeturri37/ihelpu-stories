@@ -1,0 +1,27 @@
+{
+  "device_id": "0eb9e952-b4c5-4a1b-ae78-81a95fd7a504",
+  "modelo": "iPhone 14 Pro Max",
+  "loja": "sao-leopoldo",
+  "vendido_em": "2026-11-26T15:36:17.108Z",
+  "estado": "pausado",
+  "aparelho": {
+    "id": "0eb9e952-b4c5-4a1b-ae78-81a95fd7a504",
+    "model": "iPhone 14 Pro Max",
+    "capacity": "256GB",
+    "aesthetic_condition": "como_novo",
+    "category": "iphone",
+    "preferred_store": "sao-leopoldo",
+    "sold_at": "2026-11-26T15:36:17.108Z",
+    "photos": [
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/a57d5dfd-2f07-4dac-93be-876f00e5c637/0eb9e952-b4c5-4a1b-ae78-81a95fd7a504/extra_1.jpeg",
+        "photo_type": "extra_1"
+      },
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/a57d5dfd-2f07-4dac-93be-876f00e5c637/0eb9e952-b4c5-4a1b-ae78-81a95fd7a504/extra_2.jpeg",
+        "photo_type": "extra_2"
+      }
+    ],
+    "teste": false
+  }
+}
