@@ -1,0 +1,31 @@
+{
+  "device_id": "b4a24363-4379-4efd-a350-d4ba05cc8e71",
+  "modelo": "iPhone 11 Pro",
+  "loja": "pelotas",
+  "vendido_em": "2026-11-26T19:29:29.869Z",
+  "estado": "pausado",
+  "aparelho": {
+    "id": "b4a24363-4379-4efd-a350-d4ba05cc8e71",
+    "model": "iPhone 11 Pro",
+    "capacity": "64GB",
+    "aesthetic_condition": "excelente",
+    "category": "iphone",
+    "preferred_store": "pelotas",
+    "sold_at": "2026-11-26T19:29:29.869Z",
+    "photos": [
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/28e9cf21-c5b1-406d-90e0-45870a906bdb/b4a24363-4379-4efd-a350-d4ba05cc8e71/extra_1793116700148_1.jpg",
+        "photo_type": "extra_1793116700148_1"
+      },
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/28e9cf21-c5b1-406d-90e0-45870a906bdb/b4a24363-4379-4efd-a350-d4ba05cc8e71/extra_1793116700148_2.jpg",
+        "photo_type": "extra_1793116700148_2"
+      },
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/28e9cf21-c5b1-406d-90e0-45870a906bdb/b4a24363-4379-4efd-a350-d4ba05cc8e71/extra_1793116700148_3.jpg",
+        "photo_type": "extra_1793116700148_3"
+      }
+    ],
+    "teste": false
+  }
+}
