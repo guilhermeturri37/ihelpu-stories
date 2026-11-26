@@ -1,0 +1,43 @@
+{
+  "device_id": "6b8a847f-4067-4f21-95a3-ef1b80b7553d",
+  "modelo": "iPhone 14",
+  "loja": "santa-maria",
+  "vendido_em": "2026-11-26T21:21:45.294Z",
+  "estado": "pausado",
+  "aparelho": {
+    "id": "6b8a847f-4067-4f21-95a3-ef1b80b7553d",
+    "model": "iPhone 14",
+    "capacity": "128GB",
+    "aesthetic_condition": "excelente",
+    "category": "iphone",
+    "preferred_store": "santa-maria",
+    "sold_at": "2026-11-26T21:21:45.294Z",
+    "photos": [
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/a1bd024b-cae6-443d-9647-396018d9acdd/6b8a847f-4067-4f21-95a3-ef1b80b7553d/extra_1.jpg",
+        "photo_type": "extra_1"
+      },
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/a1bd024b-cae6-443d-9647-396018d9acdd/6b8a847f-4067-4f21-95a3-ef1b80b7553d/extra_2.jpg",
+        "photo_type": "extra_2"
+      },
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/a1bd024b-cae6-443d-9647-396018d9acdd/6b8a847f-4067-4f21-95a3-ef1b80b7553d/extra_3.jpg",
+        "photo_type": "extra_3"
+      },
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/a1bd024b-cae6-443d-9647-396018d9acdd/6b8a847f-4067-4f21-95a3-ef1b80b7553d/extra_1795303675122_1.jpg",
+        "photo_type": "extra_1795303675122_1"
+      },
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/a1bd024b-cae6-443d-9647-396018d9acdd/6b8a847f-4067-4f21-95a3-ef1b80b7553d/extra_1795303675122_2.jpg",
+        "photo_type": "extra_1795303675122_2"
+      },
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/a1bd024b-cae6-443d-9647-396018d9acdd/6b8a847f-4067-4f21-95a3-ef1b80b7553d/extra_1795303675122_3.jpg",
+        "photo_type": "extra_1795303675122_3"
+      }
+    ],
+    "teste": false
+  }
+}
