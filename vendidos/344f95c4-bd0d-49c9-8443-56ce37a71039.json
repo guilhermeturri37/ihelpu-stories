@@ -1,0 +1,31 @@
+{
+  "device_id": "344f95c4-bd0d-49c9-8443-56ce37a71039",
+  "modelo": "iPhone 11",
+  "loja": "caxias-do-sul",
+  "vendido_em": "2026-11-26T13:51:14.489Z",
+  "estado": "pausado",
+  "aparelho": {
+    "id": "344f95c4-bd0d-49c9-8443-56ce37a71039",
+    "model": "iPhone 11",
+    "capacity": "128GB",
+    "aesthetic_condition": "excelente",
+    "category": "iphone",
+    "preferred_store": "caxias-do-sul",
+    "sold_at": "2026-11-26T13:51:14.489Z",
+    "photos": [
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/1e5ede64-9814-428e-b1ef-7775ec1c2cb6/344f95c4-bd0d-49c9-8443-56ce37a71039/extra_1.jpg",
+        "photo_type": "extra_1"
+      },
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/1e5ede64-9814-428e-b1ef-7775ec1c2cb6/344f95c4-bd0d-49c9-8443-56ce37a71039/extra_2.jpg",
+        "photo_type": "extra_2"
+      },
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/1e5ede64-9814-428e-b1ef-7775ec1c2cb6/344f95c4-bd0d-49c9-8443-56ce37a71039/extra_3.jpg",
+        "photo_type": "extra_3"
+      }
+    ],
+    "teste": false
+  }
+}
