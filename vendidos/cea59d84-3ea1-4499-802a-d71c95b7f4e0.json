@@ -1,0 +1,27 @@
+{
+  "device_id": "cea59d84-3ea1-4499-802a-d71c95b7f4e0",
+  "modelo": "iPhone XR",
+  "loja": "sao-leopoldo",
+  "vendido_em": "2026-11-26T13:51:14.489Z",
+  "estado": "pausado",
+  "aparelho": {
+    "id": "cea59d84-3ea1-4499-802a-d71c95b7f4e0",
+    "model": "iPhone XR",
+    "capacity": "128GB",
+    "aesthetic_condition": "excelente",
+    "category": "iphone",
+    "preferred_store": "sao-leopoldo",
+    "sold_at": "2026-11-26T13:51:14.489Z",
+    "photos": [
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/f451841f-2a3a-493f-8e9f-d8e8ee29e739/cea59d84-3ea1-4499-802a-d71c95b7f4e0/front.jpeg",
+        "photo_type": "front"
+      },
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/f451841f-2a3a-493f-8e9f-d8e8ee29e739/cea59d84-3ea1-4499-802a-d71c95b7f4e0/back.jpeg",
+        "photo_type": "back"
+      }
+    ],
+    "teste": false
+  }
+}
