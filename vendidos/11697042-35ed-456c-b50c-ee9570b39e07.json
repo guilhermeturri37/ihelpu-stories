@@ -1,0 +1,39 @@
+{
+  "device_id": "11697042-35ed-456c-b50c-ee9570b39e07",
+  "modelo": "iPhone 17 Pro Max",
+  "loja": "zona-norte",
+  "vendido_em": "2026-11-26T17:32:29.306Z",
+  "estado": "pausado",
+  "aparelho": {
+    "id": "11697042-35ed-456c-b50c-ee9570b39e07",
+    "model": "iPhone 17 Pro Max",
+    "capacity": "256GB",
+    "aesthetic_condition": "excelente",
+    "category": "iphone",
+    "preferred_store": "zona-norte",
+    "sold_at": "2026-11-26T17:32:29.306Z",
+    "photos": [
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/fbd7e303-cd5d-446a-b473-b7f5202f3398/11697042-35ed-456c-b50c-ee9570b39e07/front.jpeg",
+        "photo_type": "front"
+      },
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/fbd7e303-cd5d-446a-b473-b7f5202f3398/11697042-35ed-456c-b50c-ee9570b39e07/back.jpeg",
+        "photo_type": "back"
+      },
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/8e889277-aad5-4b36-aaa3-6a0fce26907b/11697042-35ed-456c-b50c-ee9570b39e07/extra_1.jpeg",
+        "photo_type": "extra_1"
+      },
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/8e889277-aad5-4b36-aaa3-6a0fce26907b/11697042-35ed-456c-b50c-ee9570b39e07/extra_2.jpeg",
+        "photo_type": "extra_2"
+      },
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/8e889277-aad5-4b36-aaa3-6a0fce26907b/11697042-35ed-456c-b50c-ee9570b39e07/extra_3.jpeg",
+        "photo_type": "extra_3"
+      }
+    ],
+    "teste": false
+  }
+}
