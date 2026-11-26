@@ -13512,6 +13512,44 @@
       "em": "2026-11-26T11:33:24+00:00",
       "horario": 8,
       "foto": "iphone-14-plus-b.jpg"
+    },
+    {
+      "instancia": "ZONASUL",
+      "device_id": "7f282f42-27e6-4c07-8216-2c179338a18a",
+      "modelo": "iPhone 16",
+      "em": "2026-11-26T11:33:51+00:00",
+      "horario": 8
+    },
+    {
+      "instancia": "ZONASUL",
+      "device_id": "4fe39867-38bc-4cb7-bc72-694446b86520",
+      "modelo": "iPhone 11",
+      "em": "2026-11-26T11:33:51+00:00",
+      "horario": 8,
+      "foto": "iphone-11-f.jpg"
+    },
+    {
+      "instancia": "ZONASUL",
+      "device_id": "88ec091c-3219-44a0-8404-b582e2c30b82",
+      "modelo": "iPhone 12 Pro",
+      "em": "2026-11-26T11:33:51+00:00",
+      "horario": 8,
+      "foto": "iphone-12-pro-a.jpg"
+    },
+    {
+      "instancia": "ZONASUL",
+      "device_id": "fb306e55-1270-48a3-b281-efc3c24c9065",
+      "modelo": "iPhone 14 Pro",
+      "em": "2026-11-26T11:33:51+00:00",
+      "horario": 8
+    },
+    {
+      "instancia": "ZONASUL",
+      "device_id": "8c90a477-9954-4f16-a90b-24c4c2b9ca53",
+      "modelo": "iPhone 14 Pro Max",
+      "em": "2026-11-26T11:33:51+00:00",
+      "horario": 8,
+      "foto": "iphone-14-pro-max-a.jpg"
     }
   ]
 }
