@@ -1,0 +1,39 @@
+{
+  "device_id": "575fa405-68a2-46b6-8870-8856384398fb",
+  "modelo": "iPhone 15",
+  "loja": "pelotas",
+  "vendido_em": "2026-11-26T12:42:12.696Z",
+  "estado": "pausado",
+  "aparelho": {
+    "id": "575fa405-68a2-46b6-8870-8856384398fb",
+    "model": "iPhone 15",
+    "capacity": "128GB",
+    "aesthetic_condition": "excelente",
+    "category": "iphone",
+    "preferred_store": "pelotas",
+    "sold_at": "2026-11-26T12:42:12.696Z",
+    "photos": [
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/28e9cf21-c5b1-406d-90e0-45870a906bdb/575fa405-68a2-46b6-8870-8856384398fb/extra_1795285451996_1.jpg",
+        "photo_type": "extra_1795285451996_1"
+      },
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/28e9cf21-c5b1-406d-90e0-45870a906bdb/575fa405-68a2-46b6-8870-8856384398fb/extra_1795285451996_2.jpg",
+        "photo_type": "extra_1795285451996_2"
+      },
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/28e9cf21-c5b1-406d-90e0-45870a906bdb/575fa405-68a2-46b6-8870-8856384398fb/extra_1795285451996_3.jpg",
+        "photo_type": "extra_1795285451996_3"
+      },
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/28e9cf21-c5b1-406d-90e0-45870a906bdb/575fa405-68a2-46b6-8870-8856384398fb/extra_1795285474440_1.jpg",
+        "photo_type": "extra_1795285474440_1"
+      },
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/28e9cf21-c5b1-406d-90e0-45870a906bdb/575fa405-68a2-46b6-8870-8856384398fb/extra_1795285474440_2.jpg",
+        "photo_type": "extra_1795285474440_2"
+      }
+    ],
+    "teste": false
+  }
+}
