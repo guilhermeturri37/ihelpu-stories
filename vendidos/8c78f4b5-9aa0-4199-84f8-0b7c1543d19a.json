@@ -1,0 +1,27 @@
+{
+  "device_id": "8c78f4b5-9aa0-4199-84f8-0b7c1543d19a",
+  "modelo": "iPhone 14 Plus",
+  "loja": "caxias-do-sul",
+  "vendido_em": "2026-11-26T20:21:31.804Z",
+  "estado": "pausado",
+  "aparelho": {
+    "id": "8c78f4b5-9aa0-4199-84f8-0b7c1543d19a",
+    "model": "iPhone 14 Plus",
+    "capacity": "256GB",
+    "aesthetic_condition": "excelente",
+    "category": "iphone",
+    "preferred_store": "caxias-do-sul",
+    "sold_at": "2026-11-26T20:21:31.804Z",
+    "photos": [
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/d1113f2e-0638-433f-90a1-b86241e40377/8c78f4b5-9aa0-4199-84f8-0b7c1543d19a/front.jpg",
+        "photo_type": "front"
+      },
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/d1113f2e-0638-433f-90a1-b86241e40377/8c78f4b5-9aa0-4199-84f8-0b7c1543d19a/back.jpg",
+        "photo_type": "back"
+      }
+    ],
+    "teste": false
+  }
+}
