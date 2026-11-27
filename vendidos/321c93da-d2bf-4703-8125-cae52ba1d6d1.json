@@ -1,0 +1,31 @@
+{
+  "device_id": "321c93da-d2bf-4703-8125-cae52ba1d6d1",
+  "modelo": "iPhone 16 Pro",
+  "loja": "trend",
+  "vendido_em": "2026-11-27T21:11:43.197Z",
+  "estado": "pausado",
+  "aparelho": {
+    "id": "321c93da-d2bf-4703-8125-cae52ba1d6d1",
+    "model": "iPhone 16 Pro",
+    "capacity": "256GB",
+    "aesthetic_condition": "como_novo",
+    "category": "iphone",
+    "preferred_store": "trend",
+    "sold_at": "2026-11-27T21:11:43.197Z",
+    "photos": [
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/b60d56f8-42a2-4a70-827f-5a66d3090743/321c93da-d2bf-4703-8125-cae52ba1d6d1/extra_1.jpg",
+        "photo_type": "extra_1"
+      },
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/b60d56f8-42a2-4a70-827f-5a66d3090743/321c93da-d2bf-4703-8125-cae52ba1d6d1/extra_2.jpg",
+        "photo_type": "extra_2"
+      },
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/b60d56f8-42a2-4a70-827f-5a66d3090743/321c93da-d2bf-4703-8125-cae52ba1d6d1/extra_3.jpg",
+        "photo_type": "extra_3"
+      }
+    ],
+    "teste": false
+  }
+}
