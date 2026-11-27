@@ -1,0 +1,39 @@
+{
+  "device_id": "bc69f8fe-6cd0-42a1-9c27-782a65ce3273",
+  "modelo": "iPhone 12 Pro Max",
+  "loja": "pelotas",
+  "vendido_em": "2026-11-27T14:12:54.977Z",
+  "estado": "pausado",
+  "aparelho": {
+    "id": "bc69f8fe-6cd0-42a1-9c27-782a65ce3273",
+    "model": "iPhone 12 Pro Max",
+    "capacity": "128GB",
+    "aesthetic_condition": "excelente",
+    "category": "iphone",
+    "preferred_store": "pelotas",
+    "sold_at": "2026-11-27T14:12:54.977Z",
+    "photos": [
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/28e9cf21-c5b1-406d-90e0-45870a906bdb/bc69f8fe-6cd0-42a1-9c27-782a65ce3273/extra_1795281905444_1.jpg",
+        "photo_type": "extra_1795281905444_1"
+      },
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/28e9cf21-c5b1-406d-90e0-45870a906bdb/bc69f8fe-6cd0-42a1-9c27-782a65ce3273/extra_1795281905444_2.jpg",
+        "photo_type": "extra_1795281905444_2"
+      },
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/28e9cf21-c5b1-406d-90e0-45870a906bdb/bc69f8fe-6cd0-42a1-9c27-782a65ce3273/extra_1795281905444_3.jpg",
+        "photo_type": "extra_1795281905444_3"
+      },
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/28e9cf21-c5b1-406d-90e0-45870a906bdb/bc69f8fe-6cd0-42a1-9c27-782a65ce3273/extra_1795281940024_1.jpg",
+        "photo_type": "extra_1795281940024_1"
+      },
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/28e9cf21-c5b1-406d-90e0-45870a906bdb/bc69f8fe-6cd0-42a1-9c27-782a65ce3273/extra_1795281940024_2.jpg",
+        "photo_type": "extra_1795281940024_2"
+      }
+    ],
+    "teste": false
+  }
+}
