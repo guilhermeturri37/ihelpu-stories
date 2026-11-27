@@ -1,0 +1,35 @@
+{
+  "device_id": "0764820c-b32d-48af-a96f-d43079dc8f96",
+  "modelo": "iPhone 16e",
+  "loja": "pelotas",
+  "vendido_em": "2026-11-27T16:42:17.685Z",
+  "estado": "pausado",
+  "aparelho": {
+    "id": "0764820c-b32d-48af-a96f-d43079dc8f96",
+    "model": "iPhone 16e",
+    "capacity": "128GB",
+    "aesthetic_condition": "excelente",
+    "category": "iphone",
+    "preferred_store": "pelotas",
+    "sold_at": "2026-11-27T16:42:17.685Z",
+    "photos": [
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/3c7eea70-6029-47ff-bc75-46dd1d110cca/0764820c-b32d-48af-a96f-d43079dc8f96/front.jpg",
+        "photo_type": "front"
+      },
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/3c7eea70-6029-47ff-bc75-46dd1d110cca/0764820c-b32d-48af-a96f-d43079dc8f96/back.jpg",
+        "photo_type": "back"
+      },
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/28e9cf21-c5b1-406d-90e0-45870a906bdb/0764820c-b32d-48af-a96f-d43079dc8f96/extra_1.jpg",
+        "photo_type": "extra_1"
+      },
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/28e9cf21-c5b1-406d-90e0-45870a906bdb/0764820c-b32d-48af-a96f-d43079dc8f96/extra_2.jpg",
+        "photo_type": "extra_2"
+      }
+    ],
+    "teste": false
+  }
+}
