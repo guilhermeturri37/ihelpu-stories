@@ -1,0 +1,39 @@
+{
+  "device_id": "809aaef1-66d8-4130-a97b-0e7d404ed709",
+  "modelo": "iPhone 12",
+  "loja": "santa-maria",
+  "vendido_em": "2026-11-27T19:36:37.852Z",
+  "estado": "pausado",
+  "aparelho": {
+    "id": "809aaef1-66d8-4130-a97b-0e7d404ed709",
+    "model": "iPhone 12",
+    "capacity": "128GB",
+    "aesthetic_condition": "excelente",
+    "category": "iphone",
+    "preferred_store": "santa-maria",
+    "sold_at": "2026-11-27T19:36:37.852Z",
+    "photos": [
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/a1bd024b-cae6-443d-9647-396018d9acdd/809aaef1-66d8-4130-a97b-0e7d404ed709/extra_1795304373769_1.jpg",
+        "photo_type": "extra_1795304373769_1"
+      },
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/a1bd024b-cae6-443d-9647-396018d9acdd/809aaef1-66d8-4130-a97b-0e7d404ed709/extra_1795304373769_2.jpg",
+        "photo_type": "extra_1795304373769_2"
+      },
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/a1bd024b-cae6-443d-9647-396018d9acdd/809aaef1-66d8-4130-a97b-0e7d404ed709/extra_1795304373769_3.jpg",
+        "photo_type": "extra_1795304373769_3"
+      },
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/a1bd024b-cae6-443d-9647-396018d9acdd/809aaef1-66d8-4130-a97b-0e7d404ed709/extra_1795304425520_1.jpg",
+        "photo_type": "extra_1795304425520_1"
+      },
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/a1bd024b-cae6-443d-9647-396018d9acdd/809aaef1-66d8-4130-a97b-0e7d404ed709/extra_1795304425520_2.jpg",
+        "photo_type": "extra_1795304425520_2"
+      }
+    ],
+    "teste": false
+  }
+}
