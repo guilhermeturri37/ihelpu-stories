@@ -1,0 +1,31 @@
+{
+  "device_id": "832667c0-8eb0-4de4-b80f-0e8738cf404a",
+  "modelo": "iPhone 13 mini",
+  "loja": "trend",
+  "vendido_em": "2026-11-27T19:52:28.666Z",
+  "estado": "pausado",
+  "aparelho": {
+    "id": "832667c0-8eb0-4de4-b80f-0e8738cf404a",
+    "model": "iPhone 13 mini",
+    "capacity": "256GB",
+    "aesthetic_condition": "excelente",
+    "category": "iphone",
+    "preferred_store": "trend",
+    "sold_at": "2026-11-27T19:52:28.666Z",
+    "photos": [
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/b60d56f8-42a2-4a70-827f-5a66d3090743/832667c0-8eb0-4de4-b80f-0e8738cf404a/extra_1.jpg",
+        "photo_type": "extra_1"
+      },
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/b60d56f8-42a2-4a70-827f-5a66d3090743/832667c0-8eb0-4de4-b80f-0e8738cf404a/extra_2.jpg",
+        "photo_type": "extra_2"
+      },
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/b60d56f8-42a2-4a70-827f-5a66d3090743/832667c0-8eb0-4de4-b80f-0e8738cf404a/extra_3.jpg",
+        "photo_type": "extra_3"
+      }
+    ],
+    "teste": false
+  }
+}
