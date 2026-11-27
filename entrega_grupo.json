@@ -14119,6 +14119,44 @@
       "modelo": "iPhone SE (3ª geração)",
       "em": "2026-11-27T11:36:22+00:00",
       "horario": 8
+    },
+    {
+      "instancia": "PELOTAS2",
+      "device_id": "f81402b0-d1ae-4fb6-a9af-e6f57e8045ff",
+      "modelo": "iPhone 17 Pro Max",
+      "em": "2026-11-27T11:36:49+00:00",
+      "horario": 8,
+      "foto": "iphone-17-pro-max-a.jpg"
+    },
+    {
+      "instancia": "PELOTAS2",
+      "device_id": "a73fa1fe-83bd-4766-8187-05b0a1d87504",
+      "modelo": "iPhone 12",
+      "em": "2026-11-27T11:36:49+00:00",
+      "horario": 8,
+      "foto": "iphone-12-b.jpg"
+    },
+    {
+      "instancia": "PELOTAS2",
+      "device_id": "7232cd24-8f86-4c25-9b5a-f977e1f7fb74",
+      "modelo": "iPhone 13",
+      "em": "2026-11-27T11:36:49+00:00",
+      "horario": 8,
+      "foto": "iphone-13-a.jpg"
+    },
+    {
+      "instancia": "PELOTAS2",
+      "device_id": "0764820c-b32d-48af-a96f-d43079dc8f96",
+      "modelo": "iPhone 16e",
+      "em": "2026-11-27T11:36:49+00:00",
+      "horario": 8
+    },
+    {
+      "instancia": "PELOTAS2",
+      "device_id": "12388a88-1075-4425-8eed-7cadd7457f0e",
+      "modelo": "iPhone 14 Pro",
+      "em": "2026-11-27T11:36:49+00:00",
+      "horario": 8
     }
   ]
 }
