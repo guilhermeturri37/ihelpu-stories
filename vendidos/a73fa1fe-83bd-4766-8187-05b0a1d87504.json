@@ -1,0 +1,39 @@
+{
+  "device_id": "a73fa1fe-83bd-4766-8187-05b0a1d87504",
+  "modelo": "iPhone 12",
+  "loja": "pelotas",
+  "vendido_em": "2026-11-27T13:13:07.064Z",
+  "estado": "pausado",
+  "aparelho": {
+    "id": "a73fa1fe-83bd-4766-8187-05b0a1d87504",
+    "model": "iPhone 12",
+    "capacity": "64GB",
+    "aesthetic_condition": "excelente",
+    "category": "iphone",
+    "preferred_store": "pelotas",
+    "sold_at": "2026-11-27T13:13:07.064Z",
+    "photos": [
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/28e9cf21-c5b1-406d-90e0-45870a906bdb/a73fa1fe-83bd-4766-8187-05b0a1d87504/extra_1795284735474_1.jpg",
+        "photo_type": "extra_1795284735474_1"
+      },
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/28e9cf21-c5b1-406d-90e0-45870a906bdb/a73fa1fe-83bd-4766-8187-05b0a1d87504/extra_1795284735474_2.jpg",
+        "photo_type": "extra_1795284735474_2"
+      },
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/28e9cf21-c5b1-406d-90e0-45870a906bdb/a73fa1fe-83bd-4766-8187-05b0a1d87504/extra_1795284735474_3.jpg",
+        "photo_type": "extra_1795284735474_3"
+      },
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/28e9cf21-c5b1-406d-90e0-45870a906bdb/a73fa1fe-83bd-4766-8187-05b0a1d87504/extra_1795284758631_1.jpg",
+        "photo_type": "extra_1795284758631_1"
+      },
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/28e9cf21-c5b1-406d-90e0-45870a906bdb/a73fa1fe-83bd-4766-8187-05b0a1d87504/extra_1795284758631_2.jpg",
+        "photo_type": "extra_1795284758631_2"
+      }
+    ],
+    "teste": false
+  }
+}
