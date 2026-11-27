@@ -1,0 +1,43 @@
+{
+  "device_id": "d63a5e0d-222a-48b0-ab7a-6606fe10638c",
+  "modelo": "iPhone 13 Pro Max",
+  "loja": "zona-norte",
+  "vendido_em": "2026-11-27T13:46:49.890Z",
+  "estado": "pausado",
+  "aparelho": {
+    "id": "d63a5e0d-222a-48b0-ab7a-6606fe10638c",
+    "model": "iPhone 13 Pro Max",
+    "capacity": "128GB",
+    "aesthetic_condition": "como_novo",
+    "category": "iphone",
+    "preferred_store": "zona-norte",
+    "sold_at": "2026-11-27T13:46:49.890Z",
+    "photos": [
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/8e889277-aad5-4b36-aaa3-6a0fce26907b/d63a5e0d-222a-48b0-ab7a-6606fe10638c/extra_1.jpeg",
+        "photo_type": "extra_1"
+      },
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/8e889277-aad5-4b36-aaa3-6a0fce26907b/d63a5e0d-222a-48b0-ab7a-6606fe10638c/extra_2.jpeg",
+        "photo_type": "extra_2"
+      },
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/8e889277-aad5-4b36-aaa3-6a0fce26907b/d63a5e0d-222a-48b0-ab7a-6606fe10638c/extra_3.jpeg",
+        "photo_type": "extra_3"
+      },
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/8e889277-aad5-4b36-aaa3-6a0fce26907b/d63a5e0d-222a-48b0-ab7a-6606fe10638c/extra_1795785781082_1.jpeg",
+        "photo_type": "extra_1795785781082_1"
+      },
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/8e889277-aad5-4b36-aaa3-6a0fce26907b/d63a5e0d-222a-48b0-ab7a-6606fe10638c/extra_1795785781082_2.jpeg",
+        "photo_type": "extra_1795785781082_2"
+      },
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/8e889277-aad5-4b36-aaa3-6a0fce26907b/d63a5e0d-222a-48b0-ab7a-6606fe10638c/extra_1795785781082_3.jpeg",
+        "photo_type": "extra_1795785781082_3"
+      }
+    ],
+    "teste": false
+  }
+}
