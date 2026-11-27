@@ -1,0 +1,27 @@
+{
+  "device_id": "c346d89e-cd80-48ad-b663-5b16f955094d",
+  "modelo": "iPhone 13",
+  "loja": "zona-norte",
+  "vendido_em": "2026-11-27T18:21:34.315Z",
+  "estado": "pausado",
+  "aparelho": {
+    "id": "c346d89e-cd80-48ad-b663-5b16f955094d",
+    "model": "iPhone 13",
+    "capacity": "128GB",
+    "aesthetic_condition": "excelente",
+    "category": "iphone",
+    "preferred_store": "zona-norte",
+    "sold_at": "2026-11-27T18:21:34.315Z",
+    "photos": [
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/7cc60c28-75ef-4dd9-b8eb-0fbddd783c5d/c346d89e-cd80-48ad-b663-5b16f955094d/front.jpeg",
+        "photo_type": "front"
+      },
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/7cc60c28-75ef-4dd9-b8eb-0fbddd783c5d/c346d89e-cd80-48ad-b663-5b16f955094d/back.jpeg",
+        "photo_type": "back"
+      }
+    ],
+    "teste": false
+  }
+}
