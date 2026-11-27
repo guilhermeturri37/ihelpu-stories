@@ -1,0 +1,31 @@
+{
+  "device_id": "a28f3587-86e6-4c5d-892f-5e4d6aa0785e",
+  "modelo": "iPhone 15 Pro Max",
+  "loja": "caxias-do-sul",
+  "vendido_em": "2026-11-27T18:18:11.425Z",
+  "estado": "pausado",
+  "aparelho": {
+    "id": "a28f3587-86e6-4c5d-892f-5e4d6aa0785e",
+    "model": "iPhone 15 Pro Max",
+    "capacity": "256GB",
+    "aesthetic_condition": "como_novo",
+    "category": "iphone",
+    "preferred_store": "caxias-do-sul",
+    "sold_at": "2026-11-27T18:18:11.425Z",
+    "photos": [
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/1e5ede64-9814-428e-b1ef-7775ec1c2cb6/a28f3587-86e6-4c5d-892f-5e4d6aa0785e/extra_1795705283630_1.jpeg",
+        "photo_type": "extra_1795705283630_1"
+      },
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/1e5ede64-9814-428e-b1ef-7775ec1c2cb6/a28f3587-86e6-4c5d-892f-5e4d6aa0785e/extra_1795705283630_2.jpeg",
+        "photo_type": "extra_1795705283630_2"
+      },
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/1e5ede64-9814-428e-b1ef-7775ec1c2cb6/a28f3587-86e6-4c5d-892f-5e4d6aa0785e/extra_1795705283630_3.jpeg",
+        "photo_type": "extra_1795705283630_3"
+      }
+    ],
+    "teste": false
+  }
+}
