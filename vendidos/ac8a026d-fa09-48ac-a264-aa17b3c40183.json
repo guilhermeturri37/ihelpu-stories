@@ -1,0 +1,23 @@
+{
+  "device_id": "ac8a026d-fa09-48ac-a264-aa17b3c40183",
+  "modelo": "iPhone 11",
+  "loja": "pelotas",
+  "vendido_em": "2026-11-27T17:52:50.135Z",
+  "estado": "pausado",
+  "aparelho": {
+    "id": "ac8a026d-fa09-48ac-a264-aa17b3c40183",
+    "model": "iPhone 11",
+    "capacity": "128GB",
+    "aesthetic_condition": "excelente",
+    "category": "iphone",
+    "preferred_store": "pelotas",
+    "sold_at": "2026-11-27T17:52:50.135Z",
+    "photos": [
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/28e9cf21-c5b1-406d-90e0-45870a906bdb/ac8a026d-fa09-48ac-a264-aa17b3c40183/extra_1795801832130_1.jpeg",
+        "photo_type": "extra_1795801832130_1"
+      }
+    ],
+    "teste": false
+  }
+}
