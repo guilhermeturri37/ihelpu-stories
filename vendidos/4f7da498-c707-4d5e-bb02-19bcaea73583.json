@@ -1,0 +1,35 @@
+{
+  "device_id": "4f7da498-c707-4d5e-bb02-19bcaea73583",
+  "modelo": "iPhone 18 Pro Max",
+  "loja": "caxias-do-sul",
+  "vendido_em": "2026-11-28T13:36:16.178Z",
+  "estado": "pausado",
+  "aparelho": {
+    "id": "4f7da498-c707-4d5e-bb02-19bcaea73583",
+    "model": "iPhone 18 Pro Max",
+    "capacity": "256GB",
+    "aesthetic_condition": "como_novo",
+    "category": "iphone",
+    "preferred_store": "caxias-do-sul",
+    "sold_at": "2026-11-28T13:36:16.178Z",
+    "photos": [
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/1e5ede64-9814-428e-b1ef-7775ec1c2cb6/4f7da498-c707-4d5e-bb02-19bcaea73583/extra_1795529056046_1.jpg",
+        "photo_type": "extra_1795529056046_1"
+      },
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/1e5ede64-9814-428e-b1ef-7775ec1c2cb6/4f7da498-c707-4d5e-bb02-19bcaea73583/extra_1795529056046_2.jpg",
+        "photo_type": "extra_1795529056046_2"
+      },
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/1e5ede64-9814-428e-b1ef-7775ec1c2cb6/4f7da498-c707-4d5e-bb02-19bcaea73583/extra_1795529056046_3.jpg",
+        "photo_type": "extra_1795529056046_3"
+      },
+      {
+        "photo_url": "https://tegdgtovwhbhsrbkxvog.supabase.co/storage/v1/object/public/device-photos/1e5ede64-9814-428e-b1ef-7775ec1c2cb6/4f7da498-c707-4d5e-bb02-19bcaea73583/extra_1795529205305_1.jpg",
+        "photo_type": "extra_1795529205305_1"
+      }
+    ],
+    "teste": false
+  }
+}
