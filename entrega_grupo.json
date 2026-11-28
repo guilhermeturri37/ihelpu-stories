@@ -14233,6 +14233,45 @@
       "modelo": "iPhone XS",
       "em": "2026-11-28T11:32:23+00:00",
       "horario": 8
+    },
+    {
+      "instancia": "TREND2",
+      "device_id": "528646d0-58cb-47a8-a7b6-6538d1bbba68",
+      "modelo": "iPhone 14",
+      "em": "2026-11-28T11:32:48+00:00",
+      "horario": 8,
+      "foto": "iphone-14-b.jpg"
+    },
+    {
+      "instancia": "TREND2",
+      "device_id": "fe47d340-0237-4e22-b670-76ef1287e512",
+      "modelo": "iPhone 15",
+      "em": "2026-11-28T11:32:48+00:00",
+      "horario": 8,
+      "foto": "iphone-15-b.jpg"
+    },
+    {
+      "instancia": "TREND2",
+      "device_id": "ea6b48bd-7b7a-4669-a217-a2cf1bec9d6b",
+      "modelo": "iPhone 15 Pro Max",
+      "em": "2026-11-28T11:32:48+00:00",
+      "horario": 8,
+      "foto": "iphone-15-pro-a.jpg"
+    },
+    {
+      "instancia": "TREND2",
+      "device_id": "19101e8c-8153-4972-9a36-1925b670f5a9",
+      "modelo": "iPhone 16e",
+      "em": "2026-11-28T11:32:48+00:00",
+      "horario": 8
+    },
+    {
+      "instancia": "TREND2",
+      "device_id": "d286b604-a653-47af-a7ce-5100ab12f50e",
+      "modelo": "iPhone 15 Pro",
+      "em": "2026-11-28T11:32:48+00:00",
+      "horario": 8,
+      "foto": "iphone-15-pro-b.jpg"
     }
   ]
 }
